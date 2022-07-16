@@ -7431,6 +7431,9 @@ type BranchProtection interface {
 	AllowsForcePushes() interface{}
 	SetAllowsForcePushes(val interface{})
 	AllowsForcePushesInput() interface{}
+	BlocksCreations() interface{}
+	SetBlocksCreations(val interface{})
+	BlocksCreationsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -7522,6 +7525,7 @@ type BranchProtection interface {
 	PutRequiredStatusChecks(value interface{})
 	ResetAllowsDeletions()
 	ResetAllowsForcePushes()
+	ResetBlocksCreations()
 	ResetEnforceAdmins()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -7583,6 +7587,26 @@ func (j *jsiiProxy_BranchProtection) AllowsForcePushesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowsForcePushesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) BlocksCreations() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"blocksCreations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) BlocksCreationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"blocksCreationsInput",
 		&returns,
 	)
 	return returns
@@ -7961,6 +7985,14 @@ func (j *jsiiProxy_BranchProtection) SetAllowsForcePushes(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_BranchProtection) SetBlocksCreations(val interface{}) {
+	_jsii_.Set(
+		j,
+		"blocksCreations",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BranchProtection) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -8278,6 +8310,14 @@ func (b *jsiiProxy_BranchProtection) ResetAllowsForcePushes() {
 	)
 }
 
+func (b *jsiiProxy_BranchProtection) ResetBlocksCreations() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBlocksCreations",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BranchProtection) ResetEnforceAdmins() {
 	_jsii_.InvokeVoid(
 		b,
@@ -8421,6 +8461,8 @@ type BranchProtectionConfig struct {
 	AllowsDeletions interface{} `field:"optional" json:"allowsDeletions" yaml:"allowsDeletions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}.
 	AllowsForcePushes interface{} `field:"optional" json:"allowsForcePushes" yaml:"allowsForcePushes"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}.
+	BlocksCreations interface{} `field:"optional" json:"blocksCreations" yaml:"blocksCreations"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}.
 	EnforceAdmins interface{} `field:"optional" json:"enforceAdmins" yaml:"enforceAdmins"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}.
@@ -22822,6 +22864,9 @@ type DataGithubRepository interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeId() *string
+	OnlyProtectedBranches() interface{}
+	SetOnlyProtectedBranches(val interface{})
+	OnlyProtectedBranchesInput() interface{}
 	Pages() DataGithubRepositoryPagesList
 	Private() cdktf.IResolvable
 	// Experimental.
@@ -22871,6 +22916,7 @@ type DataGithubRepository interface {
 	ResetHomepageUrl()
 	ResetId()
 	ResetName()
+	ResetOnlyProtectedBranches()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -23219,6 +23265,26 @@ func (j *jsiiProxy_DataGithubRepository) NodeId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) OnlyProtectedBranches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyProtectedBranches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) OnlyProtectedBranchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onlyProtectedBranchesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) Pages() DataGithubRepositoryPagesList {
 	var returns DataGithubRepositoryPagesList
 	_jsii_.Get(
@@ -23426,6 +23492,14 @@ func (j *jsiiProxy_DataGithubRepository) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubRepository) SetOnlyProtectedBranches(val interface{}) {
+	_jsii_.Set(
+		j,
+		"onlyProtectedBranches",
 		val,
 	)
 }
@@ -23663,6 +23737,14 @@ func (d *jsiiProxy_DataGithubRepository) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubRepository) ResetOnlyProtectedBranches() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOnlyProtectedBranches",
 		nil, // no parameters
 	)
 }
@@ -24346,6 +24428,8 @@ type DataGithubRepositoryConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}.
+	OnlyProtectedBranches interface{} `field:"optional" json:"onlyProtectedBranches" yaml:"onlyProtectedBranches"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}.
