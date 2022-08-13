@@ -1,0 +1,949 @@
+// Prebuilt github Provider for Terraform CDK (cdktf)
+package github
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-github-go/github/v2/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-github-go/github/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3}.
+type BranchProtectionV3 interface {
+	cdktf.TerraformResource
+	Branch() *string
+	SetBranch(val *string)
+	BranchInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EnforceAdmins() interface{}
+	SetEnforceAdmins(val interface{})
+	EnforceAdminsInput() interface{}
+	Etag() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Repository() *string
+	SetRepository(val *string)
+	RepositoryInput() *string
+	RequireConversationResolution() interface{}
+	SetRequireConversationResolution(val interface{})
+	RequireConversationResolutionInput() interface{}
+	RequiredPullRequestReviews() BranchProtectionV3RequiredPullRequestReviewsOutputReference
+	RequiredPullRequestReviewsInput() *BranchProtectionV3RequiredPullRequestReviews
+	RequiredStatusChecks() BranchProtectionV3RequiredStatusChecksOutputReference
+	RequiredStatusChecksInput() *BranchProtectionV3RequiredStatusChecks
+	RequireSignedCommits() interface{}
+	SetRequireSignedCommits(val interface{})
+	RequireSignedCommitsInput() interface{}
+	Restrictions() BranchProtectionV3RestrictionsOutputReference
+	RestrictionsInput() *BranchProtectionV3Restrictions
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutRequiredPullRequestReviews(value *BranchProtectionV3RequiredPullRequestReviews)
+	PutRequiredStatusChecks(value *BranchProtectionV3RequiredStatusChecks)
+	PutRestrictions(value *BranchProtectionV3Restrictions)
+	ResetEnforceAdmins()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRequireConversationResolution()
+	ResetRequiredPullRequestReviews()
+	ResetRequiredStatusChecks()
+	ResetRequireSignedCommits()
+	ResetRestrictions()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for BranchProtectionV3
+type jsiiProxy_BranchProtectionV3 struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Branch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) BranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"branchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) EnforceAdmins() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceAdmins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) EnforceAdminsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceAdminsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RepositoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequireConversationResolution() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireConversationResolution",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequireConversationResolutionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireConversationResolutionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequiredPullRequestReviews() BranchProtectionV3RequiredPullRequestReviewsOutputReference {
+	var returns BranchProtectionV3RequiredPullRequestReviewsOutputReference
+	_jsii_.Get(
+		j,
+		"requiredPullRequestReviews",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequiredPullRequestReviewsInput() *BranchProtectionV3RequiredPullRequestReviews {
+	var returns *BranchProtectionV3RequiredPullRequestReviews
+	_jsii_.Get(
+		j,
+		"requiredPullRequestReviewsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequiredStatusChecks() BranchProtectionV3RequiredStatusChecksOutputReference {
+	var returns BranchProtectionV3RequiredStatusChecksOutputReference
+	_jsii_.Get(
+		j,
+		"requiredStatusChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequiredStatusChecksInput() *BranchProtectionV3RequiredStatusChecks {
+	var returns *BranchProtectionV3RequiredStatusChecks
+	_jsii_.Get(
+		j,
+		"requiredStatusChecksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequireSignedCommits() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireSignedCommits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RequireSignedCommitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireSignedCommitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) Restrictions() BranchProtectionV3RestrictionsOutputReference {
+	var returns BranchProtectionV3RestrictionsOutputReference
+	_jsii_.Get(
+		j,
+		"restrictions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) RestrictionsInput() *BranchProtectionV3Restrictions {
+	var returns *BranchProtectionV3Restrictions
+	_jsii_.Get(
+		j,
+		"restrictionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3} Resource.
+func NewBranchProtectionV3(scope constructs.Construct, id *string, config *BranchProtectionV3Config) BranchProtectionV3 {
+	_init_.Initialize()
+
+	j := jsiiProxy_BranchProtectionV3{}
+
+	_jsii_.Create(
+		"@cdktf/provider-github.BranchProtectionV3",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3} Resource.
+func NewBranchProtectionV3_Override(b BranchProtectionV3, scope constructs.Construct, id *string, config *BranchProtectionV3Config) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-github.BranchProtectionV3",
+		[]interface{}{scope, id, config},
+		b,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetBranch(val *string) {
+	_jsii_.Set(
+		j,
+		"branch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetEnforceAdmins(val interface{}) {
+	_jsii_.Set(
+		j,
+		"enforceAdmins",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetRepository(val *string) {
+	_jsii_.Set(
+		j,
+		"repository",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetRequireConversationResolution(val interface{}) {
+	_jsii_.Set(
+		j,
+		"requireConversationResolution",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3) SetRequireSignedCommits(val interface{}) {
+	_jsii_.Set(
+		j,
+		"requireSignedCommits",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func BranchProtectionV3_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.BranchProtectionV3",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func BranchProtectionV3_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-github.BranchProtectionV3",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		b,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		b,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		b,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		b,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) PutRequiredPullRequestReviews(value *BranchProtectionV3RequiredPullRequestReviews) {
+	_jsii_.InvokeVoid(
+		b,
+		"putRequiredPullRequestReviews",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) PutRequiredStatusChecks(value *BranchProtectionV3RequiredStatusChecks) {
+	_jsii_.InvokeVoid(
+		b,
+		"putRequiredStatusChecks",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) PutRestrictions(value *BranchProtectionV3Restrictions) {
+	_jsii_.InvokeVoid(
+		b,
+		"putRestrictions",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetEnforceAdmins() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEnforceAdmins",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetRequireConversationResolution() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequireConversationResolution",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetRequiredPullRequestReviews() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequiredPullRequestReviews",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetRequiredStatusChecks() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequiredStatusChecks",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetRequireSignedCommits() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequireSignedCommits",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ResetRestrictions() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRestrictions",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
