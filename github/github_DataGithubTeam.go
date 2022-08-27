@@ -42,6 +42,9 @@ type DataGithubTeam interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Members() *[]*string
+	MembershipType() *string
+	SetMembershipType(val *string)
+	MembershipTypeInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -90,6 +93,7 @@ type DataGithubTeam interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetMembershipType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -223,6 +227,26 @@ func (j *jsiiProxy_DataGithubTeam) Members() *[]*string {
 	_jsii_.Get(
 		j,
 		"members",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeam) MembershipType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeam) MembershipTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipTypeInput",
 		&returns,
 	)
 	return returns
@@ -421,6 +445,14 @@ func (j *jsiiProxy_DataGithubTeam) SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubTeam) SetMembershipType(val *string) {
+	_jsii_.Set(
+		j,
+		"membershipType",
 		val,
 	)
 }
@@ -634,6 +666,14 @@ func (d *jsiiProxy_DataGithubTeam) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubTeam) ResetMembershipType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMembershipType",
 		nil, // no parameters
 	)
 }
