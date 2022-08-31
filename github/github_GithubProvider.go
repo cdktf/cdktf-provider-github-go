@@ -377,6 +377,9 @@ func (j *jsiiProxy_GithubProvider) WriteDelayMsInput() *float64 {
 func NewGithubProvider(scope constructs.Construct, id *string, config *GithubProviderConfig) GithubProvider {
 	_init_.Initialize()
 
+	if err := validateNewGithubProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GithubProvider{}
 
 	_jsii_.Create(
@@ -399,7 +402,7 @@ func NewGithubProvider_Override(g GithubProvider, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetAlias(val *string) {
+func (j *jsiiProxy_GithubProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -407,7 +410,10 @@ func (j *jsiiProxy_GithubProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetAppAuth(val *GithubProviderAppAuth) {
+func (j *jsiiProxy_GithubProvider)SetAppAuth(val *GithubProviderAppAuth) {
+	if err := j.validateSetAppAuthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"appAuth",
@@ -415,7 +421,7 @@ func (j *jsiiProxy_GithubProvider) SetAppAuth(val *GithubProviderAppAuth) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetBaseUrl(val *string) {
+func (j *jsiiProxy_GithubProvider)SetBaseUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -423,7 +429,10 @@ func (j *jsiiProxy_GithubProvider) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetInsecure(val interface{}) {
+func (j *jsiiProxy_GithubProvider)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecure",
@@ -431,7 +440,7 @@ func (j *jsiiProxy_GithubProvider) SetInsecure(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetOrganization(val *string) {
+func (j *jsiiProxy_GithubProvider)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
 		"organization",
@@ -439,7 +448,7 @@ func (j *jsiiProxy_GithubProvider) SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetOwner(val *string) {
+func (j *jsiiProxy_GithubProvider)SetOwner(val *string) {
 	_jsii_.Set(
 		j,
 		"owner",
@@ -447,7 +456,7 @@ func (j *jsiiProxy_GithubProvider) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetReadDelayMs(val *float64) {
+func (j *jsiiProxy_GithubProvider)SetReadDelayMs(val *float64) {
 	_jsii_.Set(
 		j,
 		"readDelayMs",
@@ -455,7 +464,7 @@ func (j *jsiiProxy_GithubProvider) SetReadDelayMs(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetToken(val *string) {
+func (j *jsiiProxy_GithubProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -463,7 +472,7 @@ func (j *jsiiProxy_GithubProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubProvider) SetWriteDelayMs(val *float64) {
+func (j *jsiiProxy_GithubProvider)SetWriteDelayMs(val *float64) {
 	_jsii_.Set(
 		j,
 		"writeDelayMs",
@@ -491,6 +500,9 @@ func (j *jsiiProxy_GithubProvider) SetWriteDelayMs(val *float64) {
 func GithubProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGithubProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -515,6 +527,9 @@ func GithubProvider_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GithubProvider) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -523,6 +538,9 @@ func (g *jsiiProxy_GithubProvider) AddOverride(path *string, value interface{}) 
 }
 
 func (g *jsiiProxy_GithubProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

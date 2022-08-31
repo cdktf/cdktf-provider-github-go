@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGithubRepositoryBranchesList) WrapsSet() *bool {
 func NewDataGithubRepositoryBranchesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryBranchesList {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubRepositoryBranchesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubRepositoryBranchesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGithubRepositoryBranchesList_Override(d DataGithubRepositoryBranches
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryBranchesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryBranchesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGithubRepositoryBranchesList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryBranchesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGithubRepositoryBranchesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGithubRepositoryBranchesList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryBranchesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGithubRepositoryBranchesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGithubRepositoryBranchesList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataGithubRepositoryBranchesList) Get(index *float64) DataGithubRepositoryBranchesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGithubRepositoryBranchesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGithubRepositoryBranchesList) Get(index *float64) DataGit
 }
 
 func (d *jsiiProxy_DataGithubRepositoryBranchesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

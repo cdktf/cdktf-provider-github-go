@@ -443,6 +443,9 @@ func (j *jsiiProxy_RepositoryMilestone) TitleInput() *string {
 func NewRepositoryMilestone(scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) RepositoryMilestone {
 	_init_.Initialize()
 
+	if err := validateNewRepositoryMilestoneParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RepositoryMilestone{}
 
 	_jsii_.Create(
@@ -465,7 +468,10 @@ func NewRepositoryMilestone_Override(r RepositoryMilestone, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetConnection(val interface{}) {
+func (j *jsiiProxy_RepositoryMilestone)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -473,7 +479,7 @@ func (j *jsiiProxy_RepositoryMilestone) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetCount(val *float64) {
+func (j *jsiiProxy_RepositoryMilestone)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -481,7 +487,7 @@ func (j *jsiiProxy_RepositoryMilestone) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RepositoryMilestone)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -489,7 +495,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetDescription(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -497,7 +506,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetDueDate(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetDueDate(val *string) {
+	if err := j.validateSetDueDateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dueDate",
@@ -505,7 +517,7 @@ func (j *jsiiProxy_RepositoryMilestone) SetDueDate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RepositoryMilestone)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +525,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetId(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -521,7 +536,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RepositoryMilestone)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -529,7 +547,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetOwner(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -537,7 +558,7 @@ func (j *jsiiProxy_RepositoryMilestone) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RepositoryMilestone)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -545,7 +566,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RepositoryMilestone)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -553,7 +577,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetRepository(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repository",
@@ -561,7 +588,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetRepository(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetState(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -569,7 +599,10 @@ func (j *jsiiProxy_RepositoryMilestone) SetState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryMilestone) SetTitle(val *string) {
+func (j *jsiiProxy_RepositoryMilestone)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -597,6 +630,9 @@ func (j *jsiiProxy_RepositoryMilestone) SetTitle(val *string) {
 func RepositoryMilestone_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRepositoryMilestone_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -621,6 +657,9 @@ func RepositoryMilestone_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RepositoryMilestone) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -629,6 +668,9 @@ func (r *jsiiProxy_RepositoryMilestone) AddOverride(path *string, value interfac
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -642,6 +684,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -655,6 +700,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetBooleanAttribute(terraformAttribute *
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -668,6 +716,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -681,6 +732,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetListAttribute(terraformAttribute *str
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -694,6 +748,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetNumberAttribute(terraformAttribute *s
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -707,6 +764,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetNumberListAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -720,6 +780,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetNumberMapAttribute(terraformAttribute
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -733,6 +796,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetStringAttribute(terraformAttribute *s
 }
 
 func (r *jsiiProxy_RepositoryMilestone) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -746,6 +812,9 @@ func (r *jsiiProxy_RepositoryMilestone) GetStringMapAttribute(terraformAttribute
 }
 
 func (r *jsiiProxy_RepositoryMilestone) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -759,6 +828,9 @@ func (r *jsiiProxy_RepositoryMilestone) InterpolationForAttribute(terraformAttri
 }
 
 func (r *jsiiProxy_RepositoryMilestone) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",

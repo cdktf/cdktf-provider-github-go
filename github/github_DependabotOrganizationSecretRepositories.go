@@ -337,6 +337,9 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) TerraformResourceTy
 func NewDependabotOrganizationSecretRepositories(scope constructs.Construct, id *string, config *DependabotOrganizationSecretRepositoriesConfig) DependabotOrganizationSecretRepositories {
 	_init_.Initialize()
 
+	if err := validateNewDependabotOrganizationSecretRepositoriesParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DependabotOrganizationSecretRepositories{}
 
 	_jsii_.Create(
@@ -359,7 +362,10 @@ func NewDependabotOrganizationSecretRepositories_Override(d DependabotOrganizati
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetConnection(val interface{}) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -367,7 +373,7 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetCount(val *float64) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -375,7 +381,7 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetCount(val *float
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -383,7 +389,7 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetId(val *string) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -407,7 +419,7 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -415,7 +427,10 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -423,7 +438,10 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetSecretName(val *string) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetSecretName(val *string) {
+	if err := j.validateSetSecretNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretName",
@@ -431,7 +449,10 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetSecretName(val *
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetSelectedRepositoryIds(val *[]*float64) {
+func (j *jsiiProxy_DependabotOrganizationSecretRepositories)SetSelectedRepositoryIds(val *[]*float64) {
+	if err := j.validateSetSelectedRepositoryIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"selectedRepositoryIds",
@@ -459,6 +480,9 @@ func (j *jsiiProxy_DependabotOrganizationSecretRepositories) SetSelectedReposito
 func DependabotOrganizationSecretRepositories_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDependabotOrganizationSecretRepositories_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -483,6 +507,9 @@ func DependabotOrganizationSecretRepositories_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -491,6 +518,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) AddOverride(path *s
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -504,6 +534,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetAnyMapAttribute(
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -517,6 +550,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetBooleanAttribute
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -530,6 +566,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetBooleanMapAttrib
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -543,6 +582,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetListAttribute(te
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -556,6 +598,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberAttribute(
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -569,6 +614,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberListAttrib
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +630,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetNumberMapAttribu
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -595,6 +646,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetStringAttribute(
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -608,6 +662,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) GetStringMapAttribu
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -621,6 +678,9 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) InterpolationForAtt
 }
 
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

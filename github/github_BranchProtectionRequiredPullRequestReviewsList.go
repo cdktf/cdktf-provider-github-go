@@ -111,6 +111,9 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) WrapsSet() *b
 func NewBranchProtectionRequiredPullRequestReviewsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRequiredPullRequestReviewsList {
 	_init_.Initialize()
 
+	if err := validateNewBranchProtectionRequiredPullRequestReviewsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BranchProtectionRequiredPullRequestReviewsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewBranchProtectionRequiredPullRequestReviewsList_Override(b BranchProtecti
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) ComputeFqn() 
 }
 
 func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) Get(index *float64) BranchProtectionRequiredPullRequestReviewsOutputReference {
+	if err := b.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns BranchProtectionRequiredPullRequestReviewsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) Get(index *fl
 }
 
 func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

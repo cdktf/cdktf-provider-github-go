@@ -498,6 +498,9 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) UpdatedAt() *float64 {
 func NewDataGithubRepositoryPullRequest(scope constructs.Construct, id *string, config *DataGithubRepositoryPullRequestConfig) DataGithubRepositoryPullRequest {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubRepositoryPullRequestParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubRepositoryPullRequest{}
 
 	_jsii_.Create(
@@ -520,7 +523,10 @@ func NewDataGithubRepositoryPullRequest_Override(d DataGithubRepositoryPullReque
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetBaseRepository(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetBaseRepository(val *string) {
+	if err := j.validateSetBaseRepositoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseRepository",
@@ -528,7 +534,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetBaseRepository(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -536,7 +542,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -544,7 +550,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +558,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetId(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -560,7 +569,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -568,7 +580,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetNumber(val *float64) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetNumber(val *float64) {
+	if err := j.validateSetNumberParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"number",
@@ -576,7 +591,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetNumber(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetOwner(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -584,7 +602,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequest)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -612,6 +630,9 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequest) SetProvider(val cdktf.Terraf
 func DataGithubRepositoryPullRequest_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGithubRepositoryPullRequest_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -636,6 +657,9 @@ func DataGithubRepositoryPullRequest_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -644,6 +668,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -657,6 +684,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -670,6 +700,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -683,6 +716,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -696,6 +732,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -709,6 +748,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -722,6 +764,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -735,6 +780,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -748,6 +796,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -761,6 +812,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -774,6 +828,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequest) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequest) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

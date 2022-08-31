@@ -111,6 +111,9 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupList) WrapsSet() *bool {
 func NewTeamSyncGroupMappingGroupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamSyncGroupMappingGroupList {
 	_init_.Initialize()
 
+	if err := validateNewTeamSyncGroupMappingGroupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamSyncGroupMappingGroupList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewTeamSyncGroupMappingGroupList_Override(t TeamSyncGroupMappingGroupList, 
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupList) ComputeFqn() *string {
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupList) Get(index *float64) TeamSyncGroupMappingGroupOutputReference {
+	if err := t.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns TeamSyncGroupMappingGroupOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupList) Get(index *float64) TeamSyncGr
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

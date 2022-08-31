@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) WrapsSet() *bool {
 func NewDataGithubCollaboratorsCollaboratorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubCollaboratorsCollaboratorList {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubCollaboratorsCollaboratorListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubCollaboratorsCollaboratorList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGithubCollaboratorsCollaboratorList_Override(d DataGithubCollaborato
 	)
 }
 
-func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGithubCollaboratorsCollaboratorList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) Get(index *float64) DataGithubCollaboratorsCollaboratorOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGithubCollaboratorsCollaboratorOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

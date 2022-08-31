@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) WrapsSet() *b
 func NewDataGithubOrganizationTeamSyncGroupsGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationTeamSyncGroupsGroupsList {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubOrganizationTeamSyncGroupsGroupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataGithubOrganizationTeamSyncGroupsGroupsList_Override(d DataGithubOrga
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) Get(index *float64) DataGithubOrganizationTeamSyncGroupsGroupsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataGithubOrganizationTeamSyncGroupsGroupsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) Get(index *fl
 }
 
 func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

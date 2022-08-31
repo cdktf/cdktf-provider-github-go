@@ -308,6 +308,9 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) TerraformResourceType() *string {
 func NewDataGithubActionsPublicKey(scope constructs.Construct, id *string, config *DataGithubActionsPublicKeyConfig) DataGithubActionsPublicKey {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubActionsPublicKeyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubActionsPublicKey{}
 
 	_jsii_.Create(
@@ -330,7 +333,7 @@ func NewDataGithubActionsPublicKey_Override(d DataGithubActionsPublicKey, scope 
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -338,7 +341,7 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -346,7 +349,7 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -354,7 +357,10 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetId(val *string) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -362,7 +368,10 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -370,7 +379,7 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -378,7 +387,10 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) SetRepository(val *string) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repository",
@@ -406,6 +418,9 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) SetRepository(val *string) {
 func DataGithubActionsPublicKey_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGithubActionsPublicKey_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -430,6 +445,9 @@ func DataGithubActionsPublicKey_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -438,6 +456,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) AddOverride(path *string, value i
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -451,6 +472,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetAnyMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -464,6 +488,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetBooleanAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -477,6 +504,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetBooleanMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -490,6 +520,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetListAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -503,6 +536,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -516,6 +552,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -529,6 +568,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetNumberMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -542,6 +584,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetStringAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -555,6 +600,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) GetStringMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -568,6 +616,9 @@ func (d *jsiiProxy_DataGithubActionsPublicKey) InterpolationForAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataGithubActionsPublicKey) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

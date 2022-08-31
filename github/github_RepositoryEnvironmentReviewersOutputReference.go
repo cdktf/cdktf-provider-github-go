@@ -199,6 +199,9 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) UsersInput() *
 func NewRepositoryEnvironmentReviewersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RepositoryEnvironmentReviewersOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRepositoryEnvironmentReviewersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RepositoryEnvironmentReviewersOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewRepositoryEnvironmentReviewersOutputReference_Override(r RepositoryEnvir
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTeams(val *[]*float64) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetTeams(val *[]*float64) {
+	if err := j.validateSetTeamsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teams",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTeams(val *
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) SetUsers(val *[]*float64) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersOutputReference)SetUsers(val *[]*float64) {
+	if err := j.validateSetUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"users",
@@ -290,6 +314,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) ComputeFqn() *
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetAnyMapAttri
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetBooleanAttr
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetBooleanMapA
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetListAttribu
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberAttri
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberListA
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetNumberMapAt
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetStringAttri
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) InterpolationA
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) ResetUsers() {
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

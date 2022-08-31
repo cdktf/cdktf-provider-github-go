@@ -111,6 +111,9 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersList) WrapsSet() *bool {
 func NewRepositoryEnvironmentReviewersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RepositoryEnvironmentReviewersList {
 	_init_.Initialize()
 
+	if err := validateNewRepositoryEnvironmentReviewersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RepositoryEnvironmentReviewersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRepositoryEnvironmentReviewersList_Override(r RepositoryEnvironmentRevie
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_RepositoryEnvironmentReviewersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RepositoryEnvironmentReviewersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersList) ComputeFqn() *string {
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersList) Get(index *float64) RepositoryEnvironmentReviewersOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RepositoryEnvironmentReviewersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersList) Get(index *float64) Repos
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentReviewersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

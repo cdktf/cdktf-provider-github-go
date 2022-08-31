@@ -314,6 +314,9 @@ func (j *jsiiProxy_UserInvitationAccepter) TerraformResourceType() *string {
 func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) UserInvitationAccepter {
 	_init_.Initialize()
 
+	if err := validateNewUserInvitationAccepterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserInvitationAccepter{}
 
 	_jsii_.Create(
@@ -336,7 +339,10 @@ func NewUserInvitationAccepter_Override(u UserInvitationAccepter, scope construc
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetConnection(val interface{}) {
+func (j *jsiiProxy_UserInvitationAccepter)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -344,7 +350,7 @@ func (j *jsiiProxy_UserInvitationAccepter) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetCount(val *float64) {
+func (j *jsiiProxy_UserInvitationAccepter)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -352,7 +358,7 @@ func (j *jsiiProxy_UserInvitationAccepter) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserInvitationAccepter)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -360,7 +366,7 @@ func (j *jsiiProxy_UserInvitationAccepter) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserInvitationAccepter)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -368,7 +374,10 @@ func (j *jsiiProxy_UserInvitationAccepter) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetId(val *string) {
+func (j *jsiiProxy_UserInvitationAccepter)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -376,7 +385,10 @@ func (j *jsiiProxy_UserInvitationAccepter) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetInvitationId(val *string) {
+func (j *jsiiProxy_UserInvitationAccepter)SetInvitationId(val *string) {
+	if err := j.validateSetInvitationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"invitationId",
@@ -384,7 +396,10 @@ func (j *jsiiProxy_UserInvitationAccepter) SetInvitationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserInvitationAccepter)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -392,7 +407,7 @@ func (j *jsiiProxy_UserInvitationAccepter) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserInvitationAccepter)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -400,7 +415,10 @@ func (j *jsiiProxy_UserInvitationAccepter) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserInvitationAccepter)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -428,6 +446,9 @@ func (j *jsiiProxy_UserInvitationAccepter) SetProvisioners(val *[]interface{}) {
 func UserInvitationAccepter_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateUserInvitationAccepter_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -452,6 +473,9 @@ func UserInvitationAccepter_TfResourceType() *string {
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) AddOverride(path *string, value interface{}) {
+	if err := u.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
@@ -460,6 +484,9 @@ func (u *jsiiProxy_UserInvitationAccepter) AddOverride(path *string, value inter
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -473,6 +500,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetAnyMapAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -486,6 +516,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetBooleanAttribute(terraformAttribut
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -499,6 +532,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetBooleanMapAttribute(terraformAttri
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -512,6 +548,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetListAttribute(terraformAttribute *
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -525,6 +564,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetNumberAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -538,6 +580,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetNumberListAttribute(terraformAttri
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -551,6 +596,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetNumberMapAttribute(terraformAttrib
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -564,6 +612,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetStringAttribute(terraformAttribute
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -577,6 +628,9 @@ func (u *jsiiProxy_UserInvitationAccepter) GetStringMapAttribute(terraformAttrib
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -590,6 +644,9 @@ func (u *jsiiProxy_UserInvitationAccepter) InterpolationForAttribute(terraformAt
 }
 
 func (u *jsiiProxy_UserInvitationAccepter) OverrideLogicalId(newLogicalId *string) {
+	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",

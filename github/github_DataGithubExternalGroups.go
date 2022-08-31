@@ -274,6 +274,9 @@ func (j *jsiiProxy_DataGithubExternalGroups) TerraformResourceType() *string {
 func NewDataGithubExternalGroups(scope constructs.Construct, id *string, config *DataGithubExternalGroupsConfig) DataGithubExternalGroups {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubExternalGroupsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubExternalGroups{}
 
 	_jsii_.Create(
@@ -296,7 +299,7 @@ func NewDataGithubExternalGroups_Override(d DataGithubExternalGroups, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -304,7 +307,7 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -312,7 +315,7 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -320,7 +323,10 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetId(val *string) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -328,7 +334,10 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -336,7 +345,7 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataGithubExternalGroups) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGithubExternalGroups)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -364,6 +373,9 @@ func (j *jsiiProxy_DataGithubExternalGroups) SetProvider(val cdktf.TerraformProv
 func DataGithubExternalGroups_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGithubExternalGroups_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -388,6 +400,9 @@ func DataGithubExternalGroups_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -396,6 +411,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -409,6 +427,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -422,6 +443,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -435,6 +459,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -448,6 +475,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -461,6 +491,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -474,6 +507,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -487,6 +523,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -500,6 +539,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -513,6 +555,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -526,6 +571,9 @@ func (d *jsiiProxy_DataGithubExternalGroups) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DataGithubExternalGroups) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

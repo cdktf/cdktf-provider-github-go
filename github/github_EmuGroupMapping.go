@@ -348,6 +348,9 @@ func (j *jsiiProxy_EmuGroupMapping) TerraformResourceType() *string {
 func NewEmuGroupMapping(scope constructs.Construct, id *string, config *EmuGroupMappingConfig) EmuGroupMapping {
 	_init_.Initialize()
 
+	if err := validateNewEmuGroupMappingParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EmuGroupMapping{}
 
 	_jsii_.Create(
@@ -370,7 +373,10 @@ func NewEmuGroupMapping_Override(e EmuGroupMapping, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetConnection(val interface{}) {
+func (j *jsiiProxy_EmuGroupMapping)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -378,7 +384,7 @@ func (j *jsiiProxy_EmuGroupMapping) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetCount(val *float64) {
+func (j *jsiiProxy_EmuGroupMapping)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -386,7 +392,7 @@ func (j *jsiiProxy_EmuGroupMapping) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EmuGroupMapping)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -394,7 +400,7 @@ func (j *jsiiProxy_EmuGroupMapping) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EmuGroupMapping)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -402,7 +408,10 @@ func (j *jsiiProxy_EmuGroupMapping) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetGroupId(val *float64) {
+func (j *jsiiProxy_EmuGroupMapping)SetGroupId(val *float64) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupId",
@@ -410,7 +419,10 @@ func (j *jsiiProxy_EmuGroupMapping) SetGroupId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetId(val *string) {
+func (j *jsiiProxy_EmuGroupMapping)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -418,7 +430,10 @@ func (j *jsiiProxy_EmuGroupMapping) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EmuGroupMapping)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -426,7 +441,7 @@ func (j *jsiiProxy_EmuGroupMapping) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EmuGroupMapping)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -434,7 +449,10 @@ func (j *jsiiProxy_EmuGroupMapping) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EmuGroupMapping)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -442,7 +460,10 @@ func (j *jsiiProxy_EmuGroupMapping) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmuGroupMapping) SetTeamSlug(val *string) {
+func (j *jsiiProxy_EmuGroupMapping)SetTeamSlug(val *string) {
+	if err := j.validateSetTeamSlugParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teamSlug",
@@ -470,6 +491,9 @@ func (j *jsiiProxy_EmuGroupMapping) SetTeamSlug(val *string) {
 func EmuGroupMapping_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateEmuGroupMapping_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -494,6 +518,9 @@ func EmuGroupMapping_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_EmuGroupMapping) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -502,6 +529,9 @@ func (e *jsiiProxy_EmuGroupMapping) AddOverride(path *string, value interface{})
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -515,6 +545,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -528,6 +561,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -541,6 +577,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -554,6 +593,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetListAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -567,6 +609,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -580,6 +625,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -593,6 +641,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -606,6 +657,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetStringAttribute(terraformAttribute *strin
 }
 
 func (e *jsiiProxy_EmuGroupMapping) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -619,6 +673,9 @@ func (e *jsiiProxy_EmuGroupMapping) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_EmuGroupMapping) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -632,6 +689,9 @@ func (e *jsiiProxy_EmuGroupMapping) InterpolationForAttribute(terraformAttribute
 }
 
 func (e *jsiiProxy_EmuGroupMapping) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",

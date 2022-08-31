@@ -441,6 +441,9 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) TerraformResourceType() *st
 func NewDataGithubRepositoryPullRequests(scope constructs.Construct, id *string, config *DataGithubRepositoryPullRequestsConfig) DataGithubRepositoryPullRequests {
 	_init_.Initialize()
 
+	if err := validateNewDataGithubRepositoryPullRequestsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataGithubRepositoryPullRequests{}
 
 	_jsii_.Create(
@@ -463,7 +466,10 @@ func NewDataGithubRepositoryPullRequests_Override(d DataGithubRepositoryPullRequ
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetBaseRef(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetBaseRef(val *string) {
+	if err := j.validateSetBaseRefParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseRef",
@@ -471,7 +477,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetBaseRef(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetBaseRepository(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetBaseRepository(val *string) {
+	if err := j.validateSetBaseRepositoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseRepository",
@@ -479,7 +488,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetBaseRepository(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -487,7 +496,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -495,7 +504,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -503,7 +512,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetHeadRef(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetHeadRef(val *string) {
+	if err := j.validateSetHeadRefParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headRef",
@@ -511,7 +523,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetHeadRef(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetId(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -519,7 +534,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -527,7 +545,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetOwner(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"owner",
@@ -535,7 +556,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetOwner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -543,7 +564,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetSortBy(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetSortBy(val *string) {
+	if err := j.validateSetSortByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sortBy",
@@ -551,7 +575,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetSortBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetSortDirection(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetSortDirection(val *string) {
+	if err := j.validateSetSortDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sortDirection",
@@ -559,7 +586,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetSortDirection(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetState(val *string) {
+func (j *jsiiProxy_DataGithubRepositoryPullRequests)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"state",
@@ -587,6 +617,9 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) SetState(val *string) {
 func DataGithubRepositoryPullRequests_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataGithubRepositoryPullRequests_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -611,6 +644,9 @@ func DataGithubRepositoryPullRequests_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -619,6 +655,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) AddOverride(path *string, v
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -632,6 +671,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetAnyMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -645,6 +687,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetBooleanAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -658,6 +703,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetBooleanMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -671,6 +719,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -684,6 +735,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -697,6 +751,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberListAttribute(terr
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -710,6 +767,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetNumberMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -723,6 +783,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetStringAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -736,6 +799,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) GetStringMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -749,6 +815,9 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) InterpolationForAttribute(t
 }
 
 func (d *jsiiProxy_DataGithubRepositoryPullRequests) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

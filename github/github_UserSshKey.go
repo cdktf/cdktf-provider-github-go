@@ -359,6 +359,9 @@ func (j *jsiiProxy_UserSshKey) Url() *string {
 func NewUserSshKey(scope constructs.Construct, id *string, config *UserSshKeyConfig) UserSshKey {
 	_init_.Initialize()
 
+	if err := validateNewUserSshKeyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_UserSshKey{}
 
 	_jsii_.Create(
@@ -381,7 +384,10 @@ func NewUserSshKey_Override(u UserSshKey, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetConnection(val interface{}) {
+func (j *jsiiProxy_UserSshKey)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -389,7 +395,7 @@ func (j *jsiiProxy_UserSshKey) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetCount(val *float64) {
+func (j *jsiiProxy_UserSshKey)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -397,7 +403,7 @@ func (j *jsiiProxy_UserSshKey) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_UserSshKey)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -405,7 +411,7 @@ func (j *jsiiProxy_UserSshKey) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_UserSshKey)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -413,7 +419,10 @@ func (j *jsiiProxy_UserSshKey) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetId(val *string) {
+func (j *jsiiProxy_UserSshKey)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -421,7 +430,10 @@ func (j *jsiiProxy_UserSshKey) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetKey(val *string) {
+func (j *jsiiProxy_UserSshKey)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -429,7 +441,10 @@ func (j *jsiiProxy_UserSshKey) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_UserSshKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -437,7 +452,7 @@ func (j *jsiiProxy_UserSshKey) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_UserSshKey)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -445,7 +460,10 @@ func (j *jsiiProxy_UserSshKey) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_UserSshKey)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -453,7 +471,10 @@ func (j *jsiiProxy_UserSshKey) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserSshKey) SetTitle(val *string) {
+func (j *jsiiProxy_UserSshKey)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -481,6 +502,9 @@ func (j *jsiiProxy_UserSshKey) SetTitle(val *string) {
 func UserSshKey_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateUserSshKey_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -505,6 +529,9 @@ func UserSshKey_TfResourceType() *string {
 }
 
 func (u *jsiiProxy_UserSshKey) AddOverride(path *string, value interface{}) {
+	if err := u.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"addOverride",
@@ -513,6 +540,9 @@ func (u *jsiiProxy_UserSshKey) AddOverride(path *string, value interface{}) {
 }
 
 func (u *jsiiProxy_UserSshKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -526,6 +556,9 @@ func (u *jsiiProxy_UserSshKey) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (u *jsiiProxy_UserSshKey) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -539,6 +572,9 @@ func (u *jsiiProxy_UserSshKey) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (u *jsiiProxy_UserSshKey) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -552,6 +588,9 @@ func (u *jsiiProxy_UserSshKey) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (u *jsiiProxy_UserSshKey) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -565,6 +604,9 @@ func (u *jsiiProxy_UserSshKey) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (u *jsiiProxy_UserSshKey) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -578,6 +620,9 @@ func (u *jsiiProxy_UserSshKey) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (u *jsiiProxy_UserSshKey) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -591,6 +636,9 @@ func (u *jsiiProxy_UserSshKey) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (u *jsiiProxy_UserSshKey) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -604,6 +652,9 @@ func (u *jsiiProxy_UserSshKey) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (u *jsiiProxy_UserSshKey) GetStringAttribute(terraformAttribute *string) *string {
+	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -617,6 +668,9 @@ func (u *jsiiProxy_UserSshKey) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (u *jsiiProxy_UserSshKey) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -630,6 +684,9 @@ func (u *jsiiProxy_UserSshKey) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (u *jsiiProxy_UserSshKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -643,6 +700,9 @@ func (u *jsiiProxy_UserSshKey) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (u *jsiiProxy_UserSshKey) OverrideLogicalId(newLogicalId *string) {
+	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		u,
 		"overrideLogicalId",

@@ -222,6 +222,9 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 func NewActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ActionsOrganizationPermissionsAllowedActionsConfigOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewActionsOrganizationPermissionsAllowedActionsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewActionsOrganizationPermissionsAllowedActionsConfigOutputReference_Overri
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetGithubOwnedAllowed(val interface{}) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetGithubOwnedAllowed(val interface{}) {
+	if err := j.validateSetGithubOwnedAllowedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"githubOwnedAllowed",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetInternalValue(val *ActionsOrganizationPermissionsAllowedActionsConfig) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetInternalValue(val *ActionsOrganizationPermissionsAllowedActionsConfig) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetPatternsAllowed(val *[]*string) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetPatternsAllowed(val *[]*string) {
+	if err := j.validateSetPatternsAllowedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"patternsAllowed",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) SetVerifiedAllowed(val interface{}) {
+func (j *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference)SetVerifiedAllowed(val interface{}) {
+	if err := j.validateSetVerifiedAllowedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifiedAllowed",
@@ -321,6 +348,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

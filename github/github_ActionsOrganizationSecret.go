@@ -431,6 +431,9 @@ func (j *jsiiProxy_ActionsOrganizationSecret) VisibilityInput() *string {
 func NewActionsOrganizationSecret(scope constructs.Construct, id *string, config *ActionsOrganizationSecretConfig) ActionsOrganizationSecret {
 	_init_.Initialize()
 
+	if err := validateNewActionsOrganizationSecretParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ActionsOrganizationSecret{}
 
 	_jsii_.Create(
@@ -453,7 +456,10 @@ func NewActionsOrganizationSecret_Override(a ActionsOrganizationSecret, scope co
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetConnection(val interface{}) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -461,7 +467,7 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetCount(val *float64) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -469,7 +475,7 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -477,7 +483,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetEncryptedValue(val *string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetEncryptedValue(val *string) {
+	if err := j.validateSetEncryptedValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"encryptedValue",
@@ -485,7 +494,7 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetEncryptedValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -493,7 +502,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetId(val *string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -501,7 +513,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -509,7 +524,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetPlaintextValue(val *string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetPlaintextValue(val *string) {
+	if err := j.validateSetPlaintextValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"plaintextValue",
@@ -517,7 +535,7 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetPlaintextValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -525,7 +543,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -533,7 +554,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetSecretName(val *string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetSecretName(val *string) {
+	if err := j.validateSetSecretNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretName",
@@ -541,7 +565,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetSecretName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetSelectedRepositoryIds(val *[]*float64) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetSelectedRepositoryIds(val *[]*float64) {
+	if err := j.validateSetSelectedRepositoryIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"selectedRepositoryIds",
@@ -549,7 +576,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetSelectedRepositoryIds(val *[]*f
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecret) SetVisibility(val *string) {
+func (j *jsiiProxy_ActionsOrganizationSecret)SetVisibility(val *string) {
+	if err := j.validateSetVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visibility",
@@ -577,6 +607,9 @@ func (j *jsiiProxy_ActionsOrganizationSecret) SetVisibility(val *string) {
 func ActionsOrganizationSecret_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateActionsOrganizationSecret_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -601,6 +634,9 @@ func ActionsOrganizationSecret_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -609,6 +645,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) AddOverride(path *string, value in
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -622,6 +661,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetAnyMapAttribute(terraformAttrib
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -635,6 +677,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetBooleanAttribute(terraformAttri
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -648,6 +693,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetBooleanMapAttribute(terraformAt
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -661,6 +709,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetListAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -674,6 +725,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberAttribute(terraformAttrib
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -687,6 +741,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberListAttribute(terraformAt
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -700,6 +757,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetNumberMapAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -713,6 +773,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetStringAttribute(terraformAttrib
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -726,6 +789,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) GetStringMapAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -739,6 +805,9 @@ func (a *jsiiProxy_ActionsOrganizationSecret) InterpolationForAttribute(terrafor
 }
 
 func (a *jsiiProxy_ActionsOrganizationSecret) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

@@ -408,6 +408,9 @@ func (j *jsiiProxy_OrganizationWebhook) Url() *string {
 func NewOrganizationWebhook(scope constructs.Construct, id *string, config *OrganizationWebhookConfig) OrganizationWebhook {
 	_init_.Initialize()
 
+	if err := validateNewOrganizationWebhookParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OrganizationWebhook{}
 
 	_jsii_.Create(
@@ -430,7 +433,10 @@ func NewOrganizationWebhook_Override(o OrganizationWebhook, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetActive(val interface{}) {
+func (j *jsiiProxy_OrganizationWebhook)SetActive(val interface{}) {
+	if err := j.validateSetActiveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"active",
@@ -438,7 +444,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetActive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetConnection(val interface{}) {
+func (j *jsiiProxy_OrganizationWebhook)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -446,7 +455,7 @@ func (j *jsiiProxy_OrganizationWebhook) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationWebhook)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -454,7 +463,7 @@ func (j *jsiiProxy_OrganizationWebhook) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OrganizationWebhook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -462,7 +471,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetEvents(val *[]*string) {
+func (j *jsiiProxy_OrganizationWebhook)SetEvents(val *[]*string) {
+	if err := j.validateSetEventsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"events",
@@ -470,7 +482,7 @@ func (j *jsiiProxy_OrganizationWebhook) SetEvents(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OrganizationWebhook)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +490,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetId(val *string) {
+func (j *jsiiProxy_OrganizationWebhook)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -486,7 +501,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OrganizationWebhook)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -494,7 +512,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetName(val *string) {
+func (j *jsiiProxy_OrganizationWebhook)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -502,7 +523,7 @@ func (j *jsiiProxy_OrganizationWebhook) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OrganizationWebhook)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -510,7 +531,10 @@ func (j *jsiiProxy_OrganizationWebhook) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_OrganizationWebhook) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OrganizationWebhook)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -538,6 +562,9 @@ func (j *jsiiProxy_OrganizationWebhook) SetProvisioners(val *[]interface{}) {
 func OrganizationWebhook_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOrganizationWebhook_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -562,6 +589,9 @@ func OrganizationWebhook_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OrganizationWebhook) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -570,6 +600,9 @@ func (o *jsiiProxy_OrganizationWebhook) AddOverride(path *string, value interfac
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -583,6 +616,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -596,6 +632,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetBooleanAttribute(terraformAttribute *
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -609,6 +648,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -622,6 +664,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetListAttribute(terraformAttribute *str
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -635,6 +680,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetNumberAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -648,6 +696,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetNumberListAttribute(terraformAttribut
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -661,6 +712,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetNumberMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -674,6 +728,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetStringAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OrganizationWebhook) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -687,6 +744,9 @@ func (o *jsiiProxy_OrganizationWebhook) GetStringMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OrganizationWebhook) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -700,6 +760,9 @@ func (o *jsiiProxy_OrganizationWebhook) InterpolationForAttribute(terraformAttri
 }
 
 func (o *jsiiProxy_OrganizationWebhook) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
@@ -708,6 +771,9 @@ func (o *jsiiProxy_OrganizationWebhook) OverrideLogicalId(newLogicalId *string) 
 }
 
 func (o *jsiiProxy_OrganizationWebhook) PutConfiguration(value *OrganizationWebhookConfiguration) {
+	if err := o.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putConfiguration",

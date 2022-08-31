@@ -220,6 +220,9 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) TerraformResource()
 func NewTeamSyncGroupMappingGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TeamSyncGroupMappingGroupOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTeamSyncGroupMappingGroupOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TeamSyncGroupMappingGroupOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewTeamSyncGroupMappingGroupOutputReference_Override(t TeamSyncGroupMapping
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupDescription(val *string) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetGroupDescription(val *string) {
+	if err := j.validateSetGroupDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupDescription",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupDescription
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupId(val *string) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetGroupId(val *string) {
+	if err := j.validateSetGroupIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupId",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupId(val *str
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupName(val *string) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetGroupName(val *string) {
+	if err := j.validateSetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupName",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetGroupName(val *s
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamSyncGroupMappingGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) ComputeFqn() *strin
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetAnyMapAttribute(
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetBooleanAttribute
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetBooleanMapAttrib
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetListAttribute(te
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberAttribute(
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberListAttrib
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetNumberMapAttribu
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetStringAttribute(
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) InterpolationAsList
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) InterpolationForAtt
 }
 
 func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
