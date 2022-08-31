@@ -107,6 +107,12 @@ type Repository interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MergeCommitMessage() *string
+	SetMergeCommitMessage(val *string)
+	MergeCommitMessageInput() *string
+	MergeCommitTitle() *string
+	SetMergeCommitTitle(val *string)
+	MergeCommitTitleInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -129,6 +135,12 @@ type Repository interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RepoId() *float64
+	SquashMergeCommitMessage() *string
+	SetSquashMergeCommitMessage(val *string)
+	SquashMergeCommitMessageInput() *string
+	SquashMergeCommitTitle() *string
+	SetSquashMergeCommitTitle(val *string)
+	SquashMergeCommitTitleInput() *string
 	SshCloneUrl() *string
 	SvnUrl() *string
 	Template() RepositoryTemplateOutputReference
@@ -195,11 +207,15 @@ type Repository interface {
 	ResetIgnoreVulnerabilityAlertsDuringRead()
 	ResetIsTemplate()
 	ResetLicenseTemplate()
+	ResetMergeCommitMessage()
+	ResetMergeCommitTitle()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPages()
 	ResetPrivate()
+	ResetSquashMergeCommitMessage()
+	ResetSquashMergeCommitTitle()
 	ResetTemplate()
 	ResetTopics()
 	ResetVisibility()
@@ -769,6 +785,46 @@ func (j *jsiiProxy_Repository) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) MergeCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) MergeCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) MergeCommitTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitTitle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) MergeCommitTitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitTitleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -884,6 +940,46 @@ func (j *jsiiProxy_Repository) RepoId() *float64 {
 	_jsii_.Get(
 		j,
 		"repoId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SquashMergeCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SquashMergeCommitMessageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitMessageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SquashMergeCommitTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitTitle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SquashMergeCommitTitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitTitleInput",
 		&returns,
 	)
 	return returns
@@ -1315,6 +1411,28 @@ func (j *jsiiProxy_Repository)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
+func (j *jsiiProxy_Repository)SetMergeCommitMessage(val *string) {
+	if err := j.validateSetMergeCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mergeCommitMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetMergeCommitTitle(val *string) {
+	if err := j.validateSetMergeCommitTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mergeCommitTitle",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Repository)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -1352,6 +1470,28 @@ func (j *jsiiProxy_Repository)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetSquashMergeCommitMessage(val *string) {
+	if err := j.validateSetSquashMergeCommitMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"squashMergeCommitMessage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetSquashMergeCommitTitle(val *string) {
+	if err := j.validateSetSquashMergeCommitTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"squashMergeCommitTitle",
 		val,
 	)
 }
@@ -1799,6 +1939,22 @@ func (r *jsiiProxy_Repository) ResetLicenseTemplate() {
 	)
 }
 
+func (r *jsiiProxy_Repository) ResetMergeCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMergeCommitMessage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetMergeCommitTitle() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMergeCommitTitle",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_Repository) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1819,6 +1975,22 @@ func (r *jsiiProxy_Repository) ResetPrivate() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPrivate",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetSquashMergeCommitMessage() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSquashMergeCommitMessage",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetSquashMergeCommitTitle() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSquashMergeCommitTitle",
 		nil, // no parameters
 	)
 }

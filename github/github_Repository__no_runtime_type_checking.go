@@ -154,6 +154,14 @@ func (j *jsiiProxy_Repository) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_Repository) validateSetMergeCommitMessageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetMergeCommitTitleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repository) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -163,6 +171,14 @@ func (j *jsiiProxy_Repository) validateSetPrivateParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_Repository) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetSquashMergeCommitMessageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetSquashMergeCommitTitleParameters(val *string) error {
 	return nil
 }
 

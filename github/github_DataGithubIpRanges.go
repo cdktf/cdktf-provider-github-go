@@ -16,6 +16,9 @@ type DataGithubIpRanges interface {
 	Actions() *[]*string
 	ActionsIpv4() *[]*string
 	ActionsIpv6() *[]*string
+	Api() *[]*string
+	ApiIpv4() *[]*string
+	ApiIpv6() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -72,6 +75,9 @@ type DataGithubIpRanges interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Web() *[]*string
+	WebIpv4() *[]*string
+	WebIpv6() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -141,6 +147,36 @@ func (j *jsiiProxy_DataGithubIpRanges) ActionsIpv6() *[]*string {
 	_jsii_.Get(
 		j,
 		"actionsIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) Api() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"api",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) ApiIpv4() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiIpv4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) ApiIpv6() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiIpv6",
 		&returns,
 	)
 	return returns
@@ -451,6 +487,36 @@ func (j *jsiiProxy_DataGithubIpRanges) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) Web() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"web",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) WebIpv4() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"webIpv4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubIpRanges) WebIpv6() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"webIpv6",
 		&returns,
 	)
 	return returns

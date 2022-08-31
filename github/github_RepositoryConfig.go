@@ -67,12 +67,20 @@ type RepositoryConfig struct {
 	IsTemplate interface{} `field:"optional" json:"isTemplate" yaml:"isTemplate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}.
 	LicenseTemplate *string `field:"optional" json:"licenseTemplate" yaml:"licenseTemplate"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}.
+	MergeCommitMessage *string `field:"optional" json:"mergeCommitMessage" yaml:"mergeCommitMessage"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}.
+	MergeCommitTitle *string `field:"optional" json:"mergeCommitTitle" yaml:"mergeCommitTitle"`
 	// pages block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#pages Repository#pages}
 	Pages *RepositoryPages `field:"optional" json:"pages" yaml:"pages"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}.
 	Private interface{} `field:"optional" json:"private" yaml:"private"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}.
+	SquashMergeCommitMessage *string `field:"optional" json:"squashMergeCommitMessage" yaml:"squashMergeCommitMessage"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}.
+	SquashMergeCommitTitle *string `field:"optional" json:"squashMergeCommitTitle" yaml:"squashMergeCommitTitle"`
 	// template block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#template Repository#template}

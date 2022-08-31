@@ -63,6 +63,8 @@ type DataGithubRepository interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MergeCommitMessage() *string
+	MergeCommitTitle() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -81,6 +83,8 @@ type DataGithubRepository interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RepoId() *float64
+	SquashMergeCommitMessage() *string
+	SquashMergeCommitTitle() *string
 	SshCloneUrl() *string
 	SvnUrl() *string
 	// Experimental.
@@ -440,6 +444,26 @@ func (j *jsiiProxy_DataGithubRepository) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) MergeCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) MergeCommitTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mergeCommitTitle",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,6 +569,26 @@ func (j *jsiiProxy_DataGithubRepository) RepoId() *float64 {
 	_jsii_.Get(
 		j,
 		"repoId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) SquashMergeCommitMessage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) SquashMergeCommitTitle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"squashMergeCommitTitle",
 		&returns,
 	)
 	return returns
