@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package branchprotection
 
@@ -62,6 +61,14 @@ func (b *jsiiProxy_BranchProtection) validatePutRequiredStatusChecksParameters(v
 }
 
 func validateBranchProtection_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateBranchProtection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBranchProtection_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

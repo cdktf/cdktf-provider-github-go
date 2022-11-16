@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package repository
 
@@ -62,6 +61,14 @@ func (r *jsiiProxy_Repository) validatePutTemplateParameters(value *RepositoryTe
 }
 
 func validateRepository_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepository_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

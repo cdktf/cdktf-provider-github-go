@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package membership
 
@@ -54,6 +53,14 @@ func (m *jsiiProxy_Membership) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateMembership_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMembership_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

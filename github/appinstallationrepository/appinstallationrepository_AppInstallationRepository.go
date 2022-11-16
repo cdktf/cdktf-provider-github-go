@@ -2,10 +2,10 @@ package appinstallationrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/appinstallationrepository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/appinstallationrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -498,6 +498,44 @@ func AppInstallationRepository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.appInstallationRepository.AppInstallationRepository",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppInstallationRepository_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppInstallationRepository_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.appInstallationRepository.AppInstallationRepository",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppInstallationRepository_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppInstallationRepository_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.appInstallationRepository.AppInstallationRepository",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

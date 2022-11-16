@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package appinstallationrepository
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_AppInstallationRepository) validateOverrideLogicalIdParameter
 }
 
 func validateAppInstallationRepository_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppInstallationRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppInstallationRepository_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

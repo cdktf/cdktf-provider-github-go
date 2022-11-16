@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package actionsenvironmentsecret
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_ActionsEnvironmentSecret) validateOverrideLogicalIdParameters
 }
 
 func validateActionsEnvironmentSecret_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsEnvironmentSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsEnvironmentSecret_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

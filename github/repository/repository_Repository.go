@@ -2,10 +2,10 @@ package repository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/repository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/repository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1556,6 +1556,44 @@ func Repository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.repository.Repository",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Repository_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRepository_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.repository.Repository",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Repository_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRepository_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.repository.Repository",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

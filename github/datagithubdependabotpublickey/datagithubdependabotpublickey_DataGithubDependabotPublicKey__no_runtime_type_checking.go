@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubdependabotpublickey
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubDependabotPublicKey) validateOverrideLogicalIdParam
 }
 
 func validateDataGithubDependabotPublicKey_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubDependabotPublicKey_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubDependabotPublicKey_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package organizationblock
 
@@ -54,6 +53,14 @@ func (o *jsiiProxy_OrganizationBlock) validateOverrideLogicalIdParameters(newLog
 }
 
 func validateOrganizationBlock_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationBlock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationBlock_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

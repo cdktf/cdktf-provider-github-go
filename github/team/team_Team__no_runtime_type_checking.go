@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package team
 
@@ -54,6 +53,14 @@ func (t *jsiiProxy_Team) validateOverrideLogicalIdParameters(newLogicalId *strin
 }
 
 func validateTeam_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeam_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeam_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

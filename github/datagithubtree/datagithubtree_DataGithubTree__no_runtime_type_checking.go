@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubtree
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubTree) validateOverrideLogicalIdParameters(newLogica
 }
 
 func validateDataGithubTree_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubTree_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubTree_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

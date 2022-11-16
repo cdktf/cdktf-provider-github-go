@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package actionsrunnergroup
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_ActionsRunnerGroup) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateActionsRunnerGroup_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsRunnerGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsRunnerGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

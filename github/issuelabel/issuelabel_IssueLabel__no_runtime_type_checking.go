@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package issuelabel
 
@@ -54,6 +53,14 @@ func (i *jsiiProxy_IssueLabel) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateIssueLabel_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateIssueLabel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIssueLabel_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

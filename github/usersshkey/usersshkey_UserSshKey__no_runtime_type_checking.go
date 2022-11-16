@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package usersshkey
 
@@ -54,6 +53,14 @@ func (u *jsiiProxy_UserSshKey) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func validateUserSshKey_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserSshKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserSshKey_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

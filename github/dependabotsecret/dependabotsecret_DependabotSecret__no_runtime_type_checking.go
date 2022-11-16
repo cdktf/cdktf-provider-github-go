@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dependabotsecret
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DependabotSecret) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateDependabotSecret_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDependabotSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDependabotSecret_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

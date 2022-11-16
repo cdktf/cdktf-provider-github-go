@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package repositorypullrequest
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_RepositoryPullRequest) validateOverrideLogicalIdParameters(ne
 }
 
 func validateRepositoryPullRequest_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepositoryPullRequest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepositoryPullRequest_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

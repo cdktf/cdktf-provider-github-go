@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package repositoryautolinkreference
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_RepositoryAutolinkReference) validateOverrideLogicalIdParamet
 }
 
 func validateRepositoryAutolinkReference_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepositoryAutolinkReference_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRepositoryAutolinkReference_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

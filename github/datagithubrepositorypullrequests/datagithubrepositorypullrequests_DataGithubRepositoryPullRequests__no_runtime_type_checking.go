@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubrepositorypullrequests
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubRepositoryPullRequests) validateOverrideLogicalIdPa
 }
 
 func validateDataGithubRepositoryPullRequests_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRepositoryPullRequests_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRepositoryPullRequests_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

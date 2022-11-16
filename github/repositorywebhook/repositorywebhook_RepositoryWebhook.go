@@ -2,10 +2,10 @@ package repositorywebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/repositorywebhook/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/repositorywebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -603,6 +603,44 @@ func RepositoryWebhook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.repositoryWebhook.RepositoryWebhook",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RepositoryWebhook_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRepositoryWebhook_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.repositoryWebhook.RepositoryWebhook",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RepositoryWebhook_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRepositoryWebhook_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.repositoryWebhook.RepositoryWebhook",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubrelease
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubRelease) validateOverrideLogicalIdParameters(newLog
 }
 
 func validateDataGithubRelease_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRelease_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRelease_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

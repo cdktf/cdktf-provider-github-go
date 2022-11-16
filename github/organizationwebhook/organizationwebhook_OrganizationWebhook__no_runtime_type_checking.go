@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package organizationwebhook
 
@@ -58,6 +57,14 @@ func (o *jsiiProxy_OrganizationWebhook) validatePutConfigurationParameters(value
 }
 
 func validateOrganizationWebhook_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationWebhook_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

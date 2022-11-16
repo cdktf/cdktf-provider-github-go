@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package teamsyncgroupmapping
 
@@ -58,6 +57,14 @@ func (t *jsiiProxy_TeamSyncGroupMapping) validatePutGroupParameters(value interf
 }
 
 func validateTeamSyncGroupMapping_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeamSyncGroupMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTeamSyncGroupMapping_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

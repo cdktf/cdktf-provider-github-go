@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package userinvitationaccepter
 
@@ -54,6 +53,14 @@ func (u *jsiiProxy_UserInvitationAccepter) validateOverrideLogicalIdParameters(n
 }
 
 func validateUserInvitationAccepter_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserInvitationAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateUserInvitationAccepter_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

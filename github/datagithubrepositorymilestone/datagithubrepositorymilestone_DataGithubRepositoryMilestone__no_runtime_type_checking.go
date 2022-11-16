@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubrepositorymilestone
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubRepositoryMilestone) validateOverrideLogicalIdParam
 }
 
 func validateDataGithubRepositoryMilestone_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRepositoryMilestone_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubRepositoryMilestone_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

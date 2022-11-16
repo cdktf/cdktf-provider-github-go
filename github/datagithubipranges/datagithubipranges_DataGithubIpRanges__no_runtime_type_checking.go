@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datagithubipranges
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataGithubIpRanges) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateDataGithubIpRanges_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubIpRanges_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGithubIpRanges_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

@@ -2,10 +2,10 @@ package branchdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/branchdefault/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/branchdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -487,6 +487,44 @@ func BranchDefault_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.branchDefault.BranchDefault",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BranchDefault_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBranchDefault_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.branchDefault.BranchDefault",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BranchDefault_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBranchDefault_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.branchDefault.BranchDefault",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

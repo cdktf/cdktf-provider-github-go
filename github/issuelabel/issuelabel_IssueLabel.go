@@ -2,10 +2,10 @@ package issuelabel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/issuelabel/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/issuelabel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -578,6 +578,44 @@ func IssueLabel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.issueLabel.IssueLabel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IssueLabel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIssueLabel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.issueLabel.IssueLabel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IssueLabel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIssueLabel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.issueLabel.IssueLabel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

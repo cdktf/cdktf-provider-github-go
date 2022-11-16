@@ -2,10 +2,10 @@ package projectcard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v3/projectcard/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v4/projectcard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -580,6 +580,44 @@ func ProjectCard_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-github.projectCard.ProjectCard",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectCard_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectCard_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.projectCard.ProjectCard",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ProjectCard_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateProjectCard_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.projectCard.ProjectCard",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

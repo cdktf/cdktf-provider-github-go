@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package actionsorganizationsecretrepositories
 
@@ -54,6 +53,14 @@ func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateOverrideLogica
 }
 
 func validateActionsOrganizationSecretRepositories_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsOrganizationSecretRepositories_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActionsOrganizationSecretRepositories_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

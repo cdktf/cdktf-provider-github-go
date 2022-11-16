@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package projectcard
 
@@ -54,6 +53,14 @@ func (p *jsiiProxy_ProjectCard) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateProjectCard_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectCard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectCard_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dependabotorganizationsecretrepositories
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateOverrideLog
 }
 
 func validateDependabotOrganizationSecretRepositories_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDependabotOrganizationSecretRepositories_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDependabotOrganizationSecretRepositories_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
