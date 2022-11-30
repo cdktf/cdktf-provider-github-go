@@ -56,6 +56,10 @@ func (j *jsiiProxy_RepositoryTemplateOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryTemplateOutputReference) validateSetIncludeAllBranchesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryTemplateOutputReference) validateSetInternalValueParameters(val *RepositoryTemplate) error {
 	return nil
 }

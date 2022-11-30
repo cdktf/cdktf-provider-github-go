@@ -2,10 +2,10 @@ package datagithuborganizationteams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/datagithuborganizationteams/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/datagithuborganizationteams/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -47,9 +47,15 @@ type DataGithubOrganizationTeams interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ResultsPerPage() *float64
+	SetResultsPerPage(val *float64)
+	ResultsPerPageInput() *float64
 	RootTeamsOnly() interface{}
 	SetRootTeamsOnly(val interface{})
 	RootTeamsOnlyInput() interface{}
+	SummaryOnly() interface{}
+	SetSummaryOnly(val interface{})
+	SummaryOnlyInput() interface{}
 	Teams() DataGithubOrganizationTeamsTeamsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -86,7 +92,9 @@ type DataGithubOrganizationTeams interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResultsPerPage()
 	ResetRootTeamsOnly()
+	ResetSummaryOnly()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -232,6 +240,26 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganizationTeams) ResultsPerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeams) ResultsPerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganizationTeams) RootTeamsOnly() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -247,6 +275,26 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) RootTeamsOnlyInput() interface{}
 	_jsii_.Get(
 		j,
 		"rootTeamsOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeams) SummaryOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeams) SummaryOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnlyInput",
 		&returns,
 	)
 	return returns
@@ -376,6 +424,17 @@ func (j *jsiiProxy_DataGithubOrganizationTeams)SetProvider(val cdktf.TerraformPr
 	)
 }
 
+func (j *jsiiProxy_DataGithubOrganizationTeams)SetResultsPerPage(val *float64) {
+	if err := j.validateSetResultsPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resultsPerPage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataGithubOrganizationTeams)SetRootTeamsOnly(val interface{}) {
 	if err := j.validateSetRootTeamsOnlyParameters(val); err != nil {
 		panic(err)
@@ -383,6 +442,17 @@ func (j *jsiiProxy_DataGithubOrganizationTeams)SetRootTeamsOnly(val interface{})
 	_jsii_.Set(
 		j,
 		"rootTeamsOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeams)SetSummaryOnly(val interface{}) {
+	if err := j.validateSetSummaryOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"summaryOnly",
 		val,
 	)
 }
@@ -669,10 +739,26 @@ func (d *jsiiProxy_DataGithubOrganizationTeams) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DataGithubOrganizationTeams) ResetResultsPerPage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResultsPerPage",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGithubOrganizationTeams) ResetRootTeamsOnly() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootTeamsOnly",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubOrganizationTeams) ResetSummaryOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSummaryOnly",
 		nil, // no parameters
 	)
 }

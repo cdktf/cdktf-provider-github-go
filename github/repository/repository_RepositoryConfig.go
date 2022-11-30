@@ -29,6 +29,8 @@ type RepositoryConfig struct {
 	AllowRebaseMerge interface{} `field:"optional" json:"allowRebaseMerge" yaml:"allowRebaseMerge"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_squash_merge Repository#allow_squash_merge}.
 	AllowSquashMerge interface{} `field:"optional" json:"allowSquashMerge" yaml:"allowSquashMerge"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_update_branch Repository#allow_update_branch}.
+	AllowUpdateBranch interface{} `field:"optional" json:"allowUpdateBranch" yaml:"allowUpdateBranch"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archived Repository#archived}.
 	Archived interface{} `field:"optional" json:"archived" yaml:"archived"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archive_on_destroy Repository#archive_on_destroy}.
@@ -76,6 +78,10 @@ type RepositoryConfig struct {
 	Pages *RepositoryPages `field:"optional" json:"pages" yaml:"pages"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}.
 	Private interface{} `field:"optional" json:"private" yaml:"private"`
+	// security_and_analysis block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#security_and_analysis Repository#security_and_analysis}
+	SecurityAndAnalysis *RepositorySecurityAndAnalysis `field:"optional" json:"securityAndAnalysis" yaml:"securityAndAnalysis"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}.
 	SquashMergeCommitMessage *string `field:"optional" json:"squashMergeCommitMessage" yaml:"squashMergeCommitMessage"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}.

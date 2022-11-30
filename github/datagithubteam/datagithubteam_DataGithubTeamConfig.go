@@ -28,5 +28,9 @@ type DataGithubTeamConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#membership_type DataGithubTeam#membership_type}.
 	MembershipType *string `field:"optional" json:"membershipType" yaml:"membershipType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#results_per_page DataGithubTeam#results_per_page}.
+	ResultsPerPage *float64 `field:"optional" json:"resultsPerPage" yaml:"resultsPerPage"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#summary_only DataGithubTeam#summary_only}.
+	SummaryOnly interface{} `field:"optional" json:"summaryOnly" yaml:"summaryOnly"`
 }
 

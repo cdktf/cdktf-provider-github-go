@@ -2,10 +2,10 @@ package datagithubrepositories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/datagithubrepositories/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/datagithubrepositories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,6 +36,9 @@ type DataGithubRepositories interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeRepoId() interface{}
+	SetIncludeRepoId(val interface{})
+	IncludeRepoIdInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,6 +55,10 @@ type DataGithubRepositories interface {
 	QueryInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RepoIds() *[]*float64
+	ResultsPerPage() *float64
+	SetResultsPerPage(val *float64)
+	ResultsPerPageInput() *float64
 	Sort() *string
 	SetSort(val *string)
 	SortInput() *string
@@ -87,9 +94,11 @@ type DataGithubRepositories interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIncludeRepoId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResultsPerPage()
 	ResetSort()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -206,6 +215,26 @@ func (j *jsiiProxy_DataGithubRepositories) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepositories) IncludeRepoId() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeRepoId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepositories) IncludeRepoIdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeRepoIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepositories) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -271,6 +300,36 @@ func (j *jsiiProxy_DataGithubRepositories) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepositories) RepoIds() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"repoIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepositories) ResultsPerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepositories) ResultsPerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPageInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +450,17 @@ func (j *jsiiProxy_DataGithubRepositories)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataGithubRepositories)SetIncludeRepoId(val interface{}) {
+	if err := j.validateSetIncludeRepoIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeRepoId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataGithubRepositories)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -417,6 +487,17 @@ func (j *jsiiProxy_DataGithubRepositories)SetQuery(val *string) {
 	_jsii_.Set(
 		j,
 		"query",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubRepositories)SetResultsPerPage(val *float64) {
+	if err := j.validateSetResultsPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resultsPerPage",
 		val,
 	)
 }
@@ -706,10 +787,26 @@ func (d *jsiiProxy_DataGithubRepositories) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataGithubRepositories) ResetIncludeRepoId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeRepoId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGithubRepositories) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubRepositories) ResetResultsPerPage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResultsPerPage",
 		nil, // no parameters
 	)
 }

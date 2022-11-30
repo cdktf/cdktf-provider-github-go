@@ -88,10 +88,6 @@ func (j *jsiiProxy_DataGithubRepository) validateSetNameParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubRepository) validateSetOnlyProtectedBranchesParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewDataGithubRepositoryParameters(scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) error {
 	return nil
 }

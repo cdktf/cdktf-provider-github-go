@@ -2,10 +2,10 @@ package repositoryautolinkreference
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/repositoryautolinkreference/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/repositoryautolinkreference/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -40,6 +40,9 @@ type RepositoryAutolinkReference interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsAlphanumeric() interface{}
+	SetIsAlphanumeric(val interface{})
+	IsAlphanumericInput() interface{}
 	KeyPrefix() *string
 	SetKeyPrefix(val *string)
 	KeyPrefixInput() *string
@@ -97,6 +100,7 @@ type RepositoryAutolinkReference interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIsAlphanumeric()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -220,6 +224,26 @@ func (j *jsiiProxy_RepositoryAutolinkReference) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryAutolinkReference) IsAlphanumeric() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAlphanumeric",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryAutolinkReference) IsAlphanumericInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAlphanumericInput",
 		&returns,
 	)
 	return returns
@@ -437,6 +461,17 @@ func (j *jsiiProxy_RepositoryAutolinkReference)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryAutolinkReference)SetIsAlphanumeric(val interface{}) {
+	if err := j.validateSetIsAlphanumericParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isAlphanumeric",
 		val,
 	)
 }
@@ -774,6 +809,14 @@ func (r *jsiiProxy_RepositoryAutolinkReference) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryAutolinkReference) ResetIsAlphanumeric() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetIsAlphanumeric",
 		nil, // no parameters
 	)
 }

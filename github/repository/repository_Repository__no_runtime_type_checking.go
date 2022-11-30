@@ -56,6 +56,10 @@ func (r *jsiiProxy_Repository) validatePutPagesParameters(value *RepositoryPages
 	return nil
 }
 
+func (r *jsiiProxy_Repository) validatePutSecurityAndAnalysisParameters(value *RepositorySecurityAndAnalysis) error {
+	return nil
+}
+
 func (r *jsiiProxy_Repository) validatePutTemplateParameters(value *RepositoryTemplate) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_Repository) validateSetAllowRebaseMergeParameters(val interfa
 }
 
 func (j *jsiiProxy_Repository) validateSetAllowSquashMergeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetAllowUpdateBranchParameters(val interface{}) error {
 	return nil
 }
 

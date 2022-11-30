@@ -2,10 +2,10 @@ package repository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/repository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/repository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -24,6 +24,9 @@ type Repository interface {
 	AllowSquashMerge() interface{}
 	SetAllowSquashMerge(val interface{})
 	AllowSquashMergeInput() interface{}
+	AllowUpdateBranch() interface{}
+	SetAllowUpdateBranch(val interface{})
+	AllowUpdateBranchInput() interface{}
 	Archived() interface{}
 	SetArchived(val interface{})
 	ArchivedInput() interface{}
@@ -33,7 +36,6 @@ type Repository interface {
 	AutoInit() interface{}
 	SetAutoInit(val interface{})
 	AutoInitInput() interface{}
-	Branches() RepositoryBranchesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -134,6 +136,8 @@ type Repository interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RepoId() *float64
+	SecurityAndAnalysis() RepositorySecurityAndAnalysisOutputReference
+	SecurityAndAnalysisInput() *RepositorySecurityAndAnalysis
 	SquashMergeCommitMessage() *string
 	SetSquashMergeCommitMessage(val *string)
 	SquashMergeCommitMessageInput() *string
@@ -185,11 +189,13 @@ type Repository interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPages(value *RepositoryPages)
+	PutSecurityAndAnalysis(value *RepositorySecurityAndAnalysis)
 	PutTemplate(value *RepositoryTemplate)
 	ResetAllowAutoMerge()
 	ResetAllowMergeCommit()
 	ResetAllowRebaseMerge()
 	ResetAllowSquashMerge()
+	ResetAllowUpdateBranch()
 	ResetArchived()
 	ResetArchiveOnDestroy()
 	ResetAutoInit()
@@ -213,6 +219,7 @@ type Repository interface {
 	ResetOverrideLogicalId()
 	ResetPages()
 	ResetPrivate()
+	ResetSecurityAndAnalysis()
 	ResetSquashMergeCommitMessage()
 	ResetSquashMergeCommitTitle()
 	ResetTemplate()
@@ -314,6 +321,26 @@ func (j *jsiiProxy_Repository) AllowSquashMergeInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) AllowUpdateBranch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowUpdateBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) AllowUpdateBranchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowUpdateBranchInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) Archived() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -369,16 +396,6 @@ func (j *jsiiProxy_Repository) AutoInitInput() interface{} {
 	_jsii_.Get(
 		j,
 		"autoInitInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Repository) Branches() RepositoryBranchesList {
-	var returns RepositoryBranchesList
-	_jsii_.Get(
-		j,
-		"branches",
 		&returns,
 	)
 	return returns
@@ -944,6 +961,26 @@ func (j *jsiiProxy_Repository) RepoId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) SecurityAndAnalysis() RepositorySecurityAndAnalysisOutputReference {
+	var returns RepositorySecurityAndAnalysisOutputReference
+	_jsii_.Get(
+		j,
+		"securityAndAnalysis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SecurityAndAnalysisInput() *RepositorySecurityAndAnalysis {
+	var returns *RepositorySecurityAndAnalysis
+	_jsii_.Get(
+		j,
+		"securityAndAnalysisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) SquashMergeCommitMessage() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1184,6 +1221,17 @@ func (j *jsiiProxy_Repository)SetAllowSquashMerge(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowSquashMerge",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetAllowUpdateBranch(val interface{}) {
+	if err := j.validateSetAllowUpdateBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowUpdateBranch",
 		val,
 	)
 }
@@ -1805,6 +1853,17 @@ func (r *jsiiProxy_Repository) PutPages(value *RepositoryPages) {
 	)
 }
 
+func (r *jsiiProxy_Repository) PutSecurityAndAnalysis(value *RepositorySecurityAndAnalysis) {
+	if err := r.validatePutSecurityAndAnalysisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSecurityAndAnalysis",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Repository) PutTemplate(value *RepositoryTemplate) {
 	if err := r.validatePutTemplateParameters(value); err != nil {
 		panic(err)
@@ -1844,6 +1903,14 @@ func (r *jsiiProxy_Repository) ResetAllowSquashMerge() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAllowSquashMerge",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetAllowUpdateBranch() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAllowUpdateBranch",
 		nil, // no parameters
 	)
 }
@@ -2012,6 +2079,14 @@ func (r *jsiiProxy_Repository) ResetPrivate() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPrivate",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetSecurityAndAnalysis() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecurityAndAnalysis",
 		nil, // no parameters
 	)
 }

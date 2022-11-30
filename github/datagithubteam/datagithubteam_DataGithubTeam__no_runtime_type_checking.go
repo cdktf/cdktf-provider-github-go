@@ -76,7 +76,15 @@ func (j *jsiiProxy_DataGithubTeam) validateSetMembershipTypeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubTeam) validateSetResultsPerPageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubTeam) validateSetSlugParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGithubTeam) validateSetSummaryOnlyParameters(val interface{}) error {
 	return nil
 }
 

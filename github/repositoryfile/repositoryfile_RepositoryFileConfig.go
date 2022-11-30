@@ -37,13 +37,17 @@ type RepositoryFileConfig struct {
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
 	// The commit author name, defaults to the authenticated user's name.
 	//
+	// GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
 	CommitAuthor *string `field:"optional" json:"commitAuthor" yaml:"commitAuthor"`
 	// The commit author email address, defaults to the authenticated user's email address.
 	//
+	// GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
 	CommitEmail *string `field:"optional" json:"commitEmail" yaml:"commitEmail"`
-	// The commit message when creating or updating the file.
+	// The commit message when creating, updating or deleting the file.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
 	CommitMessage *string `field:"optional" json:"commitMessage" yaml:"commitMessage"`

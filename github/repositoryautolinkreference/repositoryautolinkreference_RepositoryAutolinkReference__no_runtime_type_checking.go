@@ -72,6 +72,10 @@ func (j *jsiiProxy_RepositoryAutolinkReference) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryAutolinkReference) validateSetIsAlphanumericParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryAutolinkReference) validateSetKeyPrefixParameters(val *string) error {
 	return nil
 }

@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-github-go/github/v4
+module github.com/cdktf/cdktf-provider-github-go/github/v5
 
 go 1.18
 

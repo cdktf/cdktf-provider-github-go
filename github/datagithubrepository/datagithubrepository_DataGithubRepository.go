@@ -2,10 +2,10 @@ package datagithubrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/datagithubrepository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/datagithubrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -17,7 +17,6 @@ type DataGithubRepository interface {
 	AllowRebaseMerge() cdktf.IResolvable
 	AllowSquashMerge() cdktf.IResolvable
 	Archived() cdktf.IResolvable
-	Branches() DataGithubRepositoryBranchesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -58,6 +57,7 @@ type DataGithubRepository interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsTemplate() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -70,9 +70,6 @@ type DataGithubRepository interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeId() *string
-	OnlyProtectedBranches() interface{}
-	SetOnlyProtectedBranches(val interface{})
-	OnlyProtectedBranchesInput() interface{}
 	Pages() DataGithubRepositoryPagesList
 	Private() cdktf.IResolvable
 	// Experimental.
@@ -86,6 +83,7 @@ type DataGithubRepository interface {
 	SquashMergeCommitTitle() *string
 	SshCloneUrl() *string
 	SvnUrl() *string
+	Template() DataGithubRepositoryTemplateList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,7 +122,6 @@ type DataGithubRepository interface {
 	ResetHomepageUrl()
 	ResetId()
 	ResetName()
-	ResetOnlyProtectedBranches()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -188,16 +185,6 @@ func (j *jsiiProxy_DataGithubRepository) Archived() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"archived",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGithubRepository) Branches() DataGithubRepositoryBranchesList {
-	var returns DataGithubRepositoryBranchesList
-	_jsii_.Get(
-		j,
-		"branches",
 		&returns,
 	)
 	return returns
@@ -433,6 +420,16 @@ func (j *jsiiProxy_DataGithubRepository) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) IsTemplate() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isTemplate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -498,26 +495,6 @@ func (j *jsiiProxy_DataGithubRepository) NodeId() *string {
 	_jsii_.Get(
 		j,
 		"nodeId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGithubRepository) OnlyProtectedBranches() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"onlyProtectedBranches",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGithubRepository) OnlyProtectedBranchesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"onlyProtectedBranchesInput",
 		&returns,
 	)
 	return returns
@@ -608,6 +585,16 @@ func (j *jsiiProxy_DataGithubRepository) SvnUrl() *string {
 	_jsii_.Get(
 		j,
 		"svnUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) Template() DataGithubRepositoryTemplateList {
+	var returns DataGithubRepositoryTemplateList
+	_jsii_.Get(
+		j,
+		"template",
 		&returns,
 	)
 	return returns
@@ -779,17 +766,6 @@ func (j *jsiiProxy_DataGithubRepository)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGithubRepository)SetOnlyProtectedBranches(val interface{}) {
-	if err := j.validateSetOnlyProtectedBranchesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"onlyProtectedBranches",
 		val,
 	)
 }
@@ -1104,14 +1080,6 @@ func (d *jsiiProxy_DataGithubRepository) ResetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGithubRepository) ResetOnlyProtectedBranches() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOnlyProtectedBranches",
 		nil, // no parameters
 	)
 }

@@ -2,10 +2,10 @@ package datagithubteam
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/datagithubteam/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/datagithubteam/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -57,9 +57,15 @@ type DataGithubTeam interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Repositories() *[]*string
+	ResultsPerPage() *float64
+	SetResultsPerPage(val *float64)
+	ResultsPerPageInput() *float64
 	Slug() *string
 	SetSlug(val *string)
 	SlugInput() *string
+	SummaryOnly() interface{}
+	SetSummaryOnly(val interface{})
+	SummaryOnlyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,6 +102,8 @@ type DataGithubTeam interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResultsPerPage()
+	ResetSummaryOnly()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -331,6 +339,26 @@ func (j *jsiiProxy_DataGithubTeam) Repositories() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubTeam) ResultsPerPage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeam) ResultsPerPageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resultsPerPageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubTeam) Slug() *string {
 	var returns *string
 	_jsii_.Get(
@@ -346,6 +374,26 @@ func (j *jsiiProxy_DataGithubTeam) SlugInput() *string {
 	_jsii_.Get(
 		j,
 		"slugInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeam) SummaryOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeam) SummaryOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnlyInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +524,17 @@ func (j *jsiiProxy_DataGithubTeam)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
+func (j *jsiiProxy_DataGithubTeam)SetResultsPerPage(val *float64) {
+	if err := j.validateSetResultsPerPageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resultsPerPage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataGithubTeam)SetSlug(val *string) {
 	if err := j.validateSetSlugParameters(val); err != nil {
 		panic(err)
@@ -483,6 +542,17 @@ func (j *jsiiProxy_DataGithubTeam)SetSlug(val *string) {
 	_jsii_.Set(
 		j,
 		"slug",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubTeam)SetSummaryOnly(val interface{}) {
+	if err := j.validateSetSummaryOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"summaryOnly",
 		val,
 	)
 }
@@ -773,6 +843,22 @@ func (d *jsiiProxy_DataGithubTeam) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubTeam) ResetResultsPerPage() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResultsPerPage",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubTeam) ResetSummaryOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSummaryOnly",
 		nil, // no parameters
 	)
 }

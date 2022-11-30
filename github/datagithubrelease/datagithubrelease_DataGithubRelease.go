@@ -2,10 +2,10 @@ package datagithubrelease
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/datagithubrelease/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/datagithubrelease/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,6 +13,8 @@ import (
 type DataGithubRelease interface {
 	cdktf.TerraformDataSource
 	AssertsUrl() *string
+	Assets() DataGithubReleaseAssetsList
+	AssetsUrl() *string
 	Body() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -132,6 +134,26 @@ func (j *jsiiProxy_DataGithubRelease) AssertsUrl() *string {
 	_jsii_.Get(
 		j,
 		"assertsUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRelease) Assets() DataGithubReleaseAssetsList {
+	var returns DataGithubReleaseAssetsList
+	_jsii_.Get(
+		j,
+		"assets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRelease) AssetsUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetsUrl",
 		&returns,
 	)
 	return returns

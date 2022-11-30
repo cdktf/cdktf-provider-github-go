@@ -72,7 +72,15 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganizationTeams) validateSetResultsPerPageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubOrganizationTeams) validateSetRootTeamsOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeams) validateSetSummaryOnlyParameters(val interface{}) error {
 	return nil
 }
 

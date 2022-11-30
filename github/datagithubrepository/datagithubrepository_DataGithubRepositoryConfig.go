@@ -32,7 +32,5 @@ type DataGithubRepositoryConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}.
-	OnlyProtectedBranches interface{} `field:"optional" json:"onlyProtectedBranches" yaml:"onlyProtectedBranches"`
 }
 

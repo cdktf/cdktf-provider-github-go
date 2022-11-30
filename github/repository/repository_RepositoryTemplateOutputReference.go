@@ -2,9 +2,9 @@ package repository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-github-go/github/v4/repository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v5/repository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -27,6 +27,9 @@ type RepositoryTemplateOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeAllBranches() interface{}
+	SetIncludeAllBranches(val interface{})
+	IncludeAllBranchesInput() interface{}
 	InternalValue() *RepositoryTemplate
 	SetInternalValue(val *RepositoryTemplate)
 	Owner() *string
@@ -67,6 +70,7 @@ type RepositoryTemplateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIncludeAllBranches()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +121,26 @@ func (j *jsiiProxy_RepositoryTemplateOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryTemplateOutputReference) IncludeAllBranches() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeAllBranches",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryTemplateOutputReference) IncludeAllBranchesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeAllBranchesInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_RepositoryTemplateOutputReference)SetComplexObjectIsFromSet(v
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryTemplateOutputReference)SetIncludeAllBranches(val interface{}) {
+	if err := j.validateSetIncludeAllBranchesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeAllBranches",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (r *jsiiProxy_RepositoryTemplateOutputReference) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RepositoryTemplateOutputReference) ResetIncludeAllBranches() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetIncludeAllBranches",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RepositoryTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

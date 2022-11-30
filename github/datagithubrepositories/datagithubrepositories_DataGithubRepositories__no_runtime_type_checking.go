@@ -68,11 +68,19 @@ func (j *jsiiProxy_DataGithubRepositories) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubRepositories) validateSetIncludeRepoIdParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubRepositories) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataGithubRepositories) validateSetQueryParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGithubRepositories) validateSetResultsPerPageParameters(val *float64) error {
 	return nil
 }
 
