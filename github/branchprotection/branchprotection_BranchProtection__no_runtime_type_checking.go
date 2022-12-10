@@ -100,6 +100,10 @@ func (j *jsiiProxy_BranchProtection) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtection) validateSetLockBranchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtection) validateSetPatternParameters(val *string) error {
 	return nil
 }

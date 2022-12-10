@@ -44,6 +44,9 @@ type BranchProtectionRequiredPullRequestReviewsOutputReference interface {
 	RequiredApprovingReviewCount() *float64
 	SetRequiredApprovingReviewCount(val *float64)
 	RequiredApprovingReviewCountInput() *float64
+	RequireLastPushApproval() interface{}
+	SetRequireLastPushApproval(val interface{})
+	RequireLastPushApprovalInput() interface{}
 	RestrictDismissals() interface{}
 	SetRestrictDismissals(val interface{})
 	RestrictDismissalsInput() interface{}
@@ -84,6 +87,7 @@ type BranchProtectionRequiredPullRequestReviewsOutputReference interface {
 	ResetPullRequestBypassers()
 	ResetRequireCodeOwnerReviews()
 	ResetRequiredApprovingReviewCount()
+	ResetRequireLastPushApproval()
 	ResetRestrictDismissals()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -250,6 +254,26 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) RequireLastPushApproval() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireLastPushApproval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) RequireLastPushApprovalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireLastPushApprovalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) RestrictDismissals() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -402,6 +426,17 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"requiredApprovingReviewCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference)SetRequireLastPushApproval(val interface{}) {
+	if err := j.validateSetRequireLastPushApprovalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireLastPushApproval",
 		val,
 	)
 }
@@ -661,6 +696,14 @@ func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) Re
 	_jsii_.InvokeVoid(
 		b,
 		"resetRequiredApprovingReviewCount",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) ResetRequireLastPushApproval() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequireLastPushApproval",
 		nil, // no parameters
 	)
 }

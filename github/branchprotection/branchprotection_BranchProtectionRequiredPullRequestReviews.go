@@ -12,6 +12,8 @@ type BranchProtectionRequiredPullRequestReviews struct {
 	RequireCodeOwnerReviews interface{} `field:"optional" json:"requireCodeOwnerReviews" yaml:"requireCodeOwnerReviews"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}.
 	RequiredApprovingReviewCount *float64 `field:"optional" json:"requiredApprovingReviewCount" yaml:"requiredApprovingReviewCount"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}.
+	RequireLastPushApproval interface{} `field:"optional" json:"requireLastPushApproval" yaml:"requireLastPushApproval"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}.
 	RestrictDismissals interface{} `field:"optional" json:"restrictDismissals" yaml:"restrictDismissals"`
 }

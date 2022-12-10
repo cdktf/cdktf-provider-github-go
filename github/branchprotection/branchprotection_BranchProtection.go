@@ -55,6 +55,9 @@ type BranchProtection interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LockBranch() interface{}
+	SetLockBranch(val interface{})
+	LockBranchInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Pattern() *string
@@ -127,6 +130,7 @@ type BranchProtection interface {
 	ResetBlocksCreations()
 	ResetEnforceAdmins()
 	ResetId()
+	ResetLockBranch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_BranchProtection) Lifecycle() *cdktf.TerraformResourceLifecyc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) LockBranch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) LockBranchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockBranchInput",
 		&returns,
 	)
 	return returns
@@ -698,6 +722,17 @@ func (j *jsiiProxy_BranchProtection)SetLifecycle(val *cdktf.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtection)SetLockBranch(val interface{}) {
+	if err := j.validateSetLockBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lockBranch",
 		val,
 	)
 }
@@ -1111,6 +1146,14 @@ func (b *jsiiProxy_BranchProtection) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtection) ResetLockBranch() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLockBranch",
 		nil, // no parameters
 	)
 }

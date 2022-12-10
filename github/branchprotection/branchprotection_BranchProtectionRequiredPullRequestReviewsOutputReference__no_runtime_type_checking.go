@@ -80,6 +80,10 @@ func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) validateSetRequireLastPushApprovalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionRequiredPullRequestReviewsOutputReference) validateSetRestrictDismissalsParameters(val interface{}) error {
 	return nil
 }
