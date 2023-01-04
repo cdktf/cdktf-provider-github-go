@@ -116,6 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeId", GoGetter: "NodeId"},
+			_jsii_.MemberProperty{JsiiProperty: "parent", GoGetter: "Parent"},
 			_jsii_.MemberProperty{JsiiProperty: "privacy", GoGetter: "Privacy"},
 			_jsii_.MemberProperty{JsiiProperty: "repositories", GoGetter: "Repositories"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
