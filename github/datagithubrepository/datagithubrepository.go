@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "gitCloneUrl", GoGetter: "GitCloneUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "hasDiscussions", GoGetter: "HasDiscussions"},
 			_jsii_.MemberProperty{JsiiProperty: "hasDownloads", GoGetter: "HasDownloads"},
 			_jsii_.MemberProperty{JsiiProperty: "hasIssues", GoGetter: "HasIssues"},
 			_jsii_.MemberProperty{JsiiProperty: "hasProjects", GoGetter: "HasProjects"},

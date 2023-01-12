@@ -128,6 +128,10 @@ func (j *jsiiProxy_Repository) validateSetGitignoreTemplateParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_Repository) validateSetHasDiscussionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repository) validateSetHasDownloadsParameters(val interface{}) error {
 	return nil
 }

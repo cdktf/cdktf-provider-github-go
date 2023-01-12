@@ -47,6 +47,8 @@ type RepositoryConfig struct {
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#gitignore_template Repository#gitignore_template}.
 	GitignoreTemplate *string `field:"optional" json:"gitignoreTemplate" yaml:"gitignoreTemplate"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_discussions Repository#has_discussions}.
+	HasDiscussions interface{} `field:"optional" json:"hasDiscussions" yaml:"hasDiscussions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_downloads Repository#has_downloads}.
 	HasDownloads interface{} `field:"optional" json:"hasDownloads" yaml:"hasDownloads"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_issues Repository#has_issues}.

@@ -45,6 +45,7 @@ type DataGithubRepository interface {
 	SetFullName(val *string)
 	FullNameInput() *string
 	GitCloneUrl() *string
+	HasDiscussions() cdktf.IResolvable
 	HasDownloads() cdktf.IResolvable
 	HasIssues() cdktf.IResolvable
 	HasProjects() cdktf.IResolvable
@@ -315,6 +316,16 @@ func (j *jsiiProxy_DataGithubRepository) GitCloneUrl() *string {
 	_jsii_.Get(
 		j,
 		"gitCloneUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) HasDiscussions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasDiscussions",
 		&returns,
 	)
 	return returns

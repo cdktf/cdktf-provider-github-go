@@ -75,6 +75,9 @@ type Repository interface {
 	GitignoreTemplate() *string
 	SetGitignoreTemplate(val *string)
 	GitignoreTemplateInput() *string
+	HasDiscussions() interface{}
+	SetHasDiscussions(val interface{})
+	HasDiscussionsInput() interface{}
 	HasDownloads() interface{}
 	SetHasDownloads(val interface{})
 	HasDownloadsInput() interface{}
@@ -203,6 +206,7 @@ type Repository interface {
 	ResetDeleteBranchOnMerge()
 	ResetDescription()
 	ResetGitignoreTemplate()
+	ResetHasDiscussions()
 	ResetHasDownloads()
 	ResetHasIssues()
 	ResetHasProjects()
@@ -586,6 +590,26 @@ func (j *jsiiProxy_Repository) GitignoreTemplateInput() *string {
 	_jsii_.Get(
 		j,
 		"gitignoreTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) HasDiscussions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasDiscussions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) HasDiscussionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasDiscussionsInput",
 		&returns,
 	)
 	return returns
@@ -1348,6 +1372,17 @@ func (j *jsiiProxy_Repository)SetGitignoreTemplate(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Repository)SetHasDiscussions(val interface{}) {
+	if err := j.validateSetHasDiscussionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasDiscussions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Repository)SetHasDownloads(val interface{}) {
 	if err := j.validateSetHasDownloadsParameters(val); err != nil {
 		panic(err)
@@ -1967,6 +2002,14 @@ func (r *jsiiProxy_Repository) ResetGitignoreTemplate() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetGitignoreTemplate",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetHasDiscussions() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetHasDiscussions",
 		nil, // no parameters
 	)
 }
