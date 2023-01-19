@@ -62,11 +62,13 @@ type ActionsRunnerGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RestrictedToWorkflows() cdktf.IResolvable
 	RunnersUrl() *string
 	SelectedRepositoriesUrl() *string
 	SelectedRepositoryIds() *[]*float64
 	SetSelectedRepositoryIds(val *[]*float64)
 	SelectedRepositoryIdsInput() *[]*float64
+	SelectedWorkflows() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -331,6 +333,16 @@ func (j *jsiiProxy_ActionsRunnerGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ActionsRunnerGroup) RestrictedToWorkflows() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictedToWorkflows",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ActionsRunnerGroup) RunnersUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +378,16 @@ func (j *jsiiProxy_ActionsRunnerGroup) SelectedRepositoryIdsInput() *[]*float64 
 	_jsii_.Get(
 		j,
 		"selectedRepositoryIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup) SelectedWorkflows() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectedWorkflows",
 		&returns,
 	)
 	return returns

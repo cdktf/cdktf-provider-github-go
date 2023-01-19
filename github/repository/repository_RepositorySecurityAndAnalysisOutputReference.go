@@ -70,6 +70,9 @@ type RepositorySecurityAndAnalysisOutputReference interface {
 	PutAdvancedSecurity(value *RepositorySecurityAndAnalysisAdvancedSecurity)
 	PutSecretScanning(value *RepositorySecurityAndAnalysisSecretScanning)
 	PutSecretScanningPushProtection(value *RepositorySecurityAndAnalysisSecretScanningPushProtection)
+	ResetAdvancedSecurity()
+	ResetSecretScanning()
+	ResetSecretScanningPushProtection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -514,6 +517,30 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutSecretScanni
 		r,
 		"putSecretScanningPushProtection",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetAdvancedSecurity() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdvancedSecurity",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetSecretScanning() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecretScanning",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetSecretScanningPushProtection() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecretScanningPushProtection",
+		nil, // no parameters
 	)
 }
 
