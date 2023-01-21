@@ -146,6 +146,8 @@ func init() {
 		"@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference",
 		reflect.TypeOf((*BranchProtectionV3RequiredStatusChecksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "checks", GoGetter: "Checks"},
+			_jsii_.MemberProperty{JsiiProperty: "checksInput", GoGetter: "ChecksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,6 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetChecks", GoMethod: "ResetChecks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContexts", GoMethod: "ResetContexts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeAdmins", GoMethod: "ResetIncludeAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStrict", GoMethod: "ResetStrict"},

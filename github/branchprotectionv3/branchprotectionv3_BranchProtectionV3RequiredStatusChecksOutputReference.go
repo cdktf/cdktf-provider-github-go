@@ -10,6 +10,9 @@ import (
 
 type BranchProtectionV3RequiredStatusChecksOutputReference interface {
 	cdktf.ComplexObject
+	Checks() *[]*string
+	SetChecks(val *[]*string)
+	ChecksInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type BranchProtectionV3RequiredStatusChecksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChecks()
 	ResetContexts()
 	ResetIncludeAdmins()
 	ResetStrict()
@@ -86,6 +90,26 @@ type BranchProtectionV3RequiredStatusChecksOutputReference interface {
 // The jsii proxy struct for BranchProtectionV3RequiredStatusChecksOutputReference
 type jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) Checks() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) ChecksInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"checksInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) ComplexObjectIndex() interface{} {
@@ -243,6 +267,17 @@ func NewBranchProtectionV3RequiredStatusChecksOutputReference_Override(b BranchP
 		"@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference)SetChecks(val *[]*string) {
+	if err := j.validateSetChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checks",
+		val,
 	)
 }
 
@@ -518,6 +553,14 @@ func (b *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) ResetChecks() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetChecks",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) ResetContexts() {

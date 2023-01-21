@@ -98,6 +98,14 @@ func (b *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) validateSetChecksParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

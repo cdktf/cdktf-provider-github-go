@@ -48,6 +48,10 @@ func (b *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) validateSetChecksParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionV3RequiredStatusChecksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
