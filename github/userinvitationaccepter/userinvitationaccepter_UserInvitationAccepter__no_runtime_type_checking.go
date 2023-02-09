@@ -64,6 +64,10 @@ func validateUserInvitationAccepter_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_UserInvitationAccepter) validateSetAllowEmptyIdParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserInvitationAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

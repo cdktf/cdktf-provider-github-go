@@ -58,6 +58,9 @@ type BranchDefault interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Rename() interface{}
+	SetRename(val interface{})
+	RenameInput() interface{}
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
@@ -96,6 +99,7 @@ type BranchDefault interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRename()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -281,6 +285,26 @@ func (j *jsiiProxy_BranchDefault) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BranchDefault) Rename() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rename",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchDefault) RenameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"renameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BranchDefault) Repository() *string {
 	var returns *string
 	_jsii_.Get(
@@ -444,6 +468,17 @@ func (j *jsiiProxy_BranchDefault)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchDefault)SetRename(val interface{}) {
+	if err := j.validateSetRenameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rename",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (b *jsiiProxy_BranchDefault) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchDefault) ResetRename() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRename",
 		nil, // no parameters
 	)
 }

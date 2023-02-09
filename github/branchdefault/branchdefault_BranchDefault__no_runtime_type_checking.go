@@ -84,6 +84,10 @@ func (j *jsiiProxy_BranchDefault) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_BranchDefault) validateSetRenameParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchDefault) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

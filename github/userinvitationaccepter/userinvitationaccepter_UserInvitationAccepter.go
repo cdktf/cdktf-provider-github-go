@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
 type UserInvitationAccepter interface {
 	cdktf.TerraformResource
+	AllowEmptyId() interface{}
+	SetAllowEmptyId(val interface{})
+	AllowEmptyIdInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -89,7 +92,9 @@ type UserInvitationAccepter interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowEmptyId()
 	ResetId()
+	ResetInvitationId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -106,6 +111,26 @@ type UserInvitationAccepter interface {
 // The jsii proxy struct for UserInvitationAccepter
 type jsiiProxy_UserInvitationAccepter struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_UserInvitationAccepter) AllowEmptyId() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmptyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_UserInvitationAccepter) AllowEmptyIdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowEmptyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_UserInvitationAccepter) CdktfStack() cdktf.TerraformStack {
@@ -335,6 +360,17 @@ func NewUserInvitationAccepter_Override(u UserInvitationAccepter, scope construc
 		"@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter",
 		[]interface{}{scope, id, config},
 		u,
+	)
+}
+
+func (j *jsiiProxy_UserInvitationAccepter)SetAllowEmptyId(val interface{}) {
+	if err := j.validateSetAllowEmptyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowEmptyId",
+		val,
 	)
 }
 
@@ -691,10 +727,26 @@ func (u *jsiiProxy_UserInvitationAccepter) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (u *jsiiProxy_UserInvitationAccepter) ResetAllowEmptyId() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetAllowEmptyId",
+		nil, // no parameters
+	)
+}
+
 func (u *jsiiProxy_UserInvitationAccepter) ResetId() {
 	_jsii_.InvokeVoid(
 		u,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (u *jsiiProxy_UserInvitationAccepter) ResetInvitationId() {
+	_jsii_.InvokeVoid(
+		u,
+		"resetInvitationId",
 		nil, // no parameters
 	)
 }
