@@ -27,7 +27,7 @@ type DataGithubRepositoryFileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#repository DataGithubRepositoryFile#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// The branch name, defaults to "main".
+	// The branch name, defaults to the repository's default branch.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#branch DataGithubRepositoryFile#branch}
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`

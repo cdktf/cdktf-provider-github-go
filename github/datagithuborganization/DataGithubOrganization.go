@@ -63,6 +63,7 @@ type DataGithubOrganization interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Users() cdktf.StringMapList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -352,6 +353,16 @@ func (j *jsiiProxy_DataGithubOrganization) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) Users() cdktf.StringMapList {
+	var returns cdktf.StringMapList
+	_jsii_.Get(
+		j,
+		"users",
 		&returns,
 	)
 	return returns

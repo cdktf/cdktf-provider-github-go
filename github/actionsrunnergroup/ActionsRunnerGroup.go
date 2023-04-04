@@ -62,13 +62,17 @@ type ActionsRunnerGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RestrictedToWorkflows() cdktf.IResolvable
+	RestrictedToWorkflows() interface{}
+	SetRestrictedToWorkflows(val interface{})
+	RestrictedToWorkflowsInput() interface{}
 	RunnersUrl() *string
 	SelectedRepositoriesUrl() *string
 	SelectedRepositoryIds() *[]*float64
 	SetSelectedRepositoryIds(val *[]*float64)
 	SelectedRepositoryIdsInput() *[]*float64
 	SelectedWorkflows() *[]*string
+	SetSelectedWorkflows(val *[]*string)
+	SelectedWorkflowsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,7 +111,9 @@ type ActionsRunnerGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRestrictedToWorkflows()
 	ResetSelectedRepositoryIds()
+	ResetSelectedWorkflows()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -333,11 +339,21 @@ func (j *jsiiProxy_ActionsRunnerGroup) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ActionsRunnerGroup) RestrictedToWorkflows() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ActionsRunnerGroup) RestrictedToWorkflows() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"restrictedToWorkflows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup) RestrictedToWorkflowsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictedToWorkflowsInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +404,16 @@ func (j *jsiiProxy_ActionsRunnerGroup) SelectedWorkflows() *[]*string {
 	_jsii_.Get(
 		j,
 		"selectedWorkflows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup) SelectedWorkflowsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"selectedWorkflowsInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +586,17 @@ func (j *jsiiProxy_ActionsRunnerGroup)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ActionsRunnerGroup)SetRestrictedToWorkflows(val interface{}) {
+	if err := j.validateSetRestrictedToWorkflowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restrictedToWorkflows",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ActionsRunnerGroup)SetSelectedRepositoryIds(val *[]*float64) {
 	if err := j.validateSetSelectedRepositoryIdsParameters(val); err != nil {
 		panic(err)
@@ -567,6 +604,17 @@ func (j *jsiiProxy_ActionsRunnerGroup)SetSelectedRepositoryIds(val *[]*float64) 
 	_jsii_.Set(
 		j,
 		"selectedRepositoryIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup)SetSelectedWorkflows(val *[]*string) {
+	if err := j.validateSetSelectedWorkflowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selectedWorkflows",
 		val,
 	)
 }
@@ -864,10 +912,26 @@ func (a *jsiiProxy_ActionsRunnerGroup) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_ActionsRunnerGroup) ResetRestrictedToWorkflows() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRestrictedToWorkflows",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ActionsRunnerGroup) ResetSelectedRepositoryIds() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSelectedRepositoryIds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ActionsRunnerGroup) ResetSelectedWorkflows() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSelectedWorkflows",
 		nil, // no parameters
 	)
 }

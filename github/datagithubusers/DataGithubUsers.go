@@ -24,6 +24,7 @@ type DataGithubUsers interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Emails() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataGithubUsers) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubUsers) Emails() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"emails",
 		&returns,
 	)
 	return returns

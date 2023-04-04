@@ -84,7 +84,15 @@ func (j *jsiiProxy_ActionsRunnerGroup) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_ActionsRunnerGroup) validateSetRestrictedToWorkflowsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsRunnerGroup) validateSetSelectedRepositoryIdsParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup) validateSetSelectedWorkflowsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -58,6 +58,7 @@ type DataGithubRepositoryFile interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Ref() *string
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
@@ -328,6 +329,16 @@ func (j *jsiiProxy_DataGithubRepositoryFile) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepositoryFile) Ref() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ref",
 		&returns,
 	)
 	return returns
