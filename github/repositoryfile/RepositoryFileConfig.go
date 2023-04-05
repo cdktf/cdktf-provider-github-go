@@ -31,7 +31,7 @@ type RepositoryFileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#repository RepositoryFile#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// The branch name, defaults to "main".
+	// The branch name, defaults to the repository's default branch.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`

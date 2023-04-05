@@ -2,6 +2,10 @@ package branchprotectionv3
 
 
 type BranchProtectionV3RequiredPullRequestReviews struct {
+	// bypass_pull_request_allowances block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#bypass_pull_request_allowances BranchProtectionV3#bypass_pull_request_allowances}
+	BypassPullRequestAllowances *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances `field:"optional" json:"bypassPullRequestAllowances" yaml:"bypassPullRequestAllowances"`
 	// The list of team slugs with dismissal access.
 	//
 	// Always use slug of the team, not its name. Each team already has to have access to the repository.

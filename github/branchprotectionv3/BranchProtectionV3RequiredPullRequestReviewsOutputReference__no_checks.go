@@ -44,6 +44,10 @@ func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	return nil
 }
 
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) validatePutBypassPullRequestAllowancesParameters(value *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

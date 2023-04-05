@@ -1,41 +1,25 @@
-package repositoryfile
+package repositorycollaborators
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v6/repositoryfile/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v6/repositorycollaborators/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
-type RepositoryFile interface {
+// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborators github_repository_collaborators}.
+type RepositoryCollaborators interface {
 	cdktf.TerraformResource
-	Branch() *string
-	SetBranch(val *string)
-	BranchInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	CommitAuthor() *string
-	SetCommitAuthor(val *string)
-	CommitAuthorInput() *string
-	CommitEmail() *string
-	SetCommitEmail(val *string)
-	CommitEmailInput() *string
-	CommitMessage() *string
-	SetCommitMessage(val *string)
-	CommitMessageInput() *string
-	CommitSha() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	Content() *string
-	SetContent(val *string)
-	ContentInput() *string
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -44,9 +28,6 @@ type RepositoryFile interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	File() *string
-	SetFile(val *string)
-	FileInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,15 +39,13 @@ type RepositoryFile interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InvitationIds() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	OverwriteOnCreate() interface{}
-	SetOverwriteOnCreate(val interface{})
-	OverwriteOnCreateInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -77,17 +56,19 @@ type RepositoryFile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Ref() *string
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
-	Sha() *string
+	Team() RepositoryCollaboratorsTeamList
+	TeamInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	User() RepositoryCollaboratorsUserList
+	UserInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,15 +94,14 @@ type RepositoryFile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetBranch()
-	ResetCommitAuthor()
-	ResetCommitEmail()
-	ResetCommitMessage()
+	PutTeam(value interface{})
+	PutUser(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOverwriteOnCreate()
+	ResetTeam()
+	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -132,32 +112,12 @@ type RepositoryFile interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for RepositoryFile
-type jsiiProxy_RepositoryFile struct {
+// The jsii proxy struct for RepositoryCollaborators
+type jsiiProxy_RepositoryCollaborators struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_RepositoryFile) Branch() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"branch",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) BranchInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"branchInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_RepositoryCollaborators) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -167,77 +127,7 @@ func (j *jsiiProxy_RepositoryFile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) CommitAuthor() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitAuthor",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitAuthorInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitAuthorInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitEmail() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitEmail",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitEmailInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitEmailInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitMessage() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitMessage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitMessageInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitMessageInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) CommitSha() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"commitSha",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) Connection() interface{} {
+func (j *jsiiProxy_RepositoryCollaborators) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -247,7 +137,7 @@ func (j *jsiiProxy_RepositoryFile) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_RepositoryCollaborators) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -257,27 +147,7 @@ func (j *jsiiProxy_RepositoryFile) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Content() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"content",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) ContentInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"contentInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) Count() *float64 {
+func (j *jsiiProxy_RepositoryCollaborators) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -287,7 +157,7 @@ func (j *jsiiProxy_RepositoryFile) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) DependsOn() *[]*string {
+func (j *jsiiProxy_RepositoryCollaborators) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -297,27 +167,7 @@ func (j *jsiiProxy_RepositoryFile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) File() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"file",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) FileInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"fileInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_RepositoryCollaborators) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -327,7 +177,7 @@ func (j *jsiiProxy_RepositoryFile) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Fqn() *string {
+func (j *jsiiProxy_RepositoryCollaborators) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -337,7 +187,7 @@ func (j *jsiiProxy_RepositoryFile) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) FriendlyUniqueId() *string {
+func (j *jsiiProxy_RepositoryCollaborators) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -347,7 +197,7 @@ func (j *jsiiProxy_RepositoryFile) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Id() *string {
+func (j *jsiiProxy_RepositoryCollaborators) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -357,7 +207,7 @@ func (j *jsiiProxy_RepositoryFile) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) IdInput() *string {
+func (j *jsiiProxy_RepositoryCollaborators) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -367,7 +217,17 @@ func (j *jsiiProxy_RepositoryFile) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_RepositoryCollaborators) InvitationIds() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"invitationIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryCollaborators) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -377,7 +237,7 @@ func (j *jsiiProxy_RepositoryFile) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Node() constructs.Node {
+func (j *jsiiProxy_RepositoryCollaborators) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -387,27 +247,7 @@ func (j *jsiiProxy_RepositoryFile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) OverwriteOnCreate() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"overwriteOnCreate",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) OverwriteOnCreateInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"overwriteOnCreateInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_RepositoryCollaborators) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -417,7 +257,7 @@ func (j *jsiiProxy_RepositoryFile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Provisioners() *[]interface{} {
+func (j *jsiiProxy_RepositoryCollaborators) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -427,7 +267,7 @@ func (j *jsiiProxy_RepositoryFile) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) RawOverrides() interface{} {
+func (j *jsiiProxy_RepositoryCollaborators) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -437,17 +277,7 @@ func (j *jsiiProxy_RepositoryFile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Ref() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ref",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryFile) Repository() *string {
+func (j *jsiiProxy_RepositoryCollaborators) Repository() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -457,7 +287,7 @@ func (j *jsiiProxy_RepositoryFile) Repository() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) RepositoryInput() *string {
+func (j *jsiiProxy_RepositoryCollaborators) RepositoryInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -467,17 +297,27 @@ func (j *jsiiProxy_RepositoryFile) RepositoryInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Sha() *string {
-	var returns *string
+func (j *jsiiProxy_RepositoryCollaborators) Team() RepositoryCollaboratorsTeamList {
+	var returns RepositoryCollaboratorsTeamList
 	_jsii_.Get(
 		j,
-		"sha",
+		"team",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_RepositoryCollaborators) TeamInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"teamInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryCollaborators) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -487,7 +327,7 @@ func (j *jsiiProxy_RepositoryFile) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_RepositoryCollaborators) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -497,7 +337,7 @@ func (j *jsiiProxy_RepositoryFile) TerraformMetaArguments() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) TerraformResourceType() *string {
+func (j *jsiiProxy_RepositoryCollaborators) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -507,18 +347,38 @@ func (j *jsiiProxy_RepositoryFile) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RepositoryCollaborators) User() RepositoryCollaboratorsUserList {
+	var returns RepositoryCollaboratorsUserList
+	_jsii_.Get(
+		j,
+		"user",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource.
-func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
+func (j *jsiiProxy_RepositoryCollaborators) UserInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"userInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_collaborators github_repository_collaborators} Resource.
+func NewRepositoryCollaborators(scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) RepositoryCollaborators {
 	_init_.Initialize()
 
-	if err := validateNewRepositoryFileParameters(scope, id, config); err != nil {
+	if err := validateNewRepositoryCollaboratorsParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_RepositoryFile{}
+	j := jsiiProxy_RepositoryCollaborators{}
 
 	_jsii_.Create(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -526,62 +386,18 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource.
-func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_collaborators github_repository_collaborators} Resource.
+func NewRepositoryCollaborators_Override(r RepositoryCollaborators, scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		[]interface{}{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetBranch(val *string) {
-	if err := j.validateSetBranchParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"branch",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetCommitAuthor(val *string) {
-	if err := j.validateSetCommitAuthorParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"commitAuthor",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetCommitEmail(val *string) {
-	if err := j.validateSetCommitEmailParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"commitEmail",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetCommitMessage(val *string) {
-	if err := j.validateSetCommitMessageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"commitMessage",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetConnection(val interface{}) {
+func (j *jsiiProxy_RepositoryCollaborators)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,18 +408,7 @@ func (j *jsiiProxy_RepositoryFile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetContent(val *string) {
-	if err := j.validateSetContentParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"content",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetCount(val *float64) {
+func (j *jsiiProxy_RepositoryCollaborators)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -611,7 +416,7 @@ func (j *jsiiProxy_RepositoryFile)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RepositoryCollaborators)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -619,18 +424,7 @@ func (j *jsiiProxy_RepositoryFile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetFile(val *string) {
-	if err := j.validateSetFileParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"file",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RepositoryCollaborators)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -638,7 +432,7 @@ func (j *jsiiProxy_RepositoryFile)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetId(val *string) {
+func (j *jsiiProxy_RepositoryCollaborators)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +443,7 @@ func (j *jsiiProxy_RepositoryFile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RepositoryCollaborators)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,18 +454,7 @@ func (j *jsiiProxy_RepositoryFile)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetOverwriteOnCreate(val interface{}) {
-	if err := j.validateSetOverwriteOnCreateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"overwriteOnCreate",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RepositoryCollaborators)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -679,7 +462,7 @@ func (j *jsiiProxy_RepositoryFile)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RepositoryCollaborators)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +473,7 @@ func (j *jsiiProxy_RepositoryFile)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetRepository(val *string) {
+func (j *jsiiProxy_RepositoryCollaborators)SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,16 +501,16 @@ func (j *jsiiProxy_RepositoryFile)SetRepository(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func RepositoryFile_IsConstruct(x interface{}) *bool {
+func RepositoryCollaborators_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRepositoryFile_IsConstructParameters(x); err != nil {
+	if err := validateRepositoryCollaborators_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -737,16 +520,16 @@ func RepositoryFile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func RepositoryFile_IsTerraformElement(x interface{}) *bool {
+func RepositoryCollaborators_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRepositoryFile_IsTerraformElementParameters(x); err != nil {
+	if err := validateRepositoryCollaborators_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -756,16 +539,16 @@ func RepositoryFile_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func RepositoryFile_IsTerraformResource(x interface{}) *bool {
+func RepositoryCollaborators_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateRepositoryFile_IsTerraformResourceParameters(x); err != nil {
+	if err := validateRepositoryCollaborators_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,18 +557,18 @@ func RepositoryFile_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func RepositoryFile_TfResourceType() *string {
+func RepositoryCollaborators_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-github.repositoryFile.RepositoryFile",
+		"@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_RepositoryCollaborators) AddOverride(path *string, value interface{}) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -796,7 +579,7 @@ func (r *jsiiProxy_RepositoryFile) AddOverride(path *string, value interface{}) 
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RepositoryCollaborators) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -812,7 +595,7 @@ func (r *jsiiProxy_RepositoryFile) GetAnyMapAttribute(terraformAttribute *string
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RepositoryCollaborators) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -828,7 +611,7 @@ func (r *jsiiProxy_RepositoryFile) GetBooleanAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (r *jsiiProxy_RepositoryCollaborators) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -844,7 +627,7 @@ func (r *jsiiProxy_RepositoryFile) GetBooleanMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetListAttribute(terraformAttribute *string) *[]*string {
+func (r *jsiiProxy_RepositoryCollaborators) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -860,7 +643,7 @@ func (r *jsiiProxy_RepositoryFile) GetListAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (r *jsiiProxy_RepositoryCollaborators) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -876,7 +659,7 @@ func (r *jsiiProxy_RepositoryFile) GetNumberAttribute(terraformAttribute *string
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (r *jsiiProxy_RepositoryCollaborators) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -892,7 +675,7 @@ func (r *jsiiProxy_RepositoryFile) GetNumberListAttribute(terraformAttribute *st
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (r *jsiiProxy_RepositoryCollaborators) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -908,7 +691,7 @@ func (r *jsiiProxy_RepositoryFile) GetNumberMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetStringAttribute(terraformAttribute *string) *string {
+func (r *jsiiProxy_RepositoryCollaborators) GetStringAttribute(terraformAttribute *string) *string {
 	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -924,7 +707,7 @@ func (r *jsiiProxy_RepositoryFile) GetStringAttribute(terraformAttribute *string
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (r *jsiiProxy_RepositoryCollaborators) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -940,7 +723,7 @@ func (r *jsiiProxy_RepositoryFile) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RepositoryCollaborators) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -956,7 +739,7 @@ func (r *jsiiProxy_RepositoryFile) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) OverrideLogicalId(newLogicalId *string) {
+func (r *jsiiProxy_RepositoryCollaborators) OverrideLogicalId(newLogicalId *string) {
 	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -967,39 +750,29 @@ func (r *jsiiProxy_RepositoryFile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) ResetBranch() {
+func (r *jsiiProxy_RepositoryCollaborators) PutTeam(value interface{}) {
+	if err := r.validatePutTeamParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
-		"resetBranch",
-		nil, // no parameters
+		"putTeam",
+		[]interface{}{value},
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) ResetCommitAuthor() {
+func (r *jsiiProxy_RepositoryCollaborators) PutUser(value interface{}) {
+	if err := r.validatePutUserParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
-		"resetCommitAuthor",
-		nil, // no parameters
+		"putUser",
+		[]interface{}{value},
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) ResetCommitEmail() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCommitEmail",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RepositoryFile) ResetCommitMessage() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetCommitMessage",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RepositoryFile) ResetId() {
+func (r *jsiiProxy_RepositoryCollaborators) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
@@ -1007,7 +780,7 @@ func (r *jsiiProxy_RepositoryFile) ResetId() {
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) ResetOverrideLogicalId() {
+func (r *jsiiProxy_RepositoryCollaborators) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
@@ -1015,15 +788,23 @@ func (r *jsiiProxy_RepositoryFile) ResetOverrideLogicalId() {
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) ResetOverwriteOnCreate() {
+func (r *jsiiProxy_RepositoryCollaborators) ResetTeam() {
 	_jsii_.InvokeVoid(
 		r,
-		"resetOverwriteOnCreate",
+		"resetTeam",
 		nil, // no parameters
 	)
 }
 
-func (r *jsiiProxy_RepositoryFile) SynthesizeAttributes() *map[string]interface{} {
+func (r *jsiiProxy_RepositoryCollaborators) ResetUser() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetUser",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryCollaborators) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1036,7 +817,7 @@ func (r *jsiiProxy_RepositoryFile) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) ToMetadata() interface{} {
+func (r *jsiiProxy_RepositoryCollaborators) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -1049,7 +830,7 @@ func (r *jsiiProxy_RepositoryFile) ToMetadata() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) ToString() *string {
+func (r *jsiiProxy_RepositoryCollaborators) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1062,7 +843,7 @@ func (r *jsiiProxy_RepositoryFile) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryFile) ToTerraform() interface{} {
+func (r *jsiiProxy_RepositoryCollaborators) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -10,6 +10,8 @@ import (
 
 type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	cdktf.ComplexObject
+	BypassPullRequestAllowances() BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference
+	BypassPullRequestAllowancesInput() *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +81,8 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBypassPullRequestAllowances(value *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances)
+	ResetBypassPullRequestAllowances()
 	ResetDismissalTeams()
 	ResetDismissalUsers()
 	ResetDismissStaleReviews()
@@ -98,6 +102,26 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 // The jsii proxy struct for BranchProtectionV3RequiredPullRequestReviewsOutputReference
 type jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) BypassPullRequestAllowances() BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference {
+	var returns BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference
+	_jsii_.Get(
+		j,
+		"bypassPullRequestAllowances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) BypassPullRequestAllowancesInput() *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances {
+	var returns *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances
+	_jsii_.Get(
+		j,
+		"bypassPullRequestAllowancesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) ComplexObjectIndex() interface{} {
@@ -623,6 +647,25 @@ func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) PutBypassPullRequestAllowances(value *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances) {
+	if err := b.validatePutBypassPullRequestAllowancesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putBypassPullRequestAllowances",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) ResetBypassPullRequestAllowances() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBypassPullRequestAllowances",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) ResetDismissalTeams() {
