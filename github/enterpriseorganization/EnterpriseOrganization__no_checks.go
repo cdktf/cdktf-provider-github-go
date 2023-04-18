@@ -76,6 +76,10 @@ func (j *jsiiProxy_EnterpriseOrganization) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_EnterpriseOrganization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EnterpriseOrganization) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

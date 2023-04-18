@@ -2,14 +2,14 @@ package actionssecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionssecret/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionssecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret github_actions_secret}.
 type ActionsSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsSecret interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ActionsSecret) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ActionsSecret) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsSecret) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ActionsSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSecretConfig) ActionsSecret {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret_Override(a ActionsSecret, scope constructs.Construct, id *string, config *ActionsSecretConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_ActionsSecret)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsSecret)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsSecret)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

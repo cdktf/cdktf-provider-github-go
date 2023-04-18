@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGithubRepositoryFile) validateSetBranchParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubRepositoryFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubRepositoryFile) validateSetFileParameters(val *string) error {
 	return nil
 }

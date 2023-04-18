@@ -2,14 +2,14 @@ package branch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/branch/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/branch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch github_branch}.
 type Branch interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -24,9 +24,9 @@ type Branch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Branch) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Branch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Branch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Branch) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch github_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch github_branch} Resource.
 func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Branch {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewBranch(scope constructs.Construct, id *string, config *BranchConfig) Bra
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch github_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch github_branch} Resource.
 func NewBranch_Override(b Branch, scope constructs.Construct, id *string, config *BranchConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_Branch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Branch)SetCount(val *float64) {
+func (j *jsiiProxy_Branch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

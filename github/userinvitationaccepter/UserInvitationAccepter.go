@@ -2,14 +2,14 @@ package userinvitationaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 type UserInvitationAccepter interface {
 	cdktf.TerraformResource
 	AllowEmptyId() interface{}
@@ -24,9 +24,9 @@ type UserInvitationAccepter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_UserInvitationAccepter) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_UserInvitationAccepter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserInvitationAccepter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,7 +334,7 @@ func (j *jsiiProxy_UserInvitationAccepter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) UserInvitationAccepter {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter_Override(u UserInvitationAccepter, scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) {
 	_init_.Initialize()
 
@@ -385,7 +385,10 @@ func (j *jsiiProxy_UserInvitationAccepter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserInvitationAccepter)SetCount(val *float64) {
+func (j *jsiiProxy_UserInvitationAccepter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

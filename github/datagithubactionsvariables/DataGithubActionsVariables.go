@@ -2,14 +2,14 @@ package datagithubactionsvariables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubactionsvariables/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_variables github_actions_variables}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_variables github_actions_variables}.
 type DataGithubActionsVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubActionsVariables interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataGithubActionsVariables) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubActionsVariables) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubActionsVariables) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGithubActionsVariables) Variables() DataGithubActionsVari
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_variables github_actions_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_variables github_actions_variables} Data Source.
 func NewDataGithubActionsVariables(scope constructs.Construct, id *string, config *DataGithubActionsVariablesConfig) DataGithubActionsVariables {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataGithubActionsVariables(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_variables github_actions_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_variables github_actions_variables} Data Source.
 func NewDataGithubActionsVariables_Override(d DataGithubActionsVariables, scope constructs.Construct, id *string, config *DataGithubActionsVariablesConfig) {
 	_init_.Initialize()
 
@@ -346,7 +346,10 @@ func NewDataGithubActionsVariables_Override(d DataGithubActionsVariables, scope 
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsVariables)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubActionsVariables)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

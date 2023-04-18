@@ -2,14 +2,14 @@ package datagithubrepositorymilestone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepositorymilestone/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositorymilestone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_milestone github_repository_milestone}.
 type DataGithubRepositoryMilestone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubRepositoryMilestone interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGithubRepositoryMilestone) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubRepositoryMilestone) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubRepositoryMilestone) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataGithubRepositoryMilestone) Title() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
 func NewDataGithubRepositoryMilestone(scope constructs.Construct, id *string, config *DataGithubRepositoryMilestoneConfig) DataGithubRepositoryMilestone {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataGithubRepositoryMilestone(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
 func NewDataGithubRepositoryMilestone_Override(d DataGithubRepositoryMilestone, scope constructs.Construct, id *string, config *DataGithubRepositoryMilestoneConfig) {
 	_init_.Initialize()
 
@@ -400,7 +400,10 @@ func NewDataGithubRepositoryMilestone_Override(d DataGithubRepositoryMilestone, 
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryMilestone)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRepositoryMilestone)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

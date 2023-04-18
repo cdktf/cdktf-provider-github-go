@@ -2,14 +2,14 @@ package datagithubactionspublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubactionspublickey/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionspublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_public_key github_actions_public_key}.
 type DataGithubActionsPublicKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubActionsPublicKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubActionsPublicKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGithubActionsPublicKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_public_key github_actions_public_key} Data Source.
 func NewDataGithubActionsPublicKey(scope constructs.Construct, id *string, config *DataGithubActionsPublicKeyConfig) DataGithubActionsPublicKey {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGithubActionsPublicKey(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_public_key github_actions_public_key} Data Source.
 func NewDataGithubActionsPublicKey_Override(d DataGithubActionsPublicKey, scope constructs.Construct, id *string, config *DataGithubActionsPublicKeyConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataGithubActionsPublicKey_Override(d DataGithubActionsPublicKey, scope 
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsPublicKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubActionsPublicKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

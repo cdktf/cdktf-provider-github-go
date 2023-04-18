@@ -112,6 +112,10 @@ func (j *jsiiProxy_Repository) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Repository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repository) validateSetDefaultBranchParameters(val *string) error {
 	return nil
 }

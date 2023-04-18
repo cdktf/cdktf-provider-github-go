@@ -2,14 +2,14 @@ package datagithubrepositorywebhooks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepositorywebhooks/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositorywebhooks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_webhooks github_repository_webhooks}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_webhooks github_repository_webhooks}.
 type DataGithubRepositoryWebhooks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubRepositoryWebhooks interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataGithubRepositoryWebhooks) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubRepositoryWebhooks) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubRepositoryWebhooks) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGithubRepositoryWebhooks) Webhooks() DataGithubRepository
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_webhooks github_repository_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
 func NewDataGithubRepositoryWebhooks(scope constructs.Construct, id *string, config *DataGithubRepositoryWebhooksConfig) DataGithubRepositoryWebhooks {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGithubRepositoryWebhooks(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_webhooks github_repository_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
 func NewDataGithubRepositoryWebhooks_Override(d DataGithubRepositoryWebhooks, scope constructs.Construct, id *string, config *DataGithubRepositoryWebhooksConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataGithubRepositoryWebhooks_Override(d DataGithubRepositoryWebhooks, sc
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepositoryWebhooks)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRepositoryWebhooks)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

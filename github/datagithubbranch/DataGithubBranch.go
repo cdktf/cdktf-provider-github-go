@@ -2,14 +2,14 @@ package datagithubbranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubbranch/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubbranch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/branch github_branch}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/branch github_branch}.
 type DataGithubBranch interface {
 	cdktf.TerraformDataSource
 	Branch() *string
@@ -20,9 +20,9 @@ type DataGithubBranch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataGithubBranch) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubBranch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubBranch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,7 +337,7 @@ func (j *jsiiProxy_DataGithubBranch) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/branch github_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/branch github_branch} Data Source.
 func NewDataGithubBranch(scope constructs.Construct, id *string, config *DataGithubBranchConfig) DataGithubBranch {
 	_init_.Initialize()
 
@@ -355,7 +355,7 @@ func NewDataGithubBranch(scope constructs.Construct, id *string, config *DataGit
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/branch github_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/branch github_branch} Data Source.
 func NewDataGithubBranch_Override(d DataGithubBranch, scope constructs.Construct, id *string, config *DataGithubBranchConfig) {
 	_init_.Initialize()
 
@@ -377,7 +377,10 @@ func (j *jsiiProxy_DataGithubBranch)SetBranch(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGithubBranch)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubBranch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

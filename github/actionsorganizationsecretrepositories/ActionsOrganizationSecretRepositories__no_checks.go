@@ -68,6 +68,10 @@ func (j *jsiiProxy_ActionsOrganizationSecretRepositories) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_ActionsOrganizationSecretRepositories) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsOrganizationSecretRepositories) validateSetIdParameters(val *string) error {
 	return nil
 }

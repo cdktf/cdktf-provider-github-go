@@ -64,6 +64,10 @@ func validateDataGithubExternalGroups_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubExternalGroups) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubExternalGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

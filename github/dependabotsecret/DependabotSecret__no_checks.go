@@ -68,6 +68,10 @@ func (j *jsiiProxy_DependabotSecret) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DependabotSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DependabotSecret) validateSetEncryptedValueParameters(val *string) error {
 	return nil
 }

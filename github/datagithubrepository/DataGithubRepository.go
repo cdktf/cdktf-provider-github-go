@@ -2,14 +2,14 @@ package datagithubrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository github_repository}.
 type DataGithubRepository interface {
 	cdktf.TerraformDataSource
 	AllowAutoMerge() cdktf.IResolvable
@@ -22,9 +22,9 @@ type DataGithubRepository interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultBranch() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -37,6 +37,7 @@ type DataGithubRepository interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	Fork() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -211,8 +212,8 @@ func (j *jsiiProxy_DataGithubRepository) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubRepository) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubRepository) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -266,6 +267,16 @@ func (j *jsiiProxy_DataGithubRepository) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) Fork() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"fork",
 		&returns,
 	)
 	return returns
@@ -662,7 +673,7 @@ func (j *jsiiProxy_DataGithubRepository) Visibility() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository(scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) DataGithubRepository {
 	_init_.Initialize()
 
@@ -680,7 +691,7 @@ func NewDataGithubRepository(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository_Override(d DataGithubRepository, scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) {
 	_init_.Initialize()
 
@@ -691,7 +702,10 @@ func NewDataGithubRepository_Override(d DataGithubRepository, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataGithubRepository)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRepository)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

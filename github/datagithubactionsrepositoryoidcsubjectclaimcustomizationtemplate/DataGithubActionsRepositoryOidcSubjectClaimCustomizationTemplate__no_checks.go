@@ -64,6 +64,10 @@ func validateDataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate_Is
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package branchprotectionv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/branchprotectionv3/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/branchprotectionv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_protection_v3 github_branch_protection_v3}.
 type BranchProtectionV3 interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -24,9 +24,9 @@ type BranchProtectionV3 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_BranchProtectionV3) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_BranchProtectionV3) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BranchProtectionV3) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -487,7 +487,7 @@ func (j *jsiiProxy_BranchProtectionV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
 func NewBranchProtectionV3(scope constructs.Construct, id *string, config *BranchProtectionV3Config) BranchProtectionV3 {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewBranchProtectionV3(scope constructs.Construct, id *string, config *Branc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
 func NewBranchProtectionV3_Override(b BranchProtectionV3, scope constructs.Construct, id *string, config *BranchProtectionV3Config) {
 	_init_.Initialize()
 
@@ -538,7 +538,10 @@ func (j *jsiiProxy_BranchProtectionV3)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BranchProtectionV3)SetCount(val *float64) {
+func (j *jsiiProxy_BranchProtectionV3)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package repository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/repository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/repository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -45,9 +45,9 @@ type Repository interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultBranch() *string
 	SetDefaultBranch(val *string)
 	DefaultBranchInput() *string
@@ -435,8 +435,8 @@ func (j *jsiiProxy_Repository) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Repository) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Repository) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1176,7 +1176,7 @@ func (j *jsiiProxy_Repository) VulnerabilityAlertsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1194,7 +1194,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 
@@ -1304,7 +1304,10 @@ func (j *jsiiProxy_Repository)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Repository)SetCount(val *float64) {
+func (j *jsiiProxy_Repository)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

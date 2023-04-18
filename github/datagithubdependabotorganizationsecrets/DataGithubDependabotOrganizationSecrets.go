@@ -2,14 +2,14 @@ package datagithubdependabotorganizationsecrets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubdependabotorganizationsecrets/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubdependabotorganizationsecrets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_organization_secrets github_dependabot_organization_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/dependabot_organization_secrets github_dependabot_organization_secrets}.
 type DataGithubDependabotOrganizationSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubDependabotOrganizationSecrets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/dependabot_organization_secrets github_dependabot_organization_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/dependabot_organization_secrets github_dependabot_organization_secrets} Data Source.
 func NewDataGithubDependabotOrganizationSecrets(scope constructs.Construct, id *string, config *DataGithubDependabotOrganizationSecretsConfig) DataGithubDependabotOrganizationSecrets {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubDependabotOrganizationSecrets(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/dependabot_organization_secrets github_dependabot_organization_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/dependabot_organization_secrets github_dependabot_organization_secrets} Data Source.
 func NewDataGithubDependabotOrganizationSecrets_Override(d DataGithubDependabotOrganizationSecrets, scope constructs.Construct, id *string, config *DataGithubDependabotOrganizationSecretsConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataGithubDependabotOrganizationSecrets_Override(d DataGithubDependabotO
 	)
 }
 
-func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubDependabotOrganizationSecrets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

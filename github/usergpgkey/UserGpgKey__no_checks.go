@@ -72,6 +72,10 @@ func (j *jsiiProxy_UserGpgKey) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_UserGpgKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_UserGpgKey) validateSetIdParameters(val *string) error {
 	return nil
 }

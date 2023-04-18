@@ -2,14 +2,14 @@ package actionsvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsvariable/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_variable github_actions_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable github_actions_variable}.
 type ActionsVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ActionsVariable) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ActionsVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ActionsVariable) VariableNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_variable github_actions_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable github_actions_variable} Resource.
 func NewActionsVariable(scope constructs.Construct, id *string, config *ActionsVariableConfig) ActionsVariable {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewActionsVariable(scope constructs.Construct, id *string, config *ActionsV
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_variable github_actions_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable github_actions_variable} Resource.
 func NewActionsVariable_Override(a ActionsVariable, scope constructs.Construct, id *string, config *ActionsVariableConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_ActionsVariable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsVariable)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

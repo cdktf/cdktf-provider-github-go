@@ -64,6 +64,10 @@ func validateDataGithubDependabotSecrets_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubDependabotSecrets) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubDependabotSecrets) validateSetFullNameParameters(val *string) error {
 	return nil
 }

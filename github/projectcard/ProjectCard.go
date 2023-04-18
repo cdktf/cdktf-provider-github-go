@@ -2,14 +2,14 @@ package projectcard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card}.
 type ProjectCard interface {
 	cdktf.TerraformResource
 	CardId() *float64
@@ -31,9 +31,9 @@ type ProjectCard interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -222,8 +222,8 @@ func (j *jsiiProxy_ProjectCard) ContentTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectCard) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectCard) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ProjectCard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card} Resource.
 func NewProjectCard(scope constructs.Construct, id *string, config *ProjectCardConfig) ProjectCard {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewProjectCard(scope constructs.Construct, id *string, config *ProjectCardC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card} Resource.
 func NewProjectCard_Override(p ProjectCard, scope constructs.Construct, id *string, config *ProjectCardConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_ProjectCard)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectCard)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectCard)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

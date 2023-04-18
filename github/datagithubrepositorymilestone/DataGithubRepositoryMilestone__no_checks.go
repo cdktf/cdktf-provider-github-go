@@ -64,6 +64,10 @@ func validateDataGithubRepositoryMilestone_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubRepositoryMilestone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubRepositoryMilestone) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datagithubipranges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubipranges/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubipranges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ip_ranges github_ip_ranges}.
 type DataGithubIpRanges interface {
 	cdktf.TerraformDataSource
 	Actions() *[]*string
@@ -23,9 +23,9 @@ type DataGithubIpRanges interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Dependabot() *[]*string
 	DependabotIpv4() *[]*string
 	DependabotIpv6() *[]*string
@@ -201,8 +201,8 @@ func (j *jsiiProxy_DataGithubIpRanges) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubIpRanges) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubIpRanges) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataGithubIpRanges) WebIpv6() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
 func NewDataGithubIpRanges(scope constructs.Construct, id *string, config *DataGithubIpRangesConfig) DataGithubIpRanges {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewDataGithubIpRanges(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
 func NewDataGithubIpRanges_Override(d DataGithubIpRanges, scope constructs.Construct, id *string, config *DataGithubIpRangesConfig) {
 	_init_.Initialize()
 
@@ -551,7 +551,10 @@ func NewDataGithubIpRanges_Override(d DataGithubIpRanges, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataGithubIpRanges)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubIpRanges)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

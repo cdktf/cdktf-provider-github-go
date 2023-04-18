@@ -68,6 +68,10 @@ func (j *jsiiProxy_RepositoryDeployKey) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryDeployKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryDeployKey) validateSetIdParameters(val *string) error {
 	return nil
 }

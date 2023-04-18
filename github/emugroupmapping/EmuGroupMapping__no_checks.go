@@ -68,6 +68,10 @@ func (j *jsiiProxy_EmuGroupMapping) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_EmuGroupMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmuGroupMapping) validateSetGroupIdParameters(val *float64) error {
 	return nil
 }

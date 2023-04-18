@@ -2,14 +2,14 @@ package datagithubactionsregistrationtoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubactionsregistrationtoken/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsregistrationtoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
 type DataGithubActionsRegistrationToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubActionsRegistrationToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataGithubActionsRegistrationToken) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubActionsRegistrationToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubActionsRegistrationToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGithubActionsRegistrationToken) Token() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) DataGithubActionsRegistrationToken {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken_Override(d DataGithubActionsRegistrationToken, scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataGithubActionsRegistrationToken_Override(d DataGithubActionsRegistrat
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsRegistrationToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubActionsRegistrationToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

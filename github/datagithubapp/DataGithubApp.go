@@ -2,14 +2,14 @@ package datagithubapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubapp/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/app github_app}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/app github_app}.
 type DataGithubApp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGithubApp) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,7 +314,7 @@ func (j *jsiiProxy_DataGithubApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/app github_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/app github_app} Data Source.
 func NewDataGithubApp(scope constructs.Construct, id *string, config *DataGithubAppConfig) DataGithubApp {
 	_init_.Initialize()
 
@@ -332,7 +332,7 @@ func NewDataGithubApp(scope constructs.Construct, id *string, config *DataGithub
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/app github_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/app github_app} Data Source.
 func NewDataGithubApp_Override(d DataGithubApp, scope constructs.Construct, id *string, config *DataGithubAppConfig) {
 	_init_.Initialize()
 
@@ -343,7 +343,10 @@ func NewDataGithubApp_Override(d DataGithubApp, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataGithubApp)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

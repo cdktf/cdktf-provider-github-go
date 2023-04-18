@@ -2,14 +2,14 @@ package appinstallationrepositories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories github_app_installation_repositories}.
 type AppInstallationRepositories interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AppInstallationRepositories interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_AppInstallationRepositories) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_AppInstallationRepositories) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppInstallationRepositories) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AppInstallationRepositories) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories github_app_installation_repositories} Resource.
 func NewAppInstallationRepositories(scope constructs.Construct, id *string, config *AppInstallationRepositoriesConfig) AppInstallationRepositories {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAppInstallationRepositories(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories github_app_installation_repositories} Resource.
 func NewAppInstallationRepositories_Override(a AppInstallationRepositories, scope constructs.Construct, id *string, config *AppInstallationRepositoriesConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_AppInstallationRepositories)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppInstallationRepositories)SetCount(val *float64) {
+func (j *jsiiProxy_AppInstallationRepositories)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

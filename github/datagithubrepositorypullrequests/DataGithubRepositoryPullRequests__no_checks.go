@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) validateSetBaseRepositoryPa
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubRepositoryPullRequests) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubRepositoryPullRequests) validateSetHeadRefParameters(val *string) error {
 	return nil
 }

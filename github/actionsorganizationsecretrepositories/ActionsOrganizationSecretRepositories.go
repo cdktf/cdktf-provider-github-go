@@ -2,14 +2,14 @@ package actionsorganizationsecretrepositories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationsecretrepositories/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationsecretrepositories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
 type ActionsOrganizationSecretRepositories interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsOrganizationSecretRepositories interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ActionsOrganizationSecretRepositories) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecretRepositories) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsOrganizationSecretRepositories) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ActionsOrganizationSecretRepositories) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
 func NewActionsOrganizationSecretRepositories(scope constructs.Construct, id *string, config *ActionsOrganizationSecretRepositoriesConfig) ActionsOrganizationSecretRepositories {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewActionsOrganizationSecretRepositories(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
 func NewActionsOrganizationSecretRepositories_Override(a ActionsOrganizationSecretRepositories, scope constructs.Construct, id *string, config *ActionsOrganizationSecretRepositoriesConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_ActionsOrganizationSecretRepositories)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationSecretRepositories)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsOrganizationSecretRepositories)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

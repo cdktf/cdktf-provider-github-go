@@ -2,14 +2,14 @@ package actionsorganizationoidcsubjectclaimcustomizationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationoidcsubjectclaimcustomizationtemplate/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationoidcsubjectclaimcustomizationtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}.
 type ActionsOrganizationOidcSubjectClaimCustomizationTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsOrganizationOidcSubjectClaimCustomizationTemplate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate) Con
 	return returns
 }
 
-func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate) Ter
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource.
 func NewActionsOrganizationOidcSubjectClaimCustomizationTemplate(scope constructs.Construct, id *string, config *ActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig) ActionsOrganizationOidcSubjectClaimCustomizationTemplate {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewActionsOrganizationOidcSubjectClaimCustomizationTemplate(scope construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource.
 func NewActionsOrganizationOidcSubjectClaimCustomizationTemplate_Override(a ActionsOrganizationOidcSubjectClaimCustomizationTemplate, scope constructs.Construct, id *string, config *ActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate)SetC
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsOrganizationOidcSubjectClaimCustomizationTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_RepositoryAutolinkReference) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryAutolinkReference) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryAutolinkReference) validateSetIdParameters(val *string) error {
 	return nil
 }

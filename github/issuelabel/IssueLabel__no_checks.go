@@ -72,6 +72,10 @@ func (j *jsiiProxy_IssueLabel) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_IssueLabel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IssueLabel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package actionsrunnergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrunnergroup/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrunnergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_runner_group github_actions_runner_group}.
 type ActionsRunnerGroup interface {
 	cdktf.TerraformResource
 	AllowsPublicRepositories() cdktf.IResolvable
@@ -22,9 +22,9 @@ type ActionsRunnerGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Default() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ActionsRunnerGroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ActionsRunnerGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsRunnerGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -470,7 +470,7 @@ func (j *jsiiProxy_ActionsRunnerGroup) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) ActionsRunnerGroup {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *Actio
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup_Override(a ActionsRunnerGroup, scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) {
 	_init_.Initialize()
 
@@ -510,7 +510,10 @@ func (j *jsiiProxy_ActionsRunnerGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsRunnerGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsRunnerGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

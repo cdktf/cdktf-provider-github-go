@@ -2,14 +2,14 @@ package datagithuborganizationteamsyncgroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationteamsyncgroups/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationteamsyncgroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups}.
 type DataGithubOrganizationTeamSyncGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubOrganizationTeamSyncGroups interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
 func NewDataGithubOrganizationTeamSyncGroups(scope constructs.Construct, id *string, config *DataGithubOrganizationTeamSyncGroupsConfig) DataGithubOrganizationTeamSyncGroups {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubOrganizationTeamSyncGroups(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
 func NewDataGithubOrganizationTeamSyncGroups_Override(d DataGithubOrganizationTeamSyncGroups, scope constructs.Construct, id *string, config *DataGithubOrganizationTeamSyncGroupsConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataGithubOrganizationTeamSyncGroups_Override(d DataGithubOrganizationTe
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

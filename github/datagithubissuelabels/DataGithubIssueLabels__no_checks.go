@@ -64,6 +64,10 @@ func validateDataGithubIssueLabels_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubIssueLabels) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubIssueLabels) validateSetIdParameters(val *string) error {
 	return nil
 }

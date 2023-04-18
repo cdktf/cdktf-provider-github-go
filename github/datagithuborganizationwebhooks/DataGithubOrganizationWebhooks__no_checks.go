@@ -64,6 +64,10 @@ func validateDataGithubOrganizationWebhooks_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganizationWebhooks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubOrganizationWebhooks) validateSetIdParameters(val *string) error {
 	return nil
 }

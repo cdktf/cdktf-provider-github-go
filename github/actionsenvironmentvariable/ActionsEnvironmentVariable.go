@@ -2,14 +2,14 @@ package actionsenvironmentvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsenvironmentvariable/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsenvironmentvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_variable github_actions_environment_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
 type ActionsEnvironmentVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsEnvironmentVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ActionsEnvironmentVariable) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_ActionsEnvironmentVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsEnvironmentVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ActionsEnvironmentVariable) VariableNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) ActionsEnvironmentVariable {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable_Override(a ActionsEnvironmentVariable, scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) {
 	_init_.Initialize()
 
@@ -440,7 +440,10 @@ func (j *jsiiProxy_ActionsEnvironmentVariable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsEnvironmentVariable)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsEnvironmentVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

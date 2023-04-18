@@ -2,14 +2,14 @@ package repositoryfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file github_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -37,9 +37,9 @@ type RepositoryFile interface {
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -277,8 +277,8 @@ func (j *jsiiProxy_RepositoryFile) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryFile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RepositoryFile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,7 +508,7 @@ func (j *jsiiProxy_RepositoryFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file github_repository_file} Resource.
 func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file github_repository_file} Resource.
 func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
 	_init_.Initialize()
 
@@ -603,7 +603,10 @@ func (j *jsiiProxy_RepositoryFile)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryFile)SetCount(val *float64) {
+func (j *jsiiProxy_RepositoryFile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

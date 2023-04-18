@@ -76,6 +76,10 @@ func (j *jsiiProxy_RepositoryWebhook) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryWebhook) validateSetEventsParameters(val *[]*string) error {
 	return nil
 }

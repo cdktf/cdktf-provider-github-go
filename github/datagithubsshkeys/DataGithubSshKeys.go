@@ -2,14 +2,14 @@ package datagithubsshkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubsshkeys/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubsshkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/ssh_keys github_ssh_keys}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ssh_keys github_ssh_keys}.
 type DataGithubSshKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubSshKeys interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGithubSshKeys) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubSshKeys) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubSshKeys) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubSshKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ssh_keys github_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
 func NewDataGithubSshKeys(scope constructs.Construct, id *string, config *DataGithubSshKeysConfig) DataGithubSshKeys {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubSshKeys(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ssh_keys github_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
 func NewDataGithubSshKeys_Override(d DataGithubSshKeys, scope constructs.Construct, id *string, config *DataGithubSshKeysConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataGithubSshKeys_Override(d DataGithubSshKeys, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataGithubSshKeys)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubSshKeys)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package dependabotorganizationsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/dependabotorganizationsecret/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotorganizationsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret github_dependabot_organization_secret}.
 type DependabotOrganizationSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DependabotOrganizationSecret interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DependabotOrganizationSecret) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecret) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DependabotOrganizationSecret) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DependabotOrganizationSecret) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret github_dependabot_organization_secret} Resource.
 func NewDependabotOrganizationSecret(scope constructs.Construct, id *string, config *DependabotOrganizationSecretConfig) DependabotOrganizationSecret {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDependabotOrganizationSecret(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret github_dependabot_organization_secret} Resource.
 func NewDependabotOrganizationSecret_Override(d DependabotOrganizationSecret, scope constructs.Construct, id *string, config *DependabotOrganizationSecretConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_DependabotOrganizationSecret)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DependabotOrganizationSecret)SetCount(val *float64) {
+func (j *jsiiProxy_DependabotOrganizationSecret)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package actionsorganizationvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable github_actions_organization_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable github_actions_organization_variable}.
 type ActionsOrganizationVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsOrganizationVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ActionsOrganizationVariable) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ActionsOrganizationVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsOrganizationVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ActionsOrganizationVariable) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable github_actions_organization_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable github_actions_organization_variable} Resource.
 func NewActionsOrganizationVariable(scope constructs.Construct, id *string, config *ActionsOrganizationVariableConfig) ActionsOrganizationVariable {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewActionsOrganizationVariable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable github_actions_organization_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable github_actions_organization_variable} Resource.
 func NewActionsOrganizationVariable_Override(a ActionsOrganizationVariable, scope constructs.Construct, id *string, config *ActionsOrganizationVariableConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_ActionsOrganizationVariable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsOrganizationVariable)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsOrganizationVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

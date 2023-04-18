@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGithubCollaborators) validateSetAffiliationParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubCollaborators) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubCollaborators) validateSetIdParameters(val *string) error {
 	return nil
 }

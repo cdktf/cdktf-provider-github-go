@@ -2,14 +2,14 @@ package datagithuborganizationteams
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationteams/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationteams/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_teams github_organization_teams}.
 type DataGithubOrganizationTeams interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubOrganizationTeams interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeams) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubOrganizationTeams) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_teams github_organization_teams} Data Source.
 func NewDataGithubOrganizationTeams(scope constructs.Construct, id *string, config *DataGithubOrganizationTeamsConfig) DataGithubOrganizationTeams {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataGithubOrganizationTeams(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_teams github_organization_teams} Data Source.
 func NewDataGithubOrganizationTeams_Override(d DataGithubOrganizationTeams, scope constructs.Construct, id *string, config *DataGithubOrganizationTeamsConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataGithubOrganizationTeams_Override(d DataGithubOrganizationTeams, scop
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationTeams)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubOrganizationTeams)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

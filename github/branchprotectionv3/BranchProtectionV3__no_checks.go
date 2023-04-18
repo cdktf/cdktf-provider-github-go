@@ -84,6 +84,10 @@ func (j *jsiiProxy_BranchProtectionV3) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionV3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionV3) validateSetEnforceAdminsParameters(val interface{}) error {
 	return nil
 }

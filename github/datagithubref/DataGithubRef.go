@@ -2,14 +2,14 @@ package datagithubref
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubref/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubref/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref github_ref}.
 type DataGithubRef interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubRef interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -42,6 +42,9 @@ type DataGithubRef interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Owner() *string
+	SetOwner(val *string)
+	OwnerInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -90,6 +93,7 @@ type DataGithubRef interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwner()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -125,8 +129,8 @@ func (j *jsiiProxy_DataGithubRef) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubRef) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubRef) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -220,6 +224,26 @@ func (j *jsiiProxy_DataGithubRef) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRef) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRef) OwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerInput",
 		&returns,
 	)
 	return returns
@@ -326,7 +350,7 @@ func (j *jsiiProxy_DataGithubRef) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ref github_ref} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref github_ref} Data Source.
 func NewDataGithubRef(scope constructs.Construct, id *string, config *DataGithubRefConfig) DataGithubRef {
 	_init_.Initialize()
 
@@ -344,7 +368,7 @@ func NewDataGithubRef(scope constructs.Construct, id *string, config *DataGithub
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/ref github_ref} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref github_ref} Data Source.
 func NewDataGithubRef_Override(d DataGithubRef, scope constructs.Construct, id *string, config *DataGithubRefConfig) {
 	_init_.Initialize()
 
@@ -355,7 +379,10 @@ func NewDataGithubRef_Override(d DataGithubRef, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataGithubRef)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubRef)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -397,6 +424,17 @@ func (j *jsiiProxy_DataGithubRef)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubRef)SetOwner(val *string) {
+	if err := j.validateSetOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"owner",
 		val,
 	)
 }
@@ -709,6 +747,14 @@ func (d *jsiiProxy_DataGithubRef) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubRef) ResetOwner() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOwner",
 		nil, // no parameters
 	)
 }

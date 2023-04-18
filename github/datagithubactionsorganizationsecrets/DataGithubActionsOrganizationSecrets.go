@@ -2,14 +2,14 @@ package datagithubactionsorganizationsecrets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubactionsorganizationsecrets/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsorganizationsecrets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_secrets github_actions_organization_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_secrets github_actions_organization_secrets}.
 type DataGithubActionsOrganizationSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubActionsOrganizationSecrets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGithubActionsOrganizationSecrets) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubActionsOrganizationSecrets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubActionsOrganizationSecrets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubActionsOrganizationSecrets) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_organization_secrets github_actions_organization_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_secrets github_actions_organization_secrets} Data Source.
 func NewDataGithubActionsOrganizationSecrets(scope constructs.Construct, id *string, config *DataGithubActionsOrganizationSecretsConfig) DataGithubActionsOrganizationSecrets {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubActionsOrganizationSecrets(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_organization_secrets github_actions_organization_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_secrets github_actions_organization_secrets} Data Source.
 func NewDataGithubActionsOrganizationSecrets_Override(d DataGithubActionsOrganizationSecrets, scope constructs.Construct, id *string, config *DataGithubActionsOrganizationSecretsConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataGithubActionsOrganizationSecrets_Override(d DataGithubActionsOrganiz
 	)
 }
 
-func (j *jsiiProxy_DataGithubActionsOrganizationSecrets)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubActionsOrganizationSecrets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package organizationblock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/organizationblock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block github_organization_block}.
 type OrganizationBlock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type OrganizationBlock interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_OrganizationBlock) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationBlock) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrganizationBlock) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,7 +320,7 @@ func (j *jsiiProxy_OrganizationBlock) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block github_organization_block} Resource.
 func NewOrganizationBlock(scope constructs.Construct, id *string, config *OrganizationBlockConfig) OrganizationBlock {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewOrganizationBlock(scope constructs.Construct, id *string, config *Organi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block github_organization_block} Resource.
 func NewOrganizationBlock_Override(o OrganizationBlock, scope constructs.Construct, id *string, config *OrganizationBlockConfig) {
 	_init_.Initialize()
 
@@ -360,7 +360,10 @@ func (j *jsiiProxy_OrganizationBlock)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationBlock)SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationBlock)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

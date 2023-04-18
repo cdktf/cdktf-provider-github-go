@@ -2,14 +2,14 @@ package actionsenvironmentsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/actionsenvironmentsecret/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/actionsenvironmentsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_secret github_actions_environment_secret}.
 type ActionsEnvironmentSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ActionsEnvironmentSecret interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ActionsEnvironmentSecret) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ActionsEnvironmentSecret) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ActionsEnvironmentSecret) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ActionsEnvironmentSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
 func NewActionsEnvironmentSecret(scope constructs.Construct, id *string, config *ActionsEnvironmentSecretConfig) ActionsEnvironmentSecret {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewActionsEnvironmentSecret(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
 func NewActionsEnvironmentSecret_Override(a ActionsEnvironmentSecret, scope constructs.Construct, id *string, config *ActionsEnvironmentSecretConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_ActionsEnvironmentSecret)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ActionsEnvironmentSecret)SetCount(val *float64) {
+func (j *jsiiProxy_ActionsEnvironmentSecret)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

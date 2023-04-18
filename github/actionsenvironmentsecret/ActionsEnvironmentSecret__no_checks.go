@@ -68,6 +68,10 @@ func (j *jsiiProxy_ActionsEnvironmentSecret) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ActionsEnvironmentSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsEnvironmentSecret) validateSetEncryptedValueParameters(val *string) error {
 	return nil
 }

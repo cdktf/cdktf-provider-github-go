@@ -2,14 +2,14 @@ package usergpgkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/usergpgkey/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/usergpgkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key github_user_gpg_key}.
 type UserGpgKey interface {
 	cdktf.TerraformResource
 	ArmoredPublicKey() *string
@@ -24,9 +24,9 @@ type UserGpgKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_UserGpgKey) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserGpgKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_UserGpgKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -331,7 +331,7 @@ func (j *jsiiProxy_UserGpgKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyConfig) UserGpgKey {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey_Override(u UserGpgKey, scope constructs.Construct, id *string, config *UserGpgKeyConfig) {
 	_init_.Initialize()
 
@@ -382,7 +382,10 @@ func (j *jsiiProxy_UserGpgKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserGpgKey)SetCount(val *float64) {
+func (j *jsiiProxy_UserGpgKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

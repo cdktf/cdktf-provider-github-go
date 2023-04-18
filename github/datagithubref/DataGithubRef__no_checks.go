@@ -64,11 +64,19 @@ func validateDataGithubRef_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubRef) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubRef) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataGithubRef) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGithubRef) validateSetOwnerParameters(val *string) error {
 	return nil
 }
 

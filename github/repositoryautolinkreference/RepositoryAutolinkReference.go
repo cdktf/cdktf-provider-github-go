@@ -2,14 +2,14 @@ package repositoryautolinkreference
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference github_repository_autolink_reference}.
 type RepositoryAutolinkReference interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type RepositoryAutolinkReference interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_RepositoryAutolinkReference) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryAutolinkReference) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RepositoryAutolinkReference) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_RepositoryAutolinkReference) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference github_repository_autolink_reference} Resource.
 func NewRepositoryAutolinkReference(scope constructs.Construct, id *string, config *RepositoryAutolinkReferenceConfig) RepositoryAutolinkReference {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewRepositoryAutolinkReference(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference github_repository_autolink_reference} Resource.
 func NewRepositoryAutolinkReference_Override(r RepositoryAutolinkReference, scope constructs.Construct, id *string, config *RepositoryAutolinkReferenceConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_RepositoryAutolinkReference)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryAutolinkReference)SetCount(val *float64) {
+func (j *jsiiProxy_RepositoryAutolinkReference)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

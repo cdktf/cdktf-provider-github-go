@@ -64,6 +64,10 @@ func validateDataGithubActionsRegistrationToken_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubActionsRegistrationToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubActionsRegistrationToken) validateSetIdParameters(val *string) error {
 	return nil
 }

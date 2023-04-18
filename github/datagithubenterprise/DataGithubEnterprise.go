@@ -2,14 +2,14 @@ package datagithubenterprise
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/d/enterprise github_enterprise}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise github_enterprise}.
 type DataGithubEnterprise interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGithubEnterprise interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGithubEnterprise) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubEnterprise) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGithubEnterprise) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataGithubEnterprise) Url() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/enterprise github_enterprise} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise github_enterprise} Data Source.
 func NewDataGithubEnterprise(scope constructs.Construct, id *string, config *DataGithubEnterpriseConfig) DataGithubEnterprise {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataGithubEnterprise(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/d/enterprise github_enterprise} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise github_enterprise} Data Source.
 func NewDataGithubEnterprise_Override(d DataGithubEnterprise, scope constructs.Construct, id *string, config *DataGithubEnterpriseConfig) {
 	_init_.Initialize()
 
@@ -354,7 +354,10 @@ func NewDataGithubEnterprise_Override(d DataGithubEnterprise, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataGithubEnterprise)SetCount(val *float64) {
+func (j *jsiiProxy_DataGithubEnterprise)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) valid
 	return nil
 }
 
+func (j *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateSetIdParameters(val *string) error {
 	return nil
 }

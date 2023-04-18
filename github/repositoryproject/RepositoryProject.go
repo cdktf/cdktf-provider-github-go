@@ -2,14 +2,14 @@ package repositoryproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryproject/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project github_repository_project}.
 type RepositoryProject interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -24,9 +24,9 @@ type RepositoryProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_RepositoryProject) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RepositoryProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_RepositoryProject) Url() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject(scope constructs.Construct, id *string, config *RepositoryProjectConfig) RepositoryProject {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewRepositoryProject(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject_Override(r RepositoryProject, scope constructs.Construct, id *string, config *RepositoryProjectConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_RepositoryProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RepositoryProject)SetCount(val *float64) {
+func (j *jsiiProxy_RepositoryProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

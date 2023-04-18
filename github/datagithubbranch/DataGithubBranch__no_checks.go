@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGithubBranch) validateSetBranchParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubBranch) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubBranch) validateSetIdParameters(val *string) error {
 	return nil
 }
