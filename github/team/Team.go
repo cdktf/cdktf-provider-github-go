@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team github_team}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team github_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,9 +60,9 @@ type Team interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeId() *string
-	ParentTeamId() *float64
-	SetParentTeamId(val *float64)
-	ParentTeamIdInput() *float64
+	ParentTeamId() *string
+	SetParentTeamId(val *string)
+	ParentTeamIdInput() *string
 	Privacy() *string
 	SetPrivacy(val *string)
 	PrivacyInput() *string
@@ -362,8 +362,8 @@ func (j *jsiiProxy_Team) NodeId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Team) ParentTeamId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Team) ParentTeamId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"parentTeamId",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_Team) ParentTeamId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Team) ParentTeamIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Team) ParentTeamIdInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"parentTeamIdInput",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_Team) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team github_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team github_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func (j *jsiiProxy_Team)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Team)SetParentTeamId(val *float64) {
+func (j *jsiiProxy_Team)SetParentTeamId(val *string) {
 	if err := j.validateSetParentTeamIdParameters(val); err != nil {
 		panic(err)
 	}

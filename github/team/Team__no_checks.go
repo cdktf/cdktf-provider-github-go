@@ -96,7 +96,7 @@ func (j *jsiiProxy_Team) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Team) validateSetParentTeamIdParameters(val *float64) error {
+func (j *jsiiProxy_Team) validateSetParentTeamIdParameters(val *string) error {
 	return nil
 }
 

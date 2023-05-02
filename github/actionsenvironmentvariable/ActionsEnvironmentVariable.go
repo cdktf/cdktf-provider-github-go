@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
 type ActionsEnvironmentVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ActionsEnvironmentVariable) VariableNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) ActionsEnvironmentVariable {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable_Override(a ActionsEnvironmentVariable, scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) {
 	_init_.Initialize()
 
