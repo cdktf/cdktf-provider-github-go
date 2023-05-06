@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions github_actions_repository_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_repository_permissions github_actions_repository_permissions}.
 type ActionsRepositoryPermissions interface {
 	cdktf.TerraformResource
 	AllowedActions() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ActionsRepositoryPermissions) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource.
 func NewActionsRepositoryPermissions(scope constructs.Construct, id *string, config *ActionsRepositoryPermissionsConfig) ActionsRepositoryPermissions {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewActionsRepositoryPermissions(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource.
 func NewActionsRepositoryPermissions_Override(a ActionsRepositoryPermissions, scope constructs.Construct, id *string, config *ActionsRepositoryPermissionsConfig) {
 	_init_.Initialize()
 

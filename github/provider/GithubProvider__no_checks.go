@@ -32,6 +32,10 @@ func (j *jsiiProxy_GithubProvider) validateSetInsecureParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GithubProvider) validateSetParallelRequestsParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGithubProviderParameters(scope constructs.Construct, id *string, config *GithubProviderConfig) error {
 	return nil
 }

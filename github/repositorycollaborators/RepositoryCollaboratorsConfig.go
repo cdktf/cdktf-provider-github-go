@@ -19,20 +19,20 @@ type RepositoryCollaboratorsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// team block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
 	Team interface{} `field:"optional" json:"team" yaml:"team"`
 	// user block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
 	User interface{} `field:"optional" json:"user" yaml:"user"`
 }
 

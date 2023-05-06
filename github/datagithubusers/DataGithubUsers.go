@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/users github_users}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users github_users}.
 type DataGithubUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataGithubUsers) UsernamesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/users github_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users github_users} Data Source.
 func NewDataGithubUsers(scope constructs.Construct, id *string, config *DataGithubUsersConfig) DataGithubUsers {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataGithubUsers(scope constructs.Construct, id *string, config *DataGith
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/users github_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users github_users} Data Source.
 func NewDataGithubUsers_Override(d DataGithubUsers, scope constructs.Construct, id *string, config *DataGithubUsersConfig) {
 	_init_.Initialize()
 

@@ -21,26 +21,26 @@ type ActionsOrganizationVariableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Value of the variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_organization_variable#value ActionsOrganizationVariable#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_variable#value ActionsOrganizationVariable#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// Name of the variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_organization_variable#variable_name ActionsOrganizationVariable#variable_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_variable#variable_name ActionsOrganizationVariable#variable_name}
 	VariableName *string `field:"required" json:"variableName" yaml:"variableName"`
 	// Configures the access that repositories have to the organization variable.
 	//
 	// Must be one of 'all', 'private', or 'selected'. 'selected_repository_ids' is required if set to 'selected'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_organization_variable#visibility ActionsOrganizationVariable#visibility}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_variable#visibility ActionsOrganizationVariable#visibility}
 	Visibility *string `field:"required" json:"visibility" yaml:"visibility"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_organization_variable#id ActionsOrganizationVariable#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_variable#id ActionsOrganizationVariable#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// An array of repository ids that can access the organization variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_organization_variable#selected_repository_ids ActionsOrganizationVariable#selected_repository_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_variable#selected_repository_ids ActionsOrganizationVariable#selected_repository_ids}
 	SelectedRepositoryIds *[]*float64 `field:"optional" json:"selectedRepositoryIds" yaml:"selectedRepositoryIds"`
 }
 
