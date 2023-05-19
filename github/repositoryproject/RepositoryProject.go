@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_project github_repository_project}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_project github_repository_project}.
 type RepositoryProject interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_RepositoryProject) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject(scope constructs.Construct, id *string, config *RepositoryProjectConfig) RepositoryProject {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewRepositoryProject(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject_Override(r RepositoryProject, scope constructs.Construct, id *string, config *RepositoryProjectConfig) {
 	_init_.Initialize()
 

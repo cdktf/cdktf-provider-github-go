@@ -21,24 +21,24 @@ type RepositoryDeployKeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A SSH key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_deploy_key#key RepositoryDeployKey#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_deploy_key#key RepositoryDeployKey#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// Name of the GitHub repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_deploy_key#repository RepositoryDeployKey#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_deploy_key#repository RepositoryDeployKey#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// A title.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_deploy_key#title RepositoryDeployKey#title}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_deploy_key#title RepositoryDeployKey#title}
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// A boolean qualifying the key to be either read only or read/write.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_deploy_key#read_only RepositoryDeployKey#read_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_deploy_key#read_only RepositoryDeployKey#read_only}
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
 
