@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataGithubOrganizationIpAllowListIpAllowListList interface {
+type DataGithubOrganizationIpAllowListIpAllowListStructList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -28,7 +28,7 @@ type DataGithubOrganizationIpAllowListIpAllowListList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataGithubOrganizationIpAllowListIpAllowListOutputReference
+	Get(index *float64) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -39,12 +39,12 @@ type DataGithubOrganizationIpAllowListIpAllowListList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataGithubOrganizationIpAllowListIpAllowListList
-type jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList struct {
+// The jsii proxy struct for DataGithubOrganizationIpAllowListIpAllowListStructList
+type jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -54,7 +54,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Fqn() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -74,7 +74,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) TerraformRe
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) WrapsSet() *bool {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -95,16 +95,16 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) WrapsSet() 
 }
 
 
-func NewDataGithubOrganizationIpAllowListIpAllowListList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListList {
+func NewDataGithubOrganizationIpAllowListIpAllowListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructList {
 	_init_.Initialize()
 
-	if err := validateNewDataGithubOrganizationIpAllowListIpAllowListListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataGithubOrganizationIpAllowListIpAllowListStructListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList{}
+	j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList",
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -112,17 +112,17 @@ func NewDataGithubOrganizationIpAllowListIpAllowListList(terraformResource cdktf
 	return &j
 }
 
-func NewDataGithubOrganizationIpAllowListIpAllowListList_Override(d DataGithubOrganizationIpAllowListIpAllowListList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGithubOrganizationIpAllowListIpAllowListStructList_Override(d DataGithubOrganizationIpAllowListIpAllowListStructList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList",
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -133,7 +133,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -144,7 +144,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList)SetWrapsSet(
 	)
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) ComputeFqn() *string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -168,11 +168,11 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) ComputeFqn(
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Get(index *float64) DataGithubOrganizationIpAllowListIpAllowListOutputReference {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) Get(index *float64) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataGithubOrganizationIpAllowListIpAllowListOutputReference
+	var returns DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -184,7 +184,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Get(index *
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -200,7 +200,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) Resolve(_co
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) ToString() *string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

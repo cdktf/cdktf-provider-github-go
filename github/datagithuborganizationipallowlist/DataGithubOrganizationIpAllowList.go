@@ -35,7 +35,7 @@ type DataGithubOrganizationIpAllowList interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IpAllowList() DataGithubOrganizationIpAllowListIpAllowListList
+	IpAllowList() DataGithubOrganizationIpAllowListIpAllowListStructList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowList) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowList) IpAllowList() DataGithubOrganizationIpAllowListIpAllowListList {
-	var returns DataGithubOrganizationIpAllowListIpAllowListList
+func (j *jsiiProxy_DataGithubOrganizationIpAllowList) IpAllowList() DataGithubOrganizationIpAllowListIpAllowListStructList {
+	var returns DataGithubOrganizationIpAllowListIpAllowListStructList
 	_jsii_.Get(
 		j,
 		"ipAllowList",

@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataGithubOrganizationIpAllowListIpAllowListOutputReference interface {
+type DataGithubOrganizationIpAllowListIpAllowListStructOutputReference interface {
 	cdktf.ComplexObject
 	AllowListValue() *string
 	// the index of the complex object in a list.
@@ -30,8 +30,8 @@ type DataGithubOrganizationIpAllowListIpAllowListOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() *DataGithubOrganizationIpAllowListIpAllowList
-	SetInternalValue(val *DataGithubOrganizationIpAllowListIpAllowList)
+	InternalValue() *DataGithubOrganizationIpAllowListIpAllowListStruct
+	SetInternalValue(val *DataGithubOrganizationIpAllowListIpAllowListStruct)
 	IsActive() cdktf.IResolvable
 	Name() *string
 	// Experimental.
@@ -77,12 +77,12 @@ type DataGithubOrganizationIpAllowListIpAllowListOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataGithubOrganizationIpAllowListIpAllowListOutputReference
-type jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference struct {
+// The jsii proxy struct for DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
+type jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) AllowListValue() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) AllowListValue() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -102,7 +102,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -112,7 +112,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) CreatedAt() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) CreatedAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -122,7 +122,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -132,7 +132,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -142,7 +142,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) Id() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) InternalValue() *DataGithubOrganizationIpAllowListIpAllowList {
-	var returns *DataGithubOrganizationIpAllowListIpAllowList
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) InternalValue() *DataGithubOrganizationIpAllowListIpAllowListStruct {
+	var returns *DataGithubOrganizationIpAllowListIpAllowListStruct
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -162,7 +162,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) IsActive() cdktf.IResolvable {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) IsActive() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
@@ -172,7 +172,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) Name() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -192,7 +192,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) UpdatedAt() *string {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) UpdatedAt() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -213,16 +213,16 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 }
 
 
-func NewDataGithubOrganizationIpAllowListIpAllowListOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListOutputReference {
+func NewDataGithubOrganizationIpAllowListIpAllowListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataGithubOrganizationIpAllowListIpAllowListOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataGithubOrganizationIpAllowListIpAllowListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference{}
+	j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference",
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,17 +230,17 @@ func NewDataGithubOrganizationIpAllowListIpAllowListOutputReference(terraformRes
 	return &j
 }
 
-func NewDataGithubOrganizationIpAllowListIpAllowListOutputReference_Override(d DataGithubOrganizationIpAllowListIpAllowListOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGithubOrganizationIpAllowListIpAllowListStructOutputReference_Override(d DataGithubOrganizationIpAllowListIpAllowListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference",
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)SetInternalValue(val *DataGithubOrganizationIpAllowListIpAllowList) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)SetInternalValue(val *DataGithubOrganizationIpAllowListIpAllowListStruct) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference)S
 	)
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -308,7 +308,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -324,7 +324,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -340,7 +340,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -356,7 +356,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -372,7 +372,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -388,7 +388,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -404,7 +404,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -420,7 +420,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -436,7 +436,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -452,7 +452,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -465,7 +465,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -481,7 +481,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -497,7 +497,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) ToString() *string {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

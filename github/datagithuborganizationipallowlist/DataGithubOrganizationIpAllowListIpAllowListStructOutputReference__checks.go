@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateSetInternalValueParameters(val *DataGithubOrganizationIpAllowListIpAllowList) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateSetInternalValueParameters(val *DataGithubOrganizationIpAllowListIpAllowListStruct) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference) 
 	return nil
 }
 
-func validateNewDataGithubOrganizationIpAllowListIpAllowListOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGithubOrganizationIpAllowListIpAllowListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

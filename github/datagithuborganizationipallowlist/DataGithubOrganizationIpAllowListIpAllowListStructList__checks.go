@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateGetParameters(index *float64) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -16,7 +16,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -24,7 +24,7 @@ func (d *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -48,7 +48,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList) validateSet
 	return nil
 }
 
-func validateNewDataGithubOrganizationIpAllowListIpAllowListListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGithubOrganizationIpAllowListIpAllowListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

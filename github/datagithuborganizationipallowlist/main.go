@@ -58,12 +58,12 @@ func init() {
 		reflect.TypeOf((*DataGithubOrganizationIpAllowListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList",
-		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowList)(nil)).Elem(),
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct",
+		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList",
-		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowListList)(nil)).Elem(),
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList",
+		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -76,14 +76,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListList{}
+			j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference",
-		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference",
+		reflect.TypeOf((*DataGithubOrganizationIpAllowListIpAllowListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowListValue", GoGetter: "AllowListValue"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListOutputReference{}
+			j := jsiiProxy_DataGithubOrganizationIpAllowListIpAllowListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
