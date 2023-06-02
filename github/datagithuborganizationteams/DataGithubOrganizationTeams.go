@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/organization_teams github_organization_teams}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/organization_teams github_organization_teams}.
 type DataGithubOrganizationTeams interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataGithubOrganizationTeams) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/organization_teams github_organization_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/organization_teams github_organization_teams} Data Source.
 func NewDataGithubOrganizationTeams(scope constructs.Construct, id *string, config *DataGithubOrganizationTeamsConfig) DataGithubOrganizationTeams {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataGithubOrganizationTeams(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/organization_teams github_organization_teams} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/organization_teams github_organization_teams} Data Source.
 func NewDataGithubOrganizationTeams_Override(d DataGithubOrganizationTeams, scope constructs.Construct, id *string, config *DataGithubOrganizationTeamsConfig) {
 	_init_.Initialize()
 

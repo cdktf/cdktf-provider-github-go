@@ -52,6 +52,10 @@ func (r *jsiiProxy_RepositoryPagesOutputReference) validateResolveParameters(_co
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryPagesOutputReference) validateSetBuildTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryPagesOutputReference) validateSetCnameParameters(val *string) error {
 	return nil
 }

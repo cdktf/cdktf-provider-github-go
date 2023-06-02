@@ -64,6 +64,10 @@ func validateActionsRunnerGroup_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ActionsRunnerGroup) validateSetAllowsPublicRepositoriesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsRunnerGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

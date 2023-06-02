@@ -9,10 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_runner_group github_actions_runner_group}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group}.
 type ActionsRunnerGroup interface {
 	cdktf.TerraformResource
-	AllowsPublicRepositories() cdktf.IResolvable
+	AllowsPublicRepositories() interface{}
+	SetAllowsPublicRepositories(val interface{})
+	AllowsPublicRepositoriesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -107,6 +109,7 @@ type ActionsRunnerGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowsPublicRepositories()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -129,11 +132,21 @@ type jsiiProxy_ActionsRunnerGroup struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ActionsRunnerGroup) AllowsPublicRepositories() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ActionsRunnerGroup) AllowsPublicRepositories() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"allowsPublicRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup) AllowsPublicRepositoriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowsPublicRepositoriesInput",
 		&returns,
 	)
 	return returns
@@ -470,7 +483,7 @@ func (j *jsiiProxy_ActionsRunnerGroup) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) ActionsRunnerGroup {
 	_init_.Initialize()
 
@@ -488,7 +501,7 @@ func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *Actio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup_Override(a ActionsRunnerGroup, scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) {
 	_init_.Initialize()
 
@@ -496,6 +509,17 @@ func NewActionsRunnerGroup_Override(a ActionsRunnerGroup, scope constructs.Const
 		"@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ActionsRunnerGroup)SetAllowsPublicRepositories(val interface{}) {
+	if err := j.validateSetAllowsPublicRepositoriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowsPublicRepositories",
+		val,
 	)
 }
 
@@ -896,6 +920,14 @@ func (a *jsiiProxy_ActionsRunnerGroup) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ActionsRunnerGroup) ResetAllowsPublicRepositories() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowsPublicRepositories",
+		nil, // no parameters
 	)
 }
 

@@ -1,0 +1,6 @@
+package datagithubrepositoryautolinkreferences
+
+
+type DataGithubRepositoryAutolinkReferencesAutolinkReferences struct {
+}
+

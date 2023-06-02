@@ -176,6 +176,8 @@ func init() {
 		"@cdktf/provider-github.repository.RepositoryPagesOutputReference",
 		reflect.TypeOf((*RepositoryPagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "buildType", GoGetter: "BuildType"},
+			_jsii_.MemberProperty{JsiiProperty: "buildTypeInput", GoGetter: "BuildTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cname", GoGetter: "Cname"},
 			_jsii_.MemberProperty{JsiiProperty: "cnameInput", GoGetter: "CnameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,7 +200,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBuildType", GoMethod: "ResetBuildType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCname", GoMethod: "ResetCname"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},

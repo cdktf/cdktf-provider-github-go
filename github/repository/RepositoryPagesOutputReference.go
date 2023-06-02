@@ -10,6 +10,9 @@ import (
 
 type RepositoryPagesOutputReference interface {
 	cdktf.ComplexObject
+	BuildType() *string
+	SetBuildType(val *string)
+	BuildTypeInput() *string
 	Cname() *string
 	SetCname(val *string)
 	CnameInput() *string
@@ -71,7 +74,9 @@ type RepositoryPagesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSource(value *RepositoryPagesSource)
+	ResetBuildType()
 	ResetCname()
+	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -85,6 +90,26 @@ type RepositoryPagesOutputReference interface {
 // The jsii proxy struct for RepositoryPagesOutputReference
 type jsiiProxy_RepositoryPagesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_RepositoryPagesOutputReference) BuildType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryPagesOutputReference) BuildTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RepositoryPagesOutputReference) Cname() *string {
@@ -262,6 +287,17 @@ func NewRepositoryPagesOutputReference_Override(r RepositoryPagesOutputReference
 		"@cdktf/provider-github.repository.RepositoryPagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RepositoryPagesOutputReference)SetBuildType(val *string) {
+	if err := j.validateSetBuildTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"buildType",
+		val,
 	)
 }
 
@@ -528,10 +564,26 @@ func (r *jsiiProxy_RepositoryPagesOutputReference) PutSource(value *RepositoryPa
 	)
 }
 
+func (r *jsiiProxy_RepositoryPagesOutputReference) ResetBuildType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBuildType",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RepositoryPagesOutputReference) ResetCname() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetCname",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryPagesOutputReference) ResetSource() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSource",
 		nil, // no parameters
 	)
 }

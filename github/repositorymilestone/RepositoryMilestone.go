@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_milestone github_repository_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_milestone github_repository_milestone}.
 type RepositoryMilestone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_RepositoryMilestone) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone(scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) RepositoryMilestone {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewRepositoryMilestone(scope constructs.Construct, id *string, config *Repo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone_Override(r RepositoryMilestone, scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) {
 	_init_.Initialize()
 

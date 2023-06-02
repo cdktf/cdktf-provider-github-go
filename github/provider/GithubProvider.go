@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs github}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs github}.
 type GithubProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GithubProvider) WriteDelayMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs github} Resource.
 func NewGithubProvider(scope constructs.Construct, id *string, config *GithubProviderConfig) GithubProvider {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewGithubProvider(scope constructs.Construct, id *string, config *GithubPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs github} Resource.
 func NewGithubProvider_Override(g GithubProvider, scope constructs.Construct, id *string, config *GithubProviderConfig) {
 	_init_.Initialize()
 
