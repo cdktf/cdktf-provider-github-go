@@ -2,14 +2,14 @@ package datagithubrepositorybranches
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepositorybranches/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrepositorybranches/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_branches github_repository_branches}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/repository_branches github_repository_branches}.
 type DataGithubRepositoryBranches interface {
 	cdktf.TerraformDataSource
 	Branches() DataGithubRepositoryBranchesBranchesList
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataGithubRepositoryBranches) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_branches github_repository_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/repository_branches github_repository_branches} Data Source.
 func NewDataGithubRepositoryBranches(scope constructs.Construct, id *string, config *DataGithubRepositoryBranchesConfig) DataGithubRepositoryBranches {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataGithubRepositoryBranches(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_branches github_repository_branches} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/repository_branches github_repository_branches} Data Source.
 func NewDataGithubRepositoryBranches_Override(d DataGithubRepositoryBranches, scope constructs.Construct, id *string, config *DataGithubRepositoryBranchesConfig) {
 	_init_.Initialize()
 

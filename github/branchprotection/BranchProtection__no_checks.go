@@ -96,6 +96,10 @@ func (j *jsiiProxy_BranchProtection) validateSetEnforceAdminsParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtection) validateSetForcePushBypassersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtection) validateSetIdParameters(val *string) error {
 	return nil
 }

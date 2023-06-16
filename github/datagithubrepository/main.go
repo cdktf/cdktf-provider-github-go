@@ -125,6 +125,7 @@ func init() {
 		"@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesOutputReference",
 		reflect.TypeOf((*DataGithubRepositoryPagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "buildType", GoGetter: "BuildType"},
 			_jsii_.MemberProperty{JsiiProperty: "cname", GoGetter: "Cname"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

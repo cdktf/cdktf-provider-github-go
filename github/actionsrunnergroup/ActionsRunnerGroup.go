@@ -2,14 +2,14 @@ package actionsrunnergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/actionsrunnergroup/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/actionsrunnergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_runner_group github_actions_runner_group}.
 type ActionsRunnerGroup interface {
 	cdktf.TerraformResource
 	AllowsPublicRepositories() interface{}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_ActionsRunnerGroup) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) ActionsRunnerGroup {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewActionsRunnerGroup(scope constructs.Construct, id *string, config *Actio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_runner_group github_actions_runner_group} Resource.
 func NewActionsRunnerGroup_Override(a ActionsRunnerGroup, scope constructs.Construct, id *string, config *ActionsRunnerGroupConfig) {
 	_init_.Initialize()
 

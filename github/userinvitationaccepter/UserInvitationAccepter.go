@@ -2,14 +2,14 @@ package userinvitationaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/userinvitationaccepter/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/userinvitationaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 type UserInvitationAccepter interface {
 	cdktf.TerraformResource
 	AllowEmptyId() interface{}
@@ -334,7 +334,7 @@ func (j *jsiiProxy_UserInvitationAccepter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) UserInvitationAccepter {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter_Override(u UserInvitationAccepter, scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) {
 	_init_.Initialize()
 

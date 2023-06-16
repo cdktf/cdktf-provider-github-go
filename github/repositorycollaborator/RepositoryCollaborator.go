@@ -2,14 +2,14 @@ package repositorycollaborator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_collaborator github_repository_collaborator}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_collaborator github_repository_collaborator}.
 type RepositoryCollaborator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_RepositoryCollaborator) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) RepositoryCollaborator {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator_Override(r RepositoryCollaborator, scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) {
 	_init_.Initialize()
 

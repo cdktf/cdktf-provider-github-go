@@ -2,14 +2,14 @@ package repositorypullrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/repositorypullrequest/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/repositorypullrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_pull_request github_repository_pull_request}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_pull_request github_repository_pull_request}.
 type RepositoryPullRequest interface {
 	cdktf.TerraformResource
 	BaseRef() *string
@@ -549,7 +549,7 @@ func (j *jsiiProxy_RepositoryPullRequest) UpdatedAt() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
 func NewRepositoryPullRequest(scope constructs.Construct, id *string, config *RepositoryPullRequestConfig) RepositoryPullRequest {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewRepositoryPullRequest(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
 func NewRepositoryPullRequest_Override(r RepositoryPullRequest, scope constructs.Construct, id *string, config *RepositoryPullRequestConfig) {
 	_init_.Initialize()
 

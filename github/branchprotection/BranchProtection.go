@@ -2,14 +2,14 @@ package branchprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/branchprotection/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/branchprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection github_branch_protection}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection github_branch_protection}.
 type BranchProtection interface {
 	cdktf.TerraformResource
 	AllowsDeletions() interface{}
@@ -40,6 +40,9 @@ type BranchProtection interface {
 	EnforceAdmins() interface{}
 	SetEnforceAdmins(val interface{})
 	EnforceAdminsInput() interface{}
+	ForcePushBypassers() *[]*string
+	SetForcePushBypassers(val *[]*string)
+	ForcePushBypassersInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -129,6 +132,7 @@ type BranchProtection interface {
 	ResetAllowsForcePushes()
 	ResetBlocksCreations()
 	ResetEnforceAdmins()
+	ResetForcePushBypassers()
 	ResetId()
 	ResetLockBranch()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -280,6 +284,26 @@ func (j *jsiiProxy_BranchProtection) EnforceAdminsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enforceAdminsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) ForcePushBypassers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"forcePushBypassers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) ForcePushBypassersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"forcePushBypassersInput",
 		&returns,
 	)
 	return returns
@@ -596,7 +620,7 @@ func (j *jsiiProxy_BranchProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection github_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection github_branch_protection} Resource.
 func NewBranchProtection(scope constructs.Construct, id *string, config *BranchProtectionConfig) BranchProtection {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewBranchProtection(scope constructs.Construct, id *string, config *BranchP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection github_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection github_branch_protection} Resource.
 func NewBranchProtection_Override(b BranchProtection, scope constructs.Construct, id *string, config *BranchProtectionConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (j *jsiiProxy_BranchProtection)SetEnforceAdmins(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enforceAdmins",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtection)SetForcePushBypassers(val *[]*string) {
+	if err := j.validateSetForcePushBypassersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forcePushBypassers",
 		val,
 	)
 }
@@ -1141,6 +1176,14 @@ func (b *jsiiProxy_BranchProtection) ResetEnforceAdmins() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetEnforceAdmins",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtection) ResetForcePushBypassers() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetForcePushBypassers",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,15 @@ package datagithubrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DataGithubRepositoryPagesOutputReference interface {
 	cdktf.ComplexObject
+	BuildType() *string
 	Cname() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -80,6 +81,16 @@ type DataGithubRepositoryPagesOutputReference interface {
 // The jsii proxy struct for DataGithubRepositoryPagesOutputReference
 type jsiiProxy_DataGithubRepositoryPagesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGithubRepositoryPagesOutputReference) BuildType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildType",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGithubRepositoryPagesOutputReference) Cname() *string {

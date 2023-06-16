@@ -2,14 +2,14 @@ package actionsorganizationsecretrepositories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/actionsorganizationsecretrepositories/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/actionsorganizationsecretrepositories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
 type ActionsOrganizationSecretRepositories interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ActionsOrganizationSecretRepositories) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
 func NewActionsOrganizationSecretRepositories(scope constructs.Construct, id *string, config *ActionsOrganizationSecretRepositoriesConfig) ActionsOrganizationSecretRepositories {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewActionsOrganizationSecretRepositories(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
 func NewActionsOrganizationSecretRepositories_Override(a ActionsOrganizationSecretRepositories, scope constructs.Construct, id *string, config *ActionsOrganizationSecretRepositoriesConfig) {
 	_init_.Initialize()
 

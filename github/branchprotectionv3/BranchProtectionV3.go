@@ -2,14 +2,14 @@ package branchprotectionv3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/branchprotectionv3/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/branchprotectionv3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3 github_branch_protection_v3}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3 github_branch_protection_v3}.
 type BranchProtectionV3 interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_BranchProtectionV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
 func NewBranchProtectionV3(scope constructs.Construct, id *string, config *BranchProtectionV3Config) BranchProtectionV3 {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewBranchProtectionV3(scope constructs.Construct, id *string, config *Branc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3 github_branch_protection_v3} Resource.
 func NewBranchProtectionV3_Override(b BranchProtectionV3, scope constructs.Construct, id *string, config *BranchProtectionV3Config) {
 	_init_.Initialize()
 

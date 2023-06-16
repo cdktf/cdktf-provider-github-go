@@ -2,9 +2,9 @@ package datagithubrepositoryenvironments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepositoryenvironments/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrepositoryenvironments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

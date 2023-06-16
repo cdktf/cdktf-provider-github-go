@@ -2,14 +2,14 @@ package datagithubdependabotpublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubdependabotpublickey/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotpublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/dependabot_public_key github_dependabot_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_public_key github_dependabot_public_key}.
 type DataGithubDependabotPublicKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGithubDependabotPublicKey) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/dependabot_public_key github_dependabot_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_public_key github_dependabot_public_key} Data Source.
 func NewDataGithubDependabotPublicKey(scope constructs.Construct, id *string, config *DataGithubDependabotPublicKeyConfig) DataGithubDependabotPublicKey {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGithubDependabotPublicKey(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/dependabot_public_key github_dependabot_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_public_key github_dependabot_public_key} Data Source.
 func NewDataGithubDependabotPublicKey_Override(d DataGithubDependabotPublicKey, scope constructs.Construct, id *string, config *DataGithubDependabotPublicKeyConfig) {
 	_init_.Initialize()
 

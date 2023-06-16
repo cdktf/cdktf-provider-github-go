@@ -2,14 +2,14 @@ package datagithubexternalgroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubexternalgroups/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubexternalgroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/external_groups github_external_groups}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/external_groups github_external_groups}.
 type DataGithubExternalGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubExternalGroups) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/external_groups github_external_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/external_groups github_external_groups} Data Source.
 func NewDataGithubExternalGroups(scope constructs.Construct, id *string, config *DataGithubExternalGroupsConfig) DataGithubExternalGroups {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubExternalGroups(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/external_groups github_external_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/external_groups github_external_groups} Data Source.
 func NewDataGithubExternalGroups_Override(d DataGithubExternalGroups, scope constructs.Construct, id *string, config *DataGithubExternalGroupsConfig) {
 	_init_.Initialize()
 

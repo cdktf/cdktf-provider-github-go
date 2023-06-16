@@ -2,14 +2,14 @@ package teamsyncgroupmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v9/teamsyncgroupmapping/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v10/teamsyncgroupmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping}.
 type TeamSyncGroupMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_TeamSyncGroupMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping} Resource.
 func NewTeamSyncGroupMapping(scope constructs.Construct, id *string, config *TeamSyncGroupMappingConfig) TeamSyncGroupMapping {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewTeamSyncGroupMapping(scope constructs.Construct, id *string, config *Tea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping} Resource.
 func NewTeamSyncGroupMapping_Override(t TeamSyncGroupMapping, scope constructs.Construct, id *string, config *TeamSyncGroupMappingConfig) {
 	_init_.Initialize()
 
