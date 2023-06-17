@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_permissions github_actions_organization_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/actions_organization_permissions github_actions_organization_permissions}.
 type ActionsOrganizationPermissions interface {
 	cdktf.TerraformResource
 	AllowedActions() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ActionsOrganizationPermissions) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource.
 func NewActionsOrganizationPermissions(scope constructs.Construct, id *string, config *ActionsOrganizationPermissionsConfig) ActionsOrganizationPermissions {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewActionsOrganizationPermissions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource.
 func NewActionsOrganizationPermissions_Override(a ActionsOrganizationPermissions, scope constructs.Construct, id *string, config *ActionsOrganizationPermissionsConfig) {
 	_init_.Initialize()
 

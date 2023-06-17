@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key github_user_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key github_user_ssh_key}.
 type UserSshKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_UserSshKey) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key github_user_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key github_user_ssh_key} Resource.
 func NewUserSshKey(scope constructs.Construct, id *string, config *UserSshKeyConfig) UserSshKey {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewUserSshKey(scope constructs.Construct, id *string, config *UserSshKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key github_user_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key github_user_ssh_key} Resource.
 func NewUserSshKey_Override(u UserSshKey, scope constructs.Construct, id *string, config *UserSshKeyConfig) {
 	_init_.Initialize()
 
