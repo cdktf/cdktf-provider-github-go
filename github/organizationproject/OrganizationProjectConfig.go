@@ -21,13 +21,13 @@ type OrganizationProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/organization_project#name OrganizationProject#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/organization_project#name OrganizationProject#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The body of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/organization_project#body OrganizationProject#body}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/organization_project#body OrganizationProject#body}
 	Body *string `field:"optional" json:"body" yaml:"body"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/organization_project#id OrganizationProject#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/organization_project#id OrganizationProject#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

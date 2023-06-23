@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team github_team}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team}.
 type Team interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,12 @@ type Team interface {
 	ParentTeamId() *string
 	SetParentTeamId(val *string)
 	ParentTeamIdInput() *string
+	ParentTeamReadId() *string
+	SetParentTeamReadId(val *string)
+	ParentTeamReadIdInput() *string
+	ParentTeamReadSlug() *string
+	SetParentTeamReadSlug(val *string)
+	ParentTeamReadSlugInput() *string
 	Privacy() *string
 	SetPrivacy(val *string)
 	PrivacyInput() *string
@@ -116,6 +122,8 @@ type Team interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParentTeamId()
+	ResetParentTeamReadId()
+	ResetParentTeamReadSlug()
 	ResetPrivacy()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -382,6 +390,46 @@ func (j *jsiiProxy_Team) ParentTeamIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Team) ParentTeamReadId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamReadId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) ParentTeamReadIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamReadIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) ParentTeamReadSlug() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamReadSlug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Team) ParentTeamReadSlugInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamReadSlugInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Team) Privacy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +521,7 @@ func (j *jsiiProxy_Team) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team} Resource.
 func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	_init_.Initialize()
 
@@ -491,7 +539,7 @@ func NewTeam(scope constructs.Construct, id *string, config *TeamConfig) Team {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team} Resource.
 func NewTeam_Override(t Team, scope constructs.Construct, id *string, config *TeamConfig) {
 	_init_.Initialize()
 
@@ -613,6 +661,28 @@ func (j *jsiiProxy_Team)SetParentTeamId(val *string) {
 	_jsii_.Set(
 		j,
 		"parentTeamId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Team)SetParentTeamReadId(val *string) {
+	if err := j.validateSetParentTeamReadIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentTeamReadId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Team)SetParentTeamReadSlug(val *string) {
+	if err := j.validateSetParentTeamReadSlugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentTeamReadSlug",
 		val,
 	)
 }
@@ -957,6 +1027,22 @@ func (t *jsiiProxy_Team) ResetParentTeamId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetParentTeamId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Team) ResetParentTeamReadId() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetParentTeamReadId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Team) ResetParentTeamReadSlug() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetParentTeamReadSlug",
 		nil, // no parameters
 	)
 }

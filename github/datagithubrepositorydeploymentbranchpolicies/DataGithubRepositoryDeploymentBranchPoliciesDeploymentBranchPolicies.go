@@ -1,0 +1,6 @@
+package datagithubrepositorydeploymentbranchpolicies
+
+
+type DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPolicies struct {
+}
+

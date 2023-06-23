@@ -293,6 +293,22 @@ func (j *jsiiProxy_Team) validateSetParentTeamIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Team) validateSetParentTeamReadIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Team) validateSetParentTeamReadSlugParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Team) validateSetPrivacyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
