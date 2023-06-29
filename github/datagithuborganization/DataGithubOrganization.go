@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/organization github_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/organization github_organization}.
 type DataGithubOrganization interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataGithubOrganization) Users() cdktf.StringMapList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization(scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) DataGithubOrganization {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataGithubOrganization(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization_Override(d DataGithubOrganization, scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) {
 	_init_.Initialize()
 

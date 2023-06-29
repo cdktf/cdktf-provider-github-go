@@ -21,17 +21,17 @@ type DataGithubRepositoryFileConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The file path to manage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
 	File *string `field:"required" json:"file" yaml:"file"`
 	// The repository name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// The branch name, defaults to the repository's default branch.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
 	Branch *string `field:"optional" json:"branch" yaml:"branch"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

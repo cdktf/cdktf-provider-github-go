@@ -21,13 +21,13 @@ type RepositoryTagProtectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The pattern of the tag to protect.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
 	Pattern *string `field:"required" json:"pattern" yaml:"pattern"`
 	// Name of the repository to add the tag protection to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
