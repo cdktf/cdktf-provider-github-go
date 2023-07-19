@@ -72,6 +72,10 @@ func (j *jsiiProxy_Membership) validateSetCountParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Membership) validateSetDowngradeOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Membership) validateSetIdParameters(val *string) error {
 	return nil
 }

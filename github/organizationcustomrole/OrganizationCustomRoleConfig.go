@@ -21,21 +21,21 @@ type OrganizationCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The base role for the custom repository role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
 	BaseRole *string `field:"required" json:"baseRole" yaml:"baseRole"`
 	// The organization custom repository role to create.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The permissions for the custom repository role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
 	Permissions *[]*string `field:"required" json:"permissions" yaml:"permissions"`
 	// The description of the custom repository role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

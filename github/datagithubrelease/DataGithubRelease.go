@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release github_release}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/release github_release}.
 type DataGithubRelease interface {
 	cdktf.TerraformDataSource
 	AssertsUrl() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_DataGithubRelease) ZipballUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release github_release} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/release github_release} Data Source.
 func NewDataGithubRelease(scope constructs.Construct, id *string, config *DataGithubReleaseConfig) DataGithubRelease {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewDataGithubRelease(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release github_release} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/release github_release} Data Source.
 func NewDataGithubRelease_Override(d DataGithubRelease, scope constructs.Construct, id *string, config *DataGithubReleaseConfig) {
 	_init_.Initialize()
 

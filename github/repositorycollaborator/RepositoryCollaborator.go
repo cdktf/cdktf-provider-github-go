@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_collaborator github_repository_collaborator}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborator github_repository_collaborator}.
 type RepositoryCollaborator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_RepositoryCollaborator) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) RepositoryCollaborator {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator_Override(r RepositoryCollaborator, scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) {
 	_init_.Initialize()
 

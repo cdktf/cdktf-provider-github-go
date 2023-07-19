@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership github_membership}.
 type Membership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type Membership interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DowngradeOnDestroy() interface{}
+	SetDowngradeOnDestroy(val interface{})
+	DowngradeOnDestroyInput() interface{}
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -93,6 +96,7 @@ type Membership interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDowngradeOnDestroy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -158,6 +162,26 @@ func (j *jsiiProxy_Membership) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Membership) DowngradeOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"downgradeOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Membership) DowngradeOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"downgradeOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -344,7 +368,7 @@ func (j *jsiiProxy_Membership) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership github_membership} Resource.
 func NewMembership(scope constructs.Construct, id *string, config *MembershipConfig) Membership {
 	_init_.Initialize()
 
@@ -362,7 +386,7 @@ func NewMembership(scope constructs.Construct, id *string, config *MembershipCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership github_membership} Resource.
 func NewMembership_Override(m Membership, scope constructs.Construct, id *string, config *MembershipConfig) {
 	_init_.Initialize()
 
@@ -399,6 +423,17 @@ func (j *jsiiProxy_Membership)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Membership)SetDowngradeOnDestroy(val interface{}) {
+	if err := j.validateSetDowngradeOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"downgradeOnDestroy",
 		val,
 	)
 }
@@ -737,6 +772,14 @@ func (m *jsiiProxy_Membership) OverrideLogicalId(newLogicalId *string) {
 		m,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_Membership) ResetDowngradeOnDestroy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDowngradeOnDestroy",
+		nil, // no parameters
 	)
 }
 
