@@ -21,25 +21,25 @@ type EnterpriseOrganizationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// List of organization owner usernames.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
 	AdminLogins *[]*string `field:"required" json:"adminLogins" yaml:"adminLogins"`
 	// The billing email address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
 	BillingEmail *string `field:"required" json:"billingEmail" yaml:"billingEmail"`
 	// The ID of the enterprise.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
 	EnterpriseId *string `field:"required" json:"enterpriseId" yaml:"enterpriseId"`
 	// The name of the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The description of the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

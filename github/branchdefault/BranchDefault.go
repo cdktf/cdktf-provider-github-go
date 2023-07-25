@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/branch_default github_branch_default}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/branch_default github_branch_default}.
 type BranchDefault interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_BranchDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefaultConfig) BranchDefault {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault_Override(b BranchDefault, scope constructs.Construct, id *string, config *BranchDefaultConfig) {
 	_init_.Initialize()
 

@@ -1,0 +1,6 @@
+package datagithuborganizationexternalidentities
+
+
+type DataGithubOrganizationExternalIdentitiesIdentities struct {
+}
+

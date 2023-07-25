@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/ip_ranges github_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/ip_ranges github_ip_ranges}.
 type DataGithubIpRanges interface {
 	cdktf.TerraformDataSource
 	Actions() *[]*string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_DataGithubIpRanges) WebIpv6() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
 func NewDataGithubIpRanges(scope constructs.Construct, id *string, config *DataGithubIpRangesConfig) DataGithubIpRanges {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewDataGithubIpRanges(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source.
 func NewDataGithubIpRanges_Override(d DataGithubIpRanges, scope constructs.Construct, id *string, config *DataGithubIpRangesConfig) {
 	_init_.Initialize()
 
