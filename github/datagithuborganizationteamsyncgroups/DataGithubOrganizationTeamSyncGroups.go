@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups}.
 type DataGithubOrganizationTeamSyncGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataGithubOrganizationTeamSyncGroups) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
 func NewDataGithubOrganizationTeamSyncGroups(scope constructs.Construct, id *string, config *DataGithubOrganizationTeamSyncGroupsConfig) DataGithubOrganizationTeamSyncGroups {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataGithubOrganizationTeamSyncGroups(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
 func NewDataGithubOrganizationTeamSyncGroups_Override(d DataGithubOrganizationTeamSyncGroups, scope constructs.Construct, id *string, config *DataGithubOrganizationTeamSyncGroupsConfig) {
 	_init_.Initialize()
 

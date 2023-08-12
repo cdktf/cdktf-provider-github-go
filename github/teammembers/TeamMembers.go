@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_members github_team_members}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_members github_team_members}.
 type TeamMembers interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,7 +28,6 @@ type TeamMembers interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -157,16 +156,6 @@ func (j *jsiiProxy_TeamMembers) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TeamMembers) Etag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"etag",
 		&returns,
 	)
 	return returns
@@ -343,7 +332,7 @@ func (j *jsiiProxy_TeamMembers) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_members github_team_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_members github_team_members} Resource.
 func NewTeamMembers(scope constructs.Construct, id *string, config *TeamMembersConfig) TeamMembers {
 	_init_.Initialize()
 
@@ -361,7 +350,7 @@ func NewTeamMembers(scope constructs.Construct, id *string, config *TeamMembersC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_members github_team_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_members github_team_members} Resource.
 func NewTeamMembers_Override(t TeamMembers, scope constructs.Construct, id *string, config *TeamMembersConfig) {
 	_init_.Initialize()
 
