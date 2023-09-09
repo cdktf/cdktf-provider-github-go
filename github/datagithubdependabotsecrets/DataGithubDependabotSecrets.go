@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
 type DataGithubDependabotSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGithubDependabotSecrets) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source.
 func NewDataGithubDependabotSecrets(scope constructs.Construct, id *string, config *DataGithubDependabotSecretsConfig) DataGithubDependabotSecrets {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGithubDependabotSecrets(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source.
 func NewDataGithubDependabotSecrets_Override(d DataGithubDependabotSecrets, scope constructs.Construct, id *string, config *DataGithubDependabotSecretsConfig) {
 	_init_.Initialize()
 

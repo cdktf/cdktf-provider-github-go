@@ -87,6 +87,10 @@ func (j *jsiiProxy_EnterpriseOrganization) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_EnterpriseOrganization) validateSetDisplayNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EnterpriseOrganization) validateSetEnterpriseIdParameters(val *string) error {
 	return nil
 }

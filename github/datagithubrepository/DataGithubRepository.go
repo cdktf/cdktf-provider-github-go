@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository github_repository}.
 type DataGithubRepository interface {
 	cdktf.TerraformDataSource
 	AllowAutoMerge() cdktf.IResolvable
@@ -76,6 +76,7 @@ type DataGithubRepository interface {
 	Node() constructs.Node
 	NodeId() *string
 	Pages() DataGithubRepositoryPagesList
+	PrimaryLanguage() *string
 	Private() cdktf.IResolvable
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -535,6 +536,16 @@ func (j *jsiiProxy_DataGithubRepository) Pages() DataGithubRepositoryPagesList {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) PrimaryLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLanguage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) Private() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -676,7 +687,7 @@ func (j *jsiiProxy_DataGithubRepository) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository(scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) DataGithubRepository {
 	_init_.Initialize()
 
@@ -694,7 +705,7 @@ func NewDataGithubRepository(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository_Override(d DataGithubRepository, scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) {
 	_init_.Initialize()
 

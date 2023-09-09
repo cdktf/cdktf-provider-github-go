@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization github_organization}.
 type DataGithubOrganization interface {
 	cdktf.TerraformDataSource
+	AdvancedSecurityEnabledForNewRepositories() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,6 +24,10 @@ type DataGithubOrganization interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultRepositoryPermission() *string
+	DependabotAlertsEnabledForNewRepositories() cdktf.IResolvable
+	DependabotSecurityUpdatesEnabledForNewRepositories() cdktf.IResolvable
+	DependencyGraphEnabledForNewRepositories() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -45,6 +50,15 @@ type DataGithubOrganization interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Login() *string
 	Members() *[]*string
+	MembersAllowedRepositoryCreationType() *string
+	MembersCanCreateInternalRepositories() cdktf.IResolvable
+	MembersCanCreatePages() cdktf.IResolvable
+	MembersCanCreatePrivatePages() cdktf.IResolvable
+	MembersCanCreatePrivateRepositories() cdktf.IResolvable
+	MembersCanCreatePublicPages() cdktf.IResolvable
+	MembersCanCreatePublicRepositories() cdktf.IResolvable
+	MembersCanCreateRepositories() cdktf.IResolvable
+	MembersCanForkPrivateRepositories() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -60,13 +74,17 @@ type DataGithubOrganization interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Repositories() *[]*string
+	SecretScanningEnabledForNewRepositories() cdktf.IResolvable
+	SecretScanningPushProtectionEnabledForNewRepositories() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TwoFactorRequirementEnabled() cdktf.IResolvable
 	Users() cdktf.StringMapList
+	WebCommitSignoffRequired() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,6 +129,16 @@ type jsiiProxy_DataGithubOrganization struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataGithubOrganization) AdvancedSecurityEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"advancedSecurityEnabledForNewRepositories",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganization) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -136,6 +164,46 @@ func (j *jsiiProxy_DataGithubOrganization) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) DefaultRepositoryPermission() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRepositoryPermission",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) DependabotAlertsEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dependabotAlertsEnabledForNewRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) DependabotSecurityUpdatesEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dependabotSecurityUpdatesEnabledForNewRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) DependencyGraphEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dependencyGraphEnabledForNewRepositories",
 		&returns,
 	)
 	return returns
@@ -241,6 +309,96 @@ func (j *jsiiProxy_DataGithubOrganization) Members() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganization) MembersAllowedRepositoryCreationType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membersAllowedRepositoryCreationType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreateInternalRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreateInternalRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreatePages() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreatePages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreatePrivatePages() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreatePrivatePages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreatePrivateRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreatePrivateRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreatePublicPages() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreatePublicPages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreatePublicRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreatePublicRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanCreateRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanCreateRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) MembersCanForkPrivateRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"membersCanForkPrivateRepositories",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganization) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -331,6 +489,26 @@ func (j *jsiiProxy_DataGithubOrganization) Repositories() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganization) SecretScanningEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"secretScanningEnabledForNewRepositories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) SecretScanningPushProtectionEnabledForNewRepositories() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"secretScanningPushProtectionEnabledForNewRepositories",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -361,6 +539,16 @@ func (j *jsiiProxy_DataGithubOrganization) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganization) TwoFactorRequirementEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"twoFactorRequirementEnabled",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganization) Users() cdktf.StringMapList {
 	var returns cdktf.StringMapList
 	_jsii_.Get(
@@ -371,8 +559,18 @@ func (j *jsiiProxy_DataGithubOrganization) Users() cdktf.StringMapList {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganization) WebCommitSignoffRequired() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"webCommitSignoffRequired",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization(scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) DataGithubOrganization {
 	_init_.Initialize()
 
@@ -390,7 +588,7 @@ func NewDataGithubOrganization(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization_Override(d DataGithubOrganization, scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) {
 	_init_.Initialize()
 

@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeId", GoGetter: "NodeId"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "pages", GoGetter: "Pages"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryLanguage", GoGetter: "PrimaryLanguage"},
 			_jsii_.MemberProperty{JsiiProperty: "private", GoGetter: "Private"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},

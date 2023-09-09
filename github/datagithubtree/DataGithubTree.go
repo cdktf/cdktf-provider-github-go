@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/tree github_tree}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/tree github_tree}.
 type DataGithubTree interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -342,7 +342,7 @@ func (j *jsiiProxy_DataGithubTree) TreeShaInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/tree github_tree} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/tree github_tree} Data Source.
 func NewDataGithubTree(scope constructs.Construct, id *string, config *DataGithubTreeConfig) DataGithubTree {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewDataGithubTree(scope constructs.Construct, id *string, config *DataGithu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/tree github_tree} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/tree github_tree} Data Source.
 func NewDataGithubTree_Override(d DataGithubTree, scope constructs.Construct, id *string, config *DataGithubTreeConfig) {
 	_init_.Initialize()
 

@@ -24,13 +24,13 @@ type RepositoryCollaboratorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The GitHub repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// The user to add to the repository as a collaborator.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,11 +39,11 @@ type RepositoryCollaboratorConfig struct {
 	//
 	// Must be one of 'pull', 'push', 'maintain', 'triage' or 'admin' or the name of an existing custom repository role within the organization for organization-owned repositories. Must be 'push' for personal repositories. Defaults to 'push'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
 	Permission *string `field:"optional" json:"permission" yaml:"permission"`
 	// Suppress plan diffs for triage and maintain. Defaults to 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
 	PermissionDiffSuppression interface{} `field:"optional" json:"permissionDiffSuppression" yaml:"permissionDiffSuppression"`
 }
 

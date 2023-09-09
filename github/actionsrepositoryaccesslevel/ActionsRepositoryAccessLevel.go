@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
 type ActionsRepositoryAccessLevel interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_ActionsRepositoryAccessLevel) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource.
 func NewActionsRepositoryAccessLevel(scope constructs.Construct, id *string, config *ActionsRepositoryAccessLevelConfig) ActionsRepositoryAccessLevel {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewActionsRepositoryAccessLevel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource.
 func NewActionsRepositoryAccessLevel_Override(a ActionsRepositoryAccessLevel, scope constructs.Construct, id *string, config *ActionsRepositoryAccessLevelConfig) {
 	_init_.Initialize()
 

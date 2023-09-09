@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -128,6 +128,7 @@ type Repository interface {
 	NodeId() *string
 	Pages() RepositoryPagesOutputReference
 	PagesInput() *RepositoryPages
+	PrimaryLanguage() *string
 	Private() interface{}
 	SetPrivate(val interface{})
 	PrivateInput() interface{}
@@ -928,6 +929,16 @@ func (j *jsiiProxy_Repository) PagesInput() *RepositoryPages {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) PrimaryLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLanguage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) Private() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1179,7 +1190,7 @@ func (j *jsiiProxy_Repository) VulnerabilityAlertsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1197,7 +1208,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/enterprise_organization github_enterprise_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/enterprise_organization github_enterprise_organization}.
 type EnterpriseOrganization interface {
 	cdktf.TerraformResource
 	AdminLogins() *[]*string
@@ -40,6 +40,9 @@ type EnterpriseOrganization interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
 	EnterpriseId() *string
 	SetEnterpriseId(val *string)
 	EnterpriseIdInput() *string
@@ -105,6 +108,7 @@ type EnterpriseOrganization interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetDisplayName()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_EnterpriseOrganization) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnterpriseOrganization) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EnterpriseOrganization) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
 		&returns,
 	)
 	return returns
@@ -405,7 +429,7 @@ func (j *jsiiProxy_EnterpriseOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
 func NewEnterpriseOrganization(scope constructs.Construct, id *string, config *EnterpriseOrganizationConfig) EnterpriseOrganization {
 	_init_.Initialize()
 
@@ -423,7 +447,7 @@ func NewEnterpriseOrganization(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
 func NewEnterpriseOrganization_Override(e EnterpriseOrganization, scope constructs.Construct, id *string, config *EnterpriseOrganizationConfig) {
 	_init_.Initialize()
 
@@ -493,6 +517,17 @@ func (j *jsiiProxy_EnterpriseOrganization)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EnterpriseOrganization)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -838,6 +873,14 @@ func (e *jsiiProxy_EnterpriseOrganization) ResetDescription() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EnterpriseOrganization) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDisplayName",
 		nil, // no parameters
 	)
 }
