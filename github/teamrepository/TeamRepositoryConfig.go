@@ -24,13 +24,13 @@ type TeamRepositoryConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The repository to add to the team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/team_repository#repository TeamRepository#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository#repository TeamRepository#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// ID or slug of team.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/team_repository#team_id TeamRepository#team_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository#team_id TeamRepository#team_id}
 	TeamId *string `field:"required" json:"teamId" yaml:"teamId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/team_repository#id TeamRepository#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository#id TeamRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,7 +39,7 @@ type TeamRepositoryConfig struct {
 	//
 	// Must be one of 'pull', 'triage', 'push', 'maintain', 'admin' or the name of an existing custom repository role within the organisation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/team_repository#permission TeamRepository#permission}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository#permission TeamRepository#permission}
 	Permission *string `field:"optional" json:"permission" yaml:"permission"`
 }
 

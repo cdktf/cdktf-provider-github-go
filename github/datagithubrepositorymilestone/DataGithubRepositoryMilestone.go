@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_milestone github_repository_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repository_milestone github_repository_milestone}.
 type DataGithubRepositoryMilestone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataGithubRepositoryMilestone) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
 func NewDataGithubRepositoryMilestone(scope constructs.Construct, id *string, config *DataGithubRepositoryMilestoneConfig) DataGithubRepositoryMilestone {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataGithubRepositoryMilestone(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repository_milestone github_repository_milestone} Data Source.
 func NewDataGithubRepositoryMilestone_Override(d DataGithubRepositoryMilestone, scope constructs.Construct, id *string, config *DataGithubRepositoryMilestoneConfig) {
 	_init_.Initialize()
 
