@@ -22,18 +22,18 @@ type DataGithubRepositoriesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories#query DataGithubRepositories#query}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories#query DataGithubRepositories#query}.
 	Query *string `field:"required" json:"query" yaml:"query"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories#id DataGithubRepositories#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories#id DataGithubRepositories#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
 	IncludeRepoId interface{} `field:"optional" json:"includeRepoId" yaml:"includeRepoId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}.
 	ResultsPerPage *float64 `field:"optional" json:"resultsPerPage" yaml:"resultsPerPage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}.
 	Sort *string `field:"optional" json:"sort" yaml:"sort"`
 }
 

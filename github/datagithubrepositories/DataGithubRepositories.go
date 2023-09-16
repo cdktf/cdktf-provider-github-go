@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories github_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories github_repositories}.
 type DataGithubRepositories interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataGithubRepositories) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories github_repositories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories github_repositories} Data Source.
 func NewDataGithubRepositories(scope constructs.Construct, id *string, config *DataGithubRepositoriesConfig) DataGithubRepositories {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataGithubRepositories(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/repositories github_repositories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/repositories github_repositories} Data Source.
 func NewDataGithubRepositories_Override(d DataGithubRepositories, scope constructs.Construct, id *string, config *DataGithubRepositoriesConfig) {
 	_init_.Initialize()
 

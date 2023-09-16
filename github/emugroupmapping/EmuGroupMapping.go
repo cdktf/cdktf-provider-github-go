@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/emu_group_mapping github_emu_group_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/emu_group_mapping github_emu_group_mapping}.
 type EmuGroupMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_EmuGroupMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/emu_group_mapping github_emu_group_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/emu_group_mapping github_emu_group_mapping} Resource.
 func NewEmuGroupMapping(scope constructs.Construct, id *string, config *EmuGroupMappingConfig) EmuGroupMapping {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewEmuGroupMapping(scope constructs.Construct, id *string, config *EmuGroup
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/emu_group_mapping github_emu_group_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/emu_group_mapping github_emu_group_mapping} Resource.
 func NewEmuGroupMapping_Override(e EmuGroupMapping, scope constructs.Construct, id *string, config *EmuGroupMappingConfig) {
 	_init_.Initialize()
 

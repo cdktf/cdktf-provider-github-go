@@ -63,7 +63,7 @@ func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) validateSetInlcudeParameters(val *[]*string) error {
+func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) validateSetIncludeParameters(val *[]*string) error {
 	return nil
 }
 

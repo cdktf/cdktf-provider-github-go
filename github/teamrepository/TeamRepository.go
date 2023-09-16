@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository github_team_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/team_repository github_team_repository}.
 type TeamRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_TeamRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository github_team_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/team_repository github_team_repository} Resource.
 func NewTeamRepository(scope constructs.Construct, id *string, config *TeamRepositoryConfig) TeamRepository {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewTeamRepository(scope constructs.Construct, id *string, config *TeamRepos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/team_repository github_team_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/team_repository github_team_repository} Resource.
 func NewTeamRepository_Override(t TeamRepository, scope constructs.Construct, id *string, config *TeamRepositoryConfig) {
 	_init_.Initialize()
 

@@ -33,9 +33,9 @@ type OrganizationRulesetConditionsRepositoryNameOutputReference interface {
 	ExcludeInput() *[]*string
 	// Experimental.
 	Fqn() *string
-	Inlcude() *[]*string
-	SetInlcude(val *[]*string)
-	InlcudeInput() *[]*string
+	Include() *[]*string
+	SetInclude(val *[]*string)
+	IncludeInput() *[]*string
 	InternalValue() *OrganizationRulesetConditionsRepositoryName
 	SetInternalValue(val *OrganizationRulesetConditionsRepositoryName)
 	Protected() interface{}
@@ -149,21 +149,21 @@ func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) Inlcude() *[]*string {
+func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) Include() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"inlcude",
+		"include",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) InlcudeInput() *[]*string {
+func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference) IncludeInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"inlcudeInput",
+		"includeInput",
 		&returns,
 	)
 	return returns
@@ -280,13 +280,13 @@ func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference)SetInlcude(val *[]*string) {
-	if err := j.validateSetInlcudeParameters(val); err != nil {
+func (j *jsiiProxy_OrganizationRulesetConditionsRepositoryNameOutputReference)SetInclude(val *[]*string) {
+	if err := j.validateSetIncludeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"inlcude",
+		"include",
 		val,
 	)
 }
