@@ -67,6 +67,7 @@ type RepositoryRulesetRulesRequiredDeploymentsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRequiredDeploymentEnvironments()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) Int
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) ResetRequiredDeploymentEnvironments() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRequiredDeploymentEnvironments",
+		nil, // no parameters
+	)
 }
 
 func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

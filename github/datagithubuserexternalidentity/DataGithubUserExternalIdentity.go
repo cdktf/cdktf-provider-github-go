@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/user_external_identity github_user_external_identity}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/user_external_identity github_user_external_identity}.
 type DataGithubUserExternalIdentity interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGithubUserExternalIdentity) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/user_external_identity github_user_external_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/user_external_identity github_user_external_identity} Data Source.
 func NewDataGithubUserExternalIdentity(scope constructs.Construct, id *string, config *DataGithubUserExternalIdentityConfig) DataGithubUserExternalIdentity {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataGithubUserExternalIdentity(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/user_external_identity github_user_external_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/user_external_identity github_user_external_identity} Data Source.
 func NewDataGithubUserExternalIdentity_Override(d DataGithubUserExternalIdentity, scope constructs.Construct, id *string, config *DataGithubUserExternalIdentityConfig) {
 	_init_.Initialize()
 

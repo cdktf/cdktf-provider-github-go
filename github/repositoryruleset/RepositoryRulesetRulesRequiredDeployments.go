@@ -7,7 +7,7 @@ package repositoryruleset
 type RepositoryRulesetRulesRequiredDeployments struct {
 	// The environments that must be successfully deployed to before branches can be merged.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/repository_ruleset#required_deployment_environments RepositoryRuleset#required_deployment_environments}
-	RequiredDeploymentEnvironments *[]*string `field:"required" json:"requiredDeploymentEnvironments" yaml:"requiredDeploymentEnvironments"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/repository_ruleset#required_deployment_environments RepositoryRuleset#required_deployment_environments}
+	RequiredDeploymentEnvironments *[]*string `field:"optional" json:"requiredDeploymentEnvironments" yaml:"requiredDeploymentEnvironments"`
 }
 

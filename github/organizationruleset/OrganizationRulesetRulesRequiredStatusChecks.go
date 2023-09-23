@@ -7,13 +7,13 @@ package organizationruleset
 type OrganizationRulesetRulesRequiredStatusChecks struct {
 	// required_check block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
 	RequiredCheck interface{} `field:"required" json:"requiredCheck" yaml:"requiredCheck"`
 	// Whether pull requests targeting a matching branch must be tested with the latest code.
 	//
 	// This setting will not take effect unless at least one status check is enabled. Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
 	StrictRequiredStatusChecksPolicy interface{} `field:"optional" json:"strictRequiredStatusChecksPolicy" yaml:"strictRequiredStatusChecksPolicy"`
 }
 

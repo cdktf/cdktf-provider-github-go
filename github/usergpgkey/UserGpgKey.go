@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/user_gpg_key github_user_gpg_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/user_gpg_key github_user_gpg_key}.
 type UserGpgKey interface {
 	cdktf.TerraformResource
 	ArmoredPublicKey() *string
@@ -334,7 +334,7 @@ func (j *jsiiProxy_UserGpgKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyConfig) UserGpgKey {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey_Override(u UserGpgKey, scope constructs.Construct, id *string, config *UserGpgKeyConfig) {
 	_init_.Initialize()
 

@@ -577,6 +577,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredDeploymentEnvironments", GoGetter: "RequiredDeploymentEnvironments"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredDeploymentEnvironmentsInput", GoGetter: "RequiredDeploymentEnvironmentsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredDeploymentEnvironments", GoMethod: "ResetRequiredDeploymentEnvironments"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
