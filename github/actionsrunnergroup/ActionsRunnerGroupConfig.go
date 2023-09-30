@@ -24,17 +24,17 @@ type ActionsRunnerGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The visibility of the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
 	Visibility *string `field:"required" json:"visibility" yaml:"visibility"`
 	// Whether public repositories can be added to the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
 	AllowsPublicRepositories interface{} `field:"optional" json:"allowsPublicRepositories" yaml:"allowsPublicRepositories"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#id ActionsRunnerGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#id ActionsRunnerGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,17 +43,17 @@ type ActionsRunnerGroupConfig struct {
 	//
 	// Defaults to 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
 	RestrictedToWorkflows interface{} `field:"optional" json:"restrictedToWorkflows" yaml:"restrictedToWorkflows"`
 	// List of repository IDs that can access the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
 	SelectedRepositoryIds *[]*float64 `field:"optional" json:"selectedRepositoryIds" yaml:"selectedRepositoryIds"`
 	// List of workflows the runner group should be allowed to run.
 	//
 	// This setting will be ignored unless restricted_to_workflows is set to 'true'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 	SelectedWorkflows *[]*string `field:"optional" json:"selectedWorkflows" yaml:"selectedWorkflows"`
 }
 

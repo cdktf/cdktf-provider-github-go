@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue github_issue}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue github_issue}.
 type Issue interface {
 	cdktf.TerraformResource
 	Assignees() *[]*string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_Issue) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue github_issue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue github_issue} Resource.
 func NewIssue(scope constructs.Construct, id *string, config *IssueConfig) Issue {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewIssue(scope constructs.Construct, id *string, config *IssueConfig) Issue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue github_issue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue github_issue} Resource.
 func NewIssue_Override(i Issue, scope constructs.Construct, id *string, config *IssueConfig) {
 	_init_.Initialize()
 

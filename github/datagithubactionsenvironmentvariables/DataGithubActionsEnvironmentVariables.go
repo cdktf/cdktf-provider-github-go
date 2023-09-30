@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/actions_environment_variables github_actions_environment_variables}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_environment_variables github_actions_environment_variables}.
 type DataGithubActionsEnvironmentVariables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataGithubActionsEnvironmentVariables) Variables() DataGithub
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source.
 func NewDataGithubActionsEnvironmentVariables(scope constructs.Construct, id *string, config *DataGithubActionsEnvironmentVariablesConfig) DataGithubActionsEnvironmentVariables {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataGithubActionsEnvironmentVariables(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source.
 func NewDataGithubActionsEnvironmentVariables_Override(d DataGithubActionsEnvironmentVariables, scope constructs.Construct, id *string, config *DataGithubActionsEnvironmentVariablesConfig) {
 	_init_.Initialize()
 

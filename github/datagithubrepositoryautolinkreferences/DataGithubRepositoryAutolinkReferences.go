@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
 type DataGithubRepositoryAutolinkReferences interface {
 	cdktf.TerraformDataSource
 	AutolinkReferences() DataGithubRepositoryAutolinkReferencesAutolinkReferencesList
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGithubRepositoryAutolinkReferences) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/repository_autolink_references github_repository_autolink_references} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/repository_autolink_references github_repository_autolink_references} Data Source.
 func NewDataGithubRepositoryAutolinkReferences(scope constructs.Construct, id *string, config *DataGithubRepositoryAutolinkReferencesConfig) DataGithubRepositoryAutolinkReferences {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataGithubRepositoryAutolinkReferences(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/repository_autolink_references github_repository_autolink_references} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/repository_autolink_references github_repository_autolink_references} Data Source.
 func NewDataGithubRepositoryAutolinkReferences_Override(d DataGithubRepositoryAutolinkReferences, scope constructs.Construct, id *string, config *DataGithubRepositoryAutolinkReferencesConfig) {
 	_init_.Initialize()
 
