@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}.
 type DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGithubActionsRepositoryOidcSubjectClaimCustomizationTempl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source.
 func NewDataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate(scope constructs.Construct, id *string, config *DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig) DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate(scope c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source.
 func NewDataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate_Override(d DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate, scope constructs.Construct, id *string, config *DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig) {
 	_init_.Initialize()
 

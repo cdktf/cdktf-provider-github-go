@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/issue_labels github_issue_labels}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/issue_labels github_issue_labels}.
 type DataGithubIssueLabels interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGithubIssueLabels) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/issue_labels github_issue_labels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/issue_labels github_issue_labels} Data Source.
 func NewDataGithubIssueLabels(scope constructs.Construct, id *string, config *DataGithubIssueLabelsConfig) DataGithubIssueLabels {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataGithubIssueLabels(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/issue_labels github_issue_labels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/issue_labels github_issue_labels} Data Source.
 func NewDataGithubIssueLabels_Override(d DataGithubIssueLabels, scope constructs.Construct, id *string, config *DataGithubIssueLabelsConfig) {
 	_init_.Initialize()
 
