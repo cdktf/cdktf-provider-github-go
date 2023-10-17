@@ -5,10 +5,10 @@ package repositoryenvironmentdeploymentpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v11/repositoryenvironmentdeploymentpolicy/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,6 +73,9 @@ type RepositoryEnvironmentDeploymentPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -94,7 +97,12 @@ type RepositoryEnvironmentDeploymentPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -499,6 +507,25 @@ func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy)SetRepository(val *stri
 	)
 }
 
+// Generates CDKTF code for importing a RepositoryEnvironmentDeploymentPolicy resource upon running "cdktf plan <stack-name>".
+func RepositoryEnvironmentDeploymentPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRepositoryEnvironmentDeploymentPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -581,6 +608,17 @@ func RepositoryEnvironmentDeploymentPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) AddOverride(path *string, value interface{}) {
@@ -738,6 +776,17 @@ func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) GetStringMapAttribute(
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -752,6 +801,17 @@ func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) OverrideLogicalId(newLogicalId *string) {

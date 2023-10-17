@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubRepositoryTeams) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataGithubRepositoryTeams_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubRepositoryTeams_IsConstructParameters(x interface{}) error {
 	return nil
 }

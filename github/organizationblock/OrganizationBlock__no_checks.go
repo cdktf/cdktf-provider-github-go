@@ -7,6 +7,10 @@ package organizationblock
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationBlock) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationBlock) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_OrganizationBlock) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationBlock) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationBlock) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationBlock) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationBlock) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrganizationBlock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

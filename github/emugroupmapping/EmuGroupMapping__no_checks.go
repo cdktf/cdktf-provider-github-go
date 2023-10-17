@@ -7,6 +7,10 @@ package emugroupmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmuGroupMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmuGroupMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EmuGroupMapping) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EmuGroupMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmuGroupMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmuGroupMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmuGroupMapping) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmuGroupMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package dependabotorganizationsecretrepositories
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateGetStringMa
 	return nil
 }
 
+func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDependabotOrganizationSecretRepositories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package usergpgkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserGpgKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGpgKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserGpgKey) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (u *jsiiProxy_UserGpgKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGpgKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserGpgKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGpgKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserGpgKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

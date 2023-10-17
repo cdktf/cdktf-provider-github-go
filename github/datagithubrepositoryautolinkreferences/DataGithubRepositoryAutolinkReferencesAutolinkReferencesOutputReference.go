@@ -5,9 +5,9 @@ package datagithubrepositoryautolinkreferences
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryautolinkreferences/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

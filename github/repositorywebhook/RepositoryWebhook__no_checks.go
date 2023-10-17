@@ -7,6 +7,10 @@ package repositorywebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RepositoryWebhook) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RepositoryWebhook) validateOverrideLogicalIdParameters(newLog
 }
 
 func (r *jsiiProxy_RepositoryWebhook) validatePutConfigurationParameters(value *RepositoryWebhookConfiguration) error {
+	return nil
+}
+
+func validateRepositoryWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

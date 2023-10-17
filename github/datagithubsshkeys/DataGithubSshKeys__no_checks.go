@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubSshKeys) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataGithubSshKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubSshKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

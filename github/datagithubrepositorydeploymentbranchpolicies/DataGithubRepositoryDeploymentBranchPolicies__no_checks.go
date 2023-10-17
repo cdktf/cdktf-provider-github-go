@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubRepositoryDeploymentBranchPolicies) validateOverrid
 	return nil
 }
 
+func validateDataGithubRepositoryDeploymentBranchPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubRepositoryDeploymentBranchPolicies_IsConstructParameters(x interface{}) error {
 	return nil
 }

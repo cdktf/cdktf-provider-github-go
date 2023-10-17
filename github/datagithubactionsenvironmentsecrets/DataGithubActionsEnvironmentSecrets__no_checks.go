@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubActionsEnvironmentSecrets) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGithubActionsEnvironmentSecrets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubActionsEnvironmentSecrets_IsConstructParameters(x interface{}) error {
 	return nil
 }

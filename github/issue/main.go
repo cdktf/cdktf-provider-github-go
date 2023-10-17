@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-github.issue.Issue",
 		reflect.TypeOf((*Issue)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "assignees", GoGetter: "Assignees"},
 			_jsii_.MemberProperty{JsiiProperty: "assigneesInput", GoGetter: "AssigneesInput"},
@@ -39,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issueId", GoGetter: "IssueId"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
@@ -46,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "milestoneNumber", GoGetter: "MilestoneNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "milestoneNumberInput", GoGetter: "MilestoneNumberInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "number", GoGetter: "Number"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

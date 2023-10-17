@@ -7,6 +7,10 @@ package projectcard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectCard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectCard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_ProjectCard) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (p *jsiiProxy_ProjectCard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectCard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectCard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectCard) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectCard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

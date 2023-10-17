@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubUserExternalIdentity) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataGithubUserExternalIdentity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubUserExternalIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }

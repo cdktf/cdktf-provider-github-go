@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubRestApi) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataGithubRestApi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubRestApi_IsConstructParameters(x interface{}) error {
 	return nil
 }

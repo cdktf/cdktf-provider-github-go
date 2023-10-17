@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubDependabotOrganizationPublicKey) validateOverrideLo
 	return nil
 }
 
+func validateDataGithubDependabotOrganizationPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubDependabotOrganizationPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

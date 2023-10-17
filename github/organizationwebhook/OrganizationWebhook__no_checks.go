@@ -7,6 +7,10 @@ package organizationwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationWebhook) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OrganizationWebhook) validateOverrideLogicalIdParameters(newL
 }
 
 func (o *jsiiProxy_OrganizationWebhook) validatePutConfigurationParameters(value *OrganizationWebhookConfiguration) error {
+	return nil
+}
+
+func validateOrganizationWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

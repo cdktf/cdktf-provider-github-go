@@ -7,6 +7,10 @@ package actionssecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActionsSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ActionsSecret) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_ActionsSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ActionsSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsSecret) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateActionsSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

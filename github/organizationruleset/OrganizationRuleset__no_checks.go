@@ -7,6 +7,10 @@ package organizationruleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationRuleset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRuleset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationRuleset) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationRuleset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRuleset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRuleset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OrganizationRuleset) validatePutConditionsParameters(value *O
 }
 
 func (o *jsiiProxy_OrganizationRuleset) validatePutRulesParameters(value *OrganizationRulesetRules) error {
+	return nil
+}
+
+func validateOrganizationRuleset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

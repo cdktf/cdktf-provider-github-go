@@ -7,6 +7,10 @@ package repositoryenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RepositoryEnvironment) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RepositoryEnvironment) validatePutDeploymentBranchPolicyParam
 }
 
 func (r *jsiiProxy_RepositoryEnvironment) validatePutReviewersParameters(value interface{}) error {
+	return nil
+}
+
+func validateRepositoryEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

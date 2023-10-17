@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubAppToken) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataGithubAppToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubAppToken_IsConstructParameters(x interface{}) error {
 	return nil
 }

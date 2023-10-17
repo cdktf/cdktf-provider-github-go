@@ -7,6 +7,10 @@ package codespacessecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodespacesSecret) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodespacesSecret) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CodespacesSecret) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CodespacesSecret) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodespacesSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CodespacesSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodespacesSecret) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCodespacesSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

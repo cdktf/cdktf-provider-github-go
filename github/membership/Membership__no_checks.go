@@ -7,6 +7,10 @@ package membership
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Membership) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Membership) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_Membership) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (m *jsiiProxy_Membership) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Membership) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_Membership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Membership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMembership_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

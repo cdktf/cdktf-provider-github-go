@@ -7,6 +7,10 @@ package repositorydependabotsecurityupdates
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateGetStringMapAttr
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDependabotSecurityUpdates) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRepositoryDependabotSecurityUpdates_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package issuelabel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IssueLabel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueLabel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IssueLabel) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (i *jsiiProxy_IssueLabel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueLabel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IssueLabel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueLabel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIssueLabel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

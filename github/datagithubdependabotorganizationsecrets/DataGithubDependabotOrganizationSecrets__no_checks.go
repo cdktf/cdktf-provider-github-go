@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubDependabotOrganizationSecrets) validateOverrideLogi
 	return nil
 }
 
+func validateDataGithubDependabotOrganizationSecrets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubDependabotOrganizationSecrets_IsConstructParameters(x interface{}) error {
 	return nil
 }

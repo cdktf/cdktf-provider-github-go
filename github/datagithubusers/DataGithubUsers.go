@@ -5,10 +5,10 @@ package datagithubusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubusers/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -423,6 +423,25 @@ func (j *jsiiProxy_DataGithubUsers)SetUsernames(val *[]*string) {
 		"usernames",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataGithubUsers resource upon running "cdktf plan <stack-name>".
+func DataGithubUsers_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGithubUsers_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.dataGithubUsers.DataGithubUsers",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

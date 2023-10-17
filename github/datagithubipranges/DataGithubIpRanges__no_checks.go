@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubIpRanges) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataGithubIpRanges_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubIpRanges_IsConstructParameters(x interface{}) error {
 	return nil
 }

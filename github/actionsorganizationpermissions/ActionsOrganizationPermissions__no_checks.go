@@ -7,6 +7,10 @@ package actionsorganizationpermissions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActionsOrganizationPermissions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationPermissions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ActionsOrganizationPermissions) validateGetStringMapAttribute
 	return nil
 }
 
+func (a *jsiiProxy_ActionsOrganizationPermissions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationPermissions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionsOrganizationPermissions) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ActionsOrganizationPermissions) validatePutAllowedActionsConf
 }
 
 func (a *jsiiProxy_ActionsOrganizationPermissions) validatePutEnabledRepositoriesConfigParameters(value *ActionsOrganizationPermissionsEnabledRepositoriesConfig) error {
+	return nil
+}
+
+func validateActionsOrganizationPermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

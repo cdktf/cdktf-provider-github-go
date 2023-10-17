@@ -7,6 +7,10 @@ package teamsyncgroupmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamSyncGroupMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamSyncGroupMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TeamSyncGroupMapping) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (t *jsiiProxy_TeamSyncGroupMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamSyncGroupMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamSyncGroupMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (t *jsiiProxy_TeamSyncGroupMapping) validateOverrideLogicalIdParameters(new
 }
 
 func (t *jsiiProxy_TeamSyncGroupMapping) validatePutGroupParameters(value interface{}) error {
+	return nil
+}
+
+func validateTeamSyncGroupMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package repositorydeploykey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryDeployKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDeployKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RepositoryDeployKey) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryDeployKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDeployKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryDeployKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryDeployKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRepositoryDeployKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

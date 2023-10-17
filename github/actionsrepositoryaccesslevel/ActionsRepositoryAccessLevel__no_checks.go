@@ -7,6 +7,10 @@ package actionsrepositoryaccesslevel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateGetStringMapAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsRepositoryAccessLevel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateActionsRepositoryAccessLevel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

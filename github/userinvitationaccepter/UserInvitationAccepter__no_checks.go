@@ -7,6 +7,10 @@ package userinvitationaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (u *jsiiProxy_UserInvitationAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserInvitationAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (u *jsiiProxy_UserInvitationAccepter) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (u *jsiiProxy_UserInvitationAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserInvitationAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (u *jsiiProxy_UserInvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserInvitationAccepter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateUserInvitationAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

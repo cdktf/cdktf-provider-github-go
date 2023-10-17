@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubOrganizationExternalIdentities) validateOverrideLog
 	return nil
 }
 
+func validateDataGithubOrganizationExternalIdentities_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubOrganizationExternalIdentities_IsConstructParameters(x interface{}) error {
 	return nil
 }

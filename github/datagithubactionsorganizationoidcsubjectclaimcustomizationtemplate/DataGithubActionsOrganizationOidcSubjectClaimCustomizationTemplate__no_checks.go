@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubActionsOrganizationOidcSubjectClaimCustomizationTem
 	return nil
 }
 
+func validateDataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }

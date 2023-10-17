@@ -7,6 +7,10 @@ package repositorytopics
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryTopics) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTopics) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RepositoryTopics) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryTopics) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTopics) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryTopics) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTopics) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRepositoryTopics_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

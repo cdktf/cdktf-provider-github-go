@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-github.repository.Repository",
 		reflect.TypeOf((*Repository)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAutoMerge", GoGetter: "AllowAutoMerge"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAutoMergeInput", GoGetter: "AllowAutoMergeInput"},
@@ -77,6 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreVulnerabilityAlertsDuringRead", GoGetter: "IgnoreVulnerabilityAlertsDuringRead"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreVulnerabilityAlertsDuringReadInput", GoGetter: "IgnoreVulnerabilityAlertsDuringReadInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isTemplate", GoGetter: "IsTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "isTemplateInput", GoGetter: "IsTemplateInput"},
@@ -87,6 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mergeCommitMessageInput", GoGetter: "MergeCommitMessageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeCommitTitle", GoGetter: "MergeCommitTitle"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeCommitTitleInput", GoGetter: "MergeCommitTitleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

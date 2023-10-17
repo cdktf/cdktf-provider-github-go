@@ -7,6 +7,10 @@ package appinstallationrepositories
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppInstallationRepositories) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppInstallationRepositories) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AppInstallationRepositories) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AppInstallationRepositories) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppInstallationRepositories) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AppInstallationRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppInstallationRepositories) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAppInstallationRepositories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

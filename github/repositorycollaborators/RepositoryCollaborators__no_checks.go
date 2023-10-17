@@ -7,6 +7,10 @@ package repositorycollaborators
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryCollaborators) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryCollaborators) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RepositoryCollaborators) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryCollaborators) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryCollaborators) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryCollaborators) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RepositoryCollaborators) validatePutTeamParameters(value inte
 }
 
 func (r *jsiiProxy_RepositoryCollaborators) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func validateRepositoryCollaborators_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

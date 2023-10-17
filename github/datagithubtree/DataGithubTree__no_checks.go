@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubTree) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateDataGithubTree_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubTree_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package branchdefault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BranchDefault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchDefault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BranchDefault) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (b *jsiiProxy_BranchDefault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchDefault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BranchDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchDefault) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBranchDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

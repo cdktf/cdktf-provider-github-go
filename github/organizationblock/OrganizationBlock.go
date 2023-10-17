@@ -5,10 +5,10 @@ package organizationblock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v11/organizationblock/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v12/organizationblock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -68,6 +68,9 @@ type OrganizationBlock interface {
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,7 +92,12 @@ type OrganizationBlock interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -442,6 +450,25 @@ func (j *jsiiProxy_OrganizationBlock)SetUsername(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a OrganizationBlock resource upon running "cdktf plan <stack-name>".
+func OrganizationBlock_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateOrganizationBlock_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-github.organizationBlock.OrganizationBlock",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -524,6 +551,17 @@ func OrganizationBlock_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationBlock) AddMoveTarget(moveTarget *string) {
+	if err := o.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (o *jsiiProxy_OrganizationBlock) AddOverride(path *string, value interface{}) {
@@ -681,6 +719,17 @@ func (o *jsiiProxy_OrganizationBlock) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationBlock) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := o.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (o *jsiiProxy_OrganizationBlock) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -695,6 +744,17 @@ func (o *jsiiProxy_OrganizationBlock) InterpolationForAttribute(terraformAttribu
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationBlock) MoveTo(moveTarget *string, index interface{}) {
+	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (o *jsiiProxy_OrganizationBlock) OverrideLogicalId(newLogicalId *string) {

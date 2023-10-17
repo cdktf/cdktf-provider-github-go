@@ -7,6 +7,10 @@ package actionsorganizationsecretrepositories
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateGetStringMapAt
 	return nil
 }
 
+func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateActionsOrganizationSecretRepositories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

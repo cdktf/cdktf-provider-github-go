@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGithubCodespacesUserPublicKey) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGithubCodespacesUserPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGithubCodespacesUserPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

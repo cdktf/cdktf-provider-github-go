@@ -7,6 +7,10 @@ package repositorytagprotection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RepositoryTagProtection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTagProtection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RepositoryTagProtection) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryTagProtection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTagProtection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryTagProtection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryTagProtection) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRepositoryTagProtection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
