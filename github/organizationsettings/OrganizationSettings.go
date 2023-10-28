@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_settings github_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_settings github_organization_settings}.
 type OrganizationSettings interface {
 	cdktf.TerraformResource
 	AdvancedSecurityEnabledForNewRepositories() interface{}
@@ -920,7 +920,7 @@ func (j *jsiiProxy_OrganizationSettings) WebCommitSignoffRequiredInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_settings github_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_settings github_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -938,7 +938,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_settings github_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_settings github_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 

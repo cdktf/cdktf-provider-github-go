@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/project_column github_project_column}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/project_column github_project_column}.
 type ProjectColumn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_ProjectColumn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/project_column github_project_column} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/project_column github_project_column} Resource.
 func NewProjectColumn(scope constructs.Construct, id *string, config *ProjectColumnConfig) ProjectColumn {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewProjectColumn(scope constructs.Construct, id *string, config *ProjectCol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/project_column github_project_column} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/project_column github_project_column} Resource.
 func NewProjectColumn_Override(p ProjectColumn, scope constructs.Construct, id *string, config *ProjectColumnConfig) {
 	_init_.Initialize()
 

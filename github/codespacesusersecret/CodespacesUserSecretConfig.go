@@ -24,24 +24,24 @@ type CodespacesUserSecretConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_user_secret#secret_name CodespacesUserSecret#secret_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_user_secret#secret_name CodespacesUserSecret#secret_name}
 	SecretName *string `field:"required" json:"secretName" yaml:"secretName"`
 	// Encrypted value of the secret using the GitHub public key in Base64 format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_user_secret#encrypted_value CodespacesUserSecret#encrypted_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_user_secret#encrypted_value CodespacesUserSecret#encrypted_value}
 	EncryptedValue *string `field:"optional" json:"encryptedValue" yaml:"encryptedValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_user_secret#id CodespacesUserSecret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_user_secret#id CodespacesUserSecret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Plaintext value of the secret to be encrypted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_user_secret#plaintext_value CodespacesUserSecret#plaintext_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_user_secret#plaintext_value CodespacesUserSecret#plaintext_value}
 	PlaintextValue *string `field:"optional" json:"plaintextValue" yaml:"plaintextValue"`
 	// An array of repository ids that can access the user secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_user_secret#selected_repository_ids CodespacesUserSecret#selected_repository_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_user_secret#selected_repository_ids CodespacesUserSecret#selected_repository_ids}
 	SelectedRepositoryIds *[]*float64 `field:"optional" json:"selectedRepositoryIds" yaml:"selectedRepositoryIds"`
 }
 

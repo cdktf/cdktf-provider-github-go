@@ -26,13 +26,13 @@ type ActionsRepositoryAccessLevelConfig struct {
 	//
 	// Possible values are 'none', 'user', 'organization', or 'enterprise'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
 	AccessLevel *string `field:"required" json:"accessLevel" yaml:"accessLevel"`
 	// The GitHub repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

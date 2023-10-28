@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
 type RepositoryTagProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_RepositoryTagProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
 func NewRepositoryTagProtection(scope constructs.Construct, id *string, config *RepositoryTagProtectionConfig) RepositoryTagProtection {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewRepositoryTagProtection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
 func NewRepositoryTagProtection_Override(r RepositoryTagProtection, scope constructs.Construct, id *string, config *RepositoryTagProtectionConfig) {
 	_init_.Initialize()
 

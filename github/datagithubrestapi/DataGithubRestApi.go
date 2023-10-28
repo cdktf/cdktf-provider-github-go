@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/rest_api github_rest_api}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api github_rest_api}.
 type DataGithubRestApi interface {
 	cdktf.TerraformDataSource
 	Body() cdktf.StringMap
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataGithubRestApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/rest_api github_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api github_rest_api} Data Source.
 func NewDataGithubRestApi(scope constructs.Construct, id *string, config *DataGithubRestApiConfig) DataGithubRestApi {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataGithubRestApi(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/rest_api github_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api github_rest_api} Data Source.
 func NewDataGithubRestApi_Override(d DataGithubRestApi, scope constructs.Construct, id *string, config *DataGithubRestApiConfig) {
 	_init_.Initialize()
 

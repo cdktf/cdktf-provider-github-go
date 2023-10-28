@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/enterprise github_enterprise}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/enterprise github_enterprise}.
 type DataGithubEnterprise interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataGithubEnterprise) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/enterprise github_enterprise} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/enterprise github_enterprise} Data Source.
 func NewDataGithubEnterprise(scope constructs.Construct, id *string, config *DataGithubEnterpriseConfig) DataGithubEnterprise {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataGithubEnterprise(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/enterprise github_enterprise} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/enterprise github_enterprise} Data Source.
 func NewDataGithubEnterprise_Override(d DataGithubEnterprise, scope constructs.Construct, id *string, config *DataGithubEnterpriseConfig) {
 	_init_.Initialize()
 
