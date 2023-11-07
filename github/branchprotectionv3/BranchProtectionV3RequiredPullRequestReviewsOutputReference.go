@@ -30,6 +30,9 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DismissalApps() *[]*string
+	SetDismissalApps(val *[]*string)
+	DismissalAppsInput() *[]*string
 	DismissalTeams() *[]*string
 	SetDismissalTeams(val *[]*string)
 	DismissalTeamsInput() *[]*string
@@ -86,6 +89,7 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBypassPullRequestAllowances(value *BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances)
 	ResetBypassPullRequestAllowances()
+	ResetDismissalApps()
 	ResetDismissalTeams()
 	ResetDismissalUsers()
 	ResetDismissStaleReviews()
@@ -152,6 +156,26 @@ func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) DismissalApps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dismissalApps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) DismissalAppsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dismissalAppsInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +387,17 @@ func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference)S
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference)SetDismissalApps(val *[]*string) {
+	if err := j.validateSetDismissalAppsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dismissalApps",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	_jsii_.InvokeVoid(
 		b,
 		"resetBypassPullRequestAllowances",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) ResetDismissalApps() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDismissalApps",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories}.
 type CodespacesOrganizationSecretRepositories interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_CodespacesOrganizationSecretRepositories) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource.
 func NewCodespacesOrganizationSecretRepositories(scope constructs.Construct, id *string, config *CodespacesOrganizationSecretRepositoriesConfig) CodespacesOrganizationSecretRepositories {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewCodespacesOrganizationSecretRepositories(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource.
 func NewCodespacesOrganizationSecretRepositories_Override(c CodespacesOrganizationSecretRepositories, scope constructs.Construct, id *string, config *CodespacesOrganizationSecretRepositoriesConfig) {
 	_init_.Initialize()
 

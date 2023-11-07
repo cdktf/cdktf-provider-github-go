@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_webhooks github_repository_webhooks}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_webhooks github_repository_webhooks}.
 type DataGithubRepositoryWebhooks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGithubRepositoryWebhooks) Webhooks() DataGithubRepository
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
 func NewDataGithubRepositoryWebhooks(scope constructs.Construct, id *string, config *DataGithubRepositoryWebhooksConfig) DataGithubRepositoryWebhooks {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataGithubRepositoryWebhooks(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_webhooks github_repository_webhooks} Data Source.
 func NewDataGithubRepositoryWebhooks_Override(d DataGithubRepositoryWebhooks, scope constructs.Construct, id *string, config *DataGithubRepositoryWebhooksConfig) {
 	_init_.Initialize()
 

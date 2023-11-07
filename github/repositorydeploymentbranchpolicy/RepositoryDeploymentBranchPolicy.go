@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}.
 type RepositoryDeploymentBranchPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
 func NewRepositoryDeploymentBranchPolicy(scope constructs.Construct, id *string, config *RepositoryDeploymentBranchPolicyConfig) RepositoryDeploymentBranchPolicy {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewRepositoryDeploymentBranchPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
 func NewRepositoryDeploymentBranchPolicy_Override(r RepositoryDeploymentBranchPolicy, scope constructs.Construct, id *string, config *RepositoryDeploymentBranchPolicyConfig) {
 	_init_.Initialize()
 

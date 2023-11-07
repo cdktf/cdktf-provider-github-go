@@ -24,29 +24,29 @@ type OrganizationRulesetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Possible values for Enforcement are `disabled`, `active`, `evaluate`. Note: `evaluate` is currently only supported for owners of type `organization`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
 	Enforcement *string `field:"required" json:"enforcement" yaml:"enforcement"`
 	// The name of the ruleset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
 	Rules *OrganizationRulesetRules `field:"required" json:"rules" yaml:"rules"`
 	// Possible values are `branch` and `tag`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#target OrganizationRuleset#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#target OrganizationRuleset#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 	// bypass_actors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
 	BypassActors interface{} `field:"optional" json:"bypassActors" yaml:"bypassActors"`
 	// conditions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
 	Conditions *OrganizationRulesetConditions `field:"optional" json:"conditions" yaml:"conditions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_ruleset#id OrganizationRuleset#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset#id OrganizationRuleset#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
