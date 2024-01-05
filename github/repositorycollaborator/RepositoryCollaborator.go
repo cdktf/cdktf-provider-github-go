@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator github_repository_collaborator}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_collaborator github_repository_collaborator}.
 type RepositoryCollaborator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,12 +101,22 @@ type RepositoryCollaborator interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -402,7 +412,7 @@ func (j *jsiiProxy_RepositoryCollaborator) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) RepositoryCollaborator {
 	_init_.Initialize()
 
@@ -420,7 +430,7 @@ func NewRepositoryCollaborator(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_collaborator github_repository_collaborator} Resource.
 func NewRepositoryCollaborator_Override(r RepositoryCollaborator, scope constructs.Construct, id *string, config *RepositoryCollaboratorConfig) {
 	_init_.Initialize()
 
@@ -823,6 +833,19 @@ func (r *jsiiProxy_RepositoryCollaborator) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryCollaborator) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RepositoryCollaborator) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -850,6 +873,17 @@ func (r *jsiiProxy_RepositoryCollaborator) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryCollaborator) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RepositoryCollaborator) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -858,6 +892,17 @@ func (r *jsiiProxy_RepositoryCollaborator) MoveTo(moveTarget *string, index inte
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RepositoryCollaborator) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

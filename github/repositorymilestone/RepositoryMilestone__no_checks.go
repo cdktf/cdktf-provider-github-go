@@ -59,7 +59,15 @@ func (r *jsiiProxy_RepositoryMilestone) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryMilestone) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryMilestone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryMilestone) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (t *jsiiProxy_TeamSyncGroupMapping) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TeamSyncGroupMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamSyncGroupMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TeamSyncGroupMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

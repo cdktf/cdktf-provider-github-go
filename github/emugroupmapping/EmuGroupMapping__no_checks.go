@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmuGroupMapping) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EmuGroupMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmuGroupMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmuGroupMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

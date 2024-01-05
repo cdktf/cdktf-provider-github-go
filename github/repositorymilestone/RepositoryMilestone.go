@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_milestone github_repository_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_milestone github_repository_milestone}.
 type RepositoryMilestone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -107,12 +107,22 @@ type RepositoryMilestone interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_RepositoryMilestone) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone(scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) RepositoryMilestone {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewRepositoryMilestone(scope constructs.Construct, id *string, config *Repo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone_Override(r RepositoryMilestone, scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) {
 	_init_.Initialize()
 
@@ -892,6 +902,19 @@ func (r *jsiiProxy_RepositoryMilestone) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryMilestone) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RepositoryMilestone) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -919,6 +942,17 @@ func (r *jsiiProxy_RepositoryMilestone) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryMilestone) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RepositoryMilestone) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -927,6 +961,17 @@ func (r *jsiiProxy_RepositoryMilestone) MoveTo(moveTarget *string, index interfa
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RepositoryMilestone) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

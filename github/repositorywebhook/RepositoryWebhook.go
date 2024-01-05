@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_webhook github_repository_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_webhook github_repository_webhook}.
 type RepositoryWebhook interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -104,12 +104,22 @@ type RepositoryWebhook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_RepositoryWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook(scope constructs.Construct, id *string, config *RepositoryWebhookConfig) RepositoryWebhook {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewRepositoryWebhook(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook_Override(r RepositoryWebhook, scope constructs.Construct, id *string, config *RepositoryWebhookConfig) {
 	_init_.Initialize()
 
@@ -858,6 +868,19 @@ func (r *jsiiProxy_RepositoryWebhook) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryWebhook) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RepositoryWebhook) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -885,6 +908,17 @@ func (r *jsiiProxy_RepositoryWebhook) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryWebhook) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RepositoryWebhook) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -893,6 +927,17 @@ func (r *jsiiProxy_RepositoryWebhook) MoveTo(moveTarget *string, index interface
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RepositoryWebhook) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

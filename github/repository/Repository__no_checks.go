@@ -59,7 +59,15 @@ func (r *jsiiProxy_Repository) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_Repository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Repository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Repository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -232,6 +240,10 @@ func (j *jsiiProxy_Repository) validateSetVisibilityParameters(val *string) erro
 }
 
 func (j *jsiiProxy_Repository) validateSetVulnerabilityAlertsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetWebCommitSignoffRequiredParameters(val interface{}) error {
 	return nil
 }
 

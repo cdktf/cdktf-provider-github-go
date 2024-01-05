@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_pull_request github_repository_pull_request}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_pull_request github_repository_pull_request}.
 type RepositoryPullRequest interface {
 	cdktf.TerraformResource
 	BaseRef() *string
@@ -118,12 +118,22 @@ type RepositoryPullRequest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -560,7 +570,7 @@ func (j *jsiiProxy_RepositoryPullRequest) UpdatedAt() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
 func NewRepositoryPullRequest(scope constructs.Construct, id *string, config *RepositoryPullRequestConfig) RepositoryPullRequest {
 	_init_.Initialize()
 
@@ -578,7 +588,7 @@ func NewRepositoryPullRequest(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_pull_request github_repository_pull_request} Resource.
 func NewRepositoryPullRequest_Override(r RepositoryPullRequest, scope constructs.Construct, id *string, config *RepositoryPullRequestConfig) {
 	_init_.Initialize()
 
@@ -1014,6 +1024,19 @@ func (r *jsiiProxy_RepositoryPullRequest) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryPullRequest) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RepositoryPullRequest) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1041,6 +1064,17 @@ func (r *jsiiProxy_RepositoryPullRequest) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryPullRequest) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RepositoryPullRequest) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1049,6 +1083,17 @@ func (r *jsiiProxy_RepositoryPullRequest) MoveTo(moveTarget *string, index inter
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RepositoryPullRequest) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

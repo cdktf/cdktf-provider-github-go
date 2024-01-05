@@ -59,7 +59,15 @@ func (u *jsiiProxy_UserGpgKey) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (u *jsiiProxy_UserGpgKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserGpgKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserGpgKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

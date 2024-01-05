@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -170,6 +170,9 @@ type Repository interface {
 	VulnerabilityAlerts() interface{}
 	SetVulnerabilityAlerts(val interface{})
 	VulnerabilityAlertsInput() interface{}
+	WebCommitSignoffRequired() interface{}
+	SetWebCommitSignoffRequired(val interface{})
+	WebCommitSignoffRequiredInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -194,12 +197,22 @@ type Repository interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -242,6 +255,7 @@ type Repository interface {
 	ResetTopics()
 	ResetVisibility()
 	ResetVulnerabilityAlerts()
+	ResetWebCommitSignoffRequired()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1197,8 +1211,28 @@ func (j *jsiiProxy_Repository) VulnerabilityAlertsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) WebCommitSignoffRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webCommitSignoffRequired",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository github_repository} Resource.
+func (j *jsiiProxy_Repository) WebCommitSignoffRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"webCommitSignoffRequiredInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1216,7 +1250,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 
@@ -1636,6 +1670,17 @@ func (j *jsiiProxy_Repository)SetVulnerabilityAlerts(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Repository)SetWebCommitSignoffRequired(val interface{}) {
+	if err := j.validateSetWebCommitSignoffRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webCommitSignoffRequired",
+		val,
+	)
+}
+
 // Generates CDKTF code for importing a Repository resource upon running "cdktf plan <stack-name>".
 func Repository_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
 	_init_.Initialize()
@@ -1905,6 +1950,19 @@ func (r *jsiiProxy_Repository) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (r *jsiiProxy_Repository) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_Repository) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1932,6 +1990,17 @@ func (r *jsiiProxy_Repository) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (r *jsiiProxy_Repository) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_Repository) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1940,6 +2009,17 @@ func (r *jsiiProxy_Repository) MoveTo(moveTarget *string, index interface{}) {
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_Repository) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -2255,6 +2335,14 @@ func (r *jsiiProxy_Repository) ResetVulnerabilityAlerts() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetVulnerabilityAlerts",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetWebCommitSignoffRequired() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWebCommitSignoffRequired",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateInterpolati
 	return nil
 }
 
+func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DependabotOrganizationSecretRepositories) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

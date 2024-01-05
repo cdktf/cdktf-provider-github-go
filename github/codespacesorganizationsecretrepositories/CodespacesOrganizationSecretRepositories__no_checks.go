@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodespacesOrganizationSecretRepositories) validateInterpolati
 	return nil
 }
 
+func (c *jsiiProxy_CodespacesOrganizationSecretRepositories) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodespacesOrganizationSecretRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodespacesOrganizationSecretRepositories) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

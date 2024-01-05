@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/user_gpg_key github_user_gpg_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/user_gpg_key github_user_gpg_key}.
 type UserGpgKey interface {
 	cdktf.TerraformResource
 	ArmoredPublicKey() *string
@@ -93,12 +93,22 @@ type UserGpgKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -342,7 +352,7 @@ func (j *jsiiProxy_UserGpgKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyConfig) UserGpgKey {
 	_init_.Initialize()
 
@@ -360,7 +370,7 @@ func NewUserGpgKey(scope constructs.Construct, id *string, config *UserGpgKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/user_gpg_key github_user_gpg_key} Resource.
 func NewUserGpgKey_Override(u UserGpgKey, scope constructs.Construct, id *string, config *UserGpgKeyConfig) {
 	_init_.Initialize()
 
@@ -730,6 +740,19 @@ func (u *jsiiProxy_UserGpgKey) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (u *jsiiProxy_UserGpgKey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (u *jsiiProxy_UserGpgKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := u.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -757,6 +780,17 @@ func (u *jsiiProxy_UserGpgKey) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (u *jsiiProxy_UserGpgKey) MoveFromId(id *string) {
+	if err := u.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (u *jsiiProxy_UserGpgKey) MoveTo(moveTarget *string, index interface{}) {
 	if err := u.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -765,6 +799,17 @@ func (u *jsiiProxy_UserGpgKey) MoveTo(moveTarget *string, index interface{}) {
 		u,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (u *jsiiProxy_UserGpgKey) MoveToId(id *string) {
+	if err := u.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		u,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

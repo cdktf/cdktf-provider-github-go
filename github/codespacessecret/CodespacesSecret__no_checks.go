@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodespacesSecret) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CodespacesSecret) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodespacesSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodespacesSecret) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

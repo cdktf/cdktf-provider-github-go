@@ -59,7 +59,15 @@ func (d *jsiiProxy_DependabotOrganizationSecret) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DependabotOrganizationSecret) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DependabotOrganizationSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DependabotOrganizationSecret) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateInterpolationF
 	return nil
 }
 
+func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionsOrganizationSecretRepositories) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

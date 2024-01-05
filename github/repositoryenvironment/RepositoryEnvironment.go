@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment github_repository_environment}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_environment github_repository_environment}.
 type RepositoryEnvironment interface {
 	cdktf.TerraformResource
+	CanAdminsBypass() interface{}
+	SetCanAdminsBypass(val interface{})
+	CanAdminsBypassInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -101,17 +104,28 @@ type RepositoryEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDeploymentBranchPolicy(value *RepositoryEnvironmentDeploymentBranchPolicy)
 	PutReviewers(value interface{})
+	ResetCanAdminsBypass()
 	ResetDeploymentBranchPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -132,6 +146,26 @@ type RepositoryEnvironment interface {
 // The jsii proxy struct for RepositoryEnvironment
 type jsiiProxy_RepositoryEnvironment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RepositoryEnvironment) CanAdminsBypass() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"canAdminsBypass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryEnvironment) CanAdminsBypassInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"canAdminsBypassInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RepositoryEnvironment) CdktfStack() cdktf.TerraformStack {
@@ -415,7 +449,7 @@ func (j *jsiiProxy_RepositoryEnvironment) WaitTimerInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment github_repository_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_environment github_repository_environment} Resource.
 func NewRepositoryEnvironment(scope constructs.Construct, id *string, config *RepositoryEnvironmentConfig) RepositoryEnvironment {
 	_init_.Initialize()
 
@@ -433,7 +467,7 @@ func NewRepositoryEnvironment(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment github_repository_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_environment github_repository_environment} Resource.
 func NewRepositoryEnvironment_Override(r RepositoryEnvironment, scope constructs.Construct, id *string, config *RepositoryEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -441,6 +475,17 @@ func NewRepositoryEnvironment_Override(r RepositoryEnvironment, scope constructs
 		"@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RepositoryEnvironment)SetCanAdminsBypass(val interface{}) {
+	if err := j.validateSetCanAdminsBypassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"canAdminsBypass",
+		val,
 	)
 }
 
@@ -825,6 +870,19 @@ func (r *jsiiProxy_RepositoryEnvironment) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryEnvironment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RepositoryEnvironment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -852,6 +910,17 @@ func (r *jsiiProxy_RepositoryEnvironment) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (r *jsiiProxy_RepositoryEnvironment) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RepositoryEnvironment) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -860,6 +929,17 @@ func (r *jsiiProxy_RepositoryEnvironment) MoveTo(moveTarget *string, index inter
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RepositoryEnvironment) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -893,6 +973,14 @@ func (r *jsiiProxy_RepositoryEnvironment) PutReviewers(value interface{}) {
 		r,
 		"putReviewers",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositoryEnvironment) ResetCanAdminsBypass() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCanAdminsBypass",
+		nil, // no parameters
 	)
 }
 

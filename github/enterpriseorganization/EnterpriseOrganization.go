@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/enterprise_organization github_enterprise_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/enterprise_organization github_enterprise_organization}.
 type EnterpriseOrganization interface {
 	cdktf.TerraformResource
 	AdminLogins() *[]*string
@@ -106,12 +106,22 @@ type EnterpriseOrganization interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_EnterpriseOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
 func NewEnterpriseOrganization(scope constructs.Construct, id *string, config *EnterpriseOrganizationConfig) EnterpriseOrganization {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewEnterpriseOrganization(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/enterprise_organization github_enterprise_organization} Resource.
 func NewEnterpriseOrganization_Override(e EnterpriseOrganization, scope constructs.Construct, id *string, config *EnterpriseOrganizationConfig) {
 	_init_.Initialize()
 
@@ -880,6 +890,19 @@ func (e *jsiiProxy_EnterpriseOrganization) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (e *jsiiProxy_EnterpriseOrganization) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EnterpriseOrganization) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -907,6 +930,17 @@ func (e *jsiiProxy_EnterpriseOrganization) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_EnterpriseOrganization) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EnterpriseOrganization) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -915,6 +949,17 @@ func (e *jsiiProxy_EnterpriseOrganization) MoveTo(moveTarget *string, index inte
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EnterpriseOrganization) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

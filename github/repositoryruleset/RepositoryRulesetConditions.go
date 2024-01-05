@@ -7,7 +7,7 @@ package repositoryruleset
 type RepositoryRulesetConditions struct {
 	// ref_name block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_ruleset#ref_name RepositoryRuleset#ref_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_ruleset#ref_name RepositoryRuleset#ref_name}
 	RefName *RepositoryRulesetConditionsRefName `field:"required" json:"refName" yaml:"refName"`
 }
 

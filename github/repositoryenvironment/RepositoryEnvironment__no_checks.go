@@ -59,7 +59,15 @@ func (r *jsiiProxy_RepositoryEnvironment) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -88,6 +96,10 @@ func validateRepositoryEnvironment_IsTerraformElementParameters(x interface{}) e
 }
 
 func validateRepositoryEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryEnvironment) validateSetCanAdminsBypassParameters(val interface{}) error {
 	return nil
 }
 

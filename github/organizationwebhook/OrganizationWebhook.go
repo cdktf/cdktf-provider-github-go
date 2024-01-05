@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_webhook github_organization_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_webhook github_organization_webhook}.
 type OrganizationWebhook interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -101,12 +101,22 @@ type OrganizationWebhook interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_OrganizationWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_webhook github_organization_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_webhook github_organization_webhook} Resource.
 func NewOrganizationWebhook(scope constructs.Construct, id *string, config *OrganizationWebhookConfig) OrganizationWebhook {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewOrganizationWebhook(scope constructs.Construct, id *string, config *Orga
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_webhook github_organization_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_webhook github_organization_webhook} Resource.
 func NewOrganizationWebhook_Override(o OrganizationWebhook, scope constructs.Construct, id *string, config *OrganizationWebhookConfig) {
 	_init_.Initialize()
 
@@ -824,6 +834,19 @@ func (o *jsiiProxy_OrganizationWebhook) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationWebhook) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OrganizationWebhook) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -851,6 +874,17 @@ func (o *jsiiProxy_OrganizationWebhook) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationWebhook) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OrganizationWebhook) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -859,6 +893,17 @@ func (o *jsiiProxy_OrganizationWebhook) MoveTo(moveTarget *string, index interfa
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OrganizationWebhook) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

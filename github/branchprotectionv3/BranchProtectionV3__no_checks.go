@@ -59,7 +59,15 @@ func (b *jsiiProxy_BranchProtectionV3) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (b *jsiiProxy_BranchProtectionV3) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchProtectionV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BranchProtectionV3) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

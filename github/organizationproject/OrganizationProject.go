@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_project github_organization_project}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_project github_organization_project}.
 type OrganizationProject interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -96,12 +96,22 @@ type OrganizationProject interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_OrganizationProject) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_project github_organization_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_project github_organization_project} Resource.
 func NewOrganizationProject(scope constructs.Construct, id *string, config *OrganizationProjectConfig) OrganizationProject {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewOrganizationProject(scope constructs.Construct, id *string, config *Orga
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_project github_organization_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_project github_organization_project} Resource.
 func NewOrganizationProject_Override(o OrganizationProject, scope constructs.Construct, id *string, config *OrganizationProjectConfig) {
 	_init_.Initialize()
 
@@ -765,6 +775,19 @@ func (o *jsiiProxy_OrganizationProject) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationProject) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OrganizationProject) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -792,6 +815,17 @@ func (o *jsiiProxy_OrganizationProject) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationProject) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OrganizationProject) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -800,6 +834,17 @@ func (o *jsiiProxy_OrganizationProject) MoveTo(moveTarget *string, index interfa
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OrganizationProject) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

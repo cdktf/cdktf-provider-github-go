@@ -59,7 +59,15 @@ func (a *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) valid
 	return nil
 }
 
+func (a *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActionsRepositoryOidcSubjectClaimCustomizationTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (u *jsiiProxy_UserSshKey) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (u *jsiiProxy_UserSshKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSshKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSshKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
