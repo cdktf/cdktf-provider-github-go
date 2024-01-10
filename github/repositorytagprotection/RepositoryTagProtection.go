@@ -5,10 +5,10 @@ package repositorytagprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v12/repositorytagprotection/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorytagprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -119,6 +119,9 @@ type RepositoryTagProtection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -869,6 +872,32 @@ func (r *jsiiProxy_RepositoryTagProtection) SynthesizeAttributes() *map[string]i
 	_jsii_.Invoke(
 		r,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RepositoryTagProtection) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RepositoryTagProtection) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -7,6 +7,10 @@ package teamsyncgroupmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TeamSyncGroupMappingGroupList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TeamSyncGroupMappingGroupList) validateGetParameters(index *float64) error {
 	return nil
 }

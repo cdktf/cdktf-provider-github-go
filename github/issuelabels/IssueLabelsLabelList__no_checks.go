@@ -7,6 +7,10 @@ package issuelabels
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IssueLabelsLabelList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IssueLabelsLabelList) validateGetParameters(index *float64) error {
 	return nil
 }

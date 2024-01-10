@@ -5,10 +5,10 @@ package team
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v12/team/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v13/team/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -147,6 +147,9 @@ type Team interface {
 	ResetParentTeamReadSlug()
 	ResetPrivacy()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1169,6 +1172,32 @@ func (t *jsiiProxy_Team) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		t,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_Team) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		t,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_Team) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

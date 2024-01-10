@@ -7,6 +7,10 @@ package datagithubcodespacessecrets
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGithubCodespacesSecretsSecretsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGithubCodespacesSecretsSecretsList) validateGetParameters(index *float64) error {
 	return nil
 }

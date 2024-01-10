@@ -5,10 +5,10 @@ package enterpriseorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v12/enterpriseorganization/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v13/enterpriseorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -132,6 +132,9 @@ type EnterpriseOrganization interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1012,6 +1015,32 @@ func (e *jsiiProxy_EnterpriseOrganization) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		e,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EnterpriseOrganization) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EnterpriseOrganization) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

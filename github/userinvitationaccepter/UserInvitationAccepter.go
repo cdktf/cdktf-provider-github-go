@@ -5,10 +5,10 @@ package userinvitationaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v13/userinvitationaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -120,6 +120,9 @@ type UserInvitationAccepter interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -876,6 +879,32 @@ func (u *jsiiProxy_UserInvitationAccepter) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		u,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserInvitationAccepter) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		u,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (u *jsiiProxy_UserInvitationAccepter) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		u,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

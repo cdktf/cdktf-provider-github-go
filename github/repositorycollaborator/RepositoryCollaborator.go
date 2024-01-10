@@ -5,10 +5,10 @@ package repositorycollaborator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorycollaborator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -127,6 +127,9 @@ type RepositoryCollaborator interface {
 	ResetPermission()
 	ResetPermissionDiffSuppression()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -955,6 +958,32 @@ func (r *jsiiProxy_RepositoryCollaborator) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		r,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RepositoryCollaborator) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RepositoryCollaborator) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

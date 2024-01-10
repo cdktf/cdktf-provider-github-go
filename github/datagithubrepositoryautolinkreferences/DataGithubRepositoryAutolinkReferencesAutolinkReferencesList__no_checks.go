@@ -7,6 +7,10 @@ package datagithubrepositoryautolinkreferences
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGithubRepositoryAutolinkReferencesAutolinkReferencesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGithubRepositoryAutolinkReferencesAutolinkReferencesList) validateGetParameters(index *float64) error {
 	return nil
 }

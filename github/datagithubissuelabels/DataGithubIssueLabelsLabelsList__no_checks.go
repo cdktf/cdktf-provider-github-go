@@ -7,6 +7,10 @@ package datagithubissuelabels
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGithubIssueLabelsLabelsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGithubIssueLabelsLabelsList) validateGetParameters(index *float64) error {
 	return nil
 }

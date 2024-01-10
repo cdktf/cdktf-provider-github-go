@@ -7,6 +7,10 @@ package branchprotection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) validateGetParameters(index *float64) error {
 	return nil
 }
