@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository github_repository}.
 type DataGithubRepository interface {
 	cdktf.TerraformDataSource
 	AllowAutoMerge() cdktf.IResolvable
@@ -85,6 +85,7 @@ type DataGithubRepository interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RepoId() *float64
+	RepositoryLicense() DataGithubRepositoryRepositoryLicenseList
 	SquashMergeCommitMessage() *string
 	SquashMergeCommitTitle() *string
 	SshCloneUrl() *string
@@ -590,6 +591,16 @@ func (j *jsiiProxy_DataGithubRepository) RepoId() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) RepositoryLicense() DataGithubRepositoryRepositoryLicenseList {
+	var returns DataGithubRepositoryRepositoryLicenseList
+	_jsii_.Get(
+		j,
+		"repositoryLicense",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) SquashMergeCommitMessage() *string {
 	var returns *string
 	_jsii_.Get(
@@ -691,7 +702,7 @@ func (j *jsiiProxy_DataGithubRepository) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository(scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) DataGithubRepository {
 	_init_.Initialize()
 
@@ -709,7 +720,7 @@ func NewDataGithubRepository(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository_Override(d DataGithubRepository, scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) {
 	_init_.Initialize()
 
