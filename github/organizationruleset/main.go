@@ -513,6 +513,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCommitterEmailPattern", GoMethod: "PutCommitterEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putPullRequest", GoMethod: "PutPullRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequiredStatusChecks", GoMethod: "PutRequiredStatusChecks"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequiredWorkflows", GoMethod: "PutRequiredWorkflows"},
 			_jsii_.MemberMethod{JsiiMethod: "putTagNamePattern", GoMethod: "PutTagNamePattern"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredLinearHistory", GoGetter: "RequiredLinearHistory"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredLinearHistoryInput", GoGetter: "RequiredLinearHistoryInput"},
@@ -520,6 +521,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requiredSignaturesInput", GoGetter: "RequiredSignaturesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredStatusChecks", GoGetter: "RequiredStatusChecks"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredStatusChecksInput", GoGetter: "RequiredStatusChecksInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredWorkflows", GoGetter: "RequiredWorkflows"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredWorkflowsInput", GoGetter: "RequiredWorkflowsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBranchNamePattern", GoMethod: "ResetBranchNamePattern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCommitAuthorEmailPattern", GoMethod: "ResetCommitAuthorEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCommitMessagePattern", GoMethod: "ResetCommitMessagePattern"},
@@ -531,6 +534,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredLinearHistory", GoMethod: "ResetRequiredLinearHistory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredSignatures", GoMethod: "ResetRequiredSignatures"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredStatusChecks", GoMethod: "ResetRequiredStatusChecks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredWorkflows", GoMethod: "ResetRequiredWorkflows"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagNamePattern", GoMethod: "ResetTagNamePattern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUpdate", GoMethod: "ResetUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -700,6 +704,110 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredWorkflows",
+		reflect.TypeOf((*OrganizationRulesetRulesRequiredWorkflows)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredWorkflowsOutputReference",
+		reflect.TypeOf((*OrganizationRulesetRulesRequiredWorkflowsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequiredWorkflow", GoMethod: "PutRequiredWorkflow"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredWorkflow", GoGetter: "RequiredWorkflow"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredWorkflowInput", GoGetter: "RequiredWorkflowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflow",
+		reflect.TypeOf((*OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflow)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowList",
+		reflect.TypeOf((*OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowOutputReference",
+		reflect.TypeOf((*OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
+			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ref", GoGetter: "Ref"},
+			_jsii_.MemberProperty{JsiiProperty: "refInput", GoGetter: "RefInput"},
+			_jsii_.MemberProperty{JsiiProperty: "repositoryId", GoGetter: "RepositoryId"},
+			_jsii_.MemberProperty{JsiiProperty: "repositoryIdInput", GoGetter: "RepositoryIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRef", GoMethod: "ResetRef"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/ssh_keys github_ssh_keys}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ssh_keys github_ssh_keys}.
 type DataGithubSshKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataGithubSshKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
 func NewDataGithubSshKeys(scope constructs.Construct, id *string, config *DataGithubSshKeysConfig) DataGithubSshKeys {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataGithubSshKeys(scope constructs.Construct, id *string, config *DataGi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ssh_keys github_ssh_keys} Data Source.
 func NewDataGithubSshKeys_Override(d DataGithubSshKeys, scope constructs.Construct, id *string, config *DataGithubSshKeysConfig) {
 	_init_.Initialize()
 

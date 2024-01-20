@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/actions_secret github_actions_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_secret github_actions_secret}.
 type ActionsSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ActionsSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSecretConfig) ActionsSecret {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret_Override(a ActionsSecret, scope constructs.Construct, id *string, config *ActionsSecretConfig) {
 	_init_.Initialize()
 

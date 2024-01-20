@@ -71,6 +71,10 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutRequiredS
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutRequiredWorkflowsParameters(value *OrganizationRulesetRulesRequiredWorkflows) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutTagNamePatternParameters(value *OrganizationRulesetRulesTagNamePattern) error {
 	return nil
 }

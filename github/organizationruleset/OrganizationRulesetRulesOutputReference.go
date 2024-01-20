@@ -59,6 +59,8 @@ type OrganizationRulesetRulesOutputReference interface {
 	RequiredSignaturesInput() interface{}
 	RequiredStatusChecks() OrganizationRulesetRulesRequiredStatusChecksOutputReference
 	RequiredStatusChecksInput() *OrganizationRulesetRulesRequiredStatusChecks
+	RequiredWorkflows() OrganizationRulesetRulesRequiredWorkflowsOutputReference
+	RequiredWorkflowsInput() *OrganizationRulesetRulesRequiredWorkflows
 	TagNamePattern() OrganizationRulesetRulesTagNamePatternOutputReference
 	TagNamePatternInput() *OrganizationRulesetRulesTagNamePattern
 	// Experimental.
@@ -102,6 +104,7 @@ type OrganizationRulesetRulesOutputReference interface {
 	PutCommitterEmailPattern(value *OrganizationRulesetRulesCommitterEmailPattern)
 	PutPullRequest(value *OrganizationRulesetRulesPullRequest)
 	PutRequiredStatusChecks(value *OrganizationRulesetRulesRequiredStatusChecks)
+	PutRequiredWorkflows(value *OrganizationRulesetRulesRequiredWorkflows)
 	PutTagNamePattern(value *OrganizationRulesetRulesTagNamePattern)
 	ResetBranchNamePattern()
 	ResetCommitAuthorEmailPattern()
@@ -114,6 +117,7 @@ type OrganizationRulesetRulesOutputReference interface {
 	ResetRequiredLinearHistory()
 	ResetRequiredSignatures()
 	ResetRequiredStatusChecks()
+	ResetRequiredWorkflows()
 	ResetTagNamePattern()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
@@ -396,6 +400,26 @@ func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) RequiredStatusChecks
 	_jsii_.Get(
 		j,
 		"requiredStatusChecksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) RequiredWorkflows() OrganizationRulesetRulesRequiredWorkflowsOutputReference {
+	var returns OrganizationRulesetRulesRequiredWorkflowsOutputReference
+	_jsii_.Get(
+		j,
+		"requiredWorkflows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) RequiredWorkflowsInput() *OrganizationRulesetRulesRequiredWorkflows {
+	var returns *OrganizationRulesetRulesRequiredWorkflows
+	_jsii_.Get(
+		j,
+		"requiredWorkflowsInput",
 		&returns,
 	)
 	return returns
@@ -862,6 +886,17 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutRequiredStatusChe
 	)
 }
 
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutRequiredWorkflows(value *OrganizationRulesetRulesRequiredWorkflows) {
+	if err := o.validatePutRequiredWorkflowsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRequiredWorkflows",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutTagNamePattern(value *OrganizationRulesetRulesTagNamePattern) {
 	if err := o.validatePutTagNamePatternParameters(value); err != nil {
 		panic(err)
@@ -957,6 +992,14 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetRequiredStatusC
 	_jsii_.InvokeVoid(
 		o,
 		"resetRequiredStatusChecks",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetRequiredWorkflows() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRequiredWorkflows",
 		nil, // no parameters
 	)
 }
