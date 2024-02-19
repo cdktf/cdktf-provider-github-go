@@ -5,14 +5,14 @@ package membership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/membership/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/membership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/membership github_membership}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/membership github_membership}.
 type Membership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Membership) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/membership github_membership} Resource.
 func NewMembership(scope constructs.Construct, id *string, config *MembershipConfig) Membership {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewMembership(scope constructs.Construct, id *string, config *MembershipCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/membership github_membership} Resource.
 func NewMembership_Override(m Membership, scope constructs.Construct, id *string, config *MembershipConfig) {
 	_init_.Initialize()
 

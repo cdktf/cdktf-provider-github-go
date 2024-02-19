@@ -5,14 +5,14 @@ package repositorymilestone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorymilestone/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositorymilestone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_milestone github_repository_milestone}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_milestone github_repository_milestone}.
 type RepositoryMilestone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_RepositoryMilestone) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone(scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) RepositoryMilestone {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewRepositoryMilestone(scope constructs.Construct, id *string, config *Repo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_milestone github_repository_milestone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_milestone github_repository_milestone} Resource.
 func NewRepositoryMilestone_Override(r RepositoryMilestone, scope constructs.Construct, id *string, config *RepositoryMilestoneConfig) {
 	_init_.Initialize()
 

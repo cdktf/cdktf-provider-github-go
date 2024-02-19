@@ -5,14 +5,14 @@ package organizationcustomrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/organizationcustomrole/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/organizationcustomrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_custom_role github_organization_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_custom_role github_organization_custom_role}.
 type OrganizationCustomRole interface {
 	cdktf.TerraformResource
 	BaseRole() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_OrganizationCustomRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_custom_role github_organization_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_custom_role github_organization_custom_role} Resource.
 func NewOrganizationCustomRole(scope constructs.Construct, id *string, config *OrganizationCustomRoleConfig) OrganizationCustomRole {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewOrganizationCustomRole(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_custom_role github_organization_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_custom_role github_organization_custom_role} Resource.
 func NewOrganizationCustomRole_Override(o OrganizationCustomRole, scope constructs.Construct, id *string, config *OrganizationCustomRoleConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datagithubusers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubusers/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubusers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/users github_users}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/users github_users}.
 type DataGithubUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_DataGithubUsers) UsernamesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/users github_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/users github_users} Data Source.
 func NewDataGithubUsers(scope constructs.Construct, id *string, config *DataGithubUsersConfig) DataGithubUsers {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewDataGithubUsers(scope constructs.Construct, id *string, config *DataGith
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/users github_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/users github_users} Data Source.
 func NewDataGithubUsers_Override(d DataGithubUsers, scope constructs.Construct, id *string, config *DataGithubUsersConfig) {
 	_init_.Initialize()
 

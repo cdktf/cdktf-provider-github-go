@@ -5,14 +5,14 @@ package datagithubactionssecrets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionssecrets/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionssecrets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_secrets github_actions_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_secrets github_actions_secrets}.
 type DataGithubActionsSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataGithubActionsSecrets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_secrets github_actions_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_secrets github_actions_secrets} Data Source.
 func NewDataGithubActionsSecrets(scope constructs.Construct, id *string, config *DataGithubActionsSecretsConfig) DataGithubActionsSecrets {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataGithubActionsSecrets(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_secrets github_actions_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_secrets github_actions_secrets} Data Source.
 func NewDataGithubActionsSecrets_Override(d DataGithubActionsSecrets, scope constructs.Construct, id *string, config *DataGithubActionsSecretsConfig) {
 	_init_.Initialize()
 

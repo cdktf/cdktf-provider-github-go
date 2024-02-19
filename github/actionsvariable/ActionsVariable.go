@@ -5,14 +5,14 @@ package actionsvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/actionsvariable/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/actionsvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_variable github_actions_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_variable github_actions_variable}.
 type ActionsVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ActionsVariable) VariableNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_variable github_actions_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_variable github_actions_variable} Resource.
 func NewActionsVariable(scope constructs.Construct, id *string, config *ActionsVariableConfig) ActionsVariable {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewActionsVariable(scope constructs.Construct, id *string, config *ActionsV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_variable github_actions_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_variable github_actions_variable} Resource.
 func NewActionsVariable_Override(a ActionsVariable, scope constructs.Construct, id *string, config *ActionsVariableConfig) {
 	_init_.Initialize()
 

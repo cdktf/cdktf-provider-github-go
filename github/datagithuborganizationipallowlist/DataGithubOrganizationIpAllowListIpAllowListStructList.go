@@ -5,9 +5,9 @@ package datagithuborganizationipallowlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithuborganizationipallowlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

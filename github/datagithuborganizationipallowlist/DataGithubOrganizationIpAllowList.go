@@ -5,14 +5,14 @@ package datagithuborganizationipallowlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithuborganizationipallowlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list}.
 type DataGithubOrganizationIpAllowList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataGithubOrganizationIpAllowList) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list} Data Source.
 func NewDataGithubOrganizationIpAllowList(scope constructs.Construct, id *string, config *DataGithubOrganizationIpAllowListConfig) DataGithubOrganizationIpAllowList {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataGithubOrganizationIpAllowList(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list} Data Source.
 func NewDataGithubOrganizationIpAllowList_Override(d DataGithubOrganizationIpAllowList, scope constructs.Construct, id *string, config *DataGithubOrganizationIpAllowListConfig) {
 	_init_.Initialize()
 

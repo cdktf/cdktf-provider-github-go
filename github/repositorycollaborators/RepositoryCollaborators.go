@@ -5,14 +5,14 @@ package repositorycollaborators
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorycollaborators/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycollaborators/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_collaborators github_repository_collaborators}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_collaborators github_repository_collaborators}.
 type RepositoryCollaborators interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_RepositoryCollaborators) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
 func NewRepositoryCollaborators(scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) RepositoryCollaborators {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewRepositoryCollaborators(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
 func NewRepositoryCollaborators_Override(r RepositoryCollaborators, scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) {
 	_init_.Initialize()
 

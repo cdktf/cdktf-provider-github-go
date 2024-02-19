@@ -5,14 +5,14 @@ package datagithubref
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubref/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubref/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ref github_ref}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ref github_ref}.
 type DataGithubRef interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataGithubRef) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ref github_ref} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ref github_ref} Data Source.
 func NewDataGithubRef(scope constructs.Construct, id *string, config *DataGithubRefConfig) DataGithubRef {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataGithubRef(scope constructs.Construct, id *string, config *DataGithub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ref github_ref} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ref github_ref} Data Source.
 func NewDataGithubRef_Override(d DataGithubRef, scope constructs.Construct, id *string, config *DataGithubRefConfig) {
 	_init_.Initialize()
 

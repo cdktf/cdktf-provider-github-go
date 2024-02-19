@@ -5,14 +5,14 @@ package repositorydeploykey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorydeploykey/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositorydeploykey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_deploy_key github_repository_deploy_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_deploy_key github_repository_deploy_key}.
 type RepositoryDeployKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_RepositoryDeployKey) TitleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_deploy_key github_repository_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_deploy_key github_repository_deploy_key} Resource.
 func NewRepositoryDeployKey(scope constructs.Construct, id *string, config *RepositoryDeployKeyConfig) RepositoryDeployKey {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewRepositoryDeployKey(scope constructs.Construct, id *string, config *Repo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_deploy_key github_repository_deploy_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_deploy_key github_repository_deploy_key} Resource.
 func NewRepositoryDeployKey_Override(r RepositoryDeployKey, scope constructs.Construct, id *string, config *RepositoryDeployKeyConfig) {
 	_init_.Initialize()
 

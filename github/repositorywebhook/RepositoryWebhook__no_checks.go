@@ -119,10 +119,6 @@ func (j *jsiiProxy_RepositoryWebhook) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_RepositoryWebhook) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RepositoryWebhook) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

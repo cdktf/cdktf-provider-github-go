@@ -5,14 +5,14 @@ package datagithubcollaborators
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubcollaborators/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubcollaborators/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/collaborators github_collaborators}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/collaborators github_collaborators}.
 type DataGithubCollaborators interface {
 	cdktf.TerraformDataSource
 	Affiliation() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataGithubCollaborators) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/collaborators github_collaborators} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/collaborators github_collaborators} Data Source.
 func NewDataGithubCollaborators(scope constructs.Construct, id *string, config *DataGithubCollaboratorsConfig) DataGithubCollaborators {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataGithubCollaborators(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/collaborators github_collaborators} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/collaborators github_collaborators} Data Source.
 func NewDataGithubCollaborators_Override(d DataGithubCollaborators, scope constructs.Construct, id *string, config *DataGithubCollaboratorsConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package branchprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection github_branch_protection}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection github_branch_protection}.
 type BranchProtection interface {
 	cdktf.TerraformResource
 	AllowsDeletions() interface{}
@@ -21,9 +21,6 @@ type BranchProtection interface {
 	AllowsForcePushes() interface{}
 	SetAllowsForcePushes(val interface{})
 	AllowsForcePushesInput() interface{}
-	BlocksCreations() interface{}
-	SetBlocksCreations(val interface{})
-	BlocksCreationsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -77,9 +74,6 @@ type BranchProtection interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	PushRestrictions() *[]*string
-	SetPushRestrictions(val *[]*string)
-	PushRestrictionsInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
 	RepositoryId() *string
@@ -98,6 +92,8 @@ type BranchProtection interface {
 	RequireSignedCommits() interface{}
 	SetRequireSignedCommits(val interface{})
 	RequireSignedCommitsInput() interface{}
+	RestrictPushes() BranchProtectionRestrictPushesList
+	RestrictPushesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,9 +145,9 @@ type BranchProtection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutRequiredPullRequestReviews(value interface{})
 	PutRequiredStatusChecks(value interface{})
+	PutRestrictPushes(value interface{})
 	ResetAllowsDeletions()
 	ResetAllowsForcePushes()
-	ResetBlocksCreations()
 	ResetEnforceAdmins()
 	ResetForcePushBypassers()
 	ResetId()
@@ -159,12 +155,12 @@ type BranchProtection interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPushRestrictions()
 	ResetRequireConversationResolution()
 	ResetRequiredLinearHistory()
 	ResetRequiredPullRequestReviews()
 	ResetRequiredStatusChecks()
 	ResetRequireSignedCommits()
+	ResetRestrictPushes()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -218,26 +214,6 @@ func (j *jsiiProxy_BranchProtection) AllowsForcePushesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowsForcePushesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BranchProtection) BlocksCreations() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"blocksCreations",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BranchProtection) BlocksCreationsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"blocksCreationsInput",
 		&returns,
 	)
 	return returns
@@ -463,26 +439,6 @@ func (j *jsiiProxy_BranchProtection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BranchProtection) PushRestrictions() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"pushRestrictions",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BranchProtection) PushRestrictionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"pushRestrictionsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_BranchProtection) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -613,6 +569,26 @@ func (j *jsiiProxy_BranchProtection) RequireSignedCommitsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BranchProtection) RestrictPushes() BranchProtectionRestrictPushesList {
+	var returns BranchProtectionRestrictPushesList
+	_jsii_.Get(
+		j,
+		"restrictPushes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtection) RestrictPushesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictPushesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BranchProtection) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -644,7 +620,7 @@ func (j *jsiiProxy_BranchProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection github_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection github_branch_protection} Resource.
 func NewBranchProtection(scope constructs.Construct, id *string, config *BranchProtectionConfig) BranchProtection {
 	_init_.Initialize()
 
@@ -662,7 +638,7 @@ func NewBranchProtection(scope constructs.Construct, id *string, config *BranchP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection github_branch_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection github_branch_protection} Resource.
 func NewBranchProtection_Override(b BranchProtection, scope constructs.Construct, id *string, config *BranchProtectionConfig) {
 	_init_.Initialize()
 
@@ -691,17 +667,6 @@ func (j *jsiiProxy_BranchProtection)SetAllowsForcePushes(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowsForcePushes",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BranchProtection)SetBlocksCreations(val interface{}) {
-	if err := j.validateSetBlocksCreationsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"blocksCreations",
 		val,
 	)
 }
@@ -825,17 +790,6 @@ func (j *jsiiProxy_BranchProtection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BranchProtection)SetPushRestrictions(val *[]*string) {
-	if err := j.validateSetPushRestrictionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pushRestrictions",
 		val,
 	)
 }
@@ -1259,6 +1213,17 @@ func (b *jsiiProxy_BranchProtection) PutRequiredStatusChecks(value interface{}) 
 	)
 }
 
+func (b *jsiiProxy_BranchProtection) PutRestrictPushes(value interface{}) {
+	if err := b.validatePutRestrictPushesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putRestrictPushes",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BranchProtection) ResetAllowsDeletions() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1271,14 +1236,6 @@ func (b *jsiiProxy_BranchProtection) ResetAllowsForcePushes() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAllowsForcePushes",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BranchProtection) ResetBlocksCreations() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetBlocksCreations",
 		nil, // no parameters
 	)
 }
@@ -1323,14 +1280,6 @@ func (b *jsiiProxy_BranchProtection) ResetOverrideLogicalId() {
 	)
 }
 
-func (b *jsiiProxy_BranchProtection) ResetPushRestrictions() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetPushRestrictions",
-		nil, // no parameters
-	)
-}
-
 func (b *jsiiProxy_BranchProtection) ResetRequireConversationResolution() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1367,6 +1316,14 @@ func (b *jsiiProxy_BranchProtection) ResetRequireSignedCommits() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRequireSignedCommits",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtection) ResetRestrictPushes() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRestrictPushes",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package datagithubrepositorydeploymentbranchpolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositorydeploymentbranchpolicies/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploymentbranchpolicies/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
 type DataGithubRepositoryDeploymentBranchPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataGithubRepositoryDeploymentBranchPolicies) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
 func NewDataGithubRepositoryDeploymentBranchPolicies(scope constructs.Construct, id *string, config *DataGithubRepositoryDeploymentBranchPoliciesConfig) DataGithubRepositoryDeploymentBranchPolicies {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataGithubRepositoryDeploymentBranchPolicies(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
 func NewDataGithubRepositoryDeploymentBranchPolicies_Override(d DataGithubRepositoryDeploymentBranchPolicies, scope constructs.Construct, id *string, config *DataGithubRepositoryDeploymentBranchPoliciesConfig) {
 	_init_.Initialize()
 

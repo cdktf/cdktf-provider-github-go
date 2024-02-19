@@ -5,14 +5,14 @@ package repositorytagprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorytagprotection/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositorytagprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
 type RepositoryTagProtection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_RepositoryTagProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
 func NewRepositoryTagProtection(scope constructs.Construct, id *string, config *RepositoryTagProtectionConfig) RepositoryTagProtection {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewRepositoryTagProtection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource.
 func NewRepositoryTagProtection_Override(r RepositoryTagProtection, scope constructs.Construct, id *string, config *RepositoryTagProtectionConfig) {
 	_init_.Initialize()
 

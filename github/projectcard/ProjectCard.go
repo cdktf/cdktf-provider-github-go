@@ -5,14 +5,14 @@ package projectcard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/projectcard/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/projectcard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_card github_project_card}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_card github_project_card}.
 type ProjectCard interface {
 	cdktf.TerraformResource
 	CardId() *float64
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ProjectCard) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_card github_project_card} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_card github_project_card} Resource.
 func NewProjectCard(scope constructs.Construct, id *string, config *ProjectCardConfig) ProjectCard {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewProjectCard(scope constructs.Construct, id *string, config *ProjectCardC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_card github_project_card} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_card github_project_card} Resource.
 func NewProjectCard_Override(p ProjectCard, scope constructs.Construct, id *string, config *ProjectCardConfig) {
 	_init_.Initialize()
 

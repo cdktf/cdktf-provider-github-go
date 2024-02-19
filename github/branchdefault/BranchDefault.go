@@ -5,14 +5,14 @@ package branchdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/branchdefault/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/branchdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_default github_branch_default}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_default github_branch_default}.
 type BranchDefault interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_BranchDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefaultConfig) BranchDefault {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault_Override(b BranchDefault, scope constructs.Construct, id *string, config *BranchDefaultConfig) {
 	_init_.Initialize()
 

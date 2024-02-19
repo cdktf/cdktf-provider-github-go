@@ -5,14 +5,14 @@ package projectcolumn
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/projectcolumn/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/projectcolumn/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_column github_project_column}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_column github_project_column}.
 type ProjectColumn interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_ProjectColumn) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_column github_project_column} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_column github_project_column} Resource.
 func NewProjectColumn(scope constructs.Construct, id *string, config *ProjectColumnConfig) ProjectColumn {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewProjectColumn(scope constructs.Construct, id *string, config *ProjectCol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/project_column github_project_column} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/project_column github_project_column} Resource.
 func NewProjectColumn_Override(p ProjectColumn, scope constructs.Construct, id *string, config *ProjectColumnConfig) {
 	_init_.Initialize()
 

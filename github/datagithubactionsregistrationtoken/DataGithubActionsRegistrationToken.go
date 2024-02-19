@@ -5,14 +5,14 @@ package datagithubactionsregistrationtoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsregistrationtoken/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsregistrationtoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
 type DataGithubActionsRegistrationToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGithubActionsRegistrationToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) DataGithubActionsRegistrationToken {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken_Override(d DataGithubActionsRegistrationToken, scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) {
 	_init_.Initialize()
 

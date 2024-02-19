@@ -5,14 +5,14 @@ package datagithubrepositorydeploykeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositorydeploykeys/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys}.
 type DataGithubRepositoryDeployKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGithubRepositoryDeployKeys) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys} Data Source.
 func NewDataGithubRepositoryDeployKeys(scope constructs.Construct, id *string, config *DataGithubRepositoryDeployKeysConfig) DataGithubRepositoryDeployKeys {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGithubRepositoryDeployKeys(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys} Data Source.
 func NewDataGithubRepositoryDeployKeys_Override(d DataGithubRepositoryDeployKeys, scope constructs.Construct, id *string, config *DataGithubRepositoryDeployKeysConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package repositorywebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositorywebhook/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_webhook github_repository_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_webhook github_repository_webhook}.
 type RepositoryWebhook interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -55,9 +55,6 @@ type RepositoryWebhook interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -127,7 +124,6 @@ type RepositoryWebhook interface {
 	ResetActive()
 	ResetConfiguration()
 	ResetId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -329,26 +325,6 @@ func (j *jsiiProxy_RepositoryWebhook) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
-func (j *jsiiProxy_RepositoryWebhook) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RepositoryWebhook) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RepositoryWebhook) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -450,7 +426,7 @@ func (j *jsiiProxy_RepositoryWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook(scope constructs.Construct, id *string, config *RepositoryWebhookConfig) RepositoryWebhook {
 	_init_.Initialize()
 
@@ -468,7 +444,7 @@ func NewRepositoryWebhook(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook_Override(r RepositoryWebhook, scope constructs.Construct, id *string, config *RepositoryWebhookConfig) {
 	_init_.Initialize()
 
@@ -557,17 +533,6 @@ func (j *jsiiProxy_RepositoryWebhook)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RepositoryWebhook)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -986,14 +951,6 @@ func (r *jsiiProxy_RepositoryWebhook) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RepositoryWebhook) ResetName() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetName",
 		nil, // no parameters
 	)
 }

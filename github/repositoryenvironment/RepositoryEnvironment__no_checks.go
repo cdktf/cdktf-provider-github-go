@@ -123,6 +123,10 @@ func (j *jsiiProxy_RepositoryEnvironment) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryEnvironment) validateSetPreventSelfReviewParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryEnvironment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

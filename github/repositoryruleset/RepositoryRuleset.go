@@ -5,14 +5,14 @@ package repositoryruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/repositoryruleset/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_ruleset github_repository_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_ruleset github_repository_ruleset}.
 type RepositoryRuleset interface {
 	cdktf.TerraformResource
 	BypassActors() RepositoryRulesetBypassActorsList
@@ -507,7 +507,7 @@ func (j *jsiiProxy_RepositoryRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
 func NewRepositoryRuleset(scope constructs.Construct, id *string, config *RepositoryRulesetConfig) RepositoryRuleset {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewRepositoryRuleset(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
 func NewRepositoryRuleset_Override(r RepositoryRuleset, scope constructs.Construct, id *string, config *RepositoryRulesetConfig) {
 	_init_.Initialize()
 

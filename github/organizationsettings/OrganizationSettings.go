@@ -5,14 +5,14 @@ package organizationsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/organizationsettings/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings github_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_settings github_organization_settings}.
 type OrganizationSettings interface {
 	cdktf.TerraformResource
 	AdvancedSecurityEnabledForNewRepositories() interface{}
@@ -933,7 +933,7 @@ func (j *jsiiProxy_OrganizationSettings) WebCommitSignoffRequiredInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings github_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_settings github_organization_settings} Resource.
 func NewOrganizationSettings(scope constructs.Construct, id *string, config *OrganizationSettingsConfig) OrganizationSettings {
 	_init_.Initialize()
 
@@ -951,7 +951,7 @@ func NewOrganizationSettings(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings github_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_settings github_organization_settings} Resource.
 func NewOrganizationSettings_Override(o OrganizationSettings, scope constructs.Construct, id *string, config *OrganizationSettingsConfig) {
 	_init_.Initialize()
 

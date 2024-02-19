@@ -83,6 +83,10 @@ func (b *jsiiProxy_BranchProtection) validatePutRequiredStatusChecksParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BranchProtection) validatePutRestrictPushesParameters(value interface{}) error {
+	return nil
+}
+
 func validateBranchProtection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,10 +108,6 @@ func (j *jsiiProxy_BranchProtection) validateSetAllowsDeletionsParameters(val in
 }
 
 func (j *jsiiProxy_BranchProtection) validateSetAllowsForcePushesParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_BranchProtection) validateSetBlocksCreationsParameters(val interface{}) error {
 	return nil
 }
 
@@ -144,10 +144,6 @@ func (j *jsiiProxy_BranchProtection) validateSetPatternParameters(val *string) e
 }
 
 func (j *jsiiProxy_BranchProtection) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_BranchProtection) validateSetPushRestrictionsParameters(val *[]*string) error {
 	return nil
 }
 

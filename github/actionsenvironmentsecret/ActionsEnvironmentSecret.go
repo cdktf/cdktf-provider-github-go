@@ -5,14 +5,14 @@ package actionsenvironmentsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/actionsenvironmentsecret/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_secret github_actions_environment_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_secret github_actions_environment_secret}.
 type ActionsEnvironmentSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ActionsEnvironmentSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
 func NewActionsEnvironmentSecret(scope constructs.Construct, id *string, config *ActionsEnvironmentSecretConfig) ActionsEnvironmentSecret {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewActionsEnvironmentSecret(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_secret github_actions_environment_secret} Resource.
 func NewActionsEnvironmentSecret_Override(a ActionsEnvironmentSecret, scope constructs.Construct, id *string, config *ActionsEnvironmentSecretConfig) {
 	_init_.Initialize()
 

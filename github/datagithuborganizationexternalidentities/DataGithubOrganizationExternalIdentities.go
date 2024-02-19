@@ -5,14 +5,14 @@ package datagithuborganizationexternalidentities
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationexternalidentities/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithuborganizationexternalidentities/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_external_identities github_organization_external_identities}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_external_identities github_organization_external_identities}.
 type DataGithubOrganizationExternalIdentities interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataGithubOrganizationExternalIdentities) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_external_identities github_organization_external_identities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_external_identities github_organization_external_identities} Data Source.
 func NewDataGithubOrganizationExternalIdentities(scope constructs.Construct, id *string, config *DataGithubOrganizationExternalIdentitiesConfig) DataGithubOrganizationExternalIdentities {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataGithubOrganizationExternalIdentities(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/organization_external_identities github_organization_external_identities} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization_external_identities github_organization_external_identities} Data Source.
 func NewDataGithubOrganizationExternalIdentities_Override(d DataGithubOrganizationExternalIdentities, scope constructs.Construct, id *string, config *DataGithubOrganizationExternalIdentitiesConfig) {
 	_init_.Initialize()
 

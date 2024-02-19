@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/provider/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs github}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs github}.
 type GithubProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -35,6 +35,9 @@ type GithubProvider interface {
 	Insecure() interface{}
 	SetInsecure(val interface{})
 	InsecureInput() interface{}
+	MaxRetries() *float64
+	SetMaxRetries(val *float64)
+	MaxRetriesInput() *float64
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
@@ -53,6 +56,12 @@ type GithubProvider interface {
 	ReadDelayMs() *float64
 	SetReadDelayMs(val *float64)
 	ReadDelayMsInput() *float64
+	RetryableErrors() *[]*float64
+	SetRetryableErrors(val *[]*float64)
+	RetryableErrorsInput() *[]*float64
+	RetryDelayMs() *float64
+	SetRetryDelayMs(val *float64)
+	RetryDelayMsInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -74,6 +83,7 @@ type GithubProvider interface {
 	ResetAppAuth()
 	ResetBaseUrl()
 	ResetInsecure()
+	ResetMaxRetries()
 	ResetOrganization()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -81,6 +91,8 @@ type GithubProvider interface {
 	ResetOwner()
 	ResetParallelRequests()
 	ResetReadDelayMs()
+	ResetRetryableErrors()
+	ResetRetryDelayMs()
 	ResetToken()
 	ResetWriteDelayMs()
 	SynthesizeAttributes() *map[string]interface{}
@@ -221,6 +233,26 @@ func (j *jsiiProxy_GithubProvider) InsecureInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GithubProvider) MaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubProvider) MaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GithubProvider) MetaAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -331,6 +363,46 @@ func (j *jsiiProxy_GithubProvider) ReadDelayMsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GithubProvider) RetryableErrors() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"retryableErrors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubProvider) RetryableErrorsInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"retryableErrorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubProvider) RetryDelayMs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryDelayMs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubProvider) RetryDelayMsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryDelayMsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GithubProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -402,7 +474,7 @@ func (j *jsiiProxy_GithubProvider) WriteDelayMsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs github} Resource.
 func NewGithubProvider(scope constructs.Construct, id *string, config *GithubProviderConfig) GithubProvider {
 	_init_.Initialize()
 
@@ -420,7 +492,7 @@ func NewGithubProvider(scope constructs.Construct, id *string, config *GithubPro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs github} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs github} Resource.
 func NewGithubProvider_Override(g GithubProvider, scope constructs.Construct, id *string, config *GithubProviderConfig) {
 	_init_.Initialize()
 
@@ -469,6 +541,14 @@ func (j *jsiiProxy_GithubProvider)SetInsecure(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GithubProvider)SetMaxRetries(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxRetries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GithubProvider)SetOrganization(val *string) {
 	_jsii_.Set(
 		j,
@@ -500,6 +580,22 @@ func (j *jsiiProxy_GithubProvider)SetReadDelayMs(val *float64) {
 	_jsii_.Set(
 		j,
 		"readDelayMs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GithubProvider)SetRetryableErrors(val *[]*float64) {
+	_jsii_.Set(
+		j,
+		"retryableErrors",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GithubProvider)SetRetryDelayMs(val *float64) {
+	_jsii_.Set(
+		j,
+		"retryDelayMs",
 		val,
 	)
 }
@@ -677,6 +773,14 @@ func (g *jsiiProxy_GithubProvider) ResetInsecure() {
 	)
 }
 
+func (g *jsiiProxy_GithubProvider) ResetMaxRetries() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GithubProvider) ResetOrganization() {
 	_jsii_.InvokeVoid(
 		g,
@@ -713,6 +817,22 @@ func (g *jsiiProxy_GithubProvider) ResetReadDelayMs() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReadDelayMs",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GithubProvider) ResetRetryableErrors() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetryableErrors",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GithubProvider) ResetRetryDelayMs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRetryDelayMs",
 		nil, // no parameters
 	)
 }

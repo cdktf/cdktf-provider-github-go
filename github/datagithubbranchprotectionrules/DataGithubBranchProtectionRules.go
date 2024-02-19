@@ -5,14 +5,14 @@ package datagithubbranchprotectionrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubbranchprotectionrules/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubbranchprotectionrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules github_branch_protection_rules}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules github_branch_protection_rules}.
 type DataGithubBranchProtectionRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGithubBranchProtectionRules) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source.
 func NewDataGithubBranchProtectionRules(scope constructs.Construct, id *string, config *DataGithubBranchProtectionRulesConfig) DataGithubBranchProtectionRules {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGithubBranchProtectionRules(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source.
 func NewDataGithubBranchProtectionRules_Override(d DataGithubBranchProtectionRules, scope constructs.Construct, id *string, config *DataGithubBranchProtectionRulesConfig) {
 	_init_.Initialize()
 

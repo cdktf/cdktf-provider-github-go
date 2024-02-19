@@ -5,14 +5,14 @@ package actionsenvironmentvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-github-go/github/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-github-go/github/v13/actionsenvironmentvariable/internal"
+	"github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
 type ActionsEnvironmentVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ActionsEnvironmentVariable) VariableNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) ActionsEnvironmentVariable {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewActionsEnvironmentVariable(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource.
 func NewActionsEnvironmentVariable_Override(a ActionsEnvironmentVariable, scope constructs.Construct, id *string, config *ActionsEnvironmentVariableConfig) {
 	_init_.Initialize()
 
