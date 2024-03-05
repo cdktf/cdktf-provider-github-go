@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataGithubOrganization) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganization) validateSetIgnoreArchivedReposParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubOrganization) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

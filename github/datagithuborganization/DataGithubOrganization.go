@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization github_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization github_organization}.
 type DataGithubOrganization interface {
 	cdktf.TerraformDataSource
 	AdvancedSecurityEnabledForNewRepositories() cdktf.IResolvable
@@ -44,6 +44,9 @@ type DataGithubOrganization interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreArchivedRepos() interface{}
+	SetIgnoreArchivedRepos(val interface{})
+	IgnoreArchivedReposInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -111,6 +114,7 @@ type DataGithubOrganization interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIgnoreArchivedRepos()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_DataGithubOrganization) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) IgnoreArchivedRepos() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreArchivedRepos",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) IgnoreArchivedReposInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreArchivedReposInput",
 		&returns,
 	)
 	return returns
@@ -574,7 +598,7 @@ func (j *jsiiProxy_DataGithubOrganization) WebCommitSignoffRequired() cdktf.IRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization(scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) DataGithubOrganization {
 	_init_.Initialize()
 
@@ -592,7 +616,7 @@ func NewDataGithubOrganization(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization_Override(d DataGithubOrganization, scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) {
 	_init_.Initialize()
 
@@ -637,6 +661,17 @@ func (j *jsiiProxy_DataGithubOrganization)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubOrganization)SetIgnoreArchivedRepos(val interface{}) {
+	if err := j.validateSetIgnoreArchivedReposParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreArchivedRepos",
 		val,
 	)
 }
@@ -960,6 +995,14 @@ func (d *jsiiProxy_DataGithubOrganization) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubOrganization) ResetIgnoreArchivedRepos() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIgnoreArchivedRepos",
 		nil, // no parameters
 	)
 }
