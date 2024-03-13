@@ -22,16 +22,16 @@ type DataGithubOrganizationTeamsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}.
 	ResultsPerPage *float64 `field:"optional" json:"resultsPerPage" yaml:"resultsPerPage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}.
 	RootTeamsOnly interface{} `field:"optional" json:"rootTeamsOnly" yaml:"rootTeamsOnly"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}.
 	SummaryOnly interface{} `field:"optional" json:"summaryOnly" yaml:"summaryOnly"`
 }
 
