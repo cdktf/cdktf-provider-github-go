@@ -55,6 +55,9 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	RequiredApprovingReviewCount() *float64
 	SetRequiredApprovingReviewCount(val *float64)
 	RequiredApprovingReviewCountInput() *float64
+	RequireLastPushApproval() interface{}
+	SetRequireLastPushApproval(val interface{})
+	RequireLastPushApprovalInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -96,6 +99,7 @@ type BranchProtectionV3RequiredPullRequestReviewsOutputReference interface {
 	ResetIncludeAdmins()
 	ResetRequireCodeOwnerReviews()
 	ResetRequiredApprovingReviewCount()
+	ResetRequireLastPushApproval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) RequireLastPushApproval() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireLastPushApproval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) RequireLastPushApprovalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireLastPushApprovalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -475,6 +499,17 @@ func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference)S
 	_jsii_.Set(
 		j,
 		"requiredApprovingReviewCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference)SetRequireLastPushApproval(val interface{}) {
+	if err := j.validateSetRequireLastPushApprovalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requireLastPushApproval",
 		val,
 	)
 }
@@ -758,6 +793,14 @@ func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	_jsii_.InvokeVoid(
 		b,
 		"resetRequiredApprovingReviewCount",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) ResetRequireLastPushApproval() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequireLastPushApproval",
 		nil, // no parameters
 	)
 }

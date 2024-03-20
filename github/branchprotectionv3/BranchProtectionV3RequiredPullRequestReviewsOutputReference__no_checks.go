@@ -95,6 +95,10 @@ func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) validateSetRequireLastPushApprovalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
