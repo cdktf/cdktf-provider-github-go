@@ -1,6 +1,6 @@
-# CDKTF Go bindings for integrations/github provider version 6.2.0
+# CDKTF Go bindings for integrations/github provider version 6.2.1
 
-This repo builds and publishes the [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.2.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.2.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform github provider version 1:
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.2.0)
+* [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.2.1)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

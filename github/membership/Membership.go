@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/membership github_membership}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/membership github_membership}.
 type Membership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Membership) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/membership github_membership} Resource.
 func NewMembership(scope constructs.Construct, id *string, config *MembershipConfig) Membership {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewMembership(scope constructs.Construct, id *string, config *MembershipCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/membership github_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/membership github_membership} Resource.
 func NewMembership_Override(m Membership, scope constructs.Construct, id *string, config *MembershipConfig) {
 	_init_.Initialize()
 
