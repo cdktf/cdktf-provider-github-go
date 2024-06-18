@@ -26,23 +26,23 @@ type ActionsOrganizationPermissionsConfig struct {
 	//
 	// Can be one of: 'all', 'none', or 'selected'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
 	EnabledRepositories *string `field:"required" json:"enabledRepositories" yaml:"enabledRepositories"`
 	// The permissions policy that controls the actions that are allowed to run.
 	//
 	// Can be one of: 'all', 'local_only', or 'selected'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
 	AllowedActions *string `field:"optional" json:"allowedActions" yaml:"allowedActions"`
 	// allowed_actions_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
 	AllowedActionsConfig *ActionsOrganizationPermissionsAllowedActionsConfig `field:"optional" json:"allowedActionsConfig" yaml:"allowedActionsConfig"`
 	// enabled_repositories_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
 	EnabledRepositoriesConfig *ActionsOrganizationPermissionsEnabledRepositoriesConfig `field:"optional" json:"enabledRepositoriesConfig" yaml:"enabledRepositoriesConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
