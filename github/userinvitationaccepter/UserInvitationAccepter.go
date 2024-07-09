@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 type UserInvitationAccepter interface {
 	cdktf.TerraformResource
 	AllowEmptyId() interface{}
@@ -358,7 +358,7 @@ func (j *jsiiProxy_UserInvitationAccepter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) UserInvitationAccepter {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewUserInvitationAccepter(scope constructs.Construct, id *string, config *U
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource.
 func NewUserInvitationAccepter_Override(u UserInvitationAccepter, scope constructs.Construct, id *string, config *UserInvitationAccepterConfig) {
 	_init_.Initialize()
 

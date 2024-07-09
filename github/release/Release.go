@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release github_release}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release github_release}.
 type Release interface {
 	cdktf.TerraformResource
+	AssetsUrl() *string
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
@@ -30,6 +31,7 @@ type Release interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,6 +54,7 @@ type Release interface {
 	GenerateReleaseNotes() interface{}
 	SetGenerateReleaseNotes(val interface{})
 	GenerateReleaseNotesInput() interface{}
+	HtmlUrl() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -64,6 +67,7 @@ type Release interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeId() *string
 	Prerelease() interface{}
 	SetPrerelease(val interface{})
 	PrereleaseInput() interface{}
@@ -75,14 +79,17 @@ type Release interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublishedAt() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ReleaseId() *float64
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
 	TagName() *string
 	SetTagName(val *string)
 	TagNameInput() *string
+	TarballUrl() *string
 	TargetCommitish() *string
 	SetTargetCommitish(val *string)
 	TargetCommitishInput() *string
@@ -92,6 +99,9 @@ type Release interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UploadUrl() *string
+	Url() *string
+	ZipballUrl() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -164,6 +174,16 @@ type jsiiProxy_Release struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_Release) AssetsUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetsUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Release) Body() *string {
 	var returns *string
 	_jsii_.Get(
@@ -219,6 +239,16 @@ func (j *jsiiProxy_Release) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Release) CreatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createdAt",
 		&returns,
 	)
 	return returns
@@ -334,6 +364,16 @@ func (j *jsiiProxy_Release) GenerateReleaseNotesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Release) HtmlUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"htmlUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Release) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,6 +434,16 @@ func (j *jsiiProxy_Release) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Release) NodeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Release) Prerelease() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -434,11 +484,31 @@ func (j *jsiiProxy_Release) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Release) PublishedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publishedAt",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Release) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Release) ReleaseId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"releaseId",
 		&returns,
 	)
 	return returns
@@ -479,6 +549,16 @@ func (j *jsiiProxy_Release) TagNameInput() *string {
 	_jsii_.Get(
 		j,
 		"tagNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Release) TarballUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tarballUrl",
 		&returns,
 	)
 	return returns
@@ -534,8 +614,38 @@ func (j *jsiiProxy_Release) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Release) UploadUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uploadUrl",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release github_release} Resource.
+func (j *jsiiProxy_Release) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Release) ZipballUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zipballUrl",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release github_release} Resource.
 func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) Release {
 	_init_.Initialize()
 
@@ -553,7 +663,7 @@ func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release github_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release github_release} Resource.
 func NewRelease_Override(r Release, scope constructs.Construct, id *string, config *ReleaseConfig) {
 	_init_.Initialize()
 

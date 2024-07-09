@@ -24,9 +24,9 @@ type OrganizationSecurityManagerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The slug of the team to manage.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
 	TeamSlug *string `field:"required" json:"teamSlug" yaml:"teamSlug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

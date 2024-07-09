@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions}.
 type EnterpriseActionsPermissions interface {
 	cdktf.TerraformResource
 	AllowedActions() *string
@@ -41,9 +41,9 @@ type EnterpriseActionsPermissions interface {
 	EnabledOrganizationsConfig() EnterpriseActionsPermissionsEnabledOrganizationsConfigOutputReference
 	EnabledOrganizationsConfigInput() *EnterpriseActionsPermissionsEnabledOrganizationsConfig
 	EnabledOrganizationsInput() *string
-	EnterpriseId() *string
-	SetEnterpriseId(val *string)
-	EnterpriseIdInput() *string
+	EnterpriseSlug() *string
+	SetEnterpriseSlug(val *string)
+	EnterpriseSlugInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -277,21 +277,21 @@ func (j *jsiiProxy_EnterpriseActionsPermissions) EnabledOrganizationsInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_EnterpriseActionsPermissions) EnterpriseId() *string {
+func (j *jsiiProxy_EnterpriseActionsPermissions) EnterpriseSlug() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"enterpriseId",
+		"enterpriseSlug",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_EnterpriseActionsPermissions) EnterpriseIdInput() *string {
+func (j *jsiiProxy_EnterpriseActionsPermissions) EnterpriseSlugInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"enterpriseIdInput",
+		"enterpriseSlugInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +428,7 @@ func (j *jsiiProxy_EnterpriseActionsPermissions) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource.
 func NewEnterpriseActionsPermissions(scope constructs.Construct, id *string, config *EnterpriseActionsPermissionsConfig) EnterpriseActionsPermissions {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewEnterpriseActionsPermissions(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource.
 func NewEnterpriseActionsPermissions_Override(e EnterpriseActionsPermissions, scope constructs.Construct, id *string, config *EnterpriseActionsPermissionsConfig) {
 	_init_.Initialize()
 
@@ -509,13 +509,13 @@ func (j *jsiiProxy_EnterpriseActionsPermissions)SetEnabledOrganizations(val *str
 	)
 }
 
-func (j *jsiiProxy_EnterpriseActionsPermissions)SetEnterpriseId(val *string) {
-	if err := j.validateSetEnterpriseIdParameters(val); err != nil {
+func (j *jsiiProxy_EnterpriseActionsPermissions)SetEnterpriseSlug(val *string) {
+	if err := j.validateSetEnterpriseSlugParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"enterpriseId",
+		"enterpriseSlug",
 		val,
 	)
 }

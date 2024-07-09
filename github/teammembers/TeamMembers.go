@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/team_members github_team_members}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/team_members github_team_members}.
 type TeamMembers interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_TeamMembers) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/team_members github_team_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/team_members github_team_members} Resource.
 func NewTeamMembers(scope constructs.Construct, id *string, config *TeamMembersConfig) TeamMembers {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewTeamMembers(scope constructs.Construct, id *string, config *TeamMembersC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/team_members github_team_members} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/team_members github_team_members} Resource.
 func NewTeamMembers_Override(t TeamMembers, scope constructs.Construct, id *string, config *TeamMembersConfig) {
 	_init_.Initialize()
 

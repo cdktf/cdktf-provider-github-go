@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
 type DataGithubRepositoryDeploymentBranchPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataGithubRepositoryDeploymentBranchPolicies) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
 func NewDataGithubRepositoryDeploymentBranchPolicies(scope constructs.Construct, id *string, config *DataGithubRepositoryDeploymentBranchPoliciesConfig) DataGithubRepositoryDeploymentBranchPolicies {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataGithubRepositoryDeploymentBranchPolicies(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies} Data Source.
 func NewDataGithubRepositoryDeploymentBranchPolicies_Override(d DataGithubRepositoryDeploymentBranchPolicies, scope constructs.Construct, id *string, config *DataGithubRepositoryDeploymentBranchPoliciesConfig) {
 	_init_.Initialize()
 

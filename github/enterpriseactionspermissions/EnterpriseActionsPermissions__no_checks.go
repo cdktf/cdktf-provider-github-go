@@ -115,7 +115,7 @@ func (j *jsiiProxy_EnterpriseActionsPermissions) validateSetEnabledOrganizations
 	return nil
 }
 
-func (j *jsiiProxy_EnterpriseActionsPermissions) validateSetEnterpriseIdParameters(val *string) error {
+func (j *jsiiProxy_EnterpriseActionsPermissions) validateSetEnterpriseSlugParameters(val *string) error {
 	return nil
 }
 
