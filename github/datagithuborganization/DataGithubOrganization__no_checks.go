@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataGithubOrganization) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganization) validateSetSummaryOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataGithubOrganizationParameters(scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) error {
 	return nil
 }

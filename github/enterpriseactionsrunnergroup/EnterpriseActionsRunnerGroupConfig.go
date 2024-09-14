@@ -24,21 +24,21 @@ type EnterpriseActionsRunnerGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The slug of the enterprise.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#enterprise_slug EnterpriseActionsRunnerGroup#enterprise_slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#enterprise_slug EnterpriseActionsRunnerGroup#enterprise_slug}
 	EnterpriseSlug *string `field:"required" json:"enterpriseSlug" yaml:"enterpriseSlug"`
 	// Name of the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#name EnterpriseActionsRunnerGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#name EnterpriseActionsRunnerGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The visibility of the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#visibility EnterpriseActionsRunnerGroup#visibility}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#visibility EnterpriseActionsRunnerGroup#visibility}
 	Visibility *string `field:"required" json:"visibility" yaml:"visibility"`
 	// Whether public repositories can be added to the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#allows_public_repositories EnterpriseActionsRunnerGroup#allows_public_repositories}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#allows_public_repositories EnterpriseActionsRunnerGroup#allows_public_repositories}
 	AllowsPublicRepositories interface{} `field:"optional" json:"allowsPublicRepositories" yaml:"allowsPublicRepositories"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#id EnterpriseActionsRunnerGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#id EnterpriseActionsRunnerGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,17 +47,17 @@ type EnterpriseActionsRunnerGroupConfig struct {
 	//
 	// Defaults to 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#restricted_to_workflows EnterpriseActionsRunnerGroup#restricted_to_workflows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#restricted_to_workflows EnterpriseActionsRunnerGroup#restricted_to_workflows}
 	RestrictedToWorkflows interface{} `field:"optional" json:"restrictedToWorkflows" yaml:"restrictedToWorkflows"`
 	// List of organization IDs that can access the runner group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#selected_organization_ids EnterpriseActionsRunnerGroup#selected_organization_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#selected_organization_ids EnterpriseActionsRunnerGroup#selected_organization_ids}
 	SelectedOrganizationIds *[]*float64 `field:"optional" json:"selectedOrganizationIds" yaml:"selectedOrganizationIds"`
 	// List of workflows the runner group should be allowed to run.
 	//
 	// This setting will be ignored unless restricted_to_workflows is set to 'true'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/enterprise_actions_runner_group#selected_workflows EnterpriseActionsRunnerGroup#selected_workflows}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_actions_runner_group#selected_workflows EnterpriseActionsRunnerGroup#selected_workflows}
 	SelectedWorkflows *[]*string `field:"optional" json:"selectedWorkflows" yaml:"selectedWorkflows"`
 }
 

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataGithubCollaborators) validateSetOwnerParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubCollaborators) validateSetPermissionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubCollaborators) validateSetRepositoryParameters(val *string) error {
 	return nil
 }

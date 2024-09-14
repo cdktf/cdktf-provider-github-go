@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/repository github_repository}.
 type DataGithubRepository interface {
 	cdktf.TerraformDataSource
 	AllowAutoMerge() cdktf.IResolvable
 	AllowMergeCommit() cdktf.IResolvable
 	AllowRebaseMerge() cdktf.IResolvable
 	AllowSquashMerge() cdktf.IResolvable
+	AllowUpdateBranch() cdktf.IResolvable
 	Archived() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -29,6 +30,7 @@ type DataGithubRepository interface {
 	// Experimental.
 	SetCount(val interface{})
 	DefaultBranch() *string
+	DeleteBranchOnMerge() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,6 +193,16 @@ func (j *jsiiProxy_DataGithubRepository) AllowSquashMerge() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubRepository) AllowUpdateBranch() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowUpdateBranch",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubRepository) Archived() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -236,6 +248,16 @@ func (j *jsiiProxy_DataGithubRepository) DefaultBranch() *string {
 	_jsii_.Get(
 		j,
 		"defaultBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubRepository) DeleteBranchOnMerge() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deleteBranchOnMerge",
 		&returns,
 	)
 	return returns
@@ -702,7 +724,7 @@ func (j *jsiiProxy_DataGithubRepository) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository(scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) DataGithubRepository {
 	_init_.Initialize()
 
@@ -720,7 +742,7 @@ func NewDataGithubRepository(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/repository github_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/repository github_repository} Data Source.
 func NewDataGithubRepository_Override(d DataGithubRepository, scope constructs.Construct, id *string, config *DataGithubRepositoryConfig) {
 	_init_.Initialize()
 

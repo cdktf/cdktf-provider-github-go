@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization github_organization}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization github_organization}.
 type DataGithubOrganization interface {
 	cdktf.TerraformDataSource
 	AdvancedSecurityEnabledForNewRepositories() cdktf.IResolvable
@@ -79,6 +79,9 @@ type DataGithubOrganization interface {
 	Repositories() *[]*string
 	SecretScanningEnabledForNewRepositories() cdktf.IResolvable
 	SecretScanningPushProtectionEnabledForNewRepositories() cdktf.IResolvable
+	SummaryOnly() interface{}
+	SetSummaryOnly(val interface{})
+	SummaryOnlyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type DataGithubOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSummaryOnly()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -537,6 +541,26 @@ func (j *jsiiProxy_DataGithubOrganization) SecretScanningPushProtectionEnabledFo
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganization) SummaryOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganization) SummaryOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"summaryOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganization) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -598,7 +622,7 @@ func (j *jsiiProxy_DataGithubOrganization) WebCommitSignoffRequired() cdktf.IRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization(scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) DataGithubOrganization {
 	_init_.Initialize()
 
@@ -616,7 +640,7 @@ func NewDataGithubOrganization(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization github_organization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization github_organization} Data Source.
 func NewDataGithubOrganization_Override(d DataGithubOrganization, scope constructs.Construct, id *string, config *DataGithubOrganizationConfig) {
 	_init_.Initialize()
 
@@ -702,6 +726,17 @@ func (j *jsiiProxy_DataGithubOrganization)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubOrganization)SetSummaryOnly(val interface{}) {
+	if err := j.validateSetSummaryOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"summaryOnly",
 		val,
 	)
 }
@@ -1011,6 +1046,14 @@ func (d *jsiiProxy_DataGithubOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubOrganization) ResetSummaryOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSummaryOnly",
 		nil, // no parameters
 	)
 }

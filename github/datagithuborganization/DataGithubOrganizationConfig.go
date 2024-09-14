@@ -22,14 +22,16 @@ type DataGithubOrganizationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#name DataGithubOrganization#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#name DataGithubOrganization#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#id DataGithubOrganization#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#id DataGithubOrganization#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#ignore_archived_repos DataGithubOrganization#ignore_archived_repos}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#ignore_archived_repos DataGithubOrganization#ignore_archived_repos}.
 	IgnoreArchivedRepos interface{} `field:"optional" json:"ignoreArchivedRepos" yaml:"ignoreArchivedRepos"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#summary_only DataGithubOrganization#summary_only}.
+	SummaryOnly interface{} `field:"optional" json:"summaryOnly" yaml:"summaryOnly"`
 }
 

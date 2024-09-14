@@ -91,6 +91,18 @@ func validateRepositoryFile_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryFile) validateSetAutocreateBranchParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetAutocreateBranchSourceBranchParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RepositoryFile) validateSetAutocreateBranchSourceShaParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryFile) validateSetBranchParameters(val *string) error {
 	return nil
 }

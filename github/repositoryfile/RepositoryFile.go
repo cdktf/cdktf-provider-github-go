@@ -12,9 +12,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file github_repository_file}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file github_repository_file}.
 type RepositoryFile interface {
 	cdktf.TerraformResource
+	AutocreateBranch() interface{}
+	SetAutocreateBranch(val interface{})
+	AutocreateBranchInput() interface{}
+	AutocreateBranchSourceBranch() *string
+	SetAutocreateBranchSourceBranch(val *string)
+	AutocreateBranchSourceBranchInput() *string
+	AutocreateBranchSourceSha() *string
+	SetAutocreateBranchSourceSha(val *string)
+	AutocreateBranchSourceShaInput() *string
 	Branch() *string
 	SetBranch(val *string)
 	BranchInput() *string
@@ -134,6 +143,9 @@ type RepositoryFile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutocreateBranch()
+	ResetAutocreateBranchSourceBranch()
+	ResetAutocreateBranchSourceSha()
 	ResetBranch()
 	ResetCommitAuthor()
 	ResetCommitEmail()
@@ -159,6 +171,66 @@ type RepositoryFile interface {
 // The jsii proxy struct for RepositoryFile
 type jsiiProxy_RepositoryFile struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autocreateBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autocreateBranchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranchSourceBranch() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autocreateBranchSourceBranch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranchSourceBranchInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autocreateBranchSourceBranchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranchSourceSha() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autocreateBranchSourceSha",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryFile) AutocreateBranchSourceShaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autocreateBranchSourceShaInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RepositoryFile) Branch() *string {
@@ -532,7 +604,7 @@ func (j *jsiiProxy_RepositoryFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file github_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file github_repository_file} Resource.
 func NewRepositoryFile(scope constructs.Construct, id *string, config *RepositoryFileConfig) RepositoryFile {
 	_init_.Initialize()
 
@@ -550,7 +622,7 @@ func NewRepositoryFile(scope constructs.Construct, id *string, config *Repositor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file github_repository_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file github_repository_file} Resource.
 func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id *string, config *RepositoryFileConfig) {
 	_init_.Initialize()
 
@@ -558,6 +630,39 @@ func NewRepositoryFile_Override(r RepositoryFile, scope constructs.Construct, id
 		"@cdktf/provider-github.repositoryFile.RepositoryFile",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetAutocreateBranch(val interface{}) {
+	if err := j.validateSetAutocreateBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autocreateBranch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetAutocreateBranchSourceBranch(val *string) {
+	if err := j.validateSetAutocreateBranchSourceBranchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autocreateBranchSourceBranch",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryFile)SetAutocreateBranchSourceSha(val *string) {
+	if err := j.validateSetAutocreateBranchSourceShaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autocreateBranchSourceSha",
+		val,
 	)
 }
 
@@ -1078,6 +1183,30 @@ func (r *jsiiProxy_RepositoryFile) OverrideLogicalId(newLogicalId *string) {
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetAutocreateBranch() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutocreateBranch",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetAutocreateBranchSourceBranch() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutocreateBranchSourceBranch",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryFile) ResetAutocreateBranchSourceSha() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutocreateBranchSourceSha",
+		nil, // no parameters
 	)
 }
 
