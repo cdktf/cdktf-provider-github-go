@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/dependabot_secret github_dependabot_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/dependabot_secret github_dependabot_secret}.
 type DependabotSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DependabotSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/dependabot_secret github_dependabot_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/dependabot_secret github_dependabot_secret} Resource.
 func NewDependabotSecret(scope constructs.Construct, id *string, config *DependabotSecretConfig) DependabotSecret {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDependabotSecret(scope constructs.Construct, id *string, config *Dependa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/dependabot_secret github_dependabot_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/dependabot_secret github_dependabot_secret} Resource.
 func NewDependabotSecret_Override(d DependabotSecret, scope constructs.Construct, id *string, config *DependabotSecretConfig) {
 	_init_.Initialize()
 
