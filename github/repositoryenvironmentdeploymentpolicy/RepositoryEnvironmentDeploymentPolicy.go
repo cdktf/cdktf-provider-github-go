@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}.
 type RepositoryEnvironmentDeploymentPolicy interface {
 	cdktf.TerraformResource
 	BranchPattern() *string
@@ -67,6 +67,9 @@ type RepositoryEnvironmentDeploymentPolicy interface {
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
+	TagPattern() *string
+	SetTagPattern(val *string)
+	TagPatternInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,10 +119,12 @@ type RepositoryEnvironmentDeploymentPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBranchPattern()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTagPattern()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -348,6 +353,26 @@ func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) RepositoryInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) TagPattern() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPattern",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) TagPatternInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagPatternInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +404,7 @@ func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource.
 func NewRepositoryEnvironmentDeploymentPolicy(scope constructs.Construct, id *string, config *RepositoryEnvironmentDeploymentPolicyConfig) RepositoryEnvironmentDeploymentPolicy {
 	_init_.Initialize()
 
@@ -397,7 +422,7 @@ func NewRepositoryEnvironmentDeploymentPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource.
 func NewRepositoryEnvironmentDeploymentPolicy_Override(r RepositoryEnvironmentDeploymentPolicy, scope constructs.Construct, id *string, config *RepositoryEnvironmentDeploymentPolicyConfig) {
 	_init_.Initialize()
 
@@ -516,6 +541,17 @@ func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy)SetRepository(val *stri
 	_jsii_.Set(
 		j,
 		"repository",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy)SetTagPattern(val *string) {
+	if err := j.validateSetTagPatternParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagPattern",
 		val,
 	)
 }
@@ -873,6 +909,14 @@ func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) OverrideLogicalId(newL
 	)
 }
 
+func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) ResetBranchPattern() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBranchPattern",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -885,6 +929,14 @@ func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) ResetTagPattern() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTagPattern",
 		nil, // no parameters
 	)
 }

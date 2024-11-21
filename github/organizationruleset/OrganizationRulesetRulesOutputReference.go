@@ -51,6 +51,8 @@ type OrganizationRulesetRulesOutputReference interface {
 	NonFastForwardInput() interface{}
 	PullRequest() OrganizationRulesetRulesPullRequestOutputReference
 	PullRequestInput() *OrganizationRulesetRulesPullRequest
+	RequiredCodeScanning() OrganizationRulesetRulesRequiredCodeScanningOutputReference
+	RequiredCodeScanningInput() *OrganizationRulesetRulesRequiredCodeScanning
 	RequiredLinearHistory() interface{}
 	SetRequiredLinearHistory(val interface{})
 	RequiredLinearHistoryInput() interface{}
@@ -103,6 +105,7 @@ type OrganizationRulesetRulesOutputReference interface {
 	PutCommitMessagePattern(value *OrganizationRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *OrganizationRulesetRulesCommitterEmailPattern)
 	PutPullRequest(value *OrganizationRulesetRulesPullRequest)
+	PutRequiredCodeScanning(value *OrganizationRulesetRulesRequiredCodeScanning)
 	PutRequiredStatusChecks(value *OrganizationRulesetRulesRequiredStatusChecks)
 	PutRequiredWorkflows(value *OrganizationRulesetRulesRequiredWorkflows)
 	PutTagNamePattern(value *OrganizationRulesetRulesTagNamePattern)
@@ -114,6 +117,7 @@ type OrganizationRulesetRulesOutputReference interface {
 	ResetDeletion()
 	ResetNonFastForward()
 	ResetPullRequest()
+	ResetRequiredCodeScanning()
 	ResetRequiredLinearHistory()
 	ResetRequiredSignatures()
 	ResetRequiredStatusChecks()
@@ -340,6 +344,26 @@ func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) PullRequestInput() *
 	_jsii_.Get(
 		j,
 		"pullRequestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) RequiredCodeScanning() OrganizationRulesetRulesRequiredCodeScanningOutputReference {
+	var returns OrganizationRulesetRulesRequiredCodeScanningOutputReference
+	_jsii_.Get(
+		j,
+		"requiredCodeScanning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) RequiredCodeScanningInput() *OrganizationRulesetRulesRequiredCodeScanning {
+	var returns *OrganizationRulesetRulesRequiredCodeScanning
+	_jsii_.Get(
+		j,
+		"requiredCodeScanningInput",
 		&returns,
 	)
 	return returns
@@ -875,6 +899,17 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutPullRequest(value
 	)
 }
 
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutRequiredCodeScanning(value *OrganizationRulesetRulesRequiredCodeScanning) {
+	if err := o.validatePutRequiredCodeScanningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRequiredCodeScanning",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutRequiredStatusChecks(value *OrganizationRulesetRulesRequiredStatusChecks) {
 	if err := o.validatePutRequiredStatusChecksParameters(value); err != nil {
 		panic(err)
@@ -968,6 +1003,14 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetPullRequest() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPullRequest",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetRequiredCodeScanning() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRequiredCodeScanning",
 		nil, // no parameters
 	)
 }

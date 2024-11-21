@@ -67,6 +67,10 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutPullRequest
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutRequiredCodeScanningParameters(value *RepositoryRulesetRulesRequiredCodeScanning) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutRequiredDeploymentsParameters(value *RepositoryRulesetRulesRequiredDeployments) error {
 	return nil
 }

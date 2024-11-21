@@ -465,9 +465,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCommitMessagePattern", GoMethod: "PutCommitMessagePattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putCommitterEmailPattern", GoMethod: "PutCommitterEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putPullRequest", GoMethod: "PutPullRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequiredCodeScanning", GoMethod: "PutRequiredCodeScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequiredDeployments", GoMethod: "PutRequiredDeployments"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequiredStatusChecks", GoMethod: "PutRequiredStatusChecks"},
 			_jsii_.MemberMethod{JsiiMethod: "putTagNamePattern", GoMethod: "PutTagNamePattern"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredCodeScanning", GoGetter: "RequiredCodeScanning"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredCodeScanningInput", GoGetter: "RequiredCodeScanningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredDeployments", GoGetter: "RequiredDeployments"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredDeploymentsInput", GoGetter: "RequiredDeploymentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredLinearHistory", GoGetter: "RequiredLinearHistory"},
@@ -484,6 +487,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletion", GoMethod: "ResetDeletion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNonFastForward", GoMethod: "ResetNonFastForward"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPullRequest", GoMethod: "ResetPullRequest"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredCodeScanning", GoMethod: "ResetRequiredCodeScanning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredDeployments", GoMethod: "ResetRequiredDeployments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredLinearHistory", GoMethod: "ResetRequiredLinearHistory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequiredSignatures", GoMethod: "ResetRequiredSignatures"},
@@ -555,6 +559,109 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RepositoryRulesetRulesPullRequestOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesRequiredCodeScanning",
+		reflect.TypeOf((*RepositoryRulesetRulesRequiredCodeScanning)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesRequiredCodeScanningOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesRequiredCodeScanningOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putRequiredCodeScanningTool", GoMethod: "PutRequiredCodeScanningTool"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredCodeScanningTool", GoGetter: "RequiredCodeScanningTool"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredCodeScanningToolInput", GoGetter: "RequiredCodeScanningToolInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesRequiredCodeScanningOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool",
+		reflect.TypeOf((*RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList",
+		reflect.TypeOf((*RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alertsThreshold", GoGetter: "AlertsThreshold"},
+			_jsii_.MemberProperty{JsiiProperty: "alertsThresholdInput", GoGetter: "AlertsThresholdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "securityAlertsThreshold", GoGetter: "SecurityAlertsThreshold"},
+			_jsii_.MemberProperty{JsiiProperty: "securityAlertsThresholdInput", GoGetter: "SecurityAlertsThresholdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tool", GoGetter: "Tool"},
+			_jsii_.MemberProperty{JsiiProperty: "toolInput", GoGetter: "ToolInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

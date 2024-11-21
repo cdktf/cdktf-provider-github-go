@@ -67,6 +67,10 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutPullReque
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutRequiredCodeScanningParameters(value *OrganizationRulesetRulesRequiredCodeScanning) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutRequiredStatusChecksParameters(value *OrganizationRulesetRulesRequiredStatusChecks) error {
 	return nil
 }

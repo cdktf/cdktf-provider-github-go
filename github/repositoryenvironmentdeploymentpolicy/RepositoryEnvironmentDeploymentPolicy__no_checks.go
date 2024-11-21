@@ -123,6 +123,10 @@ func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) validateSetRepositoryP
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryEnvironmentDeploymentPolicy) validateSetTagPatternParameters(val *string) error {
+	return nil
+}
+
 func validateNewRepositoryEnvironmentDeploymentPolicyParameters(scope constructs.Construct, id *string, config *RepositoryEnvironmentDeploymentPolicyConfig) error {
 	return nil
 }

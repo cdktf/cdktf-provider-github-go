@@ -51,6 +51,8 @@ type RepositoryRulesetRulesOutputReference interface {
 	NonFastForwardInput() interface{}
 	PullRequest() RepositoryRulesetRulesPullRequestOutputReference
 	PullRequestInput() *RepositoryRulesetRulesPullRequest
+	RequiredCodeScanning() RepositoryRulesetRulesRequiredCodeScanningOutputReference
+	RequiredCodeScanningInput() *RepositoryRulesetRulesRequiredCodeScanning
 	RequiredDeployments() RepositoryRulesetRulesRequiredDeploymentsOutputReference
 	RequiredDeploymentsInput() *RepositoryRulesetRulesRequiredDeployments
 	RequiredLinearHistory() interface{}
@@ -106,6 +108,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	PutCommitMessagePattern(value *RepositoryRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *RepositoryRulesetRulesCommitterEmailPattern)
 	PutPullRequest(value *RepositoryRulesetRulesPullRequest)
+	PutRequiredCodeScanning(value *RepositoryRulesetRulesRequiredCodeScanning)
 	PutRequiredDeployments(value *RepositoryRulesetRulesRequiredDeployments)
 	PutRequiredStatusChecks(value *RepositoryRulesetRulesRequiredStatusChecks)
 	PutTagNamePattern(value *RepositoryRulesetRulesTagNamePattern)
@@ -117,6 +120,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	ResetDeletion()
 	ResetNonFastForward()
 	ResetPullRequest()
+	ResetRequiredCodeScanning()
 	ResetRequiredDeployments()
 	ResetRequiredLinearHistory()
 	ResetRequiredSignatures()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) PullRequestInput() *Re
 	_jsii_.Get(
 		j,
 		"pullRequestInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) RequiredCodeScanning() RepositoryRulesetRulesRequiredCodeScanningOutputReference {
+	var returns RepositoryRulesetRulesRequiredCodeScanningOutputReference
+	_jsii_.Get(
+		j,
+		"requiredCodeScanning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) RequiredCodeScanningInput() *RepositoryRulesetRulesRequiredCodeScanning {
+	var returns *RepositoryRulesetRulesRequiredCodeScanning
+	_jsii_.Get(
+		j,
+		"requiredCodeScanningInput",
 		&returns,
 	)
 	return returns
@@ -910,6 +934,17 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutPullRequest(value *
 	)
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutRequiredCodeScanning(value *RepositoryRulesetRulesRequiredCodeScanning) {
+	if err := r.validatePutRequiredCodeScanningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putRequiredCodeScanning",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutRequiredDeployments(value *RepositoryRulesetRulesRequiredDeployments) {
 	if err := r.validatePutRequiredDeploymentsParameters(value); err != nil {
 		panic(err)
@@ -1003,6 +1038,14 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetPullRequest() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPullRequest",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetRequiredCodeScanning() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRequiredCodeScanning",
 		nil, // no parameters
 	)
 }

@@ -24,24 +24,24 @@ type CodespacesSecretConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// Name of the secret.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
 	SecretName *string `field:"required" json:"secretName" yaml:"secretName"`
 	// Encrypted value of the secret using the GitHub public key in Base64 format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
 	EncryptedValue *string `field:"optional" json:"encryptedValue" yaml:"encryptedValue"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/codespaces_secret#id CodespacesSecret#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/codespaces_secret#id CodespacesSecret#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Plaintext value of the secret to be encrypted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
 	PlaintextValue *string `field:"optional" json:"plaintextValue" yaml:"plaintextValue"`
 }
 
