@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators github_repository_collaborators}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators github_repository_collaborators}.
 type RepositoryCollaborators interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,8 @@ type RepositoryCollaborators interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreTeam() RepositoryCollaboratorsIgnoreTeamList
+	IgnoreTeamInput() interface{}
 	InvitationIds() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -115,9 +117,11 @@ type RepositoryCollaborators interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIgnoreTeam(value interface{})
 	PutTeam(value interface{})
 	PutUser(value interface{})
 	ResetId()
+	ResetIgnoreTeam()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_RepositoryCollaborators) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryCollaborators) IgnoreTeam() RepositoryCollaboratorsIgnoreTeamList {
+	var returns RepositoryCollaboratorsIgnoreTeamList
+	_jsii_.Get(
+		j,
+		"ignoreTeam",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryCollaborators) IgnoreTeamInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreTeamInput",
 		&returns,
 	)
 	return returns
@@ -392,7 +416,7 @@ func (j *jsiiProxy_RepositoryCollaborators) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
 func NewRepositoryCollaborators(scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) RepositoryCollaborators {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewRepositoryCollaborators(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators github_repository_collaborators} Resource.
 func NewRepositoryCollaborators_Override(r RepositoryCollaborators, scope constructs.Construct, id *string, config *RepositoryCollaboratorsConfig) {
 	_init_.Initialize()
 
@@ -864,6 +888,17 @@ func (r *jsiiProxy_RepositoryCollaborators) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (r *jsiiProxy_RepositoryCollaborators) PutIgnoreTeam(value interface{}) {
+	if err := r.validatePutIgnoreTeamParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putIgnoreTeam",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RepositoryCollaborators) PutTeam(value interface{}) {
 	if err := r.validatePutTeamParameters(value); err != nil {
 		panic(err)
@@ -890,6 +925,14 @@ func (r *jsiiProxy_RepositoryCollaborators) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryCollaborators) ResetIgnoreTeam() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetIgnoreTeam",
 		nil, // no parameters
 	)
 }

@@ -63,6 +63,10 @@ func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) validateSetDoNotEnforceOnCreateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) validateSetInternalValueParameters(val *RepositoryRulesetRulesRequiredStatusChecks) error {
 	return nil
 }

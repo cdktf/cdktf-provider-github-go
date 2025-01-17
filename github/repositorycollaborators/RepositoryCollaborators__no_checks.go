@@ -75,6 +75,10 @@ func (r *jsiiProxy_RepositoryCollaborators) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryCollaborators) validatePutIgnoreTeamParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryCollaborators) validatePutTeamParameters(value interface{}) error {
 	return nil
 }

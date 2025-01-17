@@ -28,6 +28,9 @@ type RepositoryRulesetRulesRequiredStatusChecksOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DoNotEnforceOnCreate() interface{}
+	SetDoNotEnforceOnCreate(val interface{})
+	DoNotEnforceOnCreateInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *RepositoryRulesetRulesRequiredStatusChecks
@@ -70,6 +73,7 @@ type RepositoryRulesetRulesRequiredStatusChecksOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequiredCheck(value interface{})
+	ResetDoNotEnforceOnCreate()
 	ResetStrictRequiredStatusChecksPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -111,6 +115,26 @@ func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) DoNotEnforceOnCreate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"doNotEnforceOnCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) DoNotEnforceOnCreateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"doNotEnforceOnCreateInput",
 		&returns,
 	)
 	return returns
@@ -242,6 +266,17 @@ func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference)SetDoNotEnforceOnCreate(val interface{}) {
+	if err := j.validateSetDoNotEnforceOnCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"doNotEnforceOnCreate",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (r *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) Pu
 		r,
 		"putRequiredCheck",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksOutputReference) ResetDoNotEnforceOnCreate() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDoNotEnforceOnCreate",
+		nil, // no parameters
 	)
 }
 
