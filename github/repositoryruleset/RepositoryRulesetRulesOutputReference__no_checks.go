@@ -63,6 +63,10 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutCommitterEm
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMergeQueueParameters(value *RepositoryRulesetRulesMergeQueue) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutPullRequestParameters(value *RepositoryRulesetRulesPullRequest) error {
 	return nil
 }

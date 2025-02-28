@@ -46,6 +46,8 @@ type RepositoryRulesetRulesOutputReference interface {
 	Fqn() *string
 	InternalValue() *RepositoryRulesetRules
 	SetInternalValue(val *RepositoryRulesetRules)
+	MergeQueue() RepositoryRulesetRulesMergeQueueOutputReference
+	MergeQueueInput() *RepositoryRulesetRulesMergeQueue
 	NonFastForward() interface{}
 	SetNonFastForward(val interface{})
 	NonFastForwardInput() interface{}
@@ -107,6 +109,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	PutCommitAuthorEmailPattern(value *RepositoryRulesetRulesCommitAuthorEmailPattern)
 	PutCommitMessagePattern(value *RepositoryRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *RepositoryRulesetRulesCommitterEmailPattern)
+	PutMergeQueue(value *RepositoryRulesetRulesMergeQueue)
 	PutPullRequest(value *RepositoryRulesetRulesPullRequest)
 	PutRequiredCodeScanning(value *RepositoryRulesetRulesRequiredCodeScanning)
 	PutRequiredDeployments(value *RepositoryRulesetRulesRequiredDeployments)
@@ -118,6 +121,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	ResetCommitterEmailPattern()
 	ResetCreation()
 	ResetDeletion()
+	ResetMergeQueue()
 	ResetNonFastForward()
 	ResetPullRequest()
 	ResetRequiredCodeScanning()
@@ -308,6 +312,26 @@ func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) InternalValue() *Repos
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MergeQueue() RepositoryRulesetRulesMergeQueueOutputReference {
+	var returns RepositoryRulesetRulesMergeQueueOutputReference
+	_jsii_.Get(
+		j,
+		"mergeQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MergeQueueInput() *RepositoryRulesetRulesMergeQueue {
+	var returns *RepositoryRulesetRulesMergeQueue
+	_jsii_.Get(
+		j,
+		"mergeQueueInput",
 		&returns,
 	)
 	return returns
@@ -923,6 +947,17 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutCommitterEmailPatte
 	)
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutMergeQueue(value *RepositoryRulesetRulesMergeQueue) {
+	if err := r.validatePutMergeQueueParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMergeQueue",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutPullRequest(value *RepositoryRulesetRulesPullRequest) {
 	if err := r.validatePutPullRequestParameters(value); err != nil {
 		panic(err)
@@ -1022,6 +1057,14 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetDeletion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDeletion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetMergeQueue() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMergeQueue",
 		nil, // no parameters
 	)
 }
