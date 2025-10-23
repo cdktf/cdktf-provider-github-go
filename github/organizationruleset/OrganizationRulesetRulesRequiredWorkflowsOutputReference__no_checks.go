@@ -63,6 +63,10 @@ func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateSetDoNotEnforceOnCreateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateSetInternalValueParameters(val *OrganizationRulesetRulesRequiredWorkflows) error {
 	return nil
 }

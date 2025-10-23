@@ -1,9 +1,9 @@
 module github.com/cdktf/cdktf-provider-github-go/github/v15
 
-go 1.18
+go 1.23
 
 require (
-	github.com/aws/jsii-runtime-go v1.111.0
+	github.com/aws/jsii-runtime-go v1.116.0
 	github.com/hashicorp/terraform-cdk-go/cdktf v0.21.0
 	github.com/aws/constructs-go/constructs/v10 v10.4.2
 )

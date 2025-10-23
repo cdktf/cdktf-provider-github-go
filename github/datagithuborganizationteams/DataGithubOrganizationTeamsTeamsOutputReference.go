@@ -38,6 +38,8 @@ type DataGithubOrganizationTeamsTeamsOutputReference interface {
 	Name() *string
 	NodeId() *string
 	Parent() cdktf.StringMap
+	ParentTeamId() *string
+	ParentTeamSlug() *string
 	Privacy() *string
 	Repositories() *[]*string
 	Slug() *string
@@ -193,6 +195,26 @@ func (j *jsiiProxy_DataGithubOrganizationTeamsTeamsOutputReference) Parent() cdk
 	_jsii_.Get(
 		j,
 		"parent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeamsTeamsOutputReference) ParentTeamId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationTeamsTeamsOutputReference) ParentTeamSlug() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentTeamSlug",
 		&returns,
 	)
 	return returns

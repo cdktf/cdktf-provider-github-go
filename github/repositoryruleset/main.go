@@ -141,6 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActorId", GoMethod: "ResetActorId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -424,6 +425,120 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesFileExtensionRestriction",
+		reflect.TypeOf((*RepositoryRulesetRulesFileExtensionRestriction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesFileExtensionRestrictionOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesFileExtensionRestrictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictedFileExtensions", GoGetter: "RestrictedFileExtensions"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictedFileExtensionsInput", GoGetter: "RestrictedFileExtensionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesFilePathRestriction",
+		reflect.TypeOf((*RepositoryRulesetRulesFilePathRestriction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesFilePathRestrictionOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesFilePathRestrictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictedFilePaths", GoGetter: "RestrictedFilePaths"},
+			_jsii_.MemberProperty{JsiiProperty: "restrictedFilePathsInput", GoGetter: "RestrictedFilePathsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesFilePathRestrictionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMaxFileSize",
+		reflect.TypeOf((*RepositoryRulesetRulesMaxFileSize)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMaxFileSizeOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesMaxFileSizeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMergeQueue",
 		reflect.TypeOf((*RepositoryRulesetRulesMergeQueue)(nil)).Elem(),
 	)
@@ -500,6 +615,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "deletion", GoGetter: "Deletion"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionInput", GoGetter: "DeletionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fileExtensionRestriction", GoGetter: "FileExtensionRestriction"},
+			_jsii_.MemberProperty{JsiiProperty: "fileExtensionRestrictionInput", GoGetter: "FileExtensionRestrictionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filePathRestriction", GoGetter: "FilePathRestriction"},
+			_jsii_.MemberProperty{JsiiProperty: "filePathRestrictionInput", GoGetter: "FilePathRestrictionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -513,6 +632,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeQueue", GoGetter: "MergeQueue"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeQueueInput", GoGetter: "MergeQueueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nonFastForward", GoGetter: "NonFastForward"},
@@ -523,6 +644,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCommitAuthorEmailPattern", GoMethod: "PutCommitAuthorEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putCommitMessagePattern", GoMethod: "PutCommitMessagePattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putCommitterEmailPattern", GoMethod: "PutCommitterEmailPattern"},
+			_jsii_.MemberMethod{JsiiMethod: "putFileExtensionRestriction", GoMethod: "PutFileExtensionRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "putFilePathRestriction", GoMethod: "PutFilePathRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxFileSize", GoMethod: "PutMaxFileSize"},
 			_jsii_.MemberMethod{JsiiMethod: "putMergeQueue", GoMethod: "PutMergeQueue"},
 			_jsii_.MemberMethod{JsiiMethod: "putPullRequest", GoMethod: "PutPullRequest"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequiredCodeScanning", GoMethod: "PutRequiredCodeScanning"},
@@ -545,6 +669,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCommitterEmailPattern", GoMethod: "ResetCommitterEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreation", GoMethod: "ResetCreation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletion", GoMethod: "ResetDeletion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFileExtensionRestriction", GoMethod: "ResetFileExtensionRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilePathRestriction", GoMethod: "ResetFilePathRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxFileSize", GoMethod: "ResetMaxFileSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMergeQueue", GoMethod: "ResetMergeQueue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNonFastForward", GoMethod: "ResetNonFastForward"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPullRequest", GoMethod: "ResetPullRequest"},

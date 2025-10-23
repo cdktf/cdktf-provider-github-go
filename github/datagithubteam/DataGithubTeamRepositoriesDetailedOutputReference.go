@@ -33,6 +33,7 @@ type DataGithubTeamRepositoriesDetailedOutputReference interface {
 	InternalValue() *DataGithubTeamRepositoriesDetailed
 	SetInternalValue(val *DataGithubTeamRepositoriesDetailed)
 	RepoId() *float64
+	RepoName() *string
 	RoleName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataGithubTeamRepositoriesDetailedOutputReference) RepoId() *
 	_jsii_.Get(
 		j,
 		"repoId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubTeamRepositoriesDetailedOutputReference) RepoName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repoName",
 		&returns,
 	)
 	return returns

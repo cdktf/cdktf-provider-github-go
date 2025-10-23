@@ -137,6 +137,39 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutCommitterEm
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFileExtensionRestrictionParameters(value *RepositoryRulesetRulesFileExtensionRestriction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFilePathRestrictionParameters(value *RepositoryRulesetRulesFilePathRestriction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMaxFileSizeParameters(value *RepositoryRulesetRulesMaxFileSize) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMergeQueueParameters(value *RepositoryRulesetRulesMergeQueue) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

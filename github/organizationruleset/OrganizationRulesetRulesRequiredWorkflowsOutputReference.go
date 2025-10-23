@@ -28,6 +28,9 @@ type OrganizationRulesetRulesRequiredWorkflowsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DoNotEnforceOnCreate() interface{}
+	SetDoNotEnforceOnCreate(val interface{})
+	DoNotEnforceOnCreateInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OrganizationRulesetRulesRequiredWorkflows
@@ -67,6 +70,7 @@ type OrganizationRulesetRulesRequiredWorkflowsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequiredWorkflow(value interface{})
+	ResetDoNotEnforceOnCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) DoNotEnforceOnCreate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"doNotEnforceOnCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) DoNotEnforceOnCreateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"doNotEnforceOnCreateInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference)SetDoNotEnforceOnCreate(val interface{}) {
+	if err := j.validateSetDoNotEnforceOnCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"doNotEnforceOnCreate",
 		val,
 	)
 }
@@ -449,6 +484,14 @@ func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) Put
 		o,
 		"putRequiredWorkflow",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) ResetDoNotEnforceOnCreate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDoNotEnforceOnCreate",
+		nil, // no parameters
 	)
 }
 

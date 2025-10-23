@@ -99,6 +99,10 @@ func (j *jsiiProxy_ActionsOrganizationSecret) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ActionsOrganizationSecret) validateSetDestroyOnDriftParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActionsOrganizationSecret) validateSetEncryptedValueParameters(val *string) error {
 	return nil
 }

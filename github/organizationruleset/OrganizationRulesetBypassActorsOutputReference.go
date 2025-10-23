@@ -73,6 +73,7 @@ type OrganizationRulesetBypassActorsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetActorId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -518,6 +519,14 @@ func (o *jsiiProxy_OrganizationRulesetBypassActorsOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationRulesetBypassActorsOutputReference) ResetActorId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetActorId",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OrganizationRulesetBypassActorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

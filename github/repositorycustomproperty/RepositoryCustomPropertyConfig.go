@@ -24,21 +24,21 @@ type RepositoryCustomPropertyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the custom property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_name RepositoryCustomProperty#property_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/repository_custom_property#property_name RepositoryCustomProperty#property_name}
 	PropertyName *string `field:"required" json:"propertyName" yaml:"propertyName"`
 	// Type of the custom property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_type RepositoryCustomProperty#property_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/repository_custom_property#property_type RepositoryCustomProperty#property_type}
 	PropertyType *string `field:"required" json:"propertyType" yaml:"propertyType"`
 	// Value of the custom property.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_value RepositoryCustomProperty#property_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/repository_custom_property#property_value RepositoryCustomProperty#property_value}
 	PropertyValue *[]*string `field:"required" json:"propertyValue" yaml:"propertyValue"`
 	// Name of the repository which the custom properties should be on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#repository RepositoryCustomProperty#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/repository_custom_property#repository RepositoryCustomProperty#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

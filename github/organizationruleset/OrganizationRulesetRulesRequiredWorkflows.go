@@ -7,7 +7,11 @@ package organizationruleset
 type OrganizationRulesetRulesRequiredWorkflows struct {
 	// required_workflow block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
 	RequiredWorkflow interface{} `field:"required" json:"requiredWorkflow" yaml:"requiredWorkflow"`
+	// Allow repositories and branches to be created if a check would otherwise prohibit it.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
+	DoNotEnforceOnCreate interface{} `field:"optional" json:"doNotEnforceOnCreate" yaml:"doNotEnforceOnCreate"`
 }
 

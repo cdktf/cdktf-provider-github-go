@@ -9,11 +9,11 @@ type BranchProtectionRequiredStatusChecks struct {
 	//
 	// No status checks are required by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
 	Contexts *[]*string `field:"optional" json:"contexts" yaml:"contexts"`
 	// Require branches to be up to date before merging.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/branch_protection#strict BranchProtection#strict}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/branch_protection#strict BranchProtection#strict}
 	Strict interface{} `field:"optional" json:"strict" yaml:"strict"`
 }
 

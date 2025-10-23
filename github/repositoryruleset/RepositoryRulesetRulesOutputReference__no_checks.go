@@ -63,6 +63,18 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutCommitterEm
 	return nil
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFileExtensionRestrictionParameters(value *RepositoryRulesetRulesFileExtensionRestriction) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFilePathRestrictionParameters(value *RepositoryRulesetRulesFilePathRestriction) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMaxFileSizeParameters(value *RepositoryRulesetRulesMaxFileSize) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMergeQueueParameters(value *RepositoryRulesetRulesMergeQueue) error {
 	return nil
 }

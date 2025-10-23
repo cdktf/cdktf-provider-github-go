@@ -42,10 +42,16 @@ type RepositoryRulesetRulesOutputReference interface {
 	Deletion() interface{}
 	SetDeletion(val interface{})
 	DeletionInput() interface{}
+	FileExtensionRestriction() RepositoryRulesetRulesFileExtensionRestrictionOutputReference
+	FileExtensionRestrictionInput() *RepositoryRulesetRulesFileExtensionRestriction
+	FilePathRestriction() RepositoryRulesetRulesFilePathRestrictionOutputReference
+	FilePathRestrictionInput() *RepositoryRulesetRulesFilePathRestriction
 	// Experimental.
 	Fqn() *string
 	InternalValue() *RepositoryRulesetRules
 	SetInternalValue(val *RepositoryRulesetRules)
+	MaxFileSize() RepositoryRulesetRulesMaxFileSizeOutputReference
+	MaxFileSizeInput() *RepositoryRulesetRulesMaxFileSize
 	MergeQueue() RepositoryRulesetRulesMergeQueueOutputReference
 	MergeQueueInput() *RepositoryRulesetRulesMergeQueue
 	NonFastForward() interface{}
@@ -109,6 +115,9 @@ type RepositoryRulesetRulesOutputReference interface {
 	PutCommitAuthorEmailPattern(value *RepositoryRulesetRulesCommitAuthorEmailPattern)
 	PutCommitMessagePattern(value *RepositoryRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *RepositoryRulesetRulesCommitterEmailPattern)
+	PutFileExtensionRestriction(value *RepositoryRulesetRulesFileExtensionRestriction)
+	PutFilePathRestriction(value *RepositoryRulesetRulesFilePathRestriction)
+	PutMaxFileSize(value *RepositoryRulesetRulesMaxFileSize)
 	PutMergeQueue(value *RepositoryRulesetRulesMergeQueue)
 	PutPullRequest(value *RepositoryRulesetRulesPullRequest)
 	PutRequiredCodeScanning(value *RepositoryRulesetRulesRequiredCodeScanning)
@@ -121,6 +130,9 @@ type RepositoryRulesetRulesOutputReference interface {
 	ResetCommitterEmailPattern()
 	ResetCreation()
 	ResetDeletion()
+	ResetFileExtensionRestriction()
+	ResetFilePathRestriction()
+	ResetMaxFileSize()
 	ResetMergeQueue()
 	ResetNonFastForward()
 	ResetPullRequest()
@@ -297,6 +309,46 @@ func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) DeletionInput() interf
 	return returns
 }
 
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) FileExtensionRestriction() RepositoryRulesetRulesFileExtensionRestrictionOutputReference {
+	var returns RepositoryRulesetRulesFileExtensionRestrictionOutputReference
+	_jsii_.Get(
+		j,
+		"fileExtensionRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) FileExtensionRestrictionInput() *RepositoryRulesetRulesFileExtensionRestriction {
+	var returns *RepositoryRulesetRulesFileExtensionRestriction
+	_jsii_.Get(
+		j,
+		"fileExtensionRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) FilePathRestriction() RepositoryRulesetRulesFilePathRestrictionOutputReference {
+	var returns RepositoryRulesetRulesFilePathRestrictionOutputReference
+	_jsii_.Get(
+		j,
+		"filePathRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) FilePathRestrictionInput() *RepositoryRulesetRulesFilePathRestriction {
+	var returns *RepositoryRulesetRulesFilePathRestriction
+	_jsii_.Get(
+		j,
+		"filePathRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -312,6 +364,26 @@ func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) InternalValue() *Repos
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MaxFileSize() RepositoryRulesetRulesMaxFileSizeOutputReference {
+	var returns RepositoryRulesetRulesMaxFileSizeOutputReference
+	_jsii_.Get(
+		j,
+		"maxFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MaxFileSizeInput() *RepositoryRulesetRulesMaxFileSize {
+	var returns *RepositoryRulesetRulesMaxFileSize
+	_jsii_.Get(
+		j,
+		"maxFileSizeInput",
 		&returns,
 	)
 	return returns
@@ -947,6 +1019,39 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutCommitterEmailPatte
 	)
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutFileExtensionRestriction(value *RepositoryRulesetRulesFileExtensionRestriction) {
+	if err := r.validatePutFileExtensionRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putFileExtensionRestriction",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutFilePathRestriction(value *RepositoryRulesetRulesFilePathRestriction) {
+	if err := r.validatePutFilePathRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putFilePathRestriction",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutMaxFileSize(value *RepositoryRulesetRulesMaxFileSize) {
+	if err := r.validatePutMaxFileSizeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMaxFileSize",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutMergeQueue(value *RepositoryRulesetRulesMergeQueue) {
 	if err := r.validatePutMergeQueueParameters(value); err != nil {
 		panic(err)
@@ -1057,6 +1162,30 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetDeletion() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDeletion",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetFileExtensionRestriction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFileExtensionRestriction",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetFilePathRestriction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFilePathRestriction",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetMaxFileSize() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaxFileSize",
 		nil, // no parameters
 	)
 }
