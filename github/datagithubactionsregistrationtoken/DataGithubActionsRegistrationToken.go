@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/actions_registration_token github_actions_registration_token}.
 type DataGithubActionsRegistrationToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGithubActionsRegistrationToken) Token() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) DataGithubActionsRegistrationToken {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGithubActionsRegistrationToken(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source.
 func NewDataGithubActionsRegistrationToken_Override(d DataGithubActionsRegistrationToken, scope constructs.Construct, id *string, config *DataGithubActionsRegistrationTokenConfig) {
 	_init_.Initialize()
 

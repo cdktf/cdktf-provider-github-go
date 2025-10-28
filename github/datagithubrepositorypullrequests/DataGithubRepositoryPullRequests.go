@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_pull_requests github_repository_pull_requests}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_pull_requests github_repository_pull_requests}.
 type DataGithubRepositoryPullRequests interface {
 	cdktf.TerraformDataSource
 	BaseRef() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_DataGithubRepositoryPullRequests) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_pull_requests github_repository_pull_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_pull_requests github_repository_pull_requests} Data Source.
 func NewDataGithubRepositoryPullRequests(scope constructs.Construct, id *string, config *DataGithubRepositoryPullRequestsConfig) DataGithubRepositoryPullRequests {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewDataGithubRepositoryPullRequests(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_pull_requests github_repository_pull_requests} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_pull_requests github_repository_pull_requests} Data Source.
 func NewDataGithubRepositoryPullRequests_Override(d DataGithubRepositoryPullRequests, scope constructs.Construct, id *string, config *DataGithubRepositoryPullRequestsConfig) {
 	_init_.Initialize()
 
