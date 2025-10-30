@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/codespaces_user_secret github_codespaces_user_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/codespaces_user_secret github_codespaces_user_secret}.
 type CodespacesUserSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CodespacesUserSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/codespaces_user_secret github_codespaces_user_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/codespaces_user_secret github_codespaces_user_secret} Resource.
 func NewCodespacesUserSecret(scope constructs.Construct, id *string, config *CodespacesUserSecretConfig) CodespacesUserSecret {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCodespacesUserSecret(scope constructs.Construct, id *string, config *Cod
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/codespaces_user_secret github_codespaces_user_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/codespaces_user_secret github_codespaces_user_secret} Resource.
 func NewCodespacesUserSecret_Override(c CodespacesUserSecret, scope constructs.Construct, id *string, config *CodespacesUserSecretConfig) {
 	_init_.Initialize()
 

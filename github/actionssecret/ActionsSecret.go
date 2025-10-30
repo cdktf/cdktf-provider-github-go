@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/actions_secret github_actions_secret}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_secret github_actions_secret}.
 type ActionsSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type ActionsSecret interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestroyOnDrift() interface{}
+	SetDestroyOnDrift(val interface{})
+	DestroyOnDriftInput() interface{}
 	EncryptedValue() *string
 	SetEncryptedValue(val *string)
 	EncryptedValueInput() *string
@@ -121,6 +124,7 @@ type ActionsSecret interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDestroyOnDrift()
 	ResetEncryptedValue()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_ActionsSecret) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsSecret) DestroyOnDrift() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destroyOnDrift",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ActionsSecret) DestroyOnDriftInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destroyOnDriftInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_ActionsSecret) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSecretConfig) ActionsSecret {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewActionsSecret(scope constructs.Construct, id *string, config *ActionsSec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/actions_secret github_actions_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_secret github_actions_secret} Resource.
 func NewActionsSecret_Override(a ActionsSecret, scope constructs.Construct, id *string, config *ActionsSecretConfig) {
 	_init_.Initialize()
 
@@ -481,6 +505,17 @@ func (j *jsiiProxy_ActionsSecret)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ActionsSecret)SetDestroyOnDrift(val interface{}) {
+	if err := j.validateSetDestroyOnDriftParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destroyOnDrift",
 		val,
 	)
 }
@@ -928,6 +963,14 @@ func (a *jsiiProxy_ActionsSecret) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ActionsSecret) ResetDestroyOnDrift() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDestroyOnDrift",
+		nil, // no parameters
 	)
 }
 

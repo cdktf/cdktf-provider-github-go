@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/release github_release}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/release github_release}.
 type Release interface {
 	cdktf.TerraformResource
 	AssetsUrl() *string
@@ -645,7 +645,7 @@ func (j *jsiiProxy_Release) ZipballUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/release github_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/release github_release} Resource.
 func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) Release {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/release github_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/release github_release} Resource.
 func NewRelease_Override(r Release, scope constructs.Construct, id *string, config *ReleaseConfig) {
 	_init_.Initialize()
 

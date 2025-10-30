@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets}.
 type DataGithubCodespacesUserSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataGithubCodespacesUserSecrets) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets} Data Source.
 func NewDataGithubCodespacesUserSecrets(scope constructs.Construct, id *string, config *DataGithubCodespacesUserSecretsConfig) DataGithubCodespacesUserSecrets {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataGithubCodespacesUserSecrets(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_user_secrets github_codespaces_user_secrets} Data Source.
 func NewDataGithubCodespacesUserSecrets_Override(d DataGithubCodespacesUserSecrets, scope constructs.Construct, id *string, config *DataGithubCodespacesUserSecretsConfig) {
 	_init_.Initialize()
 

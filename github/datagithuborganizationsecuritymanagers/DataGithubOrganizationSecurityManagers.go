@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_security_managers github_organization_security_managers}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_security_managers github_organization_security_managers}.
 type DataGithubOrganizationSecurityManagers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataGithubOrganizationSecurityManagers) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_security_managers github_organization_security_managers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_security_managers github_organization_security_managers} Data Source.
 func NewDataGithubOrganizationSecurityManagers(scope constructs.Construct, id *string, config *DataGithubOrganizationSecurityManagersConfig) DataGithubOrganizationSecurityManagers {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataGithubOrganizationSecurityManagers(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_security_managers github_organization_security_managers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_security_managers github_organization_security_managers} Data Source.
 func NewDataGithubOrganizationSecurityManagers_Override(d DataGithubOrganizationSecurityManagers, scope constructs.Construct, id *string, config *DataGithubOrganizationSecurityManagersConfig) {
 	_init_.Initialize()
 
