@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team_assignment github_organization_role_team_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_team_assignment github_organization_role_team_assignment}.
 type OrganizationRoleTeamAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_OrganizationRoleTeamAssignment) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team_assignment github_organization_role_team_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_team_assignment github_organization_role_team_assignment} Resource.
 func NewOrganizationRoleTeamAssignment(scope constructs.Construct, id *string, config *OrganizationRoleTeamAssignmentConfig) OrganizationRoleTeamAssignment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewOrganizationRoleTeamAssignment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team_assignment github_organization_role_team_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_team_assignment github_organization_role_team_assignment} Resource.
 func NewOrganizationRoleTeamAssignment_Override(o OrganizationRoleTeamAssignment, scope constructs.Construct, id *string, config *OrganizationRoleTeamAssignmentConfig) {
 	_init_.Initialize()
 

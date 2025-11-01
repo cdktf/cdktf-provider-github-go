@@ -7,19 +7,19 @@ package organizationruleset
 type OrganizationRulesetBypassActors struct {
 	// The type of actor that can bypass a ruleset. See https://docs.github.com/en/rest/orgs/rules for more information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
 	ActorType *string `field:"required" json:"actorType" yaml:"actorType"`
 	// When the specified actor can bypass the ruleset.
 	//
 	// pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
 	BypassMode *string `field:"required" json:"bypassMode" yaml:"bypassMode"`
 	// The ID of the actor that can bypass a ruleset.
 	//
 	// When `actor_type` is `OrganizationAdmin`, this should be set to `1`. Some resources such as DeployKey do not have an ID and this should be omitted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
 	ActorId *float64 `field:"optional" json:"actorId" yaml:"actorId"`
 }
 

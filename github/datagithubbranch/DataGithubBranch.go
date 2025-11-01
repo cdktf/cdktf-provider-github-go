@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/branch github_branch}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/branch github_branch}.
 type DataGithubBranch interface {
 	cdktf.TerraformDataSource
 	Branch() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataGithubBranch) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/branch github_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/branch github_branch} Data Source.
 func NewDataGithubBranch(scope constructs.Construct, id *string, config *DataGithubBranchConfig) DataGithubBranch {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataGithubBranch(scope constructs.Construct, id *string, config *DataGit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/branch github_branch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/branch github_branch} Data Source.
 func NewDataGithubBranch_Override(d DataGithubBranch, scope constructs.Construct, id *string, config *DataGithubBranchConfig) {
 	_init_.Initialize()
 
