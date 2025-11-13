@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubReleaseAssetsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubReleaseAssetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubReleaseAssetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

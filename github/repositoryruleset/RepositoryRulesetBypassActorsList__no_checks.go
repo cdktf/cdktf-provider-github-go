@@ -15,7 +15,7 @@ func (r *jsiiProxy_RepositoryRulesetBypassActorsList) validateGetParameters(inde
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetBypassActorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetBypassActorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositoryPagesSourceOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryPagesSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryPagesSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryPagesSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryPagesSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) validateGetStringMa
 	return nil
 }
 
-func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamSyncGroupMappingGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -107,6 +107,10 @@ func (j *jsiiProxy_RepositoryWebhook) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryWebhook) validateSetEtagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryWebhook) validateSetEventsParameters(val *[]*string) error {
 	return nil
 }

@@ -501,6 +501,44 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMaxFilePathLength",
+		reflect.TypeOf((*RepositoryRulesetRulesMaxFilePathLength)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMaxFilePathLengthOutputReference",
+		reflect.TypeOf((*RepositoryRulesetRulesMaxFilePathLengthOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFilePathLength", GoGetter: "MaxFilePathLength"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFilePathLengthInput", GoGetter: "MaxFilePathLengthInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositoryRulesetRulesMaxFilePathLengthOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-github.repositoryRuleset.RepositoryRulesetRulesMaxFileSize",
 		reflect.TypeOf((*RepositoryRulesetRulesMaxFileSize)(nil)).Elem(),
 	)
@@ -632,6 +670,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFilePathLength", GoGetter: "MaxFilePathLength"},
+			_jsii_.MemberProperty{JsiiProperty: "maxFilePathLengthInput", GoGetter: "MaxFilePathLengthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeQueue", GoGetter: "MergeQueue"},
@@ -646,6 +686,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCommitterEmailPattern", GoMethod: "PutCommitterEmailPattern"},
 			_jsii_.MemberMethod{JsiiMethod: "putFileExtensionRestriction", GoMethod: "PutFileExtensionRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilePathRestriction", GoMethod: "PutFilePathRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxFilePathLength", GoMethod: "PutMaxFilePathLength"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaxFileSize", GoMethod: "PutMaxFileSize"},
 			_jsii_.MemberMethod{JsiiMethod: "putMergeQueue", GoMethod: "PutMergeQueue"},
 			_jsii_.MemberMethod{JsiiMethod: "putPullRequest", GoMethod: "PutPullRequest"},
@@ -671,6 +712,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletion", GoMethod: "ResetDeletion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFileExtensionRestriction", GoMethod: "ResetFileExtensionRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilePathRestriction", GoMethod: "ResetFilePathRestriction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxFilePathLength", GoMethod: "ResetMaxFilePathLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxFileSize", GoMethod: "ResetMaxFileSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMergeQueue", GoMethod: "ResetMergeQueue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNonFastForward", GoMethod: "ResetNonFastForward"},

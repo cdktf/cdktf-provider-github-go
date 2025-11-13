@@ -43,7 +43,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredWorkflowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

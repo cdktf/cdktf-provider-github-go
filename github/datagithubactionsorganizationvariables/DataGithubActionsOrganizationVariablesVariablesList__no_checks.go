@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubActionsOrganizationVariablesVariablesList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubActionsOrganizationVariablesVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubActionsOrganizationVariablesVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

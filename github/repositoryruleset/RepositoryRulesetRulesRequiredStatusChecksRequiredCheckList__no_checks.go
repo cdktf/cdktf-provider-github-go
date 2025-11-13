@@ -15,7 +15,7 @@ func (r *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksRequiredCheckList) 
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksRequiredCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesRequiredStatusChecksRequiredCheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubRepositoryDeployKeysKeysList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryDeployKeysKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryDeployKeysKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

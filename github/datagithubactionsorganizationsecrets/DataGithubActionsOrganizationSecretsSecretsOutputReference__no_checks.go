@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGithubActionsOrganizationSecretsSecretsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubActionsOrganizationSecretsSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGithubActionsOrganizationSecretsSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubActionsOrganizationSecretsSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubActionsOrganizationSecretsSecretsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

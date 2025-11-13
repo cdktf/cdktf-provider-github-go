@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesRequiredCodeScanningRequiredCodeScann
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

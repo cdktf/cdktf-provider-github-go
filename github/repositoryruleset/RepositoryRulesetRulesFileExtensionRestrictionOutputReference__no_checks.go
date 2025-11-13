@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesFileExtensionRestrictionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

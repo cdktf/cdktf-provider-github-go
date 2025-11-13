@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGithubRepositoryRepositoryLicenseLicenseOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryRepositoryLicenseLicenseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGithubRepositoryRepositoryLicenseLicenseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryRepositoryLicenseLicenseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryRepositoryLicenseLicenseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -155,6 +155,14 @@ func (j *jsiiProxy_Repository) validateSetDescriptionParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_Repository) validateSetEtagParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetForkParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Repository) validateSetGitignoreTemplateParameters(val *string) error {
 	return nil
 }
@@ -220,6 +228,14 @@ func (j *jsiiProxy_Repository) validateSetPrivateParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_Repository) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetSourceOwnerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Repository) validateSetSourceRepoParameters(val *string) error {
 	return nil
 }
 

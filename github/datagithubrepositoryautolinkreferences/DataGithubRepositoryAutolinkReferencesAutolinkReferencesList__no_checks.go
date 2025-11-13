@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubRepositoryAutolinkReferencesAutolinkReferencesList)
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryAutolinkReferencesAutolinkReferencesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryAutolinkReferencesAutolinkReferencesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

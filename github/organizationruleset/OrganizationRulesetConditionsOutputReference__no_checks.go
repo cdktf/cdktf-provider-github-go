@@ -43,7 +43,7 @@ func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validateGetStri
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validatePutRepo
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

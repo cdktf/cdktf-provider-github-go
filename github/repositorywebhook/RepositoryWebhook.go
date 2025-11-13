@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook github_repository_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook github_repository_webhook}.
 type RepositoryWebhook interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -37,6 +37,8 @@ type RepositoryWebhook interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	Events() *[]*string
 	SetEvents(val *[]*string)
 	EventsInput() *[]*string
@@ -123,6 +125,7 @@ type RepositoryWebhook interface {
 	PutConfiguration(value *RepositoryWebhookConfiguration)
 	ResetActive()
 	ResetConfiguration()
+	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -240,6 +243,16 @@ func (j *jsiiProxy_RepositoryWebhook) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryWebhook) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +439,7 @@ func (j *jsiiProxy_RepositoryWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook(scope constructs.Construct, id *string, config *RepositoryWebhookConfig) RepositoryWebhook {
 	_init_.Initialize()
 
@@ -444,7 +457,7 @@ func NewRepositoryWebhook(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook github_repository_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook github_repository_webhook} Resource.
 func NewRepositoryWebhook_Override(r RepositoryWebhook, scope constructs.Construct, id *string, config *RepositoryWebhookConfig) {
 	_init_.Initialize()
 
@@ -492,6 +505,17 @@ func (j *jsiiProxy_RepositoryWebhook)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryWebhook)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -943,6 +967,14 @@ func (r *jsiiProxy_RepositoryWebhook) ResetConfiguration() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryWebhook) ResetEtag() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEtag",
 		nil, // no parameters
 	)
 }

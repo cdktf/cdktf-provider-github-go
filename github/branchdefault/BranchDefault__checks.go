@@ -345,6 +345,14 @@ func (j *jsiiProxy_BranchDefault) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_BranchDefault) validateSetEtagParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BranchDefault) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

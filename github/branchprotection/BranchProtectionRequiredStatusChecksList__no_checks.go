@@ -15,7 +15,7 @@ func (b *jsiiProxy_BranchProtectionRequiredStatusChecksList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionRequiredStatusChecksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionRequiredStatusChecksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

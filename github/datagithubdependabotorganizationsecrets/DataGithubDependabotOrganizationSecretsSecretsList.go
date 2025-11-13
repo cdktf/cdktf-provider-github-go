@@ -39,7 +39,7 @@ type DataGithubDependabotOrganizationSecretsSecretsList interface {
 	Get(index *float64) DataGithubDependabotOrganizationSecretsSecretsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) Get(index
 	return returns
 }
 
-func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) Resolve(_
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

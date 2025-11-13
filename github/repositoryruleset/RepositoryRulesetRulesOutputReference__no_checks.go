@@ -43,7 +43,7 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -68,6 +68,10 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFileExtensi
 }
 
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutFilePathRestrictionParameters(value *RepositoryRulesetRulesFilePathRestriction) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutMaxFilePathLengthParameters(value *RepositoryRulesetRulesMaxFilePathLength) error {
 	return nil
 }
 
@@ -99,7 +103,7 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validatePutTagNamePatt
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ActionsOrganizationPermissionsAllowedActionsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

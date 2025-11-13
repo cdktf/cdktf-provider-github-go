@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token}.
 type DataGithubActionsOrganizationRegistrationToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataGithubActionsOrganizationRegistrationToken) Token() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token} Data Source.
 func NewDataGithubActionsOrganizationRegistrationToken(scope constructs.Construct, id *string, config *DataGithubActionsOrganizationRegistrationTokenConfig) DataGithubActionsOrganizationRegistrationToken {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataGithubActionsOrganizationRegistrationToken(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/actions_organization_registration_token github_actions_organization_registration_token} Data Source.
 func NewDataGithubActionsOrganizationRegistrationToken_Override(d DataGithubActionsOrganizationRegistrationToken, scope constructs.Construct, id *string, config *DataGithubActionsOrganizationRegistrationTokenConfig) {
 	_init_.Initialize()
 

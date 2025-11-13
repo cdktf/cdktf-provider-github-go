@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label github_issue_label}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label github_issue_label}.
 type IssueLabel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,6 +38,8 @@ type IssueLabel interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -122,6 +124,7 @@ type IssueLabel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -239,6 +242,16 @@ func (j *jsiiProxy_IssueLabel) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IssueLabel) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -425,7 +438,7 @@ func (j *jsiiProxy_IssueLabel) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label github_issue_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label github_issue_label} Resource.
 func NewIssueLabel(scope constructs.Construct, id *string, config *IssueLabelConfig) IssueLabel {
 	_init_.Initialize()
 
@@ -443,7 +456,7 @@ func NewIssueLabel(scope constructs.Construct, id *string, config *IssueLabelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label github_issue_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label github_issue_label} Resource.
 func NewIssueLabel_Override(i IssueLabel, scope constructs.Construct, id *string, config *IssueLabelConfig) {
 	_init_.Initialize()
 
@@ -502,6 +515,17 @@ func (j *jsiiProxy_IssueLabel)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IssueLabel)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -934,6 +958,14 @@ func (i *jsiiProxy_IssueLabel) ResetDescription() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IssueLabel) ResetEtag() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEtag",
 		nil, // no parameters
 	)
 }

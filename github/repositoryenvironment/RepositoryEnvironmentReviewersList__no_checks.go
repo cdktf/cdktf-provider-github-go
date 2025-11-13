@@ -15,7 +15,7 @@ func (r *jsiiProxy_RepositoryEnvironmentReviewersList) validateGetParameters(ind
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryEnvironmentReviewersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryEnvironmentReviewersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsBypassPullRequest
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

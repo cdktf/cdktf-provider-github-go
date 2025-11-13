@@ -15,7 +15,7 @@ func (r *jsiiProxy_RepositoryCollaboratorsUserList) validateGetParameters(index 
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryCollaboratorsUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryCollaboratorsUserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

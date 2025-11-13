@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference) validateGet
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesMaxFileSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

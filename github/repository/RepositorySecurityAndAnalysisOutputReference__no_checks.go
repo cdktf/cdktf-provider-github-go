@@ -43,7 +43,7 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validateGetStri
 	return nil
 }
 
-func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecr
 	return nil
 }
 
-func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

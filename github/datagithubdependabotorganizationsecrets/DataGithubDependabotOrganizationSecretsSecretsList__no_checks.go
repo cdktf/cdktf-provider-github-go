@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubDependabotOrganizationSecretsSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

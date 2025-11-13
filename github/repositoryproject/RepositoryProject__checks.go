@@ -345,6 +345,14 @@ func (j *jsiiProxy_RepositoryProject) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryProject) validateSetEtagParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryProject) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

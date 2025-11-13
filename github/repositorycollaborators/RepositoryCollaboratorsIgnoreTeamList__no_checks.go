@@ -15,7 +15,7 @@ func (r *jsiiProxy_RepositoryCollaboratorsIgnoreTeamList) validateGetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryCollaboratorsIgnoreTeamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryCollaboratorsIgnoreTeamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

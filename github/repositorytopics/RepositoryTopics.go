@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_topics github_repository_topics}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_topics github_repository_topics}.
 type RepositoryTopics interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_RepositoryTopics) TopicsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_topics github_repository_topics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_topics github_repository_topics} Resource.
 func NewRepositoryTopics(scope constructs.Construct, id *string, config *RepositoryTopicsConfig) RepositoryTopics {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewRepositoryTopics(scope constructs.Construct, id *string, config *Reposit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_topics github_repository_topics} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_topics github_repository_topics} Resource.
 func NewRepositoryTopics_Override(r RepositoryTopics, scope constructs.Construct, id *string, config *RepositoryTopicsConfig) {
 	_init_.Initialize()
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubOrganizationTeamSyncGroupsGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

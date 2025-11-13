@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubActionsEnvironmentSecretsSecretsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubActionsEnvironmentSecretsSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubActionsEnvironmentSecretsSecretsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

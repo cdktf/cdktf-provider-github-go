@@ -85,9 +85,9 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -127,6 +127,50 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutCommitMes
 }
 
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutCommitterEmailPatternParameters(value *OrganizationRulesetRulesCommitterEmailPattern) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutFileExtensionRestrictionParameters(value *OrganizationRulesetRulesFileExtensionRestriction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutFilePathRestrictionParameters(value *OrganizationRulesetRulesFilePathRestriction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutMaxFilePathLengthParameters(value *OrganizationRulesetRulesMaxFilePathLength) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutMaxFileSizeParameters(value *OrganizationRulesetRulesMaxFileSize) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -192,9 +236,9 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutTagNamePa
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -50,6 +50,8 @@ type RepositoryRulesetRulesOutputReference interface {
 	Fqn() *string
 	InternalValue() *RepositoryRulesetRules
 	SetInternalValue(val *RepositoryRulesetRules)
+	MaxFilePathLength() RepositoryRulesetRulesMaxFilePathLengthOutputReference
+	MaxFilePathLengthInput() *RepositoryRulesetRulesMaxFilePathLength
 	MaxFileSize() RepositoryRulesetRulesMaxFileSizeOutputReference
 	MaxFileSizeInput() *RepositoryRulesetRulesMaxFileSize
 	MergeQueue() RepositoryRulesetRulesMergeQueueOutputReference
@@ -110,13 +112,14 @@ type RepositoryRulesetRulesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBranchNamePattern(value *RepositoryRulesetRulesBranchNamePattern)
 	PutCommitAuthorEmailPattern(value *RepositoryRulesetRulesCommitAuthorEmailPattern)
 	PutCommitMessagePattern(value *RepositoryRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *RepositoryRulesetRulesCommitterEmailPattern)
 	PutFileExtensionRestriction(value *RepositoryRulesetRulesFileExtensionRestriction)
 	PutFilePathRestriction(value *RepositoryRulesetRulesFilePathRestriction)
+	PutMaxFilePathLength(value *RepositoryRulesetRulesMaxFilePathLength)
 	PutMaxFileSize(value *RepositoryRulesetRulesMaxFileSize)
 	PutMergeQueue(value *RepositoryRulesetRulesMergeQueue)
 	PutPullRequest(value *RepositoryRulesetRulesPullRequest)
@@ -132,6 +135,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	ResetDeletion()
 	ResetFileExtensionRestriction()
 	ResetFilePathRestriction()
+	ResetMaxFilePathLength()
 	ResetMaxFileSize()
 	ResetMergeQueue()
 	ResetNonFastForward()
@@ -146,7 +150,7 @@ type RepositoryRulesetRulesOutputReference interface {
 	ResetUpdateAllowsFetchAndMerge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -364,6 +368,26 @@ func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) InternalValue() *Repos
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MaxFilePathLength() RepositoryRulesetRulesMaxFilePathLengthOutputReference {
+	var returns RepositoryRulesetRulesMaxFilePathLengthOutputReference
+	_jsii_.Get(
+		j,
+		"maxFilePathLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryRulesetRulesOutputReference) MaxFilePathLengthInput() *RepositoryRulesetRulesMaxFilePathLength {
+	var returns *RepositoryRulesetRulesMaxFilePathLength
+	_jsii_.Get(
+		j,
+		"maxFilePathLengthInput",
 		&returns,
 	)
 	return returns
@@ -959,8 +983,8 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -968,7 +992,7 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) InterpolationForAttrib
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1037,6 +1061,17 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutFilePathRestriction
 	_jsii_.InvokeVoid(
 		r,
 		"putFilePathRestriction",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) PutMaxFilePathLength(value *RepositoryRulesetRulesMaxFilePathLength) {
+	if err := r.validatePutMaxFilePathLengthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMaxFilePathLength",
 		[]interface{}{value},
 	)
 }
@@ -1182,6 +1217,14 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetFilePathRestricti
 	)
 }
 
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetMaxFilePathLength() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaxFilePathLength",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetMaxFileSize() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1278,8 +1321,8 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) ResetUpdateAllowsFetch
 	)
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1287,7 +1330,7 @@ func (r *jsiiProxy_RepositoryRulesetRulesOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

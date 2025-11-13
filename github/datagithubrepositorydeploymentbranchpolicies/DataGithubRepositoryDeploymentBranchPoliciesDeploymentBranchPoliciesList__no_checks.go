@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchP
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

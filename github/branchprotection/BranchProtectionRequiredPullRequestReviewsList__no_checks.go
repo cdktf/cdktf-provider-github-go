@@ -15,7 +15,7 @@ func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) validateGetPa
 	return nil
 }
 
-func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BranchProtectionRequiredPullRequestReviewsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

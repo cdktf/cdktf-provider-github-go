@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisSecretScanningPushProtectionOutp
 	return nil
 }
 
-func (r *jsiiProxy_RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

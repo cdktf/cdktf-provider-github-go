@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositoryRulesetRulesCommitMessagePatternOutputReference) va
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesCommitMessagePatternOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryRulesetRulesCommitMessagePatternOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesCommitMessagePatternOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesCommitMessagePatternOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

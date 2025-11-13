@@ -103,6 +103,10 @@ func (j *jsiiProxy_RepositoryProject) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryProject) validateSetEtagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryProject) validateSetIdParameters(val *string) error {
 	return nil
 }

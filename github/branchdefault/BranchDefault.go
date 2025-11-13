@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default github_branch_default}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default github_branch_default}.
 type BranchDefault interface {
 	cdktf.TerraformResource
 	Branch() *string
@@ -35,6 +35,8 @@ type BranchDefault interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +119,7 @@ type BranchDefault interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -215,6 +218,16 @@ func (j *jsiiProxy_BranchDefault) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BranchDefault) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -391,7 +404,7 @@ func (j *jsiiProxy_BranchDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefaultConfig) BranchDefault {
 	_init_.Initialize()
 
@@ -409,7 +422,7 @@ func NewBranchDefault(scope constructs.Construct, id *string, config *BranchDefa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default github_branch_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default github_branch_default} Resource.
 func NewBranchDefault_Override(b BranchDefault, scope constructs.Construct, id *string, config *BranchDefaultConfig) {
 	_init_.Initialize()
 
@@ -457,6 +470,17 @@ func (j *jsiiProxy_BranchDefault)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BranchDefault)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -882,6 +906,14 @@ func (b *jsiiProxy_BranchDefault) OverrideLogicalId(newLogicalId *string) {
 		b,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BranchDefault) ResetEtag() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEtag",
+		nil, // no parameters
 	)
 }
 

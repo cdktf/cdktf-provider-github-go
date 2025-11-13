@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubOrganizationTeamsTeamsList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubOrganizationTeamsTeamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubOrganizationTeamsTeamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

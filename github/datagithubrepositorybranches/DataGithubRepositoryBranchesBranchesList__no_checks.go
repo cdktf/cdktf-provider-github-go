@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubRepositoryBranchesBranchesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryBranchesBranchesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryBranchesBranchesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

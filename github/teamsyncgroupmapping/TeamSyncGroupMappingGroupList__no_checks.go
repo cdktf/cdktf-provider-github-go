@@ -15,7 +15,7 @@ func (t *jsiiProxy_TeamSyncGroupMappingGroupList) validateGetParameters(index *f
 	return nil
 }
 
-func (t *jsiiProxy_TeamSyncGroupMappingGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamSyncGroupMappingGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

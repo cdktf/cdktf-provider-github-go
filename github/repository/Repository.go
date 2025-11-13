@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -65,10 +65,15 @@ type Repository interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	Fork() interface{}
+	SetFork(val interface{})
+	ForkInput() interface{}
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -145,6 +150,12 @@ type Repository interface {
 	RepoId() *float64
 	SecurityAndAnalysis() RepositorySecurityAndAnalysisOutputReference
 	SecurityAndAnalysisInput() *RepositorySecurityAndAnalysis
+	SourceOwner() *string
+	SetSourceOwner(val *string)
+	SourceOwnerInput() *string
+	SourceRepo() *string
+	SetSourceRepo(val *string)
+	SourceRepoInput() *string
 	SquashMergeCommitMessage() *string
 	SetSquashMergeCommitMessage(val *string)
 	SquashMergeCommitMessageInput() *string
@@ -230,6 +241,8 @@ type Repository interface {
 	ResetDefaultBranch()
 	ResetDeleteBranchOnMerge()
 	ResetDescription()
+	ResetEtag()
+	ResetFork()
 	ResetGitignoreTemplate()
 	ResetHasDiscussions()
 	ResetHasDownloads()
@@ -249,6 +262,8 @@ type Repository interface {
 	ResetPages()
 	ResetPrivate()
 	ResetSecurityAndAnalysis()
+	ResetSourceOwner()
+	ResetSourceRepo()
 	ResetSquashMergeCommitMessage()
 	ResetSquashMergeCommitTitle()
 	ResetTemplate()
@@ -554,11 +569,41 @@ func (j *jsiiProxy_Repository) Etag() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Repository) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) Fork() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) ForkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forkInput",
 		&returns,
 	)
 	return returns
@@ -1044,6 +1089,46 @@ func (j *jsiiProxy_Repository) SecurityAndAnalysisInput() *RepositorySecurityAnd
 	return returns
 }
 
+func (j *jsiiProxy_Repository) SourceOwner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceOwner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SourceOwnerInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceOwnerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SourceRepo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRepo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Repository) SourceRepoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRepoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Repository) SquashMergeCommitMessage() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1235,7 +1320,7 @@ func (j *jsiiProxy_Repository) WebCommitSignoffRequiredInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1253,7 +1338,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 
@@ -1415,10 +1500,32 @@ func (j *jsiiProxy_Repository)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Repository)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Repository)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetFork(val interface{}) {
+	if err := j.validateSetForkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fork",
 		val,
 	)
 }
@@ -1614,6 +1721,28 @@ func (j *jsiiProxy_Repository)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetSourceOwner(val *string) {
+	if err := j.validateSetSourceOwnerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceOwner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Repository)SetSourceRepo(val *string) {
+	if err := j.validateSetSourceRepoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceRepo",
 		val,
 	)
 }
@@ -2158,6 +2287,22 @@ func (r *jsiiProxy_Repository) ResetDescription() {
 	)
 }
 
+func (r *jsiiProxy_Repository) ResetEtag() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEtag",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetFork() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFork",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_Repository) ResetGitignoreTemplate() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2290,6 +2435,22 @@ func (r *jsiiProxy_Repository) ResetSecurityAndAnalysis() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSecurityAndAnalysis",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetSourceOwner() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSourceOwner",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Repository) ResetSourceRepo() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSourceRepo",
 		nil, // no parameters
 	)
 }

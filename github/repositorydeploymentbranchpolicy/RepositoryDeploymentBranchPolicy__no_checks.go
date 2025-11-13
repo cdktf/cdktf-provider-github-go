@@ -103,6 +103,10 @@ func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) validateSetEnvironmentNameP
 	return nil
 }
 
+func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) validateSetEtagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

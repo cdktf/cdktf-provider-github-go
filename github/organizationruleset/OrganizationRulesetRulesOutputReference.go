@@ -42,10 +42,18 @@ type OrganizationRulesetRulesOutputReference interface {
 	Deletion() interface{}
 	SetDeletion(val interface{})
 	DeletionInput() interface{}
+	FileExtensionRestriction() OrganizationRulesetRulesFileExtensionRestrictionOutputReference
+	FileExtensionRestrictionInput() *OrganizationRulesetRulesFileExtensionRestriction
+	FilePathRestriction() OrganizationRulesetRulesFilePathRestrictionOutputReference
+	FilePathRestrictionInput() *OrganizationRulesetRulesFilePathRestriction
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OrganizationRulesetRules
 	SetInternalValue(val *OrganizationRulesetRules)
+	MaxFilePathLength() OrganizationRulesetRulesMaxFilePathLengthOutputReference
+	MaxFilePathLengthInput() *OrganizationRulesetRulesMaxFilePathLength
+	MaxFileSize() OrganizationRulesetRulesMaxFileSizeOutputReference
+	MaxFileSizeInput() *OrganizationRulesetRulesMaxFileSize
 	NonFastForward() interface{}
 	SetNonFastForward(val interface{})
 	NonFastForwardInput() interface{}
@@ -99,11 +107,15 @@ type OrganizationRulesetRulesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBranchNamePattern(value *OrganizationRulesetRulesBranchNamePattern)
 	PutCommitAuthorEmailPattern(value *OrganizationRulesetRulesCommitAuthorEmailPattern)
 	PutCommitMessagePattern(value *OrganizationRulesetRulesCommitMessagePattern)
 	PutCommitterEmailPattern(value *OrganizationRulesetRulesCommitterEmailPattern)
+	PutFileExtensionRestriction(value *OrganizationRulesetRulesFileExtensionRestriction)
+	PutFilePathRestriction(value *OrganizationRulesetRulesFilePathRestriction)
+	PutMaxFilePathLength(value *OrganizationRulesetRulesMaxFilePathLength)
+	PutMaxFileSize(value *OrganizationRulesetRulesMaxFileSize)
 	PutPullRequest(value *OrganizationRulesetRulesPullRequest)
 	PutRequiredCodeScanning(value *OrganizationRulesetRulesRequiredCodeScanning)
 	PutRequiredStatusChecks(value *OrganizationRulesetRulesRequiredStatusChecks)
@@ -115,6 +127,10 @@ type OrganizationRulesetRulesOutputReference interface {
 	ResetCommitterEmailPattern()
 	ResetCreation()
 	ResetDeletion()
+	ResetFileExtensionRestriction()
+	ResetFilePathRestriction()
+	ResetMaxFilePathLength()
+	ResetMaxFileSize()
 	ResetNonFastForward()
 	ResetPullRequest()
 	ResetRequiredCodeScanning()
@@ -126,7 +142,7 @@ type OrganizationRulesetRulesOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -289,6 +305,46 @@ func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) DeletionInput() inte
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) FileExtensionRestriction() OrganizationRulesetRulesFileExtensionRestrictionOutputReference {
+	var returns OrganizationRulesetRulesFileExtensionRestrictionOutputReference
+	_jsii_.Get(
+		j,
+		"fileExtensionRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) FileExtensionRestrictionInput() *OrganizationRulesetRulesFileExtensionRestriction {
+	var returns *OrganizationRulesetRulesFileExtensionRestriction
+	_jsii_.Get(
+		j,
+		"fileExtensionRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) FilePathRestriction() OrganizationRulesetRulesFilePathRestrictionOutputReference {
+	var returns OrganizationRulesetRulesFilePathRestrictionOutputReference
+	_jsii_.Get(
+		j,
+		"filePathRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) FilePathRestrictionInput() *OrganizationRulesetRulesFilePathRestriction {
+	var returns *OrganizationRulesetRulesFilePathRestriction
+	_jsii_.Get(
+		j,
+		"filePathRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -304,6 +360,46 @@ func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) InternalValue() *Org
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) MaxFilePathLength() OrganizationRulesetRulesMaxFilePathLengthOutputReference {
+	var returns OrganizationRulesetRulesMaxFilePathLengthOutputReference
+	_jsii_.Get(
+		j,
+		"maxFilePathLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) MaxFilePathLengthInput() *OrganizationRulesetRulesMaxFilePathLength {
+	var returns *OrganizationRulesetRulesMaxFilePathLength
+	_jsii_.Get(
+		j,
+		"maxFilePathLengthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) MaxFileSize() OrganizationRulesetRulesMaxFileSizeOutputReference {
+	var returns OrganizationRulesetRulesMaxFileSizeOutputReference
+	_jsii_.Get(
+		j,
+		"maxFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationRulesetRulesOutputReference) MaxFileSizeInput() *OrganizationRulesetRulesMaxFileSize {
+	var returns *OrganizationRulesetRulesMaxFileSize
+	_jsii_.Get(
+		j,
+		"maxFileSizeInput",
 		&returns,
 	)
 	return returns
@@ -828,8 +924,8 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -837,7 +933,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -884,6 +980,50 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutCommitterEmailPat
 	_jsii_.InvokeVoid(
 		o,
 		"putCommitterEmailPattern",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutFileExtensionRestriction(value *OrganizationRulesetRulesFileExtensionRestriction) {
+	if err := o.validatePutFileExtensionRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFileExtensionRestriction",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutFilePathRestriction(value *OrganizationRulesetRulesFilePathRestriction) {
+	if err := o.validatePutFilePathRestrictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilePathRestriction",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutMaxFilePathLength(value *OrganizationRulesetRulesMaxFilePathLength) {
+	if err := o.validatePutMaxFilePathLengthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putMaxFilePathLength",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) PutMaxFileSize(value *OrganizationRulesetRulesMaxFileSize) {
+	if err := o.validatePutMaxFileSizeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putMaxFileSize",
 		[]interface{}{value},
 	)
 }
@@ -991,6 +1131,38 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetDeletion() {
 	)
 }
 
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetFileExtensionRestriction() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFileExtensionRestriction",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetFilePathRestriction() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilePathRestriction",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetMaxFilePathLength() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMaxFilePathLength",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetMaxFileSize() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMaxFileSize",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetNonFastForward() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1063,8 +1235,8 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) ResetUpdate() {
 	)
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1072,7 +1244,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

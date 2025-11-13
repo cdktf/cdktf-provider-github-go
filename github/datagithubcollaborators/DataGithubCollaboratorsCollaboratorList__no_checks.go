@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubCollaboratorsCollaboratorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

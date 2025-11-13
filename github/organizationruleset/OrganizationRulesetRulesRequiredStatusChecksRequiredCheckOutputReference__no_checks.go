@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutp
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

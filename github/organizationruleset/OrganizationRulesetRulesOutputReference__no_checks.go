@@ -43,7 +43,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,6 +60,22 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutCommitMes
 }
 
 func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutCommitterEmailPatternParameters(value *OrganizationRulesetRulesCommitterEmailPattern) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutFileExtensionRestrictionParameters(value *OrganizationRulesetRulesFileExtensionRestriction) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutFilePathRestrictionParameters(value *OrganizationRulesetRulesFilePathRestriction) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutMaxFilePathLengthParameters(value *OrganizationRulesetRulesMaxFilePathLength) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutMaxFileSizeParameters(value *OrganizationRulesetRulesMaxFileSize) error {
 	return nil
 }
 
@@ -83,7 +99,7 @@ func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validatePutTagNamePa
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

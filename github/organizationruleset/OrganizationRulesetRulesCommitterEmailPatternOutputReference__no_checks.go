@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrganizationRulesetRulesCommitterEmailPatternOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesCommitterEmailPatternOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationRulesetRulesCommitterEmailPatternOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationRulesetRulesCommitterEmailPatternOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationRulesetRulesCommitterEmailPatternOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}.
 type RepositoryDeploymentBranchPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,8 @@ type RepositoryDeploymentBranchPolicy interface {
 	SetEnvironmentName(val *string)
 	EnvironmentNameInput() *string
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +119,7 @@ type RepositoryDeploymentBranchPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -214,6 +217,16 @@ func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -390,7 +403,7 @@ func (j *jsiiProxy_RepositoryDeploymentBranchPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
 func NewRepositoryDeploymentBranchPolicy(scope constructs.Construct, id *string, config *RepositoryDeploymentBranchPolicyConfig) RepositoryDeploymentBranchPolicy {
 	_init_.Initialize()
 
@@ -408,7 +421,7 @@ func NewRepositoryDeploymentBranchPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource.
 func NewRepositoryDeploymentBranchPolicy_Override(r RepositoryDeploymentBranchPolicy, scope constructs.Construct, id *string, config *RepositoryDeploymentBranchPolicyConfig) {
 	_init_.Initialize()
 
@@ -456,6 +469,17 @@ func (j *jsiiProxy_RepositoryDeploymentBranchPolicy)SetEnvironmentName(val *stri
 	_jsii_.Set(
 		j,
 		"environmentName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryDeploymentBranchPolicy)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -881,6 +905,14 @@ func (r *jsiiProxy_RepositoryDeploymentBranchPolicy) OverrideLogicalId(newLogica
 		r,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_RepositoryDeploymentBranchPolicy) ResetEtag() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEtag",
+		nil, // no parameters
 	)
 }
 

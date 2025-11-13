@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project}.
 type RepositoryProject interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -35,6 +35,8 @@ type RepositoryProject interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,6 +121,7 @@ type RepositoryProject interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBody()
+	ResetEtag()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -216,6 +219,16 @@ func (j *jsiiProxy_RepositoryProject) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositoryProject) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +415,7 @@ func (j *jsiiProxy_RepositoryProject) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject(scope constructs.Construct, id *string, config *RepositoryProjectConfig) RepositoryProject {
 	_init_.Initialize()
 
@@ -420,7 +433,7 @@ func NewRepositoryProject(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project} Resource.
 func NewRepositoryProject_Override(r RepositoryProject, scope constructs.Construct, id *string, config *RepositoryProjectConfig) {
 	_init_.Initialize()
 
@@ -468,6 +481,17 @@ func (j *jsiiProxy_RepositoryProject)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RepositoryProject)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -900,6 +924,14 @@ func (r *jsiiProxy_RepositoryProject) ResetBody() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositoryProject) ResetEtag() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEtag",
 		nil, // no parameters
 	)
 }

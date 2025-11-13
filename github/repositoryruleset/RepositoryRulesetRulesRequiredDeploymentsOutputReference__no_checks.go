@@ -43,11 +43,11 @@ func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) val
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RepositoryRulesetRulesRequiredDeploymentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

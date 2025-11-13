@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGithubRepositoryTemplateList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataGithubRepositoryTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGithubRepositoryTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

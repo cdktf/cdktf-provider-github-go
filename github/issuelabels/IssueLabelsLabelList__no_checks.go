@@ -15,7 +15,7 @@ func (i *jsiiProxy_IssueLabelsLabelList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (i *jsiiProxy_IssueLabelsLabelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IssueLabelsLabelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

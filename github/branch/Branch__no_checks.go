@@ -103,6 +103,10 @@ func (j *jsiiProxy_Branch) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Branch) validateSetEtagParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Branch) validateSetIdParameters(val *string) error {
 	return nil
 }
