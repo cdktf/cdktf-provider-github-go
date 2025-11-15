@@ -7,7 +7,7 @@ package organizationruleset
 type OrganizationRulesetRulesMaxFilePathLength struct {
 	// The maximum allowed length of a file path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
 	MaxFilePathLength *float64 `field:"required" json:"maxFilePathLength" yaml:"maxFilePathLength"`
 }
 

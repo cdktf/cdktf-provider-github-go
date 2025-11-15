@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -1320,7 +1320,7 @@ func (j *jsiiProxy_Repository) WebCommitSignoffRequiredInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1338,7 +1338,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 

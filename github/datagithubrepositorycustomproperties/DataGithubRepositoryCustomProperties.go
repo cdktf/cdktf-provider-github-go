@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/repository_custom_properties github_repository_custom_properties}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/repository_custom_properties github_repository_custom_properties}.
 type DataGithubRepositoryCustomProperties interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGithubRepositoryCustomProperties) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source.
 func NewDataGithubRepositoryCustomProperties(scope constructs.Construct, id *string, config *DataGithubRepositoryCustomPropertiesConfig) DataGithubRepositoryCustomProperties {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGithubRepositoryCustomProperties(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source.
 func NewDataGithubRepositoryCustomProperties_Override(d DataGithubRepositoryCustomProperties, scope constructs.Construct, id *string, config *DataGithubRepositoryCustomPropertiesConfig) {
 	_init_.Initialize()
 

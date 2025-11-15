@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_role_users github_organization_role_users}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_role_users github_organization_role_users}.
 type DataGithubOrganizationRoleUsers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGithubOrganizationRoleUsers) Users() DataGithubOrganizati
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_role_users github_organization_role_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_role_users github_organization_role_users} Data Source.
 func NewDataGithubOrganizationRoleUsers(scope constructs.Construct, id *string, config *DataGithubOrganizationRoleUsersConfig) DataGithubOrganizationRoleUsers {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGithubOrganizationRoleUsers(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_role_users github_organization_role_users} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_role_users github_organization_role_users} Data Source.
 func NewDataGithubOrganizationRoleUsers_Override(d DataGithubOrganizationRoleUsers, scope constructs.Construct, id *string, config *DataGithubOrganizationRoleUsersConfig) {
 	_init_.Initialize()
 

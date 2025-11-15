@@ -24,13 +24,13 @@ type OrganizationRoleUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The login for the GitHub user account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#login OrganizationRoleUser#login}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#login OrganizationRoleUser#login}
 	Login *string `field:"required" json:"login" yaml:"login"`
 	// The unique identifier of the organization role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
 	RoleId *float64 `field:"required" json:"roleId" yaml:"roleId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
