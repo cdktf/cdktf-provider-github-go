@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_custom_properties github_organization_custom_properties}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties github_organization_custom_properties}.
 type OrganizationCustomProperties interface {
 	cdktf.TerraformResource
 	AllowedValues() *[]*string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_OrganizationCustomProperties) ValueTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_custom_properties github_organization_custom_properties} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties github_organization_custom_properties} Resource.
 func NewOrganizationCustomProperties(scope constructs.Construct, id *string, config *OrganizationCustomPropertiesConfig) OrganizationCustomProperties {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewOrganizationCustomProperties(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_custom_properties github_organization_custom_properties} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties github_organization_custom_properties} Resource.
 func NewOrganizationCustomProperties_Override(o OrganizationCustomProperties, scope constructs.Construct, id *string, config *OrganizationCustomPropertiesConfig) {
 	_init_.Initialize()
 

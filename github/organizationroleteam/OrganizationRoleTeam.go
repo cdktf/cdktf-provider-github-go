@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team github_organization_role_team}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team github_organization_role_team}.
 type OrganizationRoleTeam interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_OrganizationRoleTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team github_organization_role_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team github_organization_role_team} Resource.
 func NewOrganizationRoleTeam(scope constructs.Construct, id *string, config *OrganizationRoleTeamConfig) OrganizationRoleTeam {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewOrganizationRoleTeam(scope constructs.Construct, id *string, config *Org
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team github_organization_role_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team github_organization_role_team} Resource.
 func NewOrganizationRoleTeam_Override(o OrganizationRoleTeam, scope constructs.Construct, id *string, config *OrganizationRoleTeamConfig) {
 	_init_.Initialize()
 

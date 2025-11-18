@@ -24,13 +24,13 @@ type OrganizationRoleTeamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the organization role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
 	RoleId *float64 `field:"required" json:"roleId" yaml:"roleId"`
 	// The slug of the team name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
 	TeamSlug *string `field:"required" json:"teamSlug" yaml:"teamSlug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#id OrganizationRoleTeam#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team#id OrganizationRoleTeam#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
