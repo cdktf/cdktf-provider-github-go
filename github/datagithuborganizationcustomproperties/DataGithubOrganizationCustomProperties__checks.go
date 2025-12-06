@@ -279,6 +279,14 @@ func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetRequiredPa
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetValuesEditableByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetValueTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetRequiredPa
 	return nil
 }
 
+func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetValuesEditableByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGithubOrganizationCustomProperties) validateSetValueTypeParameters(val *string) error {
 	return nil
 }

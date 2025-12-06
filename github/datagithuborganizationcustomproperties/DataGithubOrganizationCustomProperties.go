@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties github_organization_custom_properties}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties github_organization_custom_properties}.
 type DataGithubOrganizationCustomProperties interface {
 	cdktf.TerraformDataSource
 	AllowedValues() *[]*string
@@ -71,6 +71,9 @@ type DataGithubOrganizationCustomProperties interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ValuesEditableBy() *string
+	SetValuesEditableBy(val *string)
+	ValuesEditableByInput() *string
 	ValueType() *string
 	SetValueType(val *string)
 	ValueTypeInput() *string
@@ -107,6 +110,7 @@ type DataGithubOrganizationCustomProperties interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRequired()
+	ResetValuesEditableBy()
 	ResetValueType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -387,6 +391,26 @@ func (j *jsiiProxy_DataGithubOrganizationCustomProperties) TerraformResourceType
 	return returns
 }
 
+func (j *jsiiProxy_DataGithubOrganizationCustomProperties) ValuesEditableBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valuesEditableBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGithubOrganizationCustomProperties) ValuesEditableByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valuesEditableByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGithubOrganizationCustomProperties) ValueType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -408,7 +432,7 @@ func (j *jsiiProxy_DataGithubOrganizationCustomProperties) ValueTypeInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties github_organization_custom_properties} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties github_organization_custom_properties} Data Source.
 func NewDataGithubOrganizationCustomProperties(scope constructs.Construct, id *string, config *DataGithubOrganizationCustomPropertiesConfig) DataGithubOrganizationCustomProperties {
 	_init_.Initialize()
 
@@ -426,7 +450,7 @@ func NewDataGithubOrganizationCustomProperties(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties github_organization_custom_properties} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties github_organization_custom_properties} Data Source.
 func NewDataGithubOrganizationCustomProperties_Override(d DataGithubOrganizationCustomProperties, scope constructs.Construct, id *string, config *DataGithubOrganizationCustomPropertiesConfig) {
 	_init_.Initialize()
 
@@ -545,6 +569,17 @@ func (j *jsiiProxy_DataGithubOrganizationCustomProperties)SetRequired(val interf
 	_jsii_.Set(
 		j,
 		"required",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGithubOrganizationCustomProperties)SetValuesEditableBy(val *string) {
+	if err := j.validateSetValuesEditableByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"valuesEditableBy",
 		val,
 	)
 }
@@ -889,6 +924,14 @@ func (d *jsiiProxy_DataGithubOrganizationCustomProperties) ResetRequired() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequired",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGithubOrganizationCustomProperties) ResetValuesEditableBy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetValuesEditableBy",
 		nil, // no parameters
 	)
 }

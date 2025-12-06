@@ -5,9 +5,11 @@ package repository
 
 
 type RepositorySecurityAndAnalysisAdvancedSecurity struct {
-	// Set to 'enabled' to enable advanced security features on the repository. Can be 'enabled' or 'disabled'.
+	// Set to 'enabled' to enable advanced security features on the repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository#status Repository#status}
+	// Can be 'enabled' or 'disabled', This value being present when split licensing is enabled will error out.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository#status Repository#status}
 	Status *string `field:"required" json:"status" yaml:"status"`
 }
 

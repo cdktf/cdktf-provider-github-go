@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/codespaces_public_key github_codespaces_public_key}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/codespaces_public_key github_codespaces_public_key}.
 type DataGithubCodespacesPublicKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGithubCodespacesPublicKey) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/codespaces_public_key github_codespaces_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/codespaces_public_key github_codespaces_public_key} Data Source.
 func NewDataGithubCodespacesPublicKey(scope constructs.Construct, id *string, config *DataGithubCodespacesPublicKeyConfig) DataGithubCodespacesPublicKey {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGithubCodespacesPublicKey(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/codespaces_public_key github_codespaces_public_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/codespaces_public_key github_codespaces_public_key} Data Source.
 func NewDataGithubCodespacesPublicKey_Override(d DataGithubCodespacesPublicKey, scope constructs.Construct, id *string, config *DataGithubCodespacesPublicKeyConfig) {
 	_init_.Initialize()
 

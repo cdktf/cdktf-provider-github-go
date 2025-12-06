@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository github_repository}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository github_repository}.
 type Repository interface {
 	cdktf.TerraformResource
 	AllowAutoMerge() interface{}
@@ -71,9 +71,9 @@ type Repository interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
-	Fork() interface{}
-	SetFork(val interface{})
-	ForkInput() interface{}
+	Fork() *string
+	SetFork(val *string)
+	ForkInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -589,8 +589,8 @@ func (j *jsiiProxy_Repository) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_Repository) Fork() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Repository) Fork() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"fork",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_Repository) Fork() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Repository) ForkInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Repository) ForkInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"forkInput",
@@ -1320,7 +1320,7 @@ func (j *jsiiProxy_Repository) WebCommitSignoffRequiredInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository github_repository} Resource.
 func NewRepository(scope constructs.Construct, id *string, config *RepositoryConfig) Repository {
 	_init_.Initialize()
 
@@ -1338,7 +1338,7 @@ func NewRepository(scope constructs.Construct, id *string, config *RepositoryCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository github_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository github_repository} Resource.
 func NewRepository_Override(r Repository, scope constructs.Construct, id *string, config *RepositoryConfig) {
 	_init_.Initialize()
 
@@ -1519,7 +1519,7 @@ func (j *jsiiProxy_Repository)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Repository)SetFork(val interface{}) {
+func (j *jsiiProxy_Repository)SetFork(val *string) {
 	if err := j.validateSetForkParameters(val); err != nil {
 		panic(err)
 	}

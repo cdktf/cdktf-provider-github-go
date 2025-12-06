@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/membership github_membership}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/membership github_membership}.
 type DataGithubMembership interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGithubMembership) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/membership github_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/membership github_membership} Data Source.
 func NewDataGithubMembership(scope constructs.Construct, id *string, config *DataGithubMembershipConfig) DataGithubMembership {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataGithubMembership(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/membership github_membership} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/membership github_membership} Data Source.
 func NewDataGithubMembership_Override(d DataGithubMembership, scope constructs.Construct, id *string, config *DataGithubMembershipConfig) {
 	_init_.Initialize()
 

@@ -327,12 +327,52 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisCodeSecurity",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisCodeSecurity)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisCodeSecurityOutputReference",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisCodeSecurityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositorySecurityAndAnalysisCodeSecurityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisOutputReference",
 		reflect.TypeOf((*RepositorySecurityAndAnalysisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurity", GoGetter: "AdvancedSecurity"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityInput", GoGetter: "AdvancedSecurityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "codeSecurity", GoGetter: "CodeSecurity"},
+			_jsii_.MemberProperty{JsiiProperty: "codeSecurityInput", GoGetter: "CodeSecurityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -351,14 +391,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedSecurity", GoMethod: "PutAdvancedSecurity"},
+			_jsii_.MemberMethod{JsiiMethod: "putCodeSecurity", GoMethod: "PutCodeSecurity"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecretScanning", GoMethod: "PutSecretScanning"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecretScanningAiDetection", GoMethod: "PutSecretScanningAiDetection"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecretScanningNonProviderPatterns", GoMethod: "PutSecretScanningNonProviderPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecretScanningPushProtection", GoMethod: "PutSecretScanningPushProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSecurity", GoMethod: "ResetAdvancedSecurity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCodeSecurity", GoMethod: "ResetCodeSecurity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretScanning", GoMethod: "ResetSecretScanning"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretScanningAiDetection", GoMethod: "ResetSecretScanningAiDetection"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretScanningNonProviderPatterns", GoMethod: "ResetSecretScanningNonProviderPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretScanningPushProtection", GoMethod: "ResetSecretScanningPushProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "secretScanning", GoGetter: "SecretScanning"},
+			_jsii_.MemberProperty{JsiiProperty: "secretScanningAiDetection", GoGetter: "SecretScanningAiDetection"},
+			_jsii_.MemberProperty{JsiiProperty: "secretScanningAiDetectionInput", GoGetter: "SecretScanningAiDetectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretScanningInput", GoGetter: "SecretScanningInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secretScanningNonProviderPatterns", GoGetter: "SecretScanningNonProviderPatterns"},
+			_jsii_.MemberProperty{JsiiProperty: "secretScanningNonProviderPatternsInput", GoGetter: "SecretScanningNonProviderPatternsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretScanningPushProtection", GoGetter: "SecretScanningPushProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "secretScanningPushProtectionInput", GoGetter: "SecretScanningPushProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -374,6 +424,82 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanning",
 		reflect.TypeOf((*RepositorySecurityAndAnalysisSecretScanning)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningAiDetection",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisSecretScanningAiDetection)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference",
+		reflect.TypeOf((*RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningOutputReference",

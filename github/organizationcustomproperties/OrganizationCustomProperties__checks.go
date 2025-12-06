@@ -451,6 +451,14 @@ func (j *jsiiProxy_OrganizationCustomProperties) validateSetRequiredParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationCustomProperties) validateSetValuesEditableByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationCustomProperties) validateSetValueTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

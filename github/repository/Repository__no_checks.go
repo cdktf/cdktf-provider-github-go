@@ -159,7 +159,7 @@ func (j *jsiiProxy_Repository) validateSetEtagParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Repository) validateSetForkParameters(val interface{}) error {
+func (j *jsiiProxy_Repository) validateSetForkParameters(val *string) error {
 	return nil
 }
 

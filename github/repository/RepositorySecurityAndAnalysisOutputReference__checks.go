@@ -104,7 +104,40 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutAdva
 	return nil
 }
 
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutCodeSecurityParameters(value *RepositorySecurityAndAnalysisCodeSecurity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningParameters(value *RepositorySecurityAndAnalysisSecretScanning) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningAiDetectionParameters(value *RepositorySecurityAndAnalysisSecretScanningAiDetection) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningNonProviderPatternsParameters(value *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -15,6 +15,8 @@ type RepositorySecurityAndAnalysisOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedSecurity() RepositorySecurityAndAnalysisAdvancedSecurityOutputReference
 	AdvancedSecurityInput() *RepositorySecurityAndAnalysisAdvancedSecurity
+	CodeSecurity() RepositorySecurityAndAnalysisCodeSecurityOutputReference
+	CodeSecurityInput() *RepositorySecurityAndAnalysisCodeSecurity
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,7 +37,11 @@ type RepositorySecurityAndAnalysisOutputReference interface {
 	InternalValue() *RepositorySecurityAndAnalysis
 	SetInternalValue(val *RepositorySecurityAndAnalysis)
 	SecretScanning() RepositorySecurityAndAnalysisSecretScanningOutputReference
+	SecretScanningAiDetection() RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference
+	SecretScanningAiDetectionInput() *RepositorySecurityAndAnalysisSecretScanningAiDetection
 	SecretScanningInput() *RepositorySecurityAndAnalysisSecretScanning
+	SecretScanningNonProviderPatterns() RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference
+	SecretScanningNonProviderPatternsInput() *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns
 	SecretScanningPushProtection() RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference
 	SecretScanningPushProtectionInput() *RepositorySecurityAndAnalysisSecretScanningPushProtection
 	// Experimental.
@@ -71,10 +77,16 @@ type RepositorySecurityAndAnalysisOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAdvancedSecurity(value *RepositorySecurityAndAnalysisAdvancedSecurity)
+	PutCodeSecurity(value *RepositorySecurityAndAnalysisCodeSecurity)
 	PutSecretScanning(value *RepositorySecurityAndAnalysisSecretScanning)
+	PutSecretScanningAiDetection(value *RepositorySecurityAndAnalysisSecretScanningAiDetection)
+	PutSecretScanningNonProviderPatterns(value *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns)
 	PutSecretScanningPushProtection(value *RepositorySecurityAndAnalysisSecretScanningPushProtection)
 	ResetAdvancedSecurity()
+	ResetCodeSecurity()
 	ResetSecretScanning()
+	ResetSecretScanningAiDetection()
+	ResetSecretScanningNonProviderPatterns()
 	ResetSecretScanningPushProtection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,6 +118,26 @@ func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) AdvancedSecurit
 	_jsii_.Get(
 		j,
 		"advancedSecurityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) CodeSecurity() RepositorySecurityAndAnalysisCodeSecurityOutputReference {
+	var returns RepositorySecurityAndAnalysisCodeSecurityOutputReference
+	_jsii_.Get(
+		j,
+		"codeSecurity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) CodeSecurityInput() *RepositorySecurityAndAnalysisCodeSecurity {
+	var returns *RepositorySecurityAndAnalysisCodeSecurity
+	_jsii_.Get(
+		j,
+		"codeSecurityInput",
 		&returns,
 	)
 	return returns
@@ -171,11 +203,51 @@ func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanning(
 	return returns
 }
 
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanningAiDetection() RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference {
+	var returns RepositorySecurityAndAnalysisSecretScanningAiDetectionOutputReference
+	_jsii_.Get(
+		j,
+		"secretScanningAiDetection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanningAiDetectionInput() *RepositorySecurityAndAnalysisSecretScanningAiDetection {
+	var returns *RepositorySecurityAndAnalysisSecretScanningAiDetection
+	_jsii_.Get(
+		j,
+		"secretScanningAiDetectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanningInput() *RepositorySecurityAndAnalysisSecretScanning {
 	var returns *RepositorySecurityAndAnalysisSecretScanning
 	_jsii_.Get(
 		j,
 		"secretScanningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanningNonProviderPatterns() RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference {
+	var returns RepositorySecurityAndAnalysisSecretScanningNonProviderPatternsOutputReference
+	_jsii_.Get(
+		j,
+		"secretScanningNonProviderPatterns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) SecretScanningNonProviderPatternsInput() *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns {
+	var returns *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns
+	_jsii_.Get(
+		j,
+		"secretScanningNonProviderPatternsInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +573,17 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutAdvancedSecu
 	)
 }
 
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutCodeSecurity(value *RepositorySecurityAndAnalysisCodeSecurity) {
+	if err := r.validatePutCodeSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putCodeSecurity",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutSecretScanning(value *RepositorySecurityAndAnalysisSecretScanning) {
 	if err := r.validatePutSecretScanningParameters(value); err != nil {
 		panic(err)
@@ -508,6 +591,28 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutSecretScanni
 	_jsii_.InvokeVoid(
 		r,
 		"putSecretScanning",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutSecretScanningAiDetection(value *RepositorySecurityAndAnalysisSecretScanningAiDetection) {
+	if err := r.validatePutSecretScanningAiDetectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSecretScanningAiDetection",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) PutSecretScanningNonProviderPatterns(value *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns) {
+	if err := r.validatePutSecretScanningNonProviderPatternsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putSecretScanningNonProviderPatterns",
 		[]interface{}{value},
 	)
 }
@@ -531,10 +636,34 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetAdvancedSe
 	)
 }
 
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetCodeSecurity() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCodeSecurity",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetSecretScanning() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSecretScanning",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetSecretScanningAiDetection() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecretScanningAiDetection",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) ResetSecretScanningNonProviderPatterns() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecretScanningNonProviderPatterns",
 		nil, // no parameters
 	)
 }

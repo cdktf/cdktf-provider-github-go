@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository_ruleset github_repository_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_ruleset github_repository_ruleset}.
 type RepositoryRuleset interface {
 	cdktf.TerraformResource
 	BypassActors() RepositoryRulesetBypassActorsList
@@ -137,7 +137,6 @@ type RepositoryRuleset interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRepository()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -507,7 +506,7 @@ func (j *jsiiProxy_RepositoryRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository_ruleset github_repository_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
 func NewRepositoryRuleset(scope constructs.Construct, id *string, config *RepositoryRulesetConfig) RepositoryRuleset {
 	_init_.Initialize()
 
@@ -525,7 +524,7 @@ func NewRepositoryRuleset(scope constructs.Construct, id *string, config *Reposi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/repository_ruleset github_repository_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_ruleset github_repository_ruleset} Resource.
 func NewRepositoryRuleset_Override(r RepositoryRuleset, scope constructs.Construct, id *string, config *RepositoryRulesetConfig) {
 	_init_.Initialize()
 
@@ -1073,14 +1072,6 @@ func (r *jsiiProxy_RepositoryRuleset) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RepositoryRuleset) ResetRepository() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetRepository",
 		nil, // no parameters
 	)
 }

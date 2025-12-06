@@ -51,7 +51,19 @@ func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutAdva
 	return nil
 }
 
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutCodeSecurityParameters(value *RepositorySecurityAndAnalysisCodeSecurity) error {
+	return nil
+}
+
 func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningParameters(value *RepositorySecurityAndAnalysisSecretScanning) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningAiDetectionParameters(value *RepositorySecurityAndAnalysisSecretScanningAiDetection) error {
+	return nil
+}
+
+func (r *jsiiProxy_RepositorySecurityAndAnalysisOutputReference) validatePutSecretScanningNonProviderPatternsParameters(value *RepositorySecurityAndAnalysisSecretScanningNonProviderPatterns) error {
 	return nil
 }
 

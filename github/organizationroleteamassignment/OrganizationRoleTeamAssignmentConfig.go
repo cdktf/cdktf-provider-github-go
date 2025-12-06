@@ -24,13 +24,13 @@ type OrganizationRoleTeamAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The GitHub organization role id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team_assignment#role_id OrganizationRoleTeamAssignment#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_role_team_assignment#role_id OrganizationRoleTeamAssignment#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 	// The GitHub team slug.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team_assignment#team_slug OrganizationRoleTeamAssignment#team_slug}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_role_team_assignment#team_slug OrganizationRoleTeamAssignment#team_slug}
 	TeamSlug *string `field:"required" json:"teamSlug" yaml:"teamSlug"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_role_team_assignment#id OrganizationRoleTeamAssignment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_role_team_assignment#id OrganizationRoleTeamAssignment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

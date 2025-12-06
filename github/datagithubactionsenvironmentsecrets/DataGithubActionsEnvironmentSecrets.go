@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/actions_environment_secrets github_actions_environment_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/actions_environment_secrets github_actions_environment_secrets}.
 type DataGithubActionsEnvironmentSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataGithubActionsEnvironmentSecrets) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/actions_environment_secrets github_actions_environment_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/actions_environment_secrets github_actions_environment_secrets} Data Source.
 func NewDataGithubActionsEnvironmentSecrets(scope constructs.Construct, id *string, config *DataGithubActionsEnvironmentSecretsConfig) DataGithubActionsEnvironmentSecrets {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataGithubActionsEnvironmentSecrets(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/actions_environment_secrets github_actions_environment_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/actions_environment_secrets github_actions_environment_secrets} Data Source.
 func NewDataGithubActionsEnvironmentSecrets_Override(d DataGithubActionsEnvironmentSecrets, scope constructs.Construct, id *string, config *DataGithubActionsEnvironmentSecretsConfig) {
 	_init_.Initialize()
 
